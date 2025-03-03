@@ -1,0 +1,244 @@
+Prices API: Description of Keys
+Description of JSON keys returned by Prices API and CSV column headers.
+
+Data Name	Description
+asin	Unique identifier (ASIN) for this product on Amazon.com
+bgs-10-price	Cards: BGS 10
+Comics: Graded 10.0 by a grading company
+box-only-price	Video Games: Price for the original box only
+Cards: Graded 9.5 by a grading company
+Comics: Graded 9.2 by a grading company
+cib-price	Video Games: Price for item only with original box and manual included
+Cards: Graded 7 or 7.5 by a grading company
+Comics: Graded 4.0 or 4.5 by a grading company
+condition-17-price	Cards: CGC 10
+Comics: Graded 9.4 by a grading company
+condition-18-price	Cards: SGC 10
+console-name	The name of the console on which the item was released.
+epid	Unique identifier (ePID) for this product on eBay
+gamestop-price	The price that GameStop charges for this game in "Pre-Owned" condition. Make sure you don't charge more than the competition. (Buy/Sell prices above already account for this). The Trade price is what GameStop pays in cash for trade-in games.
+
+These prices are only available for consoles that GameStop sells or trades.
+genre	The genre is a single category which describes the item. For example RPG, Fighting, Party, Pokemon Card, etc.
+graded-price	Video Games: Price for brand new item graded by WATA or VGA
+Cards: Graded 9 by a grading company
+Comics: Graded 8.0 or 8.5 by a grading company
+id	PriceCharting unique id for a product.
+loose-price	Video Games: Price for item only without box or manual
+Cards: Ungraded card
+Comics: Ungraded comic
+manual-only-price	Video Games: Price for the original manual only
+Cards: Graded 10 by PSA grading service
+Comics: Graded 9.8 by a grading company
+new-price	Video Games: Price for item with original packaging and original seal
+Cards: Graded 8 or 8.5 by a grading company
+Comics: Graded 6.0 or 6.5 by a grading company
+product-name	The name of the item.
+release-date	The date the item was original released.
+retail-cib-buy	The recommended price for retailers buying from a customer in CIB (complete in box) condition.
+retail-cib-sell	The recommended price for retailers selling to a customer in CIB (complete in box) condition.
+retail-loose-buy	The recommended price for retailers buying from a customer in loose condition.
+retail-loose-sell	The recommended price for retailers selling to a customer in loose condition.
+retail-new-buy	The recommended price for retailers buying from a customer in brand new condition.
+retail-new-sell	The recommended price for retailers selling to a customer in brand new condition.
+sales-volume	The yearly units sold
+upc	The items in your guide will include a UPC that helps you track the item and sell on some websites. For example, eBay uses UPC to identify products when selling on their site.
+
+UPCs may not be available for older consoles that came out before UPCs were created.
+ 
+
+ 
+Marketplace API
+This documentation is for our API to automate all of the tasks for selling on the PriceCharting Marketplace.
+
+Offers: /api/offers
+This API provides multiple offers that match the parameters provided. Complete details about a single offer can be found using /api/offer-details API.
+
+This is the API sellers will use to check if they have sold any offers. Please throttle requests to the same url to a maximum of once every 5 minutes.
+
+Method: GET
+
+Whitespace and comments are added for clarity but are not present in an actual response:
+
+
+    $ curl "https://www.pricecharting.com/api/offers?t=YOUR_TOKEN&seller=7cgdyu5ynzos3mxwhfh46xj3f4&status=sold"
+
+    {
+        "status":"success",
+        "offers":[
+            {
+                "condition-string":"Normal wear",
+                "console-name":"NES",
+                "ended-time":"2017-10-31",
+                "id":9307,                                       // unique PriceCharting product ID
+                "include-string":"Game only",
+                "is-available":false,
+                "is-ended":true,
+                "is-shipped":false,
+                "is-sold":true,                                  // has offer sold
+                "offer-id":"smzksacsy5i2dsrddxsrlzsp6i",         // unique offer Id
+                "offer-status":"sold",                           // offer status
+                "offer-url":"/offer/smzksacsy5i2dsrddxsrlzsp6i",
+                "price":1473,                                    // $14.73.  current price
+                "product-name":"M.C. Kids",
+                "sale-time":"2017-10-31",
+                "shipped-time":"0001-01-01",                     // zero time since it hasn't shipped
+            },
+            {
+                "cert-id": "5672930123",                         // gradeing company unique identifier for graded item
+                "condition-string":"Scratched,Writing",
+                "console-name":"NES",
+                "ended-time":"2017-10-30",
+                "grade-co-id": 1,                                // unique ID for the grading company used
+                "id":9729,
+                "include-string":"Game, Box, and Manual",
+                "is-available":false,
+                "is-ended":true,
+                "is-shipped":true,
+                "is-sold":true,
+                "offer-id":"nw6asacmsbvvoq5yeyrkvzcdky",
+                "offer-status":"available",
+                "offer-url":"/offer/nw6asacmsbvvoq5yeyrkvzcdky",
+                "price":6281,
+                "product-name":"Shatterhand",
+                "sale-time":"2017-10-30",
+                "shipped-time":"2017-10-31",
+            },
+        ],
+    }
+        
+
+Parameters
+There are several ways to specify which offers you want:
+
+status=available
+Offer Status (required)
+Offers matching a particular status. Valid options are: available, sold, ended, or collection
+buyer=7cgdyu5ynzos3mxwhfh46xj3f4
+User ID for Buyer
+All offers bought by a particular user. Your code is in the url of your purchase history page. Other user's ID can be found on their user profile page.
+console=G17
+PriceCharting Unique Console ID
+Offers matching a particular console. This number is available in the Console ID Table below.
+condition-id=2
+PriceCharting Condition Id
+Offers matching a particular condition/includes ("loose", "cib", "new", etc) This number is available in the Includes ID Table below.
+genre=Football
+Genre
+All offers matching a particular genre ("Systems", "RPG", "Puzzle", etc). The genres table shows all the valid options.
+id=6910
+PriceCharting Unique Product ID
+Offers matching a single product. This number is available in CSV price guides, provided in API responses or available by hovering your mouse over the product title on a product page on PriceCharting.com.
+seller=7cgdyu5ynzos3mxwhfh46xj3f4
+User ID for Seller
+All offers created by particular seller. Your code is in the url of your items for sale page. Other user's ID can be found on their user profile page.
+sort=name
+Sort By
+Choose how the offers are sorted. Can be: name (alphabetical by product), starts (newly listed offers), lowest-price (lowest price offers).
+Offer-Publish: /api/offer-publish
+The Offer-Publish API publishes one new offer on the Marketplace.
+
+To publish multiple offers at once, you should use offer CSV upload tools.
+
+Method: POST
+
+
+    $ curl --data "t=YOUR_TOKEN&product=9331&condition-id=1&price-max=901&sku=123abc" https://www.pricecharting.com/api/offer-publish
+
+    {
+        "status":"success"
+        "cost-basis":125,                                // price you paid for item
+        "offer-id":"ccirsewk5mdnoest7xkryagimy",         // the unique ID for this new offer
+        "offer-url":"/offer/ccirsewk5mdnoest7xkryagimy", // url for the new offer
+        "offer-status":"available",
+        "product-name":"Metroid",
+        "console-name":"NES",
+        "condition-string":"Scratches, Writing",         // condition values end users will see
+        "include-string":"Game, Box",                    // include values end users will see
+        "has-pictures":false,                            // does the listing have a photo
+        "price":901,
+        "sku":"123abc",
+        "is-collection":false,                           // is the offer in a collection
+        "start-time":"2017-11-03",                       // date the offer was listed
+        "quantity":1,                                    // quantity owned.  only supported for collections
+    }
+        
+
+Parameters
+These parameters determine the values for the offer you publish.
+
+Either product, upc, asin, epid or offer-id is required.
+offer-id will edit an existing offer. product, upc, asin, epid will publish a new offer.
+
+product=9331
+PriceCharting Unique Product ID
+This number is available in CSV price guides, provided in API responses or available by hovering your mouse over the product title on a product page on PriceCharting.com
+Using this parameter will create a new listing.
+upc=045496630348
+UPC
+The UPC for the item you are selling. We will match the UPC to a product in our database.
+Using this parameter will create a new listing.
+asin=B00004SVYF
+Amazon Unique ID
+ASIN is Amazon's unique product identifier. We will match the ASIN to a product in our database.
+Using this parameter will create a new listing.
+epid=6088
+eBay Unique ID
+EPID is eBay's unique product identifier. We will match the EPID to a product in our database.
+Using this parameter will create a new listing.
+offer-id=vtdsww72uyslgooawzyyijsllm
+PriceCharting Unique Offer ID
+The unique ID for an offer. This is provided in the /api/offers API and listed on the website in any offer url.
+Using this parameter will edit an existing offer with the parameters included in the request.
+price-max=901
+Maximum Price (required)
+This is the price buyers will pay. This is the starting price when you set a price-min too.
+
+Price in number of pennies. $8.99 is 899.
+condition-id=1
+Includes (required)
+Choose what is included with the listing. Item only, Item, Box, and Manual, Brand New, etc.
+
+Use the includes table for a list of the numeric values for each includes type.
+
+This field determines the value of the listing and corresponds to the values shown on website and API.
+add-to-collection=on
+Add Item to Collection
+Including this parameter will add an offer to your collection instead of listing the product for sale.
+cost-basis=125
+Price You Paid for Item
+The price you paid for the item when you bought it.
+
+Price is number of pennies. $8.99 is 899.
+description=A+short+text+description
+Offer Description
+A text description of the item you are selling. Include information about the item not already provided.
+
+300 character maximum.
+broken=on
+pristine=on
+scratch=on
+stickers=on
+tear=on
+writing=on
+Condition Tags
+Tags describing the condition of the item. Use all condition tags that apply. For example, a game with scratches and stickers on it would be: scratch=on and stickers=on.
+
+pristine=on is converted into "No blemishes" on the website. This tag excludes all other tags except new.
+
+Ommitting all condition tags defaults the listing to "Normal wear".
+price-max=700
+Minimum Price
+Setting a minimm price turns your listing into a reverse auction. The price will steadily decline over a 30 day period from the price-max until it reaches the price-min or it sells.
+
+Price in number of pennies. $8.99 is 899.
+sku=123abc
+Your Internal SKU
+An internal tracking number you can associate with an offer. A SKU must be unique among your active listings, but can be repeated with ended listings.
+
+64 character maximum. Any alpha-numeric characters.
+quantity=1
+Quantity Owned
+Only supported in collections. The number of copies of this item that are owned.
+
+Any integer number. 1 is default if no quantity is provided

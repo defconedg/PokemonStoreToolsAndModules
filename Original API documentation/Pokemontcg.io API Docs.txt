@@ -1,0 +1,552 @@
+
+Search cards
+Search for one or many cards given a search query.
+HTTP Request#
+GET https://api.pokemontcg.io/v2/cards
+Copy
+URL Parameters#
+None
+Body Parameters#
+None
+Query Parameters#
+All query parameters are optional.
+ParameterDescriptionDefault ValueqThe search query. Examples can be found below.pageThe page of data to access.1pageSizeThe maximum amount of cards to return.250 (max of 250)orderByThe field(s) to order the results by. Examples can be found below.selectA comma delimited list of fields to return in the response (ex. ?select=id,name). By default, all fields are returned if this query parameter is not used.
+To perform search queries, you use the q parameter. The search syntax is a very familiar Lucene like syntax.
+Keyword matching:#
+Search for all cards that have "charizard" in the name field.
+name:charizard
+Copy
+Search for the phrase "venusaur v" in the name field.
+name:"venusaur v"
+Copy
+Search for "charizard" in the name field AND the type "mega" in the subtypes field.
+name:charizard subtypes:mega
+Copy
+Search for "charizard" in the name field AND either the subtypes of "mega" or "vmax."
+name:charizard (subtypes:mega OR subtypes:vmax)
+Copy
+Search for all "mega" subtypes, but NOT water types.
+subtypes:mega -types:water
+Copy
+Wildcard Matching#
+Search for any card that starts with "char" in the name field.
+name:char*
+Copy
+Search for any card that starts with "char" in the name and ends with "der."
+name:char*der
+Copy
+Exact Matching#
+Search for any card named "charizard." That is, no other word except for "charizard" appears in the name field.
+!name:charizard
+Copy
+Range Searches#
+Some fields support searching on a range. This includes fields with numerical data like hp and nationalPokedexNumbers.
+Search for only cards that feature the original 151 pokemon.
+nationalPokedexNumbers:[1 TO 151]
+Copy
+Using square brackets [ and ] means to do an inclusive range search, while using curly braces { and } means exclusive.
+Search for cards with a max HP up to 100.
+hp:[* TO 100]
+Copy
+Search for cards with any HP greater than or equal to 150.
+hp:[150 TO *]
+Copy
+Search on nested fields#
+To search nested fields, use a period . as a separator. For example, to filter by the set id:
+set.id:sm1
+Copy
+Or to filter on cards where they have an attack named "Spelunk":
+attacks.name:Spelunk
+Copy
+Find cards that are banned in Standard.
+legalities.standard:banned
+Copy
+Every field in the response is searchable.
+Ordering Data#
+You can also order data using the orderBy query parameter.
+Order all cards from Sun & Moon by their number.
+?orderBy=number
+Copy
+Order all cards from Sun & Moon by their name (ascending) and then their number (descending)
+?orderBy=name,-number
+Copy
+
+Code Samples#
+* Python
+* Ruby
+* Javascript
+* cURL
+# Get all cards (will take awhile, automatically pages through data)
+cards = Card.all()
+
+# Get a single page of cards
+cards = Card.where(page=1, pageSize=250)
+
+# Filter cards via query parameters
+cards = Card.where(q='set.name:generations subtypes:mega')
+
+# Order by release date (descending)
+cards = Card.where(q='subtypes:mega', orderBy='-set.releaseDate')
+Copy
+Sample Response#
+{
+  "data": [
+    {
+      "id": "g1-1",
+      "name": "Venusaur-EX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "EX"
+      ],
+      "hp": "180",
+      "types": [
+        "Grass"
+      ],
+      "evolvesTo": [
+        "M Venusaur-EX"
+      ],
+      "rules": [
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Frog Hop",
+          "cost": [
+            "Grass",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "40+",
+          "text": "Flip a coin. If heads, this attack does 40 more damage."
+        },
+        {
+          "name": "Poison Impact",
+          "cost": [
+            "Grass",
+            "Grass",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "80",
+          "text": "Your opponent's Active Pokémon is now Asleep and Poisoned."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless",
+        "Colorless",
+        "Colorless"
+      ],
+      "convertedRetreatCost": 4,
+      "set": {
+        "id": "g1",
+        "name": "Generations",
+        "series": "XY",
+        "printedTotal": 115,
+        "total": 115,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "GEN",
+        "releaseDate": "2016/02/22",
+        "updatedAt": "2020/08/14 09:35:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/g1/symbol.png",
+          "logo": "https://images.pokemontcg.io/g1/logo.png"
+        }
+      },
+      "number": "1",
+      "artist": "Eske Yoshinob",
+      "rarity": "Rare Holo EX",
+      "nationalPokedexNumbers": [
+        3
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/g1/1.png",
+        "large": "https://images.pokemontcg.io/g1/1_hires.png"
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/g1-1",
+        "updatedAt": "2021/07/15",
+        "prices": {
+          "holofoil": {
+            "low": 2.44,
+            "mid": 5.4,
+            "high": 16.99,
+            "market": 5.38,
+            "directLow": 6.1
+          }
+        }
+      }
+    },
+    {...},
+    {...}
+  ],
+  "page": 1,
+  "pageSize": 250,
+  "count": 117,
+  "totalCount": 117
+}
+Copy
+
+
+The set object
+Attributes#
+id string#
+Unique identifier for the object.
+
+name string#
+The name of the set.
+
+series string#
+The series the set belongs to, like Sword and Shield or Base.
+
+printedTotal integer#
+The number printed on the card that represents the total. This total does not include secret rares.
+
+total integer#
+The total number of cards in the set, including secret rares, alternate art, etc.
+
+legalities hash#
+The legalities of the set. If a given format is not legal, it will not appear in the hash. This is a hash with the following fields:
+PropertyDescriptionstandard stringThe standard game format. Possible values are Legal.expanded stringThe expanded game format. Possible values are Legal.unlimited stringThe unlimited game format. Possible values are Legal.
+ptcgoCode string#
+The code the Pokémon Trading Card Game Online uses to identify a set.
+
+releaseDate string#
+The date the set was released (in the USA). Format is YYYY/MM/DD.
+
+updatedAt string#
+The date and time the set was updated. Format is YYYY/MM/DD HH:MM:SS.
+
+images hash#
+Any images associated with the set, such as symbol and logo. This is a hash with the following fields:
+PropertyDescriptionsymbol stringThe url to the symbol image.logo stringThe url to the logo image.
+Sample JSON#
+{
+    "id": "swsh1",
+    "name": "Sword & Shield",
+    "series": "Sword & Shield",
+    "printedTotal": 202,
+    "total": 216,
+    "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+    },
+    "ptcgoCode": "SSH",
+    "releaseDate": "2020/02/07",
+    "updatedAt": "2020/08/14 09:35:00",
+    "images": {
+        "symbol": "https://images.pokemontcg.io/swsh1/symbol.png",
+        "logo": "https://images.pokemontcg.io/swsh1/logo.png"
+    }
+}
+Copy
+Edit this page
+Get a set
+Fetch the details of a single set.
+HTTP Request#
+GET https://api.pokemontcg.io/v2/sets/<id>
+Copy
+URL Parameters#
+ParameterDescriptionidThe Id of the setBody Parameters#
+None
+Query Parameters#
+ParameterDescriptionDefault ValueselectA comma delimited list of fields to return in the response (ex. ?select=id,name). By default, all fields are returned if this query parameter is not used.Code Samples#
+* Python
+* Ruby
+* Javascript
+* cURL
+card = Set.find('swsh1')
+Copy
+Sample Response#
+{
+  "data": {
+    "id": "swsh1",
+    "name": "Sword & Shield",
+    "series": "Sword & Shield",
+    "printedTotal": 202,
+    "total": 216,
+    "legalities": {
+      "unlimited": "Legal",
+      "standard": "Legal",
+      "expanded": "Legal"
+    },
+    "ptcgoCode": "SSH",
+    "releaseDate": "2020/02/07",
+    "updatedAt": "2020/08/14 09:35:00",
+    "images": {
+      "symbol": "https://images.pokemontcg.io/swsh1/symbol.png",
+      "logo": "https://images.pokemontcg.io/swsh1/logo.png"
+    }
+  }
+}
+Search sets
+Search for one or many sets given a search query.
+HTTP Request#
+GET https://api.pokemontcg.io/v2/sets
+Copy
+URL Parameters#
+None
+Body Parameters#
+None
+Query Parameters#
+All query parameters are optional.
+ParameterDescriptionDefault ValueqThe search query. Examples can be found below.pageThe page of data to access.1pageSizeThe maximum amount of cards to return.250 (max of 250)orderByThe field(s) to order the results by. Examples can be found below.selectA comma delimited list of fields to return in the response (ex. ?select=id,name). By default, all fields are returned if this query parameter is not used.
+Look at the /cards endpoint for more details on the advanced query syntax.
+Code Samples#
+* Python
+* Ruby
+* Javascript
+* cURL
+# Get all sets
+sets = Set.all()
+
+# Filter sets
+sets = Set.where(q='legailities.standard:legal')
+
+# Get a specific page of data
+sets = Set.where(page=2, pageSize=10)
+Copy
+Sample Response#
+{
+  "data": [
+    {
+      "id": "base1",
+      "name": "Base",
+      "series": "Base",
+      "printedTotal": 102,
+      "total": 102,
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "ptcgoCode": "BS",
+      "releaseDate": "1999/01/09",
+      "updatedAt": "2020/08/14 09:35:00",
+      "images": {
+        "symbol": "https://images.pokemontcg.io/base1/symbol.png",
+        "logo": "https://images.pokemontcg.io/base1/logo.png"
+      }
+    },
+    {...},
+    {...}
+  ],
+  "page": 1,
+  "pageSize": 250,
+  "count": 123,
+  "totalCount": 123
+}
+Get types
+Get all possible types
+HTTP Request#
+GET https://api.pokemontcg.io/v2/types
+Copy
+URL Parameters#
+None
+Body Parameters#
+None
+Query Parameters#
+None
+
+Code Samples#
+* Python
+* Ruby
+* Javascript
+* cURL
+types = Type.all()
+Copy
+Sample Response#
+{
+  "data": [
+    "Colorless",
+    "Darkness",
+    "Dragon",
+    "Fairy",
+    "Fighting",
+    "Fire",
+    "Grass",
+    "Lightning",
+    "Metal",
+    "Psychic",
+    "Water"
+  ]
+}
+Get subtypes
+Get all possible subtypes
+HTTP Request#
+GET https://api.pokemontcg.io/v2/subtypes
+Copy
+URL Parameters#
+None
+Body Parameters#
+None
+Query Parameters#
+None
+
+Code Samples#
+* Python
+* Ruby
+* Javascript
+* cURL
+subtypes = Subtype.all()
+Copy
+Sample Response#
+{
+  "data": [
+    "BREAK",
+    "Baby",
+    "Basic",
+    "EX",
+    "GX",
+    "Goldenrod Game Corner",
+    "Item",
+    "LEGEND",
+    "Level-Up",
+    "MEGA",
+    "Pokémon Tool",
+    "Pokémon Tool F",
+    "Rapid Strike",
+    "Restored",
+    "Rocket's Secret Machine",
+    "Single Strike",
+    "Special",
+    "Stadium",
+    "Stage 1",
+    "Stage 2",
+    "Supporter",
+    "TAG TEAM",
+    "Technical Machine",
+    "V",
+    "VMAX"
+  ]
+}
+Get supertypes
+Get all possible supertypes
+HTTP Request#
+GET https://api.pokemontcg.io/v2/supertypes
+Copy
+URL Parameters#
+None
+Body Parameters#
+None
+Query Parameters#
+None
+
+Code Samples#
+* Python
+* Ruby
+* Javascript
+* cURL
+supertypes = Supertype.all()
+Copy
+Sample Response#
+{
+  "data": [
+    "Energy",
+    "Pokémon",
+    "Trainer"
+  ]
+}
+Get rarities
+Get all possible rarities
+HTTP Request#
+GET https://api.pokemontcg.io/v2/rarities
+Copy
+URL Parameters#
+None
+Body Parameters#
+None
+Query Parameters#
+None
+
+Code Samples#
+* Python
+* Ruby
+* Javascript
+* cURL
+rarities = Rarity.all()
+Copy
+Sample Response#
+{
+  "data": [
+      "Amazing Rare",
+      "Common",
+      "LEGEND",
+      "Promo",
+      "Rare",
+      "Rare ACE",
+      "Rare BREAK",
+      "Rare Holo",
+      "Rare Holo EX",
+      "Rare Holo GX",
+      "Rare Holo LV.X",
+      "Rare Holo Star",
+      "Rare Holo V",
+      "Rare Holo VMAX",
+      "Rare Prime",
+      "Rare Prism Star",
+      "Rare Rainbow",
+      "Rare Secret",
+      "Rare Shining",
+      "Rare Shiny",
+      "Rare Shiny GX",
+      "Rare Ultra",
+      "Uncommon"
+  ]
+}
+Authentication
+The Pokémon TCG API uses API keys to authenticate requests. Sign up for an account at the Pokémon TCG Developer Portal to get your API key for free.
+Your API keys carry many privileges, so be sure to keep them secure! Do not share your secret API keys in publicly accessible areas such as GitHub, client-side code, and so forth. If you feel as though your API key has been compromised, you can generate a new key at any time.
+Authentication to the API is performed via the X-Api-Key header. Provide your API key in the headers of all requests to authenticate to the Pokémon TCG API.
+All API requests must be made over HTTPS. Calls made over plain HTTP will fail will redirect to HTTPS automatically. API requests without authentication won't fail, but your rate limits are drastically reduced.
+Rate Limits
+Overview#
+Rate limits are enforced for all third-party applications and services. This document is an overview of the rate limits themselves, as well as how they are enforced and best practices for handling the errors returned when a rate limit is reached.
+V2 Rate Limits#
+Third-party application rate limits depend on your API key. By default, requests are limited to 20,000/day. If you need a higher rate limit, feel free to contact me via Discord or email and we can discuss.
+If you aren’t using an API key, you are rate limited to 1000 requests a day, and a maxium of 30 per minute.
+V1 (Deprecated) Rate Limits#
+Third-party applications are currently throttled to 30 requests per minute. As this API continues to age, the rate limits may be updated to provide better performance to users
+Rationale#
+As previously mentioned, the primary goal is to provide a responsive interface for developers and users to use when accessing the Pokémon TCG data. Since each request made to the API incurs a computational cost, it’s in the best interest of both the Pokémon TCG API and its developer partners that these costs be minimized to the greatest degree possible.
+Rate limiting also helps third-party developers by encouraging them to build their integrations to make economical use of API requests.
+By donating to this API via Patreon or Kofi, you can help ensure that the server performance will meet your application needs.
+Edit this page
+
+Previous
+« V1 to V2 Migration
+
+
+Next
+Errors »
+
+* Overview
+* V2 Rate Limits
+* V1 (Deprecated) Rate Limits
+* Rat
+Errors
+The Pokémon TCG API uses conventional HTTP response codes to indicate the success or failure of an API request. In general: Codes in the 200 range indicate success. Codes in the 4xx range indicate an error that failed given the information provided (e.g., a required parameter was omitted). Codes in the 5xx range indicate an error with the Pokémon TCG API servers.
+HTTP Status Code Summary#
+Status CodeDescription200 - OKEverything worked as expected.400 - Bad RequestThe request was unacceptable, often due to an incorrect query string parameter402 - Request FailedThe parameters were valid but the request failed.403 - ForbiddenThe user doesn't have permissions to perform the request.404 - Not FoundThe requested resource doesn't exist.429 - Too Many RequestsThe rate limit has been exceeded.500, 502, 503, 504 - Server ErrorsSomething went wrong on our end.Sample Error Response#
+{
+  "error": {
+    "message": "Bad Request. Your request is either malformed, or is missing one or more required fields.",
+    "code": 400
+  }
+}
+
