@@ -1,0 +1,53 @@
+{
+  "id": "sv6pt5-38",
+  "name": "Fezandipiti ex",
+  "set": "Shrouded Fable",
+  "set_id": "sv6pt5",
+  "number": "38",
+  "rarity": "Double Rare",
+  "image": "https://images.pokemontcg.io/sv6pt5/38.png",
+  "large_image": "https://images.pokemontcg.io/sv6pt5/38_hires.png",
+  "tcgplayer": {
+    "holofoil": {
+      "low": 9.27,
+      "mid": 11.99,
+      "high": 37.61,
+      "market": 10.11,
+      "directLow": 11.0
+    },
+    "market": 10.11
+  },
+  "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv6pt5-38",
+  "price_charting": {
+    "loose": 40.5,
+    "graded": 45.0
+  },
+  "cardmarket": {
+    "averageSellPrice": 6.58,
+    "lowPrice": 2.98,
+    "trendPrice": 4.33,
+    "germanProLow": 0.0,
+    "suggestedPrice": 0.0,
+    "reverseHoloSell": 0.0,
+    "reverseHoloLow": 0.0,
+    "reverseHoloTrend": 0.0,
+    "lowPriceExPlus": 2.98,
+    "avg1": 4.66,
+    "avg7": 4.65,
+    "avg30": 5.61,
+    "reverseHoloAvg1": 0.0,
+    "reverseHoloAvg7": 0.0,
+    "reverseHoloAvg30": 0.0,
+    "trendPrice_usd": 4.763000000000001
+  },
+  "cardmarket_url": "https://prices.pokemontcg.io/cardmarket/sv6pt5-38",
+  "arbitrage": {
+    "buy_from": "cardmarket",
+    "buy_price": 4.763000000000001,
+    "sell_to": "pricecharting",
+    "sell_price": 40.5,
+    "net_sell_price": 35.235,
+    "profit": 29.471999999999998,
+    "profit_margin": 618.769682972916
+  }
+}

@@ -34,4 +34,41 @@ A combined tool that brings together functionality from both APIs for:
 
 ## Configuration
 
-Set your API keys in `config.py` or use environment variables:
+Set your API keys in `config.py` or use environment variables.
+
+## Installation & Usage
+
+1. Clone the repository
+2. Install dependencies: `pip install -r requirements.txt`
+3. Run the arbitrage tool: `python app.py`
+4. Access the web interface at http://localhost:5000
+
+## API Keys
+
+To use this application, you'll need:
+
+1. Pokemon TCG API key (get one at https://dev.pokemontcg.io/)
+2. PriceCharting API key (optional)
+
+## Error Handling
+
+The application includes robust error handling:
+- Automatic retry with exponential backoff for API rate limits
+- Graceful fallback to cached data when APIs are unavailable
+- Detailed logging for troubleshooting
+
+## Caching System
+
+To minimize API calls and improve performance, the application implements a caching system:
+- Card data cached for 12 hours
+- Set data cached for 1 week
+- Search results cached for 3 days
+- Automatic cache invalidation for stale data
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.

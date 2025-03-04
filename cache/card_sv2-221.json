@@ -1,0 +1,53 @@
+{
+  "id": "sv2-221",
+  "name": "Paldean Wooper",
+  "set": "Paldea Evolved",
+  "set_id": "sv2",
+  "number": "221",
+  "rarity": "Illustration Rare",
+  "image": "https://images.pokemontcg.io/sv2/221.png",
+  "large_image": "https://images.pokemontcg.io/sv2/221_hires.png",
+  "tcgplayer": {
+    "holofoil": {
+      "low": 15.0,
+      "mid": 20.2,
+      "high": 50.0,
+      "market": 18.12,
+      "directLow": 21.8
+    },
+    "market": 18.12
+  },
+  "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv2-221",
+  "price_charting": {
+    "loose": 10.52,
+    "graded": 19.6
+  },
+  "cardmarket": {
+    "averageSellPrice": 4.84,
+    "lowPrice": 2.9,
+    "trendPrice": 5.31,
+    "germanProLow": 0.0,
+    "suggestedPrice": 0.0,
+    "reverseHoloSell": 0.0,
+    "reverseHoloLow": 0.0,
+    "reverseHoloTrend": 0.0,
+    "lowPriceExPlus": 2.9,
+    "avg1": 6.28,
+    "avg7": 5.81,
+    "avg30": 4.87,
+    "reverseHoloAvg1": 0.0,
+    "reverseHoloAvg7": 0.0,
+    "reverseHoloAvg30": 0.0,
+    "trendPrice_usd": 5.841
+  },
+  "cardmarket_url": "https://prices.pokemontcg.io/cardmarket/sv2-221",
+  "arbitrage": {
+    "buy_from": "cardmarket",
+    "buy_price": 5.841,
+    "sell_to": "tcgplayer",
+    "sell_price": 18.12,
+    "net_sell_price": 15.402000000000001,
+    "profit": 8.561,
+    "profit_margin": 146.56736860126688
+  }
+}

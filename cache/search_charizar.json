@@ -1,0 +1,109 @@
+{
+  "suggestions": [
+    {
+      "id": "gym2-2",
+      "name": "Blaine's Charizard",
+      "set": "Gym Challenge",
+      "number": "2",
+      "image": "https://images.pokemontcg.io/gym2/2.png"
+    },
+    {
+      "id": "ecard1-6",
+      "name": "Charizard",
+      "set": "Expedition Base Set",
+      "number": "6",
+      "image": "https://images.pokemontcg.io/ecard1/6.png"
+    },
+    {
+      "id": "base4-4",
+      "name": "Charizard",
+      "set": "Base Set 2",
+      "number": "4",
+      "image": "https://images.pokemontcg.io/base4/4.png"
+    },
+    {
+      "id": "base6-3",
+      "name": "Charizard",
+      "set": "Legendary Collection",
+      "number": "3",
+      "image": "https://images.pokemontcg.io/base6/3.png"
+    },
+    {
+      "id": "base1-4",
+      "name": "Charizard",
+      "set": "Base",
+      "number": "4",
+      "image": "https://images.pokemontcg.io/base1/4.png"
+    },
+    {
+      "id": "dp3-3",
+      "name": "Charizard",
+      "set": "Secret Wonders",
+      "number": "3",
+      "image": "https://images.pokemontcg.io/dp3/3.png"
+    },
+    {
+      "id": "pl4-1",
+      "name": "Charizard",
+      "set": "Arceus",
+      "number": "1",
+      "image": "https://images.pokemontcg.io/pl4/1.png"
+    },
+    {
+      "id": "xy12-11",
+      "name": "Charizard",
+      "set": "Evolutions",
+      "number": "11",
+      "image": "https://images.pokemontcg.io/xy12/11.png"
+    },
+    {
+      "id": "det1-5",
+      "name": "Charizard",
+      "set": "Detective Pikachu",
+      "number": "5",
+      "image": "https://images.pokemontcg.io/det1/5.png"
+    },
+    {
+      "id": "ex16-6",
+      "name": "Charizard",
+      "set": "Power Keepers",
+      "number": "6",
+      "image": "https://images.pokemontcg.io/ex16/6.png"
+    },
+    {
+      "id": "swsh4-25",
+      "name": "Charizard",
+      "set": "Vivid Voltage",
+      "number": "25",
+      "image": "https://images.pokemontcg.io/swsh4/25.png"
+    },
+    {
+      "id": "bw7-20",
+      "name": "Charizard",
+      "set": "Boundaries Crossed",
+      "number": "20",
+      "image": "https://images.pokemontcg.io/bw7/20.png"
+    },
+    {
+      "id": "bw11-19",
+      "name": "Charizard",
+      "set": "Legendary Treasures",
+      "number": "19",
+      "image": "https://images.pokemontcg.io/bw11/19.png"
+    },
+    {
+      "id": "sm75-3",
+      "name": "Charizard",
+      "set": "Dragon Majesty",
+      "number": "3",
+      "image": "https://images.pokemontcg.io/sm75/3.png"
+    },
+    {
+      "id": "sm9-14",
+      "name": "Charizard",
+      "set": "Team Up",
+      "number": "14",
+      "image": "https://images.pokemontcg.io/sm9/14.png"
+    }
+  ]
+}

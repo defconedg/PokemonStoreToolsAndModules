@@ -1,0 +1,19 @@
+2025-03-03 17:28:08,653 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-03 17:28:08,654 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-03 17:28:08,676 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-03 17:28:10,677 - werkzeug - WARNING -  * Debugger is active!
+2025-03-03 17:28:10,697 - werkzeug - INFO -  * Debugger PIN: 497-044-917
+2025-03-03 17:33:50,831 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-03 17:33:50,832 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-03 17:33:50,849 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-03 17:33:52,803 - werkzeug - WARNING -  * Debugger is active!
+2025-03-03 17:33:52,822 - werkzeug - INFO -  * Debugger PIN: 497-044-917
+2025-03-03 17:36:02,503 - werkzeug - INFO -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\flask\\blueprints.py', reloading
+2025-03-03 17:36:02,514 - werkzeug - INFO -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\flask\\sansio\\blueprints.py', reloading
+2025-03-03 17:36:12,111 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-03 17:36:14,192 - werkzeug - WARNING -  * Debugger is active!
+2025-03-03 17:36:14,214 - werkzeug - INFO -  * Debugger PIN: 497-044-917
+2025-03-03 17:36:24,271 - werkzeug - INFO -  * Detected change in 'C:\\Users\\defco\\PokemonStoreToolsAndModules\\diagnostic.py', reloading
+2025-03-03 17:36:31,892 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
