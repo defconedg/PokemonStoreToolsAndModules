@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="light">
+<html lang="en" data-bs-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,21 +8,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <style>
         :root {
-            --primary-color: #007bff;
-            --secondary-color: #6c757d;
-            --success-color: #28a745;
-            --danger-color: #dc3545;
-            --warning-color: #ffc107;
-            --info-color: #17a2b8;
-            --body-bg: #f8f9fa;
-            --card-bg: #ffffff;
-            --border-color: #dee2e6;
-            --text-color: #212529;
-            --text-muted: #6c757d;
-            --hover-bg: #f0f0f0;
-        }
-        
-        [data-bs-theme="dark"] {
             --primary-color: #0d6efd;
             --secondary-color: #6c757d;
             --success-color: #198754;
@@ -102,26 +87,14 @@
         }
         
         .profit-high {
-            background-color: rgba(40, 167, 69, 0.2);
-        }
-        
-        .profit-medium {
-            background-color: rgba(255, 193, 7, 0.2);
-        }
-        
-        .profit-none {
-            background-color: rgba(220, 53, 69, 0.1);
-        }
-        
-        [data-bs-theme="dark"] .profit-high {
             background-color: rgba(25, 135, 84, 0.3);
         }
         
-        [data-bs-theme="dark"] .profit-medium {
+        .profit-medium {
             background-color: rgba(255, 193, 7, 0.3);
         }
         
-        [data-bs-theme="dark"] .profit-none {
+        .profit-none {
             background-color: rgba(220, 53, 69, 0.15);
         }
         
@@ -133,21 +106,6 @@
         .loading {
             text-align: center;
             margin: 30px 0;
-        }
-        
-        .btn-theme-toggle {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            z-index: 1030;
-            width: 45px;
-            height: 45px;
-            border-radius: 50%;
-            padding: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.2rem;
         }
         
         .price-card {
@@ -166,35 +124,6 @@
             padding: 8px 12px;
         }
         
-        .status-indicator {
-            display: inline-block;
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-            margin-right: 5px;
-        }
-        
-        .status-online {
-            background-color: var(--success-color);
-        }
-        
-        .status-offline {
-            background-color: var(--danger-color);
-        }
-        
-        .api-status {
-            position: fixed;
-            bottom: 10px;
-            right: 10px;
-            font-size: 0.8rem;
-            padding: 5px 10px;
-            border-radius: 15px;
-            background-color: var(--card-bg);
-            border: 1px solid var(--border-color);
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            z-index: 1000;
-        }
-        
         .error-message {
             color: var(--danger-color);
             padding: 10px;
@@ -203,28 +132,29 @@
             background-color: rgba(220, 53, 69, 0.1);
         }
         
+        .price-dual {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .price-eur {
+            font-weight: bold;
+        }
+        
+        .price-usd {
+            font-size: 0.85em;
+            color: var(--text-muted);
+        }
+        
         @media (max-width: 768px) {
             .search-container {
                 margin: 10px auto;
                 padding: 15px;
             }
-            
-            .btn-theme-toggle {
-                top: 10px;
-                right: 10px;
-            }
         }
     </style>
 </head>
 <body>
-    <button class="btn btn-outline-secondary btn-theme-toggle" id="themeToggle">
-        <i class="bi bi-moon-fill"></i>
-    </button>
-    
-    <div class="api-status">
-        API Status: <span id="apiStatus"><span class="status-indicator status-offline"></span> Checking...</span>
-    </div>
-    
     <div class="container">
         <div class="search-container">
             <h1>Pokémon Card Arbitrage Tool</h1>
@@ -293,6 +223,113 @@
                                 </table>
                             </div>
                         </div>
+                        <hr>
+                        <h4>Additional Information</h4>
+                        <div class="row mb-4">
+                            <div class="col-md-6">
+                                <div class="card h-100">
+                                    <div class="card-header d-flex align-items-center">
+                                        <h5 class="mb-0">Set Information</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <img id="setSymbol" src="" class="me-3" style="max-height: 50px;" alt="Set Symbol">
+                                            <div>
+                                                <h5 id="setNameFull"></h5>
+                                                <p id="setDetails" class="mb-1"></p>
+                                                <p id="setReleaseDate" class="text-muted small"></p>
+                                            </div>
+                                        </div>
+                                        <div class="text-center mt-3">
+                                            <img id="setLogo" src="" class="img-fluid rounded" style="max-height: 100px;" alt="Set Logo">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="card h-100">
+                                    <div class="card-header">
+                                        <h5 class="mb-0">Card Details</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <table class="table table-sm">
+                                            <tbody id="cardDetailsTable">
+                                                <!-- Card details will be filled by JS -->
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <div class="card h-100">
+                                    <div class="card-header d-flex justify-content-between align-items-center">
+                                        <h5 class="mb-0">TCGPlayer Details</h5>
+                                        <a id="tcgPlayerLink" href="#" target="_blank" class="btn btn-sm btn-outline-primary">View on TCGPlayer</a>
+                                    </div>
+                                    <div class="card-body">
+                                        <div id="tcgPlayerDetails">
+                                            <div id="tcgPricesTable" class="table-responsive">
+                                                <!-- TCGPlayer details will be filled by JS -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="card h-100">
+                                    <div class="card-header d-flex justify-content-between align-items-center">
+                                        <h5 class="mb-0">PriceCharting Details</h5>
+                                        <a id="priceChartingLink" href="#" target="_blank" class="btn btn-sm btn-outline-primary">View on PriceCharting</a>
+                                    </div>
+                                    <div class="card-body">
+                                        <div id="pcDetailsFormatted">
+                                            <!-- PriceCharting details will be filled by JS -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-header d-flex justify-content-between align-items-center">
+                                        <h5 class="mb-0">CardMarket Details</h5>
+                                        <a id="cardmarketLink" href="#" target="_blank" class="btn btn-sm btn-outline-primary">View on CardMarket</a>
+                                    </div>
+                                    <div class="card-body">
+                                        <div id="cardmarketDetailsFormatted">
+                                            <!-- CardMarket details will be filled by JS -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5 class="mb-0">Raw JSON Data</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="btn-group w-100 mb-3">
+                                            <button class="btn btn-sm btn-outline-secondary active" data-target="rawTCGData">TCG</button>
+                                            <button class="btn btn-sm btn-outline-secondary" data-target="rawPCData">PriceCharting</button>
+                                            <button class="btn btn-sm btn-outline-secondary" data-target="rawCMData">CardMarket</button>
+                                        </div>
+                                        <div>
+                                            <pre id="rawTCGData" class="raw-data" style="background: #343a40; padding: 10px; border-radius: 5px; overflow-x: auto; max-height:200px;"></pre>
+                                            <pre id="rawPCData" class="raw-data" style="display:none; background: #343a40; padding: 10px; border-radius: 5px; overflow-x: auto; max-height:200px;"></pre>
+                                            <pre id="rawCMData" class="raw-data" style="display:none; background: #343a40; padding: 10px; border-radius: 5px; overflow-x: auto; max-height:200px;"></pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -306,7 +343,7 @@
                     <div class="card-body">
                         <div class="d-flex justify-content-between align-items-center mb-3">
                             <div class="d-flex align-items-center">
-                                <label for="sortOrder" class="form-label me-2 mb-0">Sort by:</label>
+                                <label for="sortOrder" class="form-label me-2 mb=0">Sort by:</label>
                                 <select id="sortOrder" class="form-select form-select-sm" style="width: 200px;">
                                     <option value="profit_desc">Highest Profit Margin First</option>
                                     <option value="profit_asc">Lowest Profit Margin First</option>
@@ -344,40 +381,6 @@
     
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            // Theme toggling
-            const themeToggleBtn = document.getElementById('themeToggle');
-            const htmlElement = document.documentElement;
-            const icon = themeToggleBtn.querySelector('i');
-            
-            // Check for saved theme preference or use preferred color scheme
-            const savedTheme = localStorage.getItem('theme');
-            if (savedTheme) {
-                htmlElement.setAttribute('data-bs-theme', savedTheme);
-                updateThemeIcon(savedTheme === 'dark');
-            } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-                htmlElement.setAttribute('data-bs-theme', 'dark');
-                updateThemeIcon(true);
-            }
-            
-            themeToggleBtn.addEventListener('click', function() {
-                const currentTheme = htmlElement.getAttribute('data-bs-theme');
-                const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-                
-                htmlElement.setAttribute('data-bs-theme', newTheme);
-                localStorage.setItem('theme', newTheme);
-                updateThemeIcon(newTheme === 'dark');
-            });
-            
-            function updateThemeIcon(isDark) {
-                if (isDark) {
-                    icon.classList.remove('bi-moon-fill');
-                    icon.classList.add('bi-sun-fill');
-                } else {
-                    icon.classList.remove('bi-sun-fill');
-                    icon.classList.add('bi-moon-fill');
-                }
-            }
-            
             // Main application code
             const cardSearchInput = document.getElementById('cardSearch');
             const suggestionsDiv = document.getElementById('suggestions');
@@ -388,23 +391,350 @@
             const loadingDiv = document.getElementById('loading');
             const cardResult = document.getElementById('cardResult');
             const setResult = document.getElementById('setResult');
-            const apiStatusElement = document.getElementById('apiStatus');
             const searchErrorElement = document.getElementById('searchError');
             
             // Define the API base URL without query parameters
             const API_BASE_URL = window.location.origin;
-            let apiOnline = false;
+            console.log("API base URL:", API_BASE_URL);
             
-            // Check API status
-            checkAPIStatus();
+            // Add a debug function to log API calls
+            function debugApiCall(endpoint, method = 'GET', params = null) {
+                const url = params ? `${API_BASE_URL}${endpoint}?${params}` : `${API_BASE_URL}${endpoint}`;
+                console.log(`🌐 API ${method} request to: ${url}`);
+                return url;
+            }
+            
+            // Update the fetch API with better debugging
+            function fetchWithDebug(url, options = {}) {
+                console.log(`📤 Sending request to: ${url}`);
+                
+                return fetch(url, options)
+                    .then(response => {
+                        console.log(`📥 Received response: ${response.status} ${response.statusText}`);
+                        if (!response.ok) {
+                            throw new Error(`HTTP error! Status: ${response.status}`);
+                        }
+                        return response.json();
+                    })
+                    .then(data => {
+                        console.log('📦 Response data:', data);
+                        if (data.error) {
+                            throw new Error(data.error);
+                        }
+                        return data;
+                    })
+                    .catch(error => {
+                        console.error('🚨 API Error:', error);
+                        throw error;
+                    });
+            }
+            
+            // Functions for API interaction and display
+            function checkAPIStatus() {
+                debugApiCall('/api/sets');
+                
+                fetchWithDebug(`${API_BASE_URL}/api/sets`)
+                    .then(data => {
+                        setSelect.innerHTML = '<option value="">Select a set to analyze</option>';
+                        if (data.sets && data.sets.length) {
+                            data.sets.forEach(set => {
+                                const option = document.createElement('option');
+                                option.value = set.id;
+                                option.textContent = `${set.name} (${set.series})`;
+                                setSelect.appendChild(option);
+                            });
+                            console.log(`✅ Loaded ${data.sets.length} sets successfully`);
+                        }
+                    })
+                    .catch(error => {
+                        console.error('API Status Check Error:', error);
+                        setSelect.innerHTML = '<option value="">API server unavailable</option>';
+                        alert("Failed to connect to API server. Please check if the server is running.");
+                    });
+            }
+            
+            // Modify existing fetch calls to use the debugged version
+            // For example, update fetchCardData:
+            function fetchCardData(cardId) {
+                showLoading(true);
+                cardResult.style.display = 'none';
+                setResult.style.display = 'none';
+                
+                const url = `${API_BASE_URL}/api/card_prices?id=${encodeURIComponent(cardId)}`;
+                debugApiCall('/api/card_prices', 'GET', `id=${encodeURIComponent(cardId)}`);
+                
+                fetchWithDebug(url)
+                    .then(data => {
+                        displayCardResult(data);
+                    })
+                    .catch(error => {
+                        console.error('Error fetching card data:', error);
+                        alert(`Failed to load card data: ${error.message}`);
+                    })
+                    .finally(() => {
+                        showLoading(false);
+                    });
+            }
+            
+            // Initial API check to verify connection
+            console.log("🔌 Checking API connection...");
+            fetch(`${API_BASE_URL}/api/sets`)
+                .then(response => {
+                    console.log("🔌 Connection test response:", response.status, response.statusText);
+                    if (response.ok) {
+                        console.log("✅ API is accessible!");
+                        // Now load the sets with our regular function
+                        checkAPIStatus();
+                    } else {
+                        console.error("❌ API returned error:", response.status);
+                        alert("Could not connect to the API server. Status: " + response.status);
+                    }
+                })
+                .catch(error => {
+                    console.error("❌ API connection failed:", error);
+                    alert("Failed to connect to API: " + error.message);
+                });
+            
+            // Update other fetch calls similarly (search, set data)
+            // ...existing code...
+            
+            // Update search input handler to use fetchWithDebug
+            let searchTimeout;
+            cardSearchInput.addEventListener('input', function() {
+                const query = this.value.trim();
+                
+                // Clear previous timeout to prevent multiple requests
+                clearTimeout(searchTimeout);
+                
+                // Hide error message when input changes
+                searchErrorElement.style.display = 'none';
+                
+                if (query.length < 3) {
+                    suggestionsDiv.style.display = 'none';
+                    return;
+                }
+                
+                searchTimeout = setTimeout(() => {
+                    // Use URLSearchParams to safely encode the query parameters
+                    const params = new URLSearchParams({ q: query }).toString();
+                    const url = `${API_BASE_URL}/api/search?${params}`;
+                    debugApiCall('/api/search', 'GET', params);
+                    
+                    fetchWithDebug(url)
+                        .then(data => {
+                            suggestionsDiv.innerHTML = '';
+                            
+                            if (data.suggestions && data.suggestions.length) {
+                                data.suggestions.forEach(card => {
+                                    // ...existing suggestion rendering...
+                                });
+                                suggestionsDiv.style.display = 'block';
+                            } else {
+                                suggestionsDiv.innerHTML = '<div class="p-3">No cards found matching your search</div>';
+                                suggestionsDiv.style.display = 'block';
+                            }
+                        })
+                        .catch(error => {
+                            console.error('Error fetching suggestions:', error);
+                            searchErrorElement.textContent = `Search error: ${error.message}. Try a different search term.`;
+                            searchErrorElement.style.display = 'block';
+                            suggestionsDiv.style.display = 'none';
+                        });
+                }, 300);
+            });
+            
+            // Update fetchSetData to use fetchWithDebug
+            function fetchSetData(setId) {
+                showLoading(true);
+                cardResult.style.display = 'none';
+                setResult.style.display = 'none';
+                
+                const url = `${API_BASE_URL}/api/set_prices?id=${encodeURIComponent(setId)}`;
+                debugApiCall('/api/set_prices', 'GET', `id=${encodeURIComponent(setId)}`);
+                
+                fetchWithDebug(url)
+                    .then(data => {
+                        displaySetResult(data);
+                    })
+                    .catch(error => {
+                        console.error('Error fetching set data:', error);
+                        alert(`Failed to load set data: ${error.message}`);
+                    })
+                    .finally(() => {
+                        showLoading(false);
+                    });
+            }
+            
+            // Format price values - Define helper functions first
+            function formatPrice(price) {
+                if (price === 'N/A' || price === undefined) return 'N/A';
+                return typeof price === 'number' ? price.toFixed(2) : price;
+            }
+            
+            // Format variant names
+            function formatVariantName(variantName) {
+                if (!variantName) return 'Normal';
+                
+                return variantName
+                    .replace(/([A-Z])/g, ' $1')
+                    .replace('_', ' ')
+                    .replace(/^./, str => str.toUpperCase())
+                    .replace('1st Edition', '1st Ed.')
+                    .replace('Holofoil', 'Holo');
+            }
+            
+            // Helper function to render TCG Player price rows
+            function renderTcgPricesRows(tcgplayer) {
+                let html = '';
+                
+                // First handle the primary variant if it exists
+                if (tcgplayer.market) {
+                    const variant = tcgplayer.primary_variant || 'Normal';
+                    html += `<tr>
+                        <td>${formatVariantName(variant)}</td>
+                        <td>$${formatPrice(tcgplayer.market)}</td>
+                        <td>$${formatPrice(tcgplayer.low || 'N/A')}</td>
+                        <td>$${formatPrice(tcgplayer.mid || 'N/A')}</td>
+                        <td>$${formatPrice(tcgplayer.high || 'N/A')}</td>
+                    </tr>`;
+                }
+                
+                // Handle additional variants
+                for (const key in tcgplayer) {
+                    if (key !== 'market' && key !== 'primary_variant' && 
+                        !key.startsWith('is_') && typeof tcgplayer[key] === 'object') {
+                        const variantName = formatVariantName(key);
+                        
+                        html += `<tr>
+                            <td>${variantName}</td>
+                            <td>$${formatPrice(tcgplayer[key].market)}</td>
+                            <td>$${formatPrice(tcgplayer[key].low || 'N/A')}</td>
+                            <td>$${formatPrice(tcgplayer[key].mid || 'N/A')}</td>
+                            <td>$${formatPrice(tcgplayer[key].high || 'N/A')}</td>
+                        </tr>`;
+                    }
+                }
+                
+                return html || '<tr><td colspan="5" class="text-center">No variant price data available</td></tr>';
+            }
+            
+            // Helper function to render PriceCharting rows
+            function renderPriceChartingRows(priceCharting) {
+                let html = '';
+                
+                // Handle basic price types
+                if (priceCharting.loose) {
+                    html += `<tr>
+                        <td>Ungraded</td>
+                        <td>$${formatPrice(priceCharting.loose)}</td>
+                    </tr>`;
+                }
+                
+                if (priceCharting.graded) {
+                    html += `<tr>
+                        <td>Graded (General)</td>
+                        <td>$${formatPrice(priceCharting.graded)}</td>
+                    </tr>`;
+                }
+                
+                // Handle PSA grades if available
+                if (priceCharting.psa_grades) {
+                    Object.entries(priceCharting.psa_grades).forEach(([grade, price]) => {
+                        html += `<tr>
+                            <td>${grade.toUpperCase()}</td>
+                            <td>$${formatPrice(price)}</td>
+                        </tr>`;
+                    });
+                }
+                
+                return html || '<tr><td colspan="2" class="text-center">No condition price data available</td></tr>';
+            }
+            
+            // Helper function to render CardMarket rows
+            function renderCardMarketRows(cardmarket) {
+                let html = '';
+                const exchangeRate = cardmarket.exchangeRate || 1.09;
+                
+                // Trend Price
+                if (cardmarket.trendPrice) {
+                    const eurPrice = cardmarket.trendPrice;
+                    const usdPrice = cardmarket.trendPrice_usd || (eurPrice * exchangeRate);
+                    
+                    html += `<tr>
+                        <td>Trend Price</td>
+                        <td>€${formatPrice(eurPrice)}</td>
+                        <td>$${formatPrice(usdPrice)}</td>
+                    </tr>`;
+                }
+                
+                // Avg 1 day
+                if (cardmarket.avg1) {
+                    const eurPrice = cardmarket.avg1;
+                    const usdPrice = cardmarket.avg1_usd || (eurPrice * exchangeRate);
+                    
+                    html += `<tr>
+                        <td>1 Day Average</td>
+                        <td>€${formatPrice(eurPrice)}</td>
+                        <td>$${formatPrice(usdPrice)}</td>
+                    </tr>`;
+                }
+                
+                // Avg 7 days
+                if (cardmarket.avg7) {
+                    const eurPrice = cardmarket.avg7;
+                    const usdPrice = cardmarket.avg7_usd || (eurPrice * exchangeRate);
+                    
+                    html += `<tr>
+                        <td>7 Day Average</td>
+                        <td>€${formatPrice(eurPrice)}</td>
+                        <td>$${formatPrice(usdPrice)}</td>
+                    </tr>`;
+                }
+                
+                // Avg 30 days
+                if (cardmarket.avg30) {
+                    const eurPrice = cardmarket.avg30;
+                    const usdPrice = cardmarket.avg30_usd || (eurPrice * exchangeRate);
+                    
+                    html += `<tr>
+                        <td>30 Day Average</td>
+                        <td>€${formatPrice(eurPrice)}</td>
+                        <td>$${formatPrice(usdPrice)}</td>
+                    </tr>`;
+                }
+                
+                // Low Price
+                if (cardmarket.lowPrice) {
+                    const eurPrice = cardmarket.lowPrice;
+                    const usdPrice = eurPrice * exchangeRate;
+                    
+                    html += `<tr>
+                        <td>Lowest Price</td>
+                        <td>€${formatPrice(eurPrice)}</td>
+                        <td>$${formatPrice(usdPrice)}</td>
+                    </tr>`;
+                }
+                
+                // Low Price Ex
+                if (cardmarket.lowPriceExShipping) {
+                    const eurPrice = cardmarket.lowPriceExShipping;
+                    const usdPrice = eurPrice * exchangeRate;
+                    
+                    html += `<tr>
+                        <td>Lowest Price (Excl. Shipping)</td>
+                        <td>€${formatPrice(eurPrice)}</td>
+                        <td>$${formatPrice(usdPrice)}</td>
+                    </tr>`;
+                }
+                
+                return html || '<tr><td colspan="3" class="text-center">No CardMarket price data available</td></tr>';
+            }
             
             // Functions for API interaction and display
             function checkAPIStatus() {
                 fetch(`${API_BASE_URL}/api/sets`)
                     .then(response => {
                         if (response.ok) {
-                            apiOnline = true;
-                            apiStatusElement.innerHTML = '<span class="status-indicator status-online"></span> Online';
                             return response.json();
                         } else {
                             throw new Error(`HTTP error! Status: ${response.status}`);
@@ -427,11 +757,12 @@
                     })
                     .catch(error => {
                         console.error('API Status Check Error:', error);
-                        apiOnline = false;
-                        apiStatusElement.innerHTML = '<span class="status-indicator status-offline"></span> Offline';
                         setSelect.innerHTML = '<option value="">API server unavailable</option>';
                     });
             }
+            
+            // Initial API check and set loading
+            checkAPIStatus();
             
             // Search input autocomplete with better error handling
             let searchTimeout;
@@ -446,13 +777,6 @@
                 
                 if (query.length < 3) {
                     suggestionsDiv.style.display = 'none';
-                    return;
-                }
-                
-                // Check if API is online before making request
-                if (!apiOnline) {
-                    searchErrorElement.textContent = 'Cannot search: API server is offline. Please try again later.';
-                    searchErrorElement.style.display = 'block';
                     return;
                 }
                 
@@ -568,11 +892,6 @@
             });
             
             function fetchCardData(cardId) {
-                if (!apiOnline) {
-                    alert('Cannot fetch data: API server is offline. Please try again later.');
-                    return;
-                }
-                
                 showLoading(true);
                 cardResult.style.display = 'none';
                 setResult.style.display = 'none';
@@ -600,11 +919,6 @@
             }
             
             function fetchSetData(setId) {
-                if (!apiOnline) {
-                    alert('Cannot fetch data: API server is offline. Please try again later.');
-                    return;
-                }
-                
                 showLoading(true);
                 cardResult.style.display = 'none';
                 setResult.style.display = 'none';
@@ -633,7 +947,7 @@
             
             function displayCardResult(data) {
                 document.getElementById('cardName').textContent = data.name;
-                document.getElementById('cardSet').textContent = data.set;
+                document.getElementById('cardSet').textContent = `${data.set} · ${data.rarity || ''}`;
                 
                 const cardImage = document.getElementById('cardImage');
                 cardImage.src = data.large_image || data.image;
@@ -641,39 +955,69 @@
                     this.src = 'https://via.placeholder.com/245x342?text=No+Image+Available';
                 };
                 
+                // Add card attributes display
+                const cardDetails = document.createElement('div');
+                cardDetails.className = 'mb-3 small text-muted';
+                cardDetails.innerHTML = `
+                    <span class="badge bg-secondary me-1">${data.supertype || 'Pokémon'}</span>
+                    ${data.subtypes && data.subtypes.length ? data.subtypes.map(st => `<span class="badge bg-info me-1">${st}</span>`).join('') : ''}
+                    <span class="badge bg-dark">#${data.number}</span>
+                    ${data.printing_type ? `<span class="badge bg-warning ms-1">${data.printing_type}</span>` : ''}
+                `;
+                document.getElementById('cardImage').insertAdjacentElement('afterend', cardDetails);
+                
                 const priceTable = document.getElementById('priceTable');
                 priceTable.innerHTML = '';
                 
                 // PriceCharting prices
                 if (data.price_charting) {
                     const loosePriceRow = createPriceRow('PriceCharting (Ungraded)', 
-                                                       data.price_charting.loose || 'N/A');
+                                                       data.price_charting.loose || 'N/A',
+                                                       data.pricecharting_url);
                     priceTable.appendChild(loosePriceRow);
                     
                     // Add graded prices if available
                     if (data.price_charting.graded) {
                         const gradedPriceRow = createPriceRow('PriceCharting (Graded)', 
-                                                            data.price_charting.graded);
+                                                            data.price_charting.graded,
+                                                            data.pricecharting_url);
                         priceTable.appendChild(gradedPriceRow);
+                    }
+                    
+                    // Add PSA graded variants if available
+                    if (data.price_charting.psa_grades) {
+                        for (const [grade, price] of Object.entries(data.price_charting.psa_grades)) {
+                            const gradePriceRow = createPriceRow(`PriceCharting (${grade.toUpperCase()})`, 
+                                                              price,
+                                                              data.pricecharting_url);
+                            priceTable.appendChild(gradePriceRow);
+                        }
                     }
                 }
                 
                 // TCGPlayer prices
                 if (data.tcgplayer) {
-                    const marketPriceRow = createPriceRow('TCGPlayer (Market)', 
+                    // Display primary variant market price
+                    const marketPriceRow = createPriceRow(`TCGPlayer (${data.tcgplayer.primary_variant || 'Market'})`, 
                                                data.tcgplayer.market || 'N/A', 
                                                data.tcgplayer_url);
                     priceTable.appendChild(marketPriceRow);
                     
-                    // Add other TCG prices (like holofoil, reverse holofoil)
+                    // Add other TCG price variants
                     for (const key in data.tcgplayer) {
-                        if (key !== 'market' && data.tcgplayer[key] && data.tcgplayer[key].market) {
-                            const variantName = key.replace('_', ' ');
-                            const price = data.tcgplayer[key].market;
-                            const variantRow = createPriceRow(`TCGPlayer (${variantName.charAt(0).toUpperCase() + variantName.slice(1)})`, 
-                                                           price, 
-                                                           data.tcgplayer_url);
-                            priceTable.appendChild(variantRow);
+                        if (key !== 'market' && key !== 'primary_variant' && 
+                            !key.startsWith('is_') && typeof data.tcgplayer[key] === 'object') {
+                            const variantName = key.replace(/([A-Z])/g, ' $1')
+                                                  .replace('_', ' ')
+                                                  .replace('1st Edition', '1st Ed.')
+                                                  .replace('Holofoil', 'Holo');
+                            
+                            if (data.tcgplayer[key].market) {
+                                const variantRow = createPriceRow(`TCGPlayer (${variantName})`, 
+                                                       data.tcgplayer[key].market, 
+                                                       data.tcgplayer_url);
+                                priceTable.appendChild(variantRow);
+                            }
                         }
                     }
                 }
@@ -681,14 +1025,18 @@
                 // CardMarket prices
                 if (data.cardmarket) {
                     const trendPriceRow = createPriceRow('CardMarket EU (Trend)', 
-                                                data.cardmarket.trendPrice || 'N/A', 
-                                                data.cardmarket_url);
+                                        data.cardmarket.trendPrice ? 
+                                        `€${data.cardmarket.trendPrice.toFixed(2)} ($${data.cardmarket.trendPrice_usd ? data.cardmarket.trendPrice_usd.toFixed(2) : '?'})` : 
+                                        'N/A', 
+                                        data.cardmarket_url);
                     priceTable.appendChild(trendPriceRow);
                     
                     if (data.cardmarket.avg1) {
                         const avgPriceRow = createPriceRow('CardMarket EU (1 Day Avg)', 
-                                                    data.cardmarket.avg1, 
-                                                    data.cardmarket_url);
+                                            data.cardmarket.avg1 ?
+                                            `€${data.cardmarket.avg1.toFixed(2)} ($${(data.cardmarket.avg1 * data.cardmarket.exchangeRate || 0).toFixed(2)})` :
+                                            'N/A', 
+                                            data.cardmarket_url);
                         priceTable.appendChild(avgPriceRow);
                     }
                 }
@@ -743,6 +1091,176 @@
                     arbitrageAlert.style.display = 'none';
                 }
                 
+                // --- New: Populate Additional Information Section ---
+                // Display entire API responses (formatted as JSON)
+                document.getElementById('tcgDetails').textContent =
+                    JSON.stringify(data, null, 2);
+                document.getElementById('pcDetails').textContent =
+                    JSON.stringify(data.price_charting || {}, null, 2);
+                document.getElementById('cmDetails').textContent =
+                    JSON.stringify(data.cardmarket || {}, null, 2);
+                
+                // Set information: use the set id to generate a set image via the PokemonTCG API
+                // (Assumes the API endpoint supports: /v2/sets/{set_id}/images/symbol)
+                if(data.set_id) {
+                    document.getElementById('setImage').src =
+                        `https://api.pokemontcg.io/v2/sets/${data.set_id}/images/symbol`;
+                } else {
+                    document.getElementById('setImage').src = 'https://via.placeholder.com/80?text=No+Set+Image';
+                }
+                document.getElementById('setNameDetail').textContent = data.set;
+                // --- End New ---
+                
+                // CARD DETAILS
+                const cardDetailsTable = document.getElementById('cardDetailsTable');
+                cardDetailsTable.innerHTML = '';
+                
+                // Add rows for basic card details
+                const cardDetails = [
+                    { label: "Card Number", value: data.number },
+                    { label: "Rarity", value: data.rarity || 'N/A' },
+                    { label: "Supertype", value: data.supertype || 'N/A' },
+                    { label: "Subtypes", value: data.subtypes ? data.subtypes.join(', ') : 'N/A' },
+                    { label: "Printing", value: data.printing_type || 'N/A' },
+                    { label: "TCG ID", value: data.id }
+                ];
+                
+                cardDetails.forEach(detail => {
+                    const row = document.createElement('tr');
+                    const labelCell = document.createElement('td');
+                    labelCell.className = 'fw-bold';
+                    labelCell.textContent = detail.label;
+                    
+                    const valueCell = document.createElement('td');
+                    valueCell.textContent = detail.value;
+                    
+                    row.appendChild(labelCell);
+                    row.appendChild(valueCell);
+                    cardDetailsTable.appendChild(row);
+                });
+                
+                // SET DETAILS
+                // Set the set logo and symbol images
+                const setSymbol = document.getElementById('setSymbol');
+                const setLogo = document.getElementById('setLogo');
+                
+                if (data.set_id) {
+                    setSymbol.src = `https://images.pokemontcg.io/${data.set_id}/symbol.png`;
+                    setLogo.src = `https://images.pokemontcg.io/${data.set_id}/logo.png`;
+                } else {
+                    setSymbol.src = 'https://via.placeholder.com/50?text=?';
+                    setLogo.src = 'https://via.placeholder.com/200x100?text=No+Set+Image';
+                }
+                
+                document.getElementById('setNameFull').textContent = data.set || 'Unknown Set';
+                
+                // Add set series if available
+                const setDetailsElement = document.getElementById('setDetails');
+                setDetailsElement.textContent = `Series: ${data.set_series || 'Unknown'}`;
+                
+                // TCG PLAYER DETAILS
+                document.getElementById('tcgPlayerLink').href = data.tcgplayer_url || '#';
+                
+                const tcgPricesTable = document.getElementById('tcgPricesTable');
+                tcgPricesTable.innerHTML = '';
+                
+                if (data.tcgplayer && Object.keys(data.tcgplayer).length > 0) {
+                    const tcgPricesHTML = `<table class="table table-sm">
+                        <thead>
+                            <tr>
+                                <th>Variant</th>
+                                <th>Market</th>
+                                <th>Low</th>
+                                <th>Mid</th>
+                                <th>High</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            ${renderTcgPricesRows(data.tcgplayer)}
+                        </tbody>
+                    </table>`;
+                    
+                    tcgPricesTable.innerHTML = tcgPricesHTML;
+                } else {
+                    tcgPricesTable.innerHTML = '<p class="text-muted">No TCGPlayer price data available</p>';
+                }
+                
+                // PRICE CHARTING DETAILS
+                document.getElementById('priceChartingLink').href = data.pricecharting_url || '#';
+                
+                const pcDetailsFormatted = document.getElementById('pcDetailsFormatted');
+                pcDetailsFormatted.innerHTML = '';
+                
+                if (data.price_charting && Object.keys(data.price_charting).length > 0) {
+                    const pcHTML = `<table class="table table-sm">
+                        <thead>
+                            <tr>
+                                <th>Condition</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            ${renderPriceChartingRows(data.price_charting)}
+                        </tbody>
+                    </table>`;
+                    
+                    pcDetailsFormatted.innerHTML = pcHTML;
+                } else {
+                    pcDetailsFormatted.innerHTML = '<p class="text-muted">No PriceCharting data available</p>';
+                }
+                
+                // CARDMARKET DETAILS
+                document.getElementById('cardmarketLink').href = data.cardmarket_url || '#';
+                
+                const cmDetailsFormatted = document.getElementById('cardmarketDetailsFormatted');
+                cmDetailsFormatted.innerHTML = '';
+                
+                if (data.cardmarket && Object.keys(data.cardmarket).length > 0) {
+                    const cmHTML = `<table class="table table-sm">
+                        <thead>
+                            <tr>
+                                <th>Price Type</th>
+                                <th>EUR</th>
+                                <th>USD</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            ${renderCardMarketRows(data.cardmarket)}
+                        </tbody>
+                    </table>`;
+                    
+                    cmDetailsFormatted.innerHTML = cmHTML;
+                } else {
+                    cmDetailsFormatted.innerHTML = '<p class="text-muted">No CardMarket data available</p>';
+                }
+                
+                // RAW DATA
+                document.getElementById('rawTCGData').textContent = JSON.stringify(data, null, 2);
+                document.getElementById('rawPCData').textContent = JSON.stringify(data.price_charting || {}, null, 2);
+                document.getElementById('rawCMData').textContent = JSON.stringify(data.cardmarket || {}, null, 2);
+                
+                // Add event listeners to raw data tabs
+                document.querySelectorAll('.btn-group button').forEach(button => {
+                    button.addEventListener('click', function() {
+                        // Remove active class from all buttons
+                        document.querySelectorAll('.btn-group button').forEach(btn => {
+                            btn.classList.remove('active');
+                        });
+                        
+                        // Add active class to clicked button
+                        this.classList.add('active');
+                        
+                        // Hide all raw data elements
+                        document.querySelectorAll('.raw-data').forEach(elem => {
+                            elem.style.display = 'none';
+                        });
+                        
+                        // Show selected raw data element
+                        const targetId = this.getAttribute('data-target');
+                        document.getElementById(targetId).style.display = 'block';
+                    });
+                });
+                
                 cardResult.style.display = 'block';
             }
             
@@ -754,6 +1272,7 @@
                 
                 // Calculate statistics for the set
                 const totalCards = data.cards.length;
+                const exchangeRate = data.exchange_rate || 1.09; // Default if not provided
                 const cardsWithArbitrage = data.cards.filter(card => card.arbitrage).length;
                 const highProfitCards = data.cards.filter(card => 
                     card.arbitrage && card.arbitrage.profit_margin >= 20
@@ -764,6 +1283,11 @@
                     <span class="badge bg-primary me-1">${totalCards} Cards</span>
                     <span class="badge bg-success me-1">${cardsWithArbitrage} Arbitrage Opportunities</span>
                     <span class="badge bg-warning">${highProfitCards} High Profit</span>
+                `;
+                
+                // Add exchange rate info
+                document.getElementById('setStats').innerHTML += `
+                    <span class="badge bg-info ms-2">€1 = $${exchangeRate.toFixed(2)}</span>
                 `;
                 
                 data.cards.forEach(card => {
@@ -788,7 +1312,7 @@
                         row.className = 'profit-none';
                     }
                     
-                    // Card info
+                    // Card info - Add attributes
                     const cardCell = document.createElement('td');
                     cardCell.innerHTML = `
                         <div class="d-flex align-items-center">
@@ -796,16 +1320,27 @@
                             <div>
                                 <strong>${card.name}</strong>
                                 <br>
-                                <small>#${card.number}</small>
+                                <small>#${card.number} · ${card.rarity || ''}</small>
+                                ${card.printing_type ? `<br><span class="badge bg-warning mt-1">${card.printing_type}</span>` : ''}
                             </div>
                         </div>
                     `;
                     row.appendChild(cardCell);
                     
-                    // PriceCharting
+                    // PriceCharting - Include graded if available
                     const pcCell = document.createElement('td');
                     if (card.price_charting && card.price_charting.loose) {
-                        pcCell.textContent = `$${card.price_charting.loose.toFixed(2)}`;
+                        pcCell.innerHTML = `$${card.price_charting.loose.toFixed(2)}`;
+                        
+                        // Add graded price if available
+                        if (card.price_charting.graded) {
+                            pcCell.innerHTML += `<br><small>Graded: $${card.price_charting.graded.toFixed(2)}</small>`;
+                        }
+                        
+                        // Add PSA 10 if available
+                        if (card.price_charting.psa_grades && card.price_charting.psa_grades['psa-10']) {
+                            pcCell.innerHTML += `<br><small>PSA 10: $${card.price_charting.psa_grades['psa-10'].toFixed(2)}</small>`;
+                        }
                     } else {
                         pcCell.textContent = 'N/A';
                     }
@@ -826,7 +1361,14 @@
                     // CardMarket
                     const cmCell = document.createElement('td');
                     if (card.cardmarket && card.cardmarket.trendPrice) {
-                        cmCell.innerHTML = `€${card.cardmarket.trendPrice.toFixed(2)}`;
+                        const eurPrice = card.cardmarket.trendPrice.toFixed(2);
+                        const usdPrice = card.cardmarket.trendPrice_usd ? card.cardmarket.trendPrice_usd.toFixed(2) : (card.cardmarket.trendPrice * exchangeRate).toFixed(2);
+                        cmCell.innerHTML = `
+                            <div class="price-dual">
+                                <span class="price-eur">€${eurPrice}</span>
+                                <span class="price-usd">($${usdPrice})</span>
+                            </div>
+                        `;
                         if (card.cardmarket_url) {
                             cmCell.innerHTML += `<br><a href="${card.cardmarket_url}" target="_blank" class="small">View</a>`;
                         }

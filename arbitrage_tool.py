@@ -9,6 +9,13 @@ from typing import Dict, List, Any
 from datetime import datetime
 from dotenv import load_dotenv
 
+# Import config for currency conversion rates
+from config import EUR_TO_USD_CONVERSION_RATE, USD_TO_EUR_CONVERSION_RATE
+
+# Import our new client modules
+from pokemontcg_client import PokemonTCGClient
+from price_charting import PriceChartingClient
+
 # Load environment variables
 load_dotenv()
 
@@ -28,6 +35,10 @@ app = Flask(__name__)
 # API Keys
 POKE_API_KEY = os.environ.get('POKE_API_KEY')
 PRICECHARTING_API_KEY = os.environ.get('PRICECHARTING_API_KEY')
+
+# Initialize API clients
+pokemon_tcg = PokemonTCGClient(POKE_API_KEY)
+price_charting = PriceChartingClient(PRICECHARTING_API_KEY)
 
 # Check API keys
 if not POKE_API_KEY:
@@ -89,9 +100,8 @@ def calculate_arbitrage(card_data):
             if 'trendPrice_usd' in card_data['cardmarket']:
                 prices['cardmarket'] = card_data['cardmarket']['trendPrice_usd']
             else:
-                # Use an exchange rate of 1.1 USD to 1 EUR (approximate)
-                exchange_rate = 1.1
-                prices['cardmarket'] = card_data['cardmarket']['trendPrice'] * exchange_rate
+                # Use the configured exchange rate
+                prices['cardmarket'] = card_data['cardmarket']['trendPrice'] * EUR_TO_USD_CONVERSION_RATE
         
         # Need at least two price sources for arbitrage
         if len(prices) < 2:
@@ -165,81 +175,42 @@ def generate_test_prices(card):
     }
     return pricing_data
 
-def get_pricecharting_prices(card):
+def get_pricecharting_prices(card_data):
     """Get prices from PriceCharting API."""
     try:
-        if not PRICECHARTING_API_KEY:
-            return generate_test_prices(card)
+        logger.info("Fetching PriceCharting data for: {}".format(card_data.get('name')))
+        
+        # Use the improved method with full card data for better accuracy
+        pricing_data = price_charting.get_card_prices_by_tcgdata(card_data)
+        
+        # Log selected product for verification
+        if 'product' in pricing_data:
+            product_name = pricing_data['product'].get('name', 'Unknown')
+            logger.info(f"Matched with PriceCharting product: {product_name}")
             
-        set_name = card.get('set', '')
-        card_name = card.get('name', '')
-        search_query = "{} pokemon {}".format(card_name, set_name)
+            # Remove product info before returning (not needed in frontend)
+            pricing_data.pop('product', None)
+            
+        logger.info("PriceCharting prices - Loose: ${}, Graded: ${}".format(
+            pricing_data['prices'].get('loose', 'N/A'), 
+            pricing_data['prices'].get('graded', 'N/A')
+        ))
         
-        logger.info("Fetching PriceCharting data for: {}".format(card_name))
-        search_url = "https://www.pricecharting.com/api/products?t={}&q={}".format(PRICECHARTING_API_KEY, search_query)
-        
-        response = requests.get(search_url)
-        if response.status_code == 200:
-            products = response.json().get('products', [])
-            if products:
-                product_id = products[0].get('id')
-                logger.info("Found PriceCharting product ID: {}".format(product_id))
-                
-                price_url = "https://www.pricecharting.com/api/product?t={}&id={}".format(PRICECHARTING_API_KEY, product_id)
-                price_response = requests.get(price_url)
-                
-                if price_response.status_code == 200:
-                    price_data = price_response.json()
-                    
-                    # Convert cents to dollars
-                    pricing_data = {
-                        'prices': {
-                            'loose': price_data.get('loose-price', 0) / 100 if price_data.get('loose-price') else 0,
-                            'graded': price_data.get('graded-price', 0) / 100 if price_data.get('graded-price') else 0
-                        },
-                        'url': "https://www.pricecharting.com/game/pokemon-card/{}".format(product_id)
-                    }
-                    logger.info("PriceCharting prices - Loose: ${}, Graded: ${}".format(
-                        pricing_data['prices']['loose'], 
-                        pricing_data['prices']['graded']
-                    ))
-                    return pricing_data
-        
-        logger.info("No PriceCharting data found for {}. Using generated prices.".format(card_name))
-        return generate_test_prices(card)
+        # Add additional logging for graded variants if available
+        if 'graded_variants' in pricing_data['prices']:
+            grade_info = ", ".join([f"{k}: ${v}" for k, v in pricing_data['prices']['graded_variants'].items()])
+            logger.debug(f"Graded variants: {grade_info}")
+            
+        return pricing_data
         
     except Exception as e:
-        logger.error("Error getting PriceCharting prices: {}".format(str(e)))
-        return generate_test_prices(card)
+        logger.error(f"Error getting PriceCharting prices: {str(e)}")
+        return generate_test_prices(card_data)
 
 def extract_tcgplayer_pricing(card_data):
     """Extract and normalize TCGPlayer pricing from Pokemon TCG API response"""
-    if 'tcgplayer' not in card_data:
-        return None, None
-        
-    tcgplayer = card_data.get('tcgplayer', {})
-    prices = tcgplayer.get('prices', {})
-    url = tcgplayer.get('url', '')
-    
-    # Create a standardized structure
-    result = {}
-    
-    # Check all possible price variants based on Pokemon TCG API documentation
-    price_variants = [
-        'normal', 'holofoil', '1stEditionHolofoil', '1stEditionNormal',
-        'unlimited', 'unlimitedHolofoil', 'reverseHolofoil'
-    ]
-    
-    # Find the market price from any available variant
-    for variant in price_variants:
-        if variant in prices and 'market' in prices[variant]:
-            result[variant] = prices[variant]
-            # Set the main market price to the first variant found
-            if 'market' not in result:
-                result['market'] = prices[variant]['market']
-                logger.debug(f"TCGPlayer market price: ${result['market']}")
-    
-    return result, url
+    # Use our new client method for more detailed variant extraction
+    return pokemon_tcg.extract_card_variants(card_data)
 
 def get_cardmarket_prices(card_data):
     """Get CardMarket prices from the card data"""
@@ -254,17 +225,43 @@ def get_cardmarket_prices(card_data):
             url = "https://www.cardmarket.com/en/Pokemon/Products/Singles/{}/{}".format(set_name, name)
             return {'prices': {}}, url
         
-        # Convert EUR to USD for easier comparison (approximate)
+        # Convert EUR to USD using the configured rate
         if 'trendPrice' in prices:
-            exchange_rate = 1.1
             eur_price = prices['trendPrice']
-            prices['trendPrice_usd'] = eur_price * exchange_rate
-            logger.debug("CardMarket price: €{} (${}))".format(eur_price, prices['trendPrice_usd']))
+            prices['trendPrice_usd'] = eur_price * EUR_TO_USD_CONVERSION_RATE
+            prices['exchangeRate'] = EUR_TO_USD_CONVERSION_RATE  # Store the exchange rate used
+            logger.debug("CardMarket price: €{} (${})".format(eur_price, prices['trendPrice_usd']))
+        
+        # Also convert avg1 if available
+        if 'avg1' in prices:
+            prices['avg1_usd'] = prices['avg1'] * EUR_TO_USD_CONVERSION_RATE
         
         return {'prices': prices}, url
     except Exception as e:
         logger.error("Error processing CardMarket prices: {}".format(str(e)))
         return {'prices': {}}, ''
+
+# Add a utility function for handling API responses
+def handle_api_response(response, default_value=None):
+    """Safely handle API responses with better error handling"""
+    try:
+        response.raise_for_status()
+        return response.json()
+    except requests.exceptions.HTTPError as err:
+        if response.status_code == 429:
+            logger.warning(f"Rate limit exceeded: {err}")
+            raise Exception("API rate limit exceeded. Please try again later.")
+        else:
+            logger.error(f"HTTP error: {err}")
+            raise
+    except requests.exceptions.RequestException as err:
+        logger.error(f"Request error: {err}")
+        raise
+    except ValueError:
+        logger.error("Invalid JSON response")
+        if default_value is not None:
+            return default_value
+        raise Exception("Invalid response from API")
 
 @app.route('/')
 def index():
@@ -332,15 +329,9 @@ def get_card_prices():
     
     logger.info("Fetching price data for card ID: {}".format(card_id))
     try:
-        # Get card data from Pokemon TCG API
+        # Get card data from Pokemon TCG API using our client
         logger.info("Getting card details from Pokemon TCG API...")
-        card_response = requests.get(
-            'https://api.pokemontcg.io/v2/cards/{}'.format(card_id),
-            headers={'X-Api-Key': POKE_API_KEY}
-        )
-        card_response.raise_for_status()
-        
-        card_data = card_response.json()['data']
+        card_data = pokemon_tcg.get_card(card_id)
         
         # Extract basic card info
         card = {
@@ -354,15 +345,20 @@ def get_card_prices():
             'large_image': card_data.get('images', {}).get('large', '')
         }
         
+        # Add additional card attributes
+        card['printing_type'] = 'Holofoil' if card_data.get('tcgplayer', {}).get('prices', {}).get('holofoil') else 'Normal'
+        card['supertype'] = card_data.get('supertype', '')
+        card['subtypes'] = card_data.get('subtypes', [])
+        
         logger.info("Processing card: {} from {}".format(card['name'], card['set']))
         
-        # Get TCGPlayer prices (already in the Pokemon TCG API response)
+        # Get TCGPlayer prices (with detailed variants)
         logger.info("Extracting TCGPlayer pricing data...")
         tcgplayer_prices, tcgplayer_url = extract_tcgplayer_pricing(card_data)
         
-        # Get PriceCharting prices
+        # Get PriceCharting prices with grading info - now passing the full card data
         logger.info("Fetching PriceCharting pricing data...")
-        pc_result = get_pricecharting_prices(card)
+        pc_result = get_pricecharting_prices(card_data)
         
         # Get CardMarket prices
         logger.info("Processing CardMarket pricing data...")
@@ -374,6 +370,7 @@ def get_card_prices():
             'tcgplayer': tcgplayer_prices,
             'tcgplayer_url': tcgplayer_url,
             'price_charting': pc_result.get('prices', {}),
+            'pricecharting_url': pc_result.get('url', ''),
             'cardmarket': cm_result.get('prices', {}),
             'cardmarket_url': cm_url
         }
@@ -416,43 +413,33 @@ def get_set_prices():
     
     logger.info(f"Analyzing set with ID: {set_id}")
     try:
-        # Get set info
+        # Get set info - now using the client
         logger.info("Getting set information...")
-        set_response = requests.get(
-            f'https://api.pokemontcg.io/v2/sets/{set_id}',
-            headers={'X-Api-Key': POKE_API_KEY}
-        )
-        set_response.raise_for_status()
-        set_data = set_response.json()['data']
+        set_data = pokemon_tcg.get_set(set_id)
         
         set_name = set_data['name']
         logger.info(f"Analyzing set: {set_name}")
         
         # Get all cards in the set
         logger.info(f"Fetching cards from set '{set_name}'...")
-        cards_response = requests.get(
-            'https://api.pokemontcg.io/v2/cards',
-            params={'q': f'set.id:{set_id}', 'pageSize': 250},
-            headers={'X-Api-Key': POKE_API_KEY}
-        )
-        cards_response.raise_for_status()
-        cards_data = cards_response.json()
+        cards_data = pokemon_tcg.get_cards_in_set(set_id)
         
         result = {
             'set_id': set_id,
             'set_name': set_name,
             'set_series': set_data['series'],
-            'cards': []
+            'cards': [],
+            'exchange_rate': EUR_TO_USD_CONVERSION_RATE  # Add exchange rate to the result
         }
         
         # Process each card
-        total_cards = len(cards_data.get('data', []))
+        total_cards = len(cards_data)
         cards_with_prices = 0
         cards_with_arbitrage = 0
         
         logger.info(f"Processing {total_cards} cards in set '{set_name}'...")
         
-        for i, card_data in enumerate(cards_data.get('data', [])):
+        for i, card_data in enumerate(cards_data):
             if i % 10 == 0:
                 logger.info(f"Processing cards: {i+1}/{total_cards}")
                 
@@ -481,10 +468,22 @@ def get_set_prices():
                 card['cardmarket'] = cm_result.get('prices', {})
                 card['cardmarket_url'] = cm_url
                 
-                # Get PriceCharting prices
-                # For set analysis, we'll only do this for valuable cards to avoid too many API calls
+                # Ensure CardMarket prices include both EUR and USD
+                if 'cardmarket' in card and 'trendPrice' in card['cardmarket']:
+                    # Add exchange rate for frontend use
+                    card['cardmarket']['exchangeRate'] = EUR_TO_USD_CONVERSION_RATE
+                    
+                    # Ensure USD prices are calculated
+                    if 'trendPrice_usd' not in card['cardmarket']:
+                        card['cardmarket']['trendPrice_usd'] = card['cardmarket']['trendPrice'] * EUR_TO_USD_CONVERSION_RATE
+                    
+                    # Also convert avg1 if available
+                    if 'avg1' in card['cardmarket'] and 'avg1_usd' not in card['cardmarket']:
+                        card['cardmarket']['avg1_usd'] = card['cardmarket']['avg1'] * EUR_TO_USD_CONVERSION_RATE
+                
+                # Get PriceCharting prices - pass the full card data for better matching
                 if tcgplayer_prices and 'market' in tcgplayer_prices and tcgplayer_prices['market'] > 5:
-                    pc_result = get_pricecharting_prices(card)
+                    pc_result = get_pricecharting_prices(card_data)
                     card['price_charting'] = pc_result.get('prices', {})
                 
                 # Calculate arbitrage
@@ -499,7 +498,7 @@ def get_set_prices():
                 if has_prices:
                     result['cards'].append(card)
                     cards_with_prices += 1
-                    
+                            
                     if card['arbitrage']:
                         cards_with_arbitrage += 1
                         
@@ -507,7 +506,6 @@ def get_set_prices():
                 logger.error(f"Error processing card {card['name']}: {str(e)}")
         
         logger.info(f"Set analysis complete: {cards_with_prices} cards with pricing data, {cards_with_arbitrage} with arbitrage opportunities")
-        
         # Sort by profitability
         result['cards'].sort(
             key=lambda x: x.get('arbitrage', {}).get('profit_margin', 0) if x.get('arbitrage') else 0,
@@ -573,7 +571,7 @@ def get_sets():
         return jsonify(result)
     except Exception as e:
         logger.error("Error fetching sets: {}".format(str(e)))
-        return jsonify({'error': str(e)}), 500
+        return jsonify({'error': str(e)}), 500    
 
 def clear_cache():
     """Clear expired cache files"""
@@ -593,7 +591,7 @@ def clear_cache():
                     count += 1
                 except Exception as e:
                     logger.error(f"Error removing cache file {filepath}: {str(e)}")
-    
+                    
     logger.info(f"Cleared {count} expired cache files")
 
 if __name__ == '__main__':

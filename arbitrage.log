@@ -1,408 +1,268 @@
-2025-03-03 18:11:04,909 [INFO] - Clearing expired cache files...
-2025-03-03 18:11:04,910 [INFO] - Cleared 0 expired cache files
-2025-03-03 18:11:04,946 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+2025-03-03 20:42:34,883 [INFO] - Clearing expired cache files...
+2025-03-03 20:42:34,890 [INFO] - Cleared 0 expired cache files
+2025-03-03 20:42:34,917 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on all addresses (0.0.0.0)
  * Running on http://127.0.0.1:5000
  * Running on http://192.168.0.113:5000
-2025-03-03 18:11:04,946 [INFO] - [33mPress CTRL+C to quit[0m
-2025-03-03 18:11:04,964 [INFO] -  * Restarting with watchdog (windowsapi)
-2025-03-03 18:11:06,917 [INFO] - Clearing expired cache files...
-2025-03-03 18:11:06,920 [INFO] - Cleared 0 expired cache files
-2025-03-03 18:11:06,943 [WARNING] -  * Debugger is active!
-2025-03-03 18:11:06,965 [INFO] -  * Debugger PIN: 497-044-917
-2025-03-03 18:11:20,582 [INFO] - 127.0.0.1 - - [03/Mar/2025 18:11:20] "GET / HTTP/1.1" 200 -
-2025-03-03 18:11:20,632 [INFO] - 127.0.0.1 - - [03/Mar/2025 18:11:20] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-2025-03-03 18:11:20,634 [INFO] - Fetching all Pokemon card sets...
-2025-03-03 18:11:22,067 [INFO] - Found 164 Pokemon card sets
-2025-03-03 18:11:22,092 [INFO] - 127.0.0.1 - - [03/Mar/2025 18:11:22] "GET /api/sets HTTP/1.1" 200 -
-2025-03-03 18:11:25,558 [INFO] - Searching for cards matching 'Charizard'...
-2025-03-03 18:11:26,509 [INFO] - Found 15 cards matching 'Charizard'
-2025-03-03 18:11:26,514 [INFO] - 127.0.0.1 - - [03/Mar/2025 18:11:26] "GET /api/search?q=Charizard HTTP/1.1" 200 -
-2025-03-03 18:11:29,947 [INFO] - Searching for cards matching 'Charizar'...
-2025-03-03 18:11:31,021 [INFO] - Found 15 cards matching 'Charizar'
-2025-03-03 18:11:31,027 [INFO] - 127.0.0.1 - - [03/Mar/2025 18:11:31] "GET /api/search?q=Charizar HTTP/1.1" 200 -
-2025-03-03 18:11:33,539 [INFO] - Searching for cards matching 'Squirtle'...
-2025-03-03 18:11:34,309 [INFO] - Found 15 cards matching 'Squirtle'
-2025-03-03 18:11:34,316 [INFO] - 127.0.0.1 - - [03/Mar/2025 18:11:34] "GET /api/search?q=Squirtle HTTP/1.1" 200 -
-2025-03-03 18:11:43,765 [INFO] - Returning cached search results for 'Squirtle'
-2025-03-03 18:11:43,767 [INFO] - 127.0.0.1 - - [03/Mar/2025 18:11:43] "GET /api/search?q=Squirtle HTTP/1.1" 200 -
-2025-03-03 18:11:44,541 [INFO] - Searching for cards matching 'Squirtle 1'...
-2025-03-03 18:11:44,838 [ERROR] - Error searching for 'Squirtle 1': 400 Client Error: Bad Request for url: https://api.pokemontcg.io/v2/cards?q=name%3A%2ASquirtle+1%2A&orderBy=name&pageSize=15
-2025-03-03 18:11:44,840 [INFO] - 127.0.0.1 - - [03/Mar/2025 18:11:44] "[35m[1mGET /api/search?q=Squirtle%201 HTTP/1.1[0m" 500 -
-2025-03-03 18:11:45,142 [INFO] - Searching for cards matching 'Squirtle 151'...
-2025-03-03 18:11:45,416 [ERROR] - Error searching for 'Squirtle 151': 400 Client Error: Bad Request for url: https://api.pokemontcg.io/v2/cards?q=name%3A%2ASquirtle+151%2A&orderBy=name&pageSize=15
-2025-03-03 18:11:45,418 [INFO] - 127.0.0.1 - - [03/Mar/2025 18:11:45] "[35m[1mGET /api/search?q=Squirtle%20151 HTTP/1.1[0m" 500 -
-2025-03-03 18:12:26,245 [INFO] - Analyzing set with ID: sv4
-2025-03-03 18:12:26,245 [INFO] - Getting set information...
-2025-03-03 18:12:26,559 [INFO] - Analyzing set: Paradox Rift
-2025-03-03 18:12:26,560 [INFO] - Fetching cards from set 'Paradox Rift'...
-2025-03-03 18:12:34,035 [INFO] - Processing 250 cards in set 'Paradox Rift'...
-2025-03-03 18:12:34,036 [INFO] - Processing cards: 1/250
-2025-03-03 18:12:34,036 [INFO] - Processing cards: 11/250
-2025-03-03 18:12:34,037 [INFO] - Processing cards: 21/250
-2025-03-03 18:12:34,037 [INFO] - Processing cards: 31/250
-2025-03-03 18:12:34,038 [INFO] - Processing cards: 41/250
-2025-03-03 18:12:34,038 [INFO] - Processing cards: 51/250
-2025-03-03 18:12:34,039 [INFO] - Processing cards: 61/250
-2025-03-03 18:12:34,039 [INFO] - Processing cards: 71/250
-2025-03-03 18:12:34,040 [INFO] - Processing cards: 81/250
-2025-03-03 18:12:34,040 [INFO] - Processing cards: 91/250
-2025-03-03 18:12:34,040 [INFO] - Processing cards: 101/250
-2025-03-03 18:12:34,041 [INFO] - Processing cards: 111/250
-2025-03-03 18:12:34,041 [INFO] - Processing cards: 121/250
-2025-03-03 18:12:34,042 [INFO] - Processing cards: 131/250
-2025-03-03 18:12:34,042 [INFO] - Fetching PriceCharting data for: Gholdengo ex
-2025-03-03 18:12:34,425 [INFO] - Found PriceCharting product ID: 5953091
-2025-03-03 18:12:34,653 [INFO] - PriceCharting prices - Loose: $27.57, Graded: $36.5
-2025-03-03 18:12:34,656 [INFO] - Processing cards: 141/250
-2025-03-03 18:12:34,656 [INFO] - Processing cards: 151/250
-2025-03-03 18:12:34,656 [INFO] - Processing cards: 161/250
-2025-03-03 18:12:34,657 [INFO] - Processing cards: 171/250
-2025-03-03 18:12:34,657 [INFO] - Processing cards: 181/250
-2025-03-03 18:12:34,658 [INFO] - Fetching PriceCharting data for: Crustle
-2025-03-03 18:12:35,341 [INFO] - Found PriceCharting product ID: 5953021
-2025-03-03 18:12:35,559 [INFO] - PriceCharting prices - Loose: $4.0, Graded: $10.99
-2025-03-03 18:12:35,561 [INFO] - Fetching PriceCharting data for: Toedscruel
-2025-03-03 18:12:36,051 [INFO] - Found PriceCharting product ID: 5953023
-2025-03-03 18:12:36,231 [INFO] - PriceCharting prices - Loose: $8.99, Graded: $16.99
-2025-03-03 18:12:36,233 [INFO] - Fetching PriceCharting data for: Magby
-2025-03-03 18:12:36,609 [INFO] - Found PriceCharting product ID: 5953024
-2025-03-03 18:12:36,798 [INFO] - PriceCharting prices - Loose: $15.08, Graded: $19.5
-2025-03-03 18:12:36,800 [INFO] - Fetching PriceCharting data for: Iron Moth
-2025-03-03 18:12:37,881 [INFO] - Found PriceCharting product ID: 5953025
-2025-03-03 18:12:38,119 [INFO] - PriceCharting prices - Loose: $7.39, Graded: $13.77
-2025-03-03 18:12:38,122 [INFO] - Fetching PriceCharting data for: Snorunt
-2025-03-03 18:12:38,708 [INFO] - Found PriceCharting product ID: 5953026
-2025-03-03 18:12:38,870 [INFO] - PriceCharting prices - Loose: $9.25, Graded: $16.88
-2025-03-03 18:12:38,873 [INFO] - Fetching PriceCharting data for: Mantyke
-2025-03-03 18:12:39,171 [INFO] - Found PriceCharting product ID: 5953027
-2025-03-03 18:12:39,361 [INFO] - PriceCharting prices - Loose: $20.03, Graded: $34.75
-2025-03-03 18:12:39,364 [INFO] - Fetching PriceCharting data for: Vanillish
-2025-03-03 18:12:40,119 [INFO] - Found PriceCharting product ID: 5953028
-2025-03-03 18:12:40,359 [INFO] - PriceCharting prices - Loose: $12.0, Graded: $19.5
-2025-03-03 18:12:40,362 [INFO] - Processing cards: 191/250
-2025-03-03 18:12:40,362 [INFO] - Fetching PriceCharting data for: Wimpod
-2025-03-03 18:12:40,990 [INFO] - Found PriceCharting product ID: 5953029
-2025-03-03 18:12:41,170 [INFO] - PriceCharting prices - Loose: $5.54, Graded: $11.9
-2025-03-03 18:12:41,172 [INFO] - Fetching PriceCharting data for: Veluza
-2025-03-03 18:12:41,544 [INFO] - Found PriceCharting product ID: 5953030
-2025-03-03 18:12:41,774 [INFO] - PriceCharting prices - Loose: $6.49, Graded: $18.49
-2025-03-03 18:12:41,777 [INFO] - Fetching PriceCharting data for: Plusle
-2025-03-03 18:12:44,075 [INFO] - Found PriceCharting product ID: 5953031
-2025-03-03 18:12:44,255 [INFO] - PriceCharting prices - Loose: $20.75, Graded: $27.28
-2025-03-03 18:12:44,259 [INFO] - Fetching PriceCharting data for: Minun
-2025-03-03 18:12:45,544 [INFO] - Found PriceCharting product ID: 5953032
-2025-03-03 18:12:45,729 [INFO] - PriceCharting prices - Loose: $20.38, Graded: $29.97
-2025-03-03 18:12:45,732 [INFO] - Fetching PriceCharting data for: Blitzle
-2025-03-03 18:12:46,482 [INFO] - Found PriceCharting product ID: 5953033
-2025-03-03 18:12:46,683 [INFO] - PriceCharting prices - Loose: $7.67, Graded: $18.5
-2025-03-03 18:12:46,687 [INFO] - Fetching PriceCharting data for: Joltik
-2025-03-03 18:12:47,633 [INFO] - Found PriceCharting product ID: 7418635
-2025-03-03 18:12:47,829 [INFO] - PriceCharting prices - Loose: $5.94, Graded: $15.5
-2025-03-03 18:12:47,832 [INFO] - Fetching PriceCharting data for: Espathra
-2025-03-03 18:12:48,345 [INFO] - Found PriceCharting product ID: 5953035
-2025-03-03 18:12:48,516 [INFO] - PriceCharting prices - Loose: $7.37, Graded: $16.47
-2025-03-03 18:12:48,518 [INFO] - Fetching PriceCharting data for: Gimmighoul
-2025-03-03 18:12:48,910 [INFO] - Found PriceCharting product ID: 5953036
-2025-03-03 18:12:49,091 [INFO] - PriceCharting prices - Loose: $10.18, Graded: $18.0
-2025-03-03 18:12:49,094 [INFO] - Fetching PriceCharting data for: Groudon
-2025-03-03 18:12:50,393 [INFO] - Found PriceCharting product ID: 5953037
-2025-03-03 18:12:50,568 [INFO] - PriceCharting prices - Loose: $93.0, Graded: $116.26
-2025-03-03 18:12:50,571 [INFO] - Fetching PriceCharting data for: Mienshao
-2025-03-03 18:12:50,911 [INFO] - Found PriceCharting product ID: 5953038
-2025-03-03 18:12:51,167 [INFO] - PriceCharting prices - Loose: $8.75, Graded: $16.38
-2025-03-03 18:12:51,169 [INFO] - Processing cards: 201/250
-2025-03-03 18:12:51,169 [INFO] - Fetching PriceCharting data for: Minior
-2025-03-03 18:12:51,639 [INFO] - Found PriceCharting product ID: 5953039
-2025-03-03 18:12:51,810 [INFO] - PriceCharting prices - Loose: $12.69, Graded: $23.18
-2025-03-03 18:12:51,812 [INFO] - Fetching PriceCharting data for: Garganacl
-2025-03-03 18:12:52,200 [INFO] - Found PriceCharting product ID: 7418574
-2025-03-03 18:12:52,426 [INFO] - PriceCharting prices - Loose: $1.7, Graded: $11.0
-2025-03-03 18:12:52,429 [INFO] - Fetching PriceCharting data for: Slither Wing
-2025-03-03 18:12:52,804 [INFO] - Found PriceCharting product ID: 5953041
-2025-03-03 18:12:53,046 [INFO] - PriceCharting prices - Loose: $5.99, Graded: $13.5
-2025-03-03 18:12:53,049 [INFO] - Fetching PriceCharting data for: Garbodor
-2025-03-03 18:12:53,510 [INFO] - Found PriceCharting product ID: 5953042
-2025-03-03 18:12:53,774 [INFO] - PriceCharting prices - Loose: $11.9, Graded: $22.66
-2025-03-03 18:12:53,777 [INFO] - Fetching PriceCharting data for: Yveltal
-2025-03-03 18:12:55,219 [INFO] - Found PriceCharting product ID: 5953043
-2025-03-03 18:12:55,399 [INFO] - PriceCharting prices - Loose: $25.0, Graded: $33.5
-2025-03-03 18:12:55,401 [INFO] - Fetching PriceCharting data for: Morpeko
-2025-03-03 18:12:56,082 [INFO] - Found PriceCharting product ID: 5953044
-2025-03-03 18:12:56,248 [INFO] - PriceCharting prices - Loose: $26.97, Graded: $27.97
-2025-03-03 18:12:56,250 [INFO] - Fetching PriceCharting data for: Brute Bonnet
-2025-03-03 18:12:56,605 [INFO] - Found PriceCharting product ID: 5953045
-2025-03-03 18:12:56,839 [INFO] - PriceCharting prices - Loose: $9.99, Graded: $18.16
-2025-03-03 18:12:56,841 [INFO] - Fetching PriceCharting data for: Steelix
-2025-03-03 18:12:58,033 [INFO] - Found PriceCharting product ID: 5953046
-2025-03-03 18:12:58,192 [INFO] - PriceCharting prices - Loose: $36.07, Graded: $41.1
-2025-03-03 18:12:58,195 [INFO] - Fetching PriceCharting data for: Ferrothorn
-2025-03-03 18:12:58,736 [INFO] - Found PriceCharting product ID: 5953047
-2025-03-03 18:12:58,928 [INFO] - PriceCharting prices - Loose: $5.05, Graded: $15.0
-2025-03-03 18:12:58,930 [INFO] - Fetching PriceCharting data for: Aegislash
-2025-03-03 18:12:59,754 [INFO] - Found PriceCharting product ID: 5953048
-2025-03-03 18:12:59,969 [INFO] - PriceCharting prices - Loose: $6.17, Graded: $16.5
-2025-03-03 18:12:59,971 [INFO] - Processing cards: 211/250
-2025-03-03 18:12:59,971 [INFO] - Fetching PriceCharting data for: Aipom
-2025-03-03 18:13:00,698 [INFO] - Found PriceCharting product ID: 5953049
-2025-03-03 18:13:00,881 [INFO] - PriceCharting prices - Loose: $8.66, Graded: $14.17
-2025-03-03 18:13:00,883 [INFO] - Fetching PriceCharting data for: Loudred
-2025-03-03 18:13:01,770 [INFO] - Found PriceCharting product ID: 5953050
-2025-03-03 18:13:02,062 [INFO] - PriceCharting prices - Loose: $13.16, Graded: $24.18
-2025-03-03 18:13:02,064 [INFO] - Fetching PriceCharting data for: Swablu
-2025-03-03 18:13:02,924 [INFO] - Found PriceCharting product ID: 5953051
-2025-03-03 18:13:03,179 [INFO] - PriceCharting prices - Loose: $15.85, Graded: $24.8
-2025-03-03 18:13:03,181 [INFO] - Fetching PriceCharting data for: Porygon-Z
-2025-03-03 18:13:03,877 [INFO] - Found PriceCharting product ID: 5953052
-2025-03-03 18:13:04,093 [INFO] - PriceCharting prices - Loose: $10.82, Graded: $21.6
-2025-03-03 18:13:04,096 [INFO] - Fetching PriceCharting data for: Cyclizar
-2025-03-03 18:13:04,659 [INFO] - Found PriceCharting product ID: 7800192
-2025-03-03 18:13:04,871 [INFO] - PriceCharting prices - Loose: $1.49, Graded: $12.4
-2025-03-03 18:13:04,873 [INFO] - Fetching PriceCharting data for: Iron Jugulis
-2025-03-03 18:13:05,278 [INFO] - Found PriceCharting product ID: 5953055
-2025-03-03 18:13:05,492 [INFO] - PriceCharting prices - Loose: $7.99, Graded: $23.49
-2025-03-03 18:13:05,494 [INFO] - Fetching PriceCharting data for: Garchomp ex
-2025-03-03 18:13:05,916 [INFO] - Found PriceCharting product ID: 5953084
-2025-03-03 18:13:06,198 [INFO] - PriceCharting prices - Loose: $45.0, Graded: $51.5
-2025-03-03 18:13:06,200 [INFO] - Processing cards: 221/250
-2025-03-03 18:13:06,201 [INFO] - Fetching PriceCharting data for: Iron Hands ex
-2025-03-03 18:13:06,610 [INFO] - Found PriceCharting product ID: 5953087
-2025-03-03 18:13:06,776 [INFO] - PriceCharting prices - Loose: $19.49, Graded: $22.12
-2025-03-03 18:13:06,779 [INFO] - Fetching PriceCharting data for: Roaring Moon ex
-2025-03-03 18:13:07,238 [INFO] - Found PriceCharting product ID: 5953090
-2025-03-03 18:13:07,559 [INFO] - PriceCharting prices - Loose: $64.75, Graded: $63.99
-2025-03-03 18:13:07,562 [INFO] - Processing cards: 231/250
-2025-03-03 18:13:07,562 [INFO] - Fetching PriceCharting data for: Gholdengo ex
-2025-03-03 18:13:07,857 [INFO] - Found PriceCharting product ID: 5953091
-2025-03-03 18:13:08,033 [INFO] - PriceCharting prices - Loose: $27.57, Graded: $36.5
-2025-03-03 18:13:08,036 [INFO] - Fetching PriceCharting data for: Maushold ex
-2025-03-03 18:13:08,378 [INFO] - Found PriceCharting product ID: 5952993
-2025-03-03 18:13:08,600 [INFO] - PriceCharting prices - Loose: $1.63, Graded: $8.5
-2025-03-03 18:13:08,603 [INFO] - Fetching PriceCharting data for: Parasol Lady
-2025-03-03 18:13:08,899 [INFO] - Found PriceCharting product ID: 5953095
-2025-03-03 18:13:09,145 [INFO] - PriceCharting prices - Loose: $19.12, Graded: $25.89
-2025-03-03 18:13:09,148 [INFO] - Fetching PriceCharting data for: Professor Sada's Vitality
-2025-03-03 18:13:09,577 [INFO] - Found PriceCharting product ID: 5953078
-2025-03-03 18:13:09,747 [INFO] - PriceCharting prices - Loose: $7.5, Graded: $11.75
-2025-03-03 18:13:09,749 [INFO] - Processing cards: 241/250
-2025-03-03 18:13:09,749 [INFO] - Fetching PriceCharting data for: Garchomp ex
-2025-03-03 18:13:10,061 [INFO] - Found PriceCharting product ID: 5953084
-2025-03-03 18:13:10,233 [INFO] - PriceCharting prices - Loose: $45.0, Graded: $51.5
-2025-03-03 18:13:10,235 [INFO] - Fetching PriceCharting data for: Golisopod ex
-2025-03-03 18:13:10,689 [INFO] - Found PriceCharting product ID: 5953085
-2025-03-03 18:13:10,880 [INFO] - PriceCharting prices - Loose: $20.5, Graded: $26.0
-2025-03-03 18:13:10,882 [INFO] - Fetching PriceCharting data for: Tapu Koko ex
-2025-03-03 18:13:11,203 [INFO] - Found PriceCharting product ID: 5953086
-2025-03-03 18:13:11,389 [INFO] - PriceCharting prices - Loose: $19.89, Graded: $22.63
-2025-03-03 18:13:11,391 [INFO] - Fetching PriceCharting data for: Iron Hands ex
-2025-03-03 18:13:11,594 [INFO] - Found PriceCharting product ID: 5953087
-2025-03-03 18:13:11,821 [INFO] - PriceCharting prices - Loose: $19.49, Graded: $22.12
-2025-03-03 18:13:11,824 [INFO] - Fetching PriceCharting data for: Iron Valiant ex
-2025-03-03 18:13:12,253 [INFO] - Found PriceCharting product ID: 5953088
-2025-03-03 18:13:12,419 [INFO] - PriceCharting prices - Loose: $31.2, Graded: $35.0
-2025-03-03 18:13:12,422 [INFO] - Fetching PriceCharting data for: Sandy Shocks ex
-2025-03-03 18:13:12,840 [INFO] - Found PriceCharting product ID: 5952946
-2025-03-03 18:13:13,024 [INFO] - PriceCharting prices - Loose: $1.97, Graded: $12.91
-2025-03-03 18:13:13,026 [INFO] - Set analysis complete: 115 cards with pricing data, 40 with arbitrage opportunities
-2025-03-03 18:13:13,147 [INFO] - 127.0.0.1 - - [03/Mar/2025 18:13:13] "GET /api/set_prices?id=sv4 HTTP/1.1" 200 -
-2025-03-03 18:14:35,868 [INFO] - Clearing expired cache files...
-2025-03-03 18:14:35,870 [INFO] - Cleared 0 expired cache files
-2025-03-03 18:14:35,902 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+2025-03-03 20:42:34,917 [INFO] - [33mPress CTRL+C to quit[0m
+2025-03-03 20:42:34,935 [INFO] -  * Restarting with watchdog (windowsapi)
+2025-03-03 20:42:36,922 [INFO] - Clearing expired cache files...
+2025-03-03 20:42:36,930 [INFO] - Cleared 0 expired cache files
+2025-03-03 20:42:36,949 [WARNING] -  * Debugger is active!
+2025-03-03 20:42:36,969 [INFO] -  * Debugger PIN: 497-044-917
+2025-03-03 20:42:37,196 [INFO] -  * Detected change in 'C:\\Users\\defco\\PokemonStoreToolsAndModules\\example_usage.py', reloading
+2025-03-03 20:42:37,203 [INFO] -  * Detected change in 'C:\\Users\\defco\\PokemonStoreToolsAndModules\\pokemon_price_helper.py', reloading
+2025-03-03 20:42:37,219 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\flask\\__init__.py', reloading
+2025-03-03 20:42:37,221 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\dotenv\\__init__.py', reloading
+2025-03-03 20:42:37,226 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\typing.py', reloading
+2025-03-03 20:42:37,233 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\flask\\app.py', reloading
+2025-03-03 20:42:37,244 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\flask\\sansio\\app.py', reloading
+2025-03-03 20:42:37,245 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\datetime.py', reloading
+2025-03-03 20:42:37,245 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\flask\\json\\__init__.py', reloading
+2025-03-03 20:42:37,253 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\flask\\globals.py', reloading
+2025-03-03 20:42:37,254 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\flask\\sansio\\scaffold.py', reloading
+2025-03-03 20:42:37,260 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\flask\\templating.py', reloading
+2025-03-03 20:42:37,261 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\dotenv\\main.py', reloading
+2025-03-03 20:42:37,266 [INFO] -  * Detected change in 'C:\\Users\\defco\\PokemonStoreToolsAndModules\\error_handling.py', reloading
+2025-03-03 20:42:37,267 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\flask\\wrappers.py', reloading
+2025-03-03 20:42:37,274 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\werkzeug\\datastructures\\__init__.py', reloading
+2025-03-03 20:42:37,274 [INFO] -  * Detected change in 'C:\\Users\\defco\\PokemonStoreToolsAndModules\\utils.py', reloading
+2025-03-03 20:42:37,279 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\werkzeug\\wrappers\\__init__.py', reloading
+2025-03-03 20:42:37,282 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\json\\__init__.py', reloading
+2025-03-03 20:42:37,288 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\flask\\typing.py', reloading
+2025-03-03 20:42:37,290 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\requests\\__init__.py', reloading
+2025-03-03 20:42:37,300 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\werkzeug\\sansio\\response.py', reloading
+2025-03-03 20:42:37,309 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\werkzeug\\utils.py', reloading
+2025-03-03 20:42:37,310 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\jinja2\\__init__.py', reloading
+2025-03-03 20:42:37,320 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\werkzeug\\wrappers\\request.py', reloading
+2025-03-03 20:42:37,329 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\werkzeug\\wrappers\\response.py', reloading
+2025-03-03 20:42:37,337 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\werkzeug\\sansio\\request.py', reloading
+2025-03-03 20:42:37,347 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\jinja2\\environment.py', reloading
+2025-03-03 20:42:37,372 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\re.py', reloading
+2025-03-03 20:42:37,387 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\functools.py', reloading
+2025-03-03 20:42:37,394 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\decimal.py', reloading
+2025-03-03 20:42:37,396 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\subprocess.py', reloading
+2025-03-03 20:42:37,408 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\random.py', reloading
+2025-03-03 20:42:37,418 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\threading.py', reloading
+2025-03-03 21:31:50,550 [INFO] - Clearing expired cache files...
+2025-03-03 21:31:50,557 [INFO] - Cleared 0 expired cache files
+2025-03-03 21:31:50,590 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on all addresses (0.0.0.0)
  * Running on http://127.0.0.1:5000
  * Running on http://192.168.0.113:5000
-2025-03-03 18:14:35,902 [INFO] - [33mPress CTRL+C to quit[0m
-2025-03-03 18:14:35,919 [INFO] -  * Restarting with watchdog (windowsapi)
-2025-03-03 18:14:37,835 [INFO] - Clearing expired cache files...
-2025-03-03 18:14:37,838 [INFO] - Cleared 0 expired cache files
-2025-03-03 18:14:37,860 [WARNING] -  * Debugger is active!
-2025-03-03 18:14:37,880 [INFO] -  * Debugger PIN: 497-044-917
-2025-03-03 18:14:40,939 [INFO] - 127.0.0.1 - - [03/Mar/2025 18:14:40] "GET / HTTP/1.1" 200 -
-2025-03-03 18:14:40,995 [INFO] - 127.0.0.1 - - [03/Mar/2025 18:14:40] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-2025-03-03 18:14:41,000 [INFO] - Returning cached set list
-2025-03-03 18:14:41,008 [INFO] - 127.0.0.1 - - [03/Mar/2025 18:14:41] "GET /api/sets HTTP/1.1" 200 -
-2025-03-03 18:14:47,746 [INFO] - Searching for cards matching 'Wooper'...
-2025-03-03 18:14:48,723 [INFO] - Found 15 cards matching 'Wooper'
-2025-03-03 18:14:48,729 [INFO] - 127.0.0.1 - - [03/Mar/2025 18:14:48] "GET /api/search?q=Wooper HTTP/1.1" 200 -
-2025-03-03 18:14:51,298 [INFO] - Fetching price data for card ID: sv2-221
-2025-03-03 18:14:51,299 [INFO] - Getting card details from Pokemon TCG API...
-2025-03-03 18:14:51,670 [INFO] - Processing card: Paldean Wooper from Paldea Evolved
-2025-03-03 18:14:51,670 [INFO] - Extracting TCGPlayer pricing data...
-2025-03-03 18:14:51,671 [INFO] - Fetching PriceCharting pricing data...
-2025-03-03 18:14:51,671 [INFO] - Fetching PriceCharting data for: Paldean Wooper
-2025-03-03 18:14:52,011 [INFO] - Found PriceCharting product ID: 5287510
-2025-03-03 18:14:52,307 [INFO] - PriceCharting prices - Loose: $10.52, Graded: $19.6
-2025-03-03 18:14:52,310 [INFO] - Processing CardMarket pricing data...
-2025-03-03 18:14:52,310 [INFO] - Calculating arbitrage opportunities...
-2025-03-03 18:14:52,310 [INFO] - Found arbitrage opportunity! Buy: $5.84 Sell: $18.12 Profit: $8.56 (146.57%)
-2025-03-03 18:14:52,317 [INFO] - 127.0.0.1 - - [03/Mar/2025 18:14:52] "GET /api/card_prices?id=sv2-221 HTTP/1.1" 200 -
-2025-03-03 18:15:34,275 [INFO] - Searching for cards matching '(151)'...
-2025-03-03 18:15:34,574 [ERROR] - Error searching for '(151)': 400 Client Error: Bad Request for url: https://api.pokemontcg.io/v2/cards?q=name%3A%2A%28151%29%2A&orderBy=name&pageSize=15
-2025-03-03 18:15:34,576 [INFO] - 127.0.0.1 - - [03/Mar/2025 18:15:34] "[35m[1mGET /api/search?q=(151) HTTP/1.1[0m" 500 -
-2025-03-03 18:15:39,620 [INFO] - Searching for cards matching '(151'...
-2025-03-03 18:15:39,924 [ERROR] - Error searching for '(151': 400 Client Error: Bad Request for url: https://api.pokemontcg.io/v2/cards?q=name%3A%2A%28151%2A&orderBy=name&pageSize=15
-2025-03-03 18:15:39,927 [INFO] - 127.0.0.1 - - [03/Mar/2025 18:15:39] "[35m[1mGET /api/search?q=(151 HTTP/1.1[0m" 500 -
-2025-03-03 18:15:44,727 [INFO] - Searching for cards matching 'sv6'...
-2025-03-03 18:15:45,182 [INFO] - Found 0 cards matching 'sv6'
-2025-03-03 18:15:45,186 [INFO] - 127.0.0.1 - - [03/Mar/2025 18:15:45] "GET /api/search?q=sv6 HTTP/1.1" 200 -
-2025-03-03 18:15:45,488 [INFO] - Searching for cards matching 'sv6pt5'...
-2025-03-03 18:15:45,893 [INFO] - Found 0 cards matching 'sv6pt5'
-2025-03-03 18:15:45,896 [INFO] - 127.0.0.1 - - [03/Mar/2025 18:15:45] "GET /api/search?q=sv6pt5 HTTP/1.1" 200 -
-2025-03-03 18:16:00,961 [INFO] - Searching for cards matching 'blastoise'...
-2025-03-03 18:16:01,882 [INFO] - Found 15 cards matching 'blastoise'
-2025-03-03 18:16:01,888 [INFO] - 127.0.0.1 - - [03/Mar/2025 18:16:01] "GET /api/search?q=blastoise HTTP/1.1" 200 -
-2025-03-03 18:16:10,214 [INFO] - Fetching price data for card ID: bw10-16
-2025-03-03 18:16:10,214 [INFO] - Getting card details from Pokemon TCG API...
-2025-03-03 18:16:10,537 [INFO] - Processing card: Blastoise from Plasma Blast
-2025-03-03 18:16:10,537 [INFO] - Extracting TCGPlayer pricing data...
-2025-03-03 18:16:10,537 [INFO] - Fetching PriceCharting pricing data...
-2025-03-03 18:16:10,538 [INFO] - Fetching PriceCharting data for: Blastoise
-2025-03-03 18:16:10,903 [INFO] - Found PriceCharting product ID: 957318
-2025-03-03 18:16:11,075 [INFO] - PriceCharting prices - Loose: $6.27, Graded: $51.18
-2025-03-03 18:16:11,077 [INFO] - Processing CardMarket pricing data...
-2025-03-03 18:16:11,078 [INFO] - Calculating arbitrage opportunities...
-2025-03-03 18:16:11,078 [INFO] - No profitable arbitrage opportunities found
-2025-03-03 18:16:11,083 [INFO] - 127.0.0.1 - - [03/Mar/2025 18:16:11] "GET /api/card_prices?id=bw10-16 HTTP/1.1" 200 -
-2025-03-03 18:17:07,649 [INFO] - Analyzing set with ID: sv6pt5
-2025-03-03 18:17:07,649 [INFO] - Getting set information...
-2025-03-03 18:17:08,033 [INFO] - Analyzing set: Shrouded Fable
-2025-03-03 18:17:08,033 [INFO] - Fetching cards from set 'Shrouded Fable'...
-2025-03-03 18:17:11,427 [INFO] - Processing 99 cards in set 'Shrouded Fable'...
-2025-03-03 18:17:11,428 [INFO] - Processing cards: 1/99
-2025-03-03 18:17:11,428 [INFO] - Processing cards: 11/99
-2025-03-03 18:17:11,429 [INFO] - Processing cards: 21/99
-2025-03-03 18:17:11,429 [INFO] - Processing cards: 31/99
-2025-03-03 18:17:11,430 [INFO] - Fetching PriceCharting data for: Fezandipiti ex
-2025-03-03 18:17:11,810 [INFO] - Found PriceCharting product ID: 7108749
-2025-03-03 18:17:12,026 [INFO] - PriceCharting prices - Loose: $40.5, Graded: $45.0
-2025-03-03 18:17:12,028 [INFO] - Processing cards: 41/99
-2025-03-03 18:17:12,029 [INFO] - Processing cards: 51/99
-2025-03-03 18:17:12,029 [INFO] - Processing cards: 61/99
-2025-03-03 18:17:12,029 [INFO] - Fetching PriceCharting data for: Tapu Bulu
-2025-03-03 18:17:12,379 [INFO] - Found PriceCharting product ID: 7108722
-2025-03-03 18:17:12,567 [INFO] - PriceCharting prices - Loose: $6.03, Graded: $17.38
-2025-03-03 18:17:12,570 [INFO] - Fetching PriceCharting data for: Houndoom
-2025-03-03 18:17:13,736 [INFO] - Found PriceCharting product ID: 7108723
-2025-03-03 18:17:13,976 [INFO] - PriceCharting prices - Loose: $45.85, Graded: $55.0
-2025-03-03 18:17:13,979 [INFO] - Fetching PriceCharting data for: Horsea
-2025-03-03 18:17:14,913 [INFO] - Found PriceCharting product ID: 7108724
-2025-03-03 18:17:15,178 [INFO] - PriceCharting prices - Loose: $22.72, Graded: $28.43
-2025-03-03 18:17:15,181 [INFO] - Fetching PriceCharting data for: Duskull
-2025-03-03 18:17:16,466 [INFO] - Found PriceCharting product ID: 7108725
-2025-03-03 18:17:16,771 [INFO] - PriceCharting prices - Loose: $38.0, Graded: $39.0
-2025-03-03 18:17:16,774 [INFO] - Fetching PriceCharting data for: Dusclops
-2025-03-03 18:17:17,620 [INFO] - Found PriceCharting product ID: 7108726
-2025-03-03 18:17:17,893 [INFO] - PriceCharting prices - Loose: $22.49, Graded: $27.38
-2025-03-03 18:17:17,895 [INFO] - Fetching PriceCharting data for: Dusknoir
-2025-03-03 18:17:18,798 [INFO] - Found PriceCharting product ID: 7108727
-2025-03-03 18:17:19,017 [INFO] - PriceCharting prices - Loose: $29.46, Graded: $34.84
-2025-03-03 18:17:19,021 [INFO] - Processing cards: 71/99
-2025-03-03 18:17:19,021 [INFO] - Fetching PriceCharting data for: Cresselia
-2025-03-03 18:17:19,604 [INFO] - Found PriceCharting product ID: 7108728
-2025-03-03 18:17:19,820 [INFO] - PriceCharting prices - Loose: $28.95, Graded: $32.0
-2025-03-03 18:17:19,823 [INFO] - Fetching PriceCharting data for: Munkidori
-2025-03-03 18:17:20,370 [INFO] - Found PriceCharting product ID: 7108729
-2025-03-03 18:17:20,603 [INFO] - PriceCharting prices - Loose: $15.0, Graded: $17.25
-2025-03-03 18:17:20,606 [INFO] - Fetching PriceCharting data for: Fezandipiti
-2025-03-03 18:17:21,045 [INFO] - Found PriceCharting product ID: 7108749
-2025-03-03 18:17:21,256 [INFO] - PriceCharting prices - Loose: $40.5, Graded: $45.0
-2025-03-03 18:17:21,260 [INFO] - Fetching PriceCharting data for: Okidogi
-2025-03-03 18:17:21,671 [INFO] - Found PriceCharting product ID: 7108747
-2025-03-03 18:17:21,875 [INFO] - PriceCharting prices - Loose: $24.1, Graded: $20.5
-2025-03-03 18:17:21,879 [INFO] - Fetching PriceCharting data for: Zorua
-2025-03-03 18:17:22,489 [INFO] - Found PriceCharting product ID: 7108732
-2025-03-03 18:17:22,687 [INFO] - PriceCharting prices - Loose: $18.84, Graded: $28.5
-2025-03-03 18:17:22,690 [INFO] - Fetching PriceCharting data for: Cufant
-2025-03-03 18:17:23,218 [INFO] - Found PriceCharting product ID: 7108733
-2025-03-03 18:17:23,393 [INFO] - PriceCharting prices - Loose: $11.0, Graded: $17.37
-2025-03-03 18:17:23,396 [INFO] - Fetching PriceCharting data for: Fraxure
-2025-03-03 18:17:23,818 [INFO] - Found PriceCharting product ID: 7108734
-2025-03-03 18:17:24,010 [INFO] - PriceCharting prices - Loose: $12.17, Graded: $21.37
-2025-03-03 18:17:24,013 [INFO] - Fetching PriceCharting data for: Persian
-2025-03-03 18:17:24,993 [INFO] - Found PriceCharting product ID: 7108735
-2025-03-03 18:17:25,196 [INFO] - PriceCharting prices - Loose: $60.4, Graded: $79.9
-2025-03-03 18:17:25,200 [INFO] - Fetching PriceCharting data for: Bewear
-2025-03-03 18:17:25,663 [INFO] - Found PriceCharting product ID: 7108736
-2025-03-03 18:17:25,865 [INFO] - PriceCharting prices - Loose: $11.0, Graded: $17.25
-2025-03-03 18:17:25,868 [INFO] - Processing cards: 81/99
-2025-03-03 18:17:25,869 [INFO] - Fetching PriceCharting data for: Fezandipiti ex
-2025-03-03 18:17:26,048 [INFO] - Found PriceCharting product ID: 7108749
-2025-03-03 18:17:26,236 [INFO] - PriceCharting prices - Loose: $40.5, Graded: $45.0
-2025-03-03 18:17:26,240 [INFO] - Fetching PriceCharting data for: Okidogi ex
-2025-03-03 18:17:26,544 [INFO] - Found PriceCharting product ID: 7108747
-2025-03-03 18:17:26,723 [INFO] - PriceCharting prices - Loose: $24.1, Graded: $20.5
-2025-03-03 18:17:26,726 [INFO] - Processing cards: 91/99
-2025-03-03 18:17:26,727 [INFO] - Fetching PriceCharting data for: Munkidori ex
-2025-03-03 18:17:27,037 [INFO] - Found PriceCharting product ID: 7108748
-2025-03-03 18:17:27,246 [INFO] - PriceCharting prices - Loose: $19.56, Graded: $17.49
-2025-03-03 18:17:27,249 [INFO] - Fetching PriceCharting data for: Fezandipiti ex
-2025-03-03 18:17:27,491 [INFO] - Found PriceCharting product ID: 7108749
-2025-03-03 18:17:27,769 [INFO] - PriceCharting prices - Loose: $40.5, Graded: $45.0
-2025-03-03 18:17:27,773 [INFO] - Fetching PriceCharting data for: Pecharunt ex
-2025-03-03 18:17:28,117 [INFO] - Found PriceCharting product ID: 7108750
-2025-03-03 18:17:28,334 [INFO] - PriceCharting prices - Loose: $19.99, Graded: $18.73
-2025-03-03 18:17:28,337 [INFO] - Fetching PriceCharting data for: Cassiopeia
-2025-03-03 18:17:28,743 [INFO] - Found PriceCharting product ID: 7108751
-2025-03-03 18:17:28,968 [INFO] - PriceCharting prices - Loose: $44.19, Graded: $50.0
-2025-03-03 18:17:28,970 [INFO] - Fetching PriceCharting data for: Pecharunt ex
-2025-03-03 18:17:29,172 [INFO] - Found PriceCharting product ID: 7108750
-2025-03-03 18:17:29,390 [INFO] - PriceCharting prices - Loose: $19.99, Graded: $18.73
-2025-03-03 18:17:29,393 [INFO] - Fetching PriceCharting data for: Earthen Vessel
-2025-03-03 18:17:29,731 [INFO] - Found PriceCharting product ID: 7108753
-2025-03-03 18:17:29,973 [INFO] - PriceCharting prices - Loose: $44.97, Graded: $51.0
-2025-03-03 18:17:29,976 [INFO] - Fetching PriceCharting data for: Powerglass
-2025-03-03 18:17:30,289 [INFO] - Found PriceCharting product ID: 7108754
-2025-03-03 18:17:30,511 [INFO] - PriceCharting prices - Loose: $15.99, Graded: $9.86
-2025-03-03 18:17:30,514 [INFO] - Fetching PriceCharting data for: Basic Darkness Energy
-2025-03-03 18:17:30,989 [INFO] - Found PriceCharting product ID: 7108755
-2025-03-03 18:17:31,178 [INFO] - PriceCharting prices - Loose: $28.74, Graded: $29.0
-2025-03-03 18:17:31,181 [INFO] - Fetching PriceCharting data for: Basic Metal Energy
-2025-03-03 18:17:31,490 [INFO] - Found PriceCharting product ID: 7108756
-2025-03-03 18:17:31,699 [INFO] - PriceCharting prices - Loose: $27.27, Graded: $22.55
-2025-03-03 18:17:31,701 [INFO] - Set analysis complete: 51 cards with pricing data, 23 with arbitrage opportunities
-2025-03-03 18:17:31,765 [INFO] - 127.0.0.1 - - [03/Mar/2025 18:17:31] "GET /api/set_prices?id=sv6pt5 HTTP/1.1" 200 -
-2025-03-03 18:19:50,878 [INFO] - Fetching price data for card ID: sv6pt5-38
-2025-03-03 18:19:50,878 [INFO] - Getting card details from Pokemon TCG API...
-2025-03-03 18:19:51,268 [INFO] - Processing card: Fezandipiti ex from Shrouded Fable
-2025-03-03 18:19:51,268 [INFO] - Extracting TCGPlayer pricing data...
-2025-03-03 18:19:51,269 [INFO] - Fetching PriceCharting pricing data...
-2025-03-03 18:19:51,269 [INFO] - Fetching PriceCharting data for: Fezandipiti ex
-2025-03-03 18:19:51,565 [INFO] - Found PriceCharting product ID: 7108749
-2025-03-03 18:19:51,741 [INFO] - PriceCharting prices - Loose: $40.5, Graded: $45.0
-2025-03-03 18:19:51,743 [INFO] - Processing CardMarket pricing data...
-2025-03-03 18:19:51,743 [INFO] - Calculating arbitrage opportunities...
-2025-03-03 18:19:51,744 [INFO] - Found arbitrage opportunity! Buy: $4.76 Sell: $40.50 Profit: $29.47 (618.77%)
-2025-03-03 18:19:51,749 [INFO] - 127.0.0.1 - - [03/Mar/2025 18:19:51] "GET /api/card_prices?id=sv6pt5-38 HTTP/1.1" 200 -
-2025-03-03 18:20:10,550 [INFO] - Clearing expired cache files...
-2025-03-03 18:20:10,553 [INFO] - Cleared 0 expired cache files
-2025-03-03 18:20:10,582 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+2025-03-03 21:31:50,591 [INFO] - [33mPress CTRL+C to quit[0m
+2025-03-03 21:31:50,611 [INFO] -  * Restarting with watchdog (windowsapi)
+2025-03-03 21:31:52,560 [INFO] - Clearing expired cache files...
+2025-03-03 21:31:52,568 [INFO] - Cleared 0 expired cache files
+2025-03-03 21:31:52,587 [WARNING] -  * Debugger is active!
+2025-03-03 21:31:52,608 [INFO] -  * Debugger PIN: 497-044-917
+2025-03-03 21:31:58,866 [INFO] - 127.0.0.1 - - [03/Mar/2025 21:31:58] "GET / HTTP/1.1" 200 -
+2025-03-03 21:31:59,066 [INFO] - 127.0.0.1 - - [03/Mar/2025 21:31:59] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-03 21:31:59,069 [INFO] - Returning cached set list
+2025-03-03 21:31:59,078 [INFO] - 127.0.0.1 - - [03/Mar/2025 21:31:59] "GET /api/sets HTTP/1.1" 200 -
+2025-03-03 21:32:02,937 [INFO] - Returning cached search results for 'bewear'
+2025-03-03 21:32:02,938 [INFO] - 127.0.0.1 - - [03/Mar/2025 21:32:02] "GET /api/search?q=bewear HTTP/1.1" 200 -
+2025-03-03 21:32:06,036 [INFO] - Returning cached price data for card ID: smp-SM34
+2025-03-03 21:32:06,037 [INFO] - 127.0.0.1 - - [03/Mar/2025 21:32:06] "GET /api/card_prices?id=smp-SM34 HTTP/1.1" 200 -
+2025-03-03 21:32:20,795 [INFO] - Searching for cards matching 'glaceon'...
+2025-03-03 21:32:21,692 [INFO] - Found 15 cards matching 'glaceon'
+2025-03-03 21:32:21,697 [INFO] - 127.0.0.1 - - [03/Mar/2025 21:32:21] "GET /api/search?q=glaceon HTTP/1.1" 200 -
+2025-03-03 21:32:25,608 [INFO] - Fetching price data for card ID: bw9-23
+2025-03-03 21:32:25,609 [INFO] - Getting card details from Pokemon TCG API...
+2025-03-03 21:32:25,958 [INFO] - Processing card: Glaceon from Plasma Freeze
+2025-03-03 21:32:25,959 [INFO] - Extracting TCGPlayer pricing data...
+2025-03-03 21:32:25,959 [INFO] - Fetching PriceCharting pricing data...
+2025-03-03 21:32:25,960 [INFO] - Fetching PriceCharting data for: Glaceon
+2025-03-03 21:32:25,960 [INFO] - Getting PriceCharting data for 'Glaceon' (#23) from 'Plasma Freeze'
+2025-03-03 21:32:26,316 [WARNING] - No suitable product match found for Glaceon (#23)
+2025-03-03 21:32:26,317 [INFO] - PriceCharting prices - Loose: $2.74, Graded: $8.22
+2025-03-03 21:32:26,317 [INFO] - Processing CardMarket pricing data...
+2025-03-03 21:32:26,317 [INFO] - Calculating arbitrage opportunities...
+2025-03-03 21:32:26,318 [INFO] - Found arbitrage opportunity! Buy: $2.33 Sell: $22.78 Profit: $18.31 (785.92%)
+2025-03-03 21:32:26,321 [INFO] - 127.0.0.1 - - [03/Mar/2025 21:32:26] "GET /api/card_prices?id=bw9-23 HTTP/1.1" 200 -
+2025-03-03 21:34:55,197 [INFO] -  * Detected change in 'C:\\Users\\defco\\PokemonStoreToolsAndModules\\app.py', reloading
+2025-03-03 21:34:58,779 [INFO] -  * Restarting with watchdog (windowsapi)
+2025-03-03 21:49:48,483 [INFO] - Clearing expired cache files...
+2025-03-03 21:49:48,490 [INFO] - Cleared 0 expired cache files
+2025-03-03 21:49:48,518 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on all addresses (0.0.0.0)
  * Running on http://127.0.0.1:5000
  * Running on http://192.168.0.113:5000
-2025-03-03 18:20:10,583 [INFO] - [33mPress CTRL+C to quit[0m
-2025-03-03 18:20:10,600 [INFO] -  * Restarting with watchdog (windowsapi)
-2025-03-03 18:20:12,524 [INFO] - Clearing expired cache files...
-2025-03-03 18:20:12,529 [INFO] - Cleared 0 expired cache files
-2025-03-03 18:20:12,553 [WARNING] -  * Debugger is active!
-2025-03-03 18:20:12,574 [INFO] -  * Debugger PIN: 497-044-917
-2025-03-03 18:20:16,902 [INFO] - 127.0.0.1 - - [03/Mar/2025 18:20:16] "GET / HTTP/1.1" 200 -
-2025-03-03 18:20:17,045 [INFO] - Returning cached set list
-2025-03-03 18:20:17,054 [INFO] - 127.0.0.1 - - [03/Mar/2025 18:20:17] "GET /api/sets HTTP/1.1" 200 -
-2025-03-03 18:20:22,926 [INFO] - Searching for cards matching 'Surfine'...
-2025-03-03 18:20:23,353 [INFO] - Found 0 cards matching 'Surfine'
-2025-03-03 18:20:23,357 [INFO] - 127.0.0.1 - - [03/Mar/2025 18:20:23] "GET /api/search?q=Surfine HTTP/1.1" 200 -
-2025-03-03 18:20:23,447 [INFO] - Searching for cards matching 'Surfing'...
-2025-03-03 18:20:23,980 [INFO] - Found 5 cards matching 'Surfing'
-2025-03-03 18:20:23,984 [INFO] - 127.0.0.1 - - [03/Mar/2025 18:20:23] "GET /api/search?q=Surfing HTTP/1.1" 200 -
-2025-03-03 18:20:31,164 [INFO] - Fetching price data for card ID: cel25-8
-2025-03-03 18:20:31,165 [INFO] - Getting card details from Pokemon TCG API...
-2025-03-03 18:20:31,555 [INFO] - Processing card: Surfing Pikachu V from Celebrations
-2025-03-03 18:20:31,556 [INFO] - Extracting TCGPlayer pricing data...
-2025-03-03 18:20:31,556 [INFO] - Fetching PriceCharting pricing data...
-2025-03-03 18:20:31,557 [INFO] - Fetching PriceCharting data for: Surfing Pikachu V
-2025-03-03 18:20:31,850 [INFO] - Found PriceCharting product ID: 2618153
-2025-03-03 18:20:32,023 [INFO] - PriceCharting prices - Loose: $2.71, Graded: $16.92
-2025-03-03 18:20:32,025 [INFO] - Processing CardMarket pricing data...
-2025-03-03 18:20:32,026 [INFO] - Calculating arbitrage opportunities...
-2025-03-03 18:20:32,026 [INFO] - No profitable arbitrage opportunities found
-2025-03-03 18:20:32,031 [INFO] - 127.0.0.1 - - [03/Mar/2025 18:20:32] "GET /api/card_prices?id=cel25-8 HTTP/1.1" 200 -
+2025-03-03 21:49:48,518 [INFO] - [33mPress CTRL+C to quit[0m
+2025-03-03 21:49:48,537 [INFO] -  * Restarting with watchdog (windowsapi)
+2025-03-03 21:49:50,490 [INFO] - Clearing expired cache files...
+2025-03-03 21:49:50,498 [INFO] - Cleared 0 expired cache files
+2025-03-03 21:49:50,518 [WARNING] -  * Debugger is active!
+2025-03-03 21:49:50,539 [INFO] -  * Debugger PIN: 497-044-917
+2025-03-03 21:49:52,776 [INFO] - 127.0.0.1 - - [03/Mar/2025 21:49:52] "GET / HTTP/1.1" 200 -
+2025-03-03 21:49:52,847 [INFO] - Returning cached set list
+2025-03-03 21:49:52,856 [INFO] - 127.0.0.1 - - [03/Mar/2025 21:49:52] "GET /api/sets HTTP/1.1" 200 -
+2025-03-03 21:49:52,908 [INFO] - 127.0.0.1 - - [03/Mar/2025 21:49:52] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-03 21:49:59,329 [INFO] - Searching for cards matching 'Drag'...
+2025-03-03 21:50:00,293 [INFO] - Found 15 cards matching 'Drag'
+2025-03-03 21:50:00,299 [INFO] - 127.0.0.1 - - [03/Mar/2025 21:50:00] "GET /api/search?q=Drag HTTP/1.1" 200 -
+2025-03-03 21:50:09,066 [INFO] - Searching for cards matching 'charmander'...
+2025-03-03 21:50:09,879 [INFO] - Found 15 cards matching 'charmander'
+2025-03-03 21:50:09,885 [INFO] - 127.0.0.1 - - [03/Mar/2025 21:50:09] "GET /api/search?q=charmander HTTP/1.1" 200 -
+2025-03-03 21:50:19,931 [INFO] - Searching for cards matching 'charm'...
+2025-03-03 21:50:20,769 [INFO] - Found 15 cards matching 'charm'
+2025-03-03 21:50:20,775 [INFO] - 127.0.0.1 - - [03/Mar/2025 21:50:20] "GET /api/search?q=charm HTTP/1.1" 200 -
+2025-03-03 21:50:30,719 [INFO] - Searching for cards matching 'prismaticx'...
+2025-03-03 21:50:31,087 [INFO] - Found 0 cards matching 'prismaticx'
+2025-03-03 21:50:31,090 [INFO] - 127.0.0.1 - - [03/Mar/2025 21:50:31] "GET /api/search?q=prismaticx HTTP/1.1" 200 -
+2025-03-03 21:50:32,492 [INFO] - Searching for cards matching 'prismatic'...
+2025-03-03 21:50:32,859 [INFO] - Found 0 cards matching 'prismatic'
+2025-03-03 21:50:32,863 [INFO] - 127.0.0.1 - - [03/Mar/2025 21:50:32] "GET /api/search?q=prismatic HTTP/1.1" 200 -
+2025-03-03 21:50:38,308 [INFO] - Searching for cards matching 'pika'...
+2025-03-03 21:50:39,192 [INFO] - Found 15 cards matching 'pika'
+2025-03-03 21:50:39,197 [INFO] - 127.0.0.1 - - [03/Mar/2025 21:50:39] "GET /api/search?q=pika HTTP/1.1" 200 -
+2025-03-03 21:50:44,739 [INFO] - Searching for cards matching 'raichu'...
+2025-03-03 21:50:45,653 [INFO] - Found 15 cards matching 'raichu'
+2025-03-03 21:50:45,659 [INFO] - 127.0.0.1 - - [03/Mar/2025 21:50:45] "GET /api/search?q=raichu HTTP/1.1" 200 -
+2025-03-03 21:50:49,687 [INFO] - Fetching price data for card ID: hgss1-10
+2025-03-03 21:50:49,687 [INFO] - Getting card details from Pokemon TCG API...
+2025-03-03 21:50:50,053 [INFO] - Processing card: Raichu from HeartGold & SoulSilver
+2025-03-03 21:50:50,053 [INFO] - Extracting TCGPlayer pricing data...
+2025-03-03 21:50:50,054 [INFO] - Fetching PriceCharting pricing data...
+2025-03-03 21:50:50,054 [INFO] - Fetching PriceCharting data for: Raichu
+2025-03-03 21:50:50,054 [INFO] - Getting PriceCharting data for 'Raichu' (#10) from 'HeartGold & SoulSilver'
+2025-03-03 21:50:50,317 [WARNING] - No suitable product match found for Raichu (#10)
+2025-03-03 21:50:50,317 [INFO] - PriceCharting prices - Loose: $2.14, Graded: $6.42
+2025-03-03 21:50:50,318 [INFO] - Processing CardMarket pricing data...
+2025-03-03 21:50:50,318 [INFO] - Calculating arbitrage opportunities...
+2025-03-03 21:50:50,319 [INFO] - Found arbitrage opportunity! Buy: $2.14 Sell: $14.26 Profit: $8.98 (419.67%)
+2025-03-03 21:50:50,322 [INFO] - 127.0.0.1 - - [03/Mar/2025 21:50:50] "GET /api/card_prices?id=hgss1-10 HTTP/1.1" 200 -
+2025-03-03 21:51:13,353 [INFO] - Searching for cards matching 'clef'...
+2025-03-03 21:51:14,256 [INFO] - Found 15 cards matching 'clef'
+2025-03-03 21:51:14,261 [INFO] - 127.0.0.1 - - [03/Mar/2025 21:51:14] "GET /api/search?q=clef HTTP/1.1" 200 -
+2025-03-03 21:51:25,440 [INFO] - Searching for cards matching 'gren'...
+2025-03-03 21:51:26,351 [INFO] - Found 15 cards matching 'gren'
+2025-03-03 21:51:26,357 [INFO] - 127.0.0.1 - - [03/Mar/2025 21:51:26] "GET /api/search?q=gren HTTP/1.1" 200 -
+2025-03-03 21:51:41,047 [INFO] - Returning cached search results for 'umbreon'
+2025-03-03 21:51:41,049 [INFO] - 127.0.0.1 - - [03/Mar/2025 21:51:41] "GET /api/search?q=umbreon HTTP/1.1" 200 -
+2025-03-03 21:51:49,070 [INFO] - Returning cached search results for 'umbreon'
+2025-03-03 21:51:49,071 [INFO] - 127.0.0.1 - - [03/Mar/2025 21:51:49] "GET /api/search?q=umbreon HTTP/1.1" 200 -
+2025-03-03 21:52:16,264 [INFO] - Returning cached search results for 'bewear'
+2025-03-03 21:52:16,265 [INFO] - 127.0.0.1 - - [03/Mar/2025 21:52:16] "GET /api/search?q=bewear HTTP/1.1" 200 -
+2025-03-03 21:52:20,511 [INFO] - Returning cached price data for card ID: sv6pt5-79
+2025-03-03 21:52:20,512 [INFO] - 127.0.0.1 - - [03/Mar/2025 21:52:20] "GET /api/card_prices?id=sv6pt5-79 HTTP/1.1" 200 -
+2025-03-03 21:55:51,734 [INFO] - Clearing expired cache files...
+2025-03-03 21:55:51,742 [INFO] - Cleared 0 expired cache files
+2025-03-03 21:55:51,768 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.113:5000
+2025-03-03 21:55:51,768 [INFO] - [33mPress CTRL+C to quit[0m
+2025-03-03 21:55:51,786 [INFO] -  * Restarting with watchdog (windowsapi)
+2025-03-03 21:55:53,715 [INFO] - Clearing expired cache files...
+2025-03-03 21:55:53,724 [INFO] - Cleared 0 expired cache files
+2025-03-03 21:55:53,741 [WARNING] -  * Debugger is active!
+2025-03-03 21:55:53,761 [INFO] -  * Debugger PIN: 497-044-917
+2025-03-03 21:56:27,390 [INFO] - Searching for cards matching 'Bewear (beFable)'...
+2025-03-03 21:56:28,038 [ERROR] - Error searching for 'Bewear (beFable)': 400 Client Error: Bad Request for url: https://api.pokemontcg.io/v2/cards?q=name%3A%2ABewear+%28beFable%29%2A&orderBy=name&pageSize=15
+2025-03-03 21:56:28,041 [INFO] - 127.0.0.1 - - [03/Mar/2025 21:56:28] "[35m[1mGET /api/search?q=Bewear+(beFable) HTTP/1.1[0m" 500 -
+2025-03-03 21:56:28,148 [INFO] - Searching for cards matching 'Bewear (beweaFable)'...
+2025-03-03 21:56:28,443 [ERROR] - Error searching for 'Bewear (beweaFable)': 400 Client Error: Bad Request for url: https://api.pokemontcg.io/v2/cards?q=name%3A%2ABewear+%28beweaFable%29%2A&orderBy=name&pageSize=15
+2025-03-03 21:56:28,446 [INFO] - 127.0.0.1 - - [03/Mar/2025 21:56:28] "[35m[1mGET /api/search?q=Bewear+(beweaFable) HTTP/1.1[0m" 500 -
+2025-03-03 21:56:28,481 [INFO] - Searching for cards matching 'Bewear (bewearFable)'...
+2025-03-03 21:56:28,754 [ERROR] - Error searching for 'Bewear (bewearFable)': 400 Client Error: Bad Request for url: https://api.pokemontcg.io/v2/cards?q=name%3A%2ABewear+%28bewearFable%29%2A&orderBy=name&pageSize=15
+2025-03-03 21:56:28,756 [INFO] - 127.0.0.1 - - [03/Mar/2025 21:56:28] "[35m[1mGET /api/search?q=Bewear+(bewearFable) HTTP/1.1[0m" 500 -
+2025-03-03 21:56:31,360 [INFO] - Searching for cards matching 'Bewear (bewear'...
+2025-03-03 21:56:31,691 [ERROR] - Error searching for 'Bewear (bewear': 400 Client Error: Bad Request for url: https://api.pokemontcg.io/v2/cards?q=name%3A%2ABewear+%28bewear%2A&orderBy=name&pageSize=15
+2025-03-03 21:56:31,693 [INFO] - 127.0.0.1 - - [03/Mar/2025 21:56:31] "[35m[1mGET /api/search?q=Bewear+(bewear HTTP/1.1[0m" 500 -
+2025-03-03 21:56:31,708 [INFO] - Searching for cards matching 'Bewear (bewea'...
+2025-03-03 21:56:32,006 [ERROR] - Error searching for 'Bewear (bewea': 400 Client Error: Bad Request for url: https://api.pokemontcg.io/v2/cards?q=name%3A%2ABewear+%28bewea%2A&orderBy=name&pageSize=15
+2025-03-03 21:56:32,008 [INFO] - 127.0.0.1 - - [03/Mar/2025 21:56:32] "[35m[1mGET /api/search?q=Bewear+(bewea HTTP/1.1[0m" 500 -
+2025-03-03 21:56:34,702 [INFO] - Searching for cards matching 'bewea'...
+2025-03-03 21:56:35,020 [INFO] - Returning cached search results for 'bewear'
+2025-03-03 21:56:35,022 [INFO] - 127.0.0.1 - - [03/Mar/2025 21:56:35] "GET /api/search?q=bewear HTTP/1.1" 200 -
+2025-03-03 21:56:35,582 [INFO] - Found 12 cards matching 'bewea'
+2025-03-03 21:56:35,587 [INFO] - 127.0.0.1 - - [03/Mar/2025 21:56:35] "GET /api/search?q=bewea HTTP/1.1" 200 -
+2025-03-03 21:56:36,755 [INFO] - Returning cached price data for card ID: sv6pt5-79
+2025-03-03 21:56:36,757 [INFO] - 127.0.0.1 - - [03/Mar/2025 21:56:36] "GET /api/card_prices?id=sv6pt5-79 HTTP/1.1" 200 -
+2025-03-03 22:00:22,525 [INFO] - Clearing expired cache files...
+2025-03-03 22:00:22,534 [INFO] - Cleared 0 expired cache files
+2025-03-03 22:00:22,560 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.113:5000
+2025-03-03 22:00:22,561 [INFO] - [33mPress CTRL+C to quit[0m
+2025-03-03 22:00:22,578 [INFO] -  * Restarting with watchdog (windowsapi)
+2025-03-03 22:00:24,545 [INFO] - Clearing expired cache files...
+2025-03-03 22:00:24,555 [INFO] - Cleared 0 expired cache files
+2025-03-03 22:00:24,573 [WARNING] -  * Debugger is active!
+2025-03-03 22:00:24,594 [INFO] -  * Debugger PIN: 497-044-917
+2025-03-03 22:00:27,553 [INFO] - 127.0.0.1 - - [03/Mar/2025 22:00:27] "GET / HTTP/1.1" 200 -
+2025-03-03 22:00:27,703 [INFO] - 127.0.0.1 - - [03/Mar/2025 22:00:27] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-03 22:01:03,487 [INFO] - 127.0.0.1 - - [03/Mar/2025 22:01:03] "GET / HTTP/1.1" 200 -
+2025-03-03 22:02:23,818 [INFO] - 127.0.0.1 - - [03/Mar/2025 22:02:23] "GET / HTTP/1.1" 200 -
+2025-03-03 22:03:39,113 [INFO] - Clearing expired cache files...
+2025-03-03 22:03:39,121 [INFO] - Cleared 0 expired cache files
+2025-03-03 22:03:39,146 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.113:5000
+2025-03-03 22:03:39,147 [INFO] - [33mPress CTRL+C to quit[0m
+2025-03-03 22:03:39,165 [INFO] -  * Restarting with watchdog (windowsapi)
+2025-03-03 22:03:41,150 [INFO] - Clearing expired cache files...
+2025-03-03 22:03:41,160 [INFO] - Cleared 0 expired cache files
+2025-03-03 22:03:41,179 [WARNING] -  * Debugger is active!
+2025-03-03 22:03:41,200 [INFO] -  * Debugger PIN: 497-044-917
+2025-03-03 22:03:59,871 [INFO] - 127.0.0.1 - - [03/Mar/2025 22:03:59] "GET / HTTP/1.1" 200 -
+2025-03-03 22:04:05,673 [INFO] - Clearing expired cache files...
+2025-03-03 22:04:05,678 [INFO] - Cleared 0 expired cache files
+2025-03-03 22:04:05,705 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.113:5000
+2025-03-03 22:04:05,706 [INFO] - [33mPress CTRL+C to quit[0m
+2025-03-03 22:04:05,716 [INFO] -  * Restarting with watchdog (windowsapi)
+2025-03-03 22:04:06,098 [INFO] - Clearing expired cache files...
+2025-03-03 22:04:06,104 [INFO] - Cleared 0 expired cache files
+2025-03-03 22:04:06,118 [WARNING] -  * Debugger is active!
+2025-03-03 22:04:06,139 [INFO] -  * Debugger PIN: 497-044-917
+2025-03-03 22:04:08,104 [INFO] - 127.0.0.1 - - [03/Mar/2025 22:04:08] "GET / HTTP/1.1" 200 -
+2025-03-03 22:04:08,220 [INFO] - 127.0.0.1 - - [03/Mar/2025 22:04:08] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-03 22:11:49,450 [INFO] - Clearing expired cache files...
+2025-03-03 22:11:49,459 [INFO] - Cleared 0 expired cache files
+2025-03-03 22:11:49,488 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.113:5000
+2025-03-03 22:11:49,489 [INFO] - [33mPress CTRL+C to quit[0m
+2025-03-03 22:11:49,508 [INFO] -  * Restarting with watchdog (windowsapi)
+2025-03-03 22:11:51,502 [INFO] - Clearing expired cache files...
+2025-03-03 22:11:51,512 [INFO] - Cleared 0 expired cache files
+2025-03-03 22:11:51,529 [WARNING] -  * Debugger is active!
+2025-03-03 22:11:51,550 [INFO] -  * Debugger PIN: 497-044-917
+2025-03-03 22:12:24,719 [INFO] - Clearing expired cache files...
+2025-03-03 22:12:24,728 [INFO] - Cleared 0 expired cache files
+2025-03-03 22:12:24,753 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.113:5000
+2025-03-03 22:12:24,753 [INFO] - [33mPress CTRL+C to quit[0m
+2025-03-03 22:12:24,771 [INFO] -  * Restarting with watchdog (windowsapi)
+2025-03-03 22:12:26,778 [INFO] - Clearing expired cache files...
+2025-03-03 22:12:26,788 [INFO] - Cleared 0 expired cache files
+2025-03-03 22:12:26,807 [WARNING] -  * Debugger is active!
+2025-03-03 22:12:26,829 [INFO] -  * Debugger PIN: 497-044-917
+2025-03-03 22:12:34,738 [INFO] - 127.0.0.1 - - [03/Mar/2025 22:12:34] "GET / HTTP/1.1" 200 -
+2025-03-03 22:12:34,916 [INFO] - 127.0.0.1 - - [03/Mar/2025 22:12:34] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-03 22:17:30,571 [INFO] -  * Detected change in 'C:\\Users\\defco\\PokemonStoreToolsAndModules\\diagnostic.py', reloading
+2025-03-03 22:17:30,573 [INFO] -  * Detected change in 'C:\\Users\\defco\\PokemonStoreToolsAndModules\\error_handling.py', reloading
+2025-03-03 22:17:30,606 [INFO] -  * Detected change in 'C:\\Users\\defco\\PokemonStoreToolsAndModules\\utils.py', reloading
+2025-03-03 22:17:30,683 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\flask\\__init__.py', reloading
+2025-03-03 22:17:30,689 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\flask\\app.py', reloading
+2025-03-03 22:17:30,716 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\flask\\sansio\\app.py', reloading
+2025-03-03 22:17:30,726 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\flask\\sansio\\scaffold.py', reloading
+2025-03-03 22:17:30,738 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\flask\\globals.py', reloading
+2025-03-03 22:17:30,741 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\flask\\wrappers.py', reloading
+2025-03-03 22:17:30,744 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\werkzeug\\wrappers\\__init__.py', reloading
+2025-03-03 22:17:30,746 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\werkzeug\\wrappers\\request.py', reloading
+2025-03-03 22:17:30,754 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\werkzeug\\sansio\\request.py', reloading
+2025-03-03 22:17:30,760 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\flask\\json\\__init__.py', reloading
+2025-03-03 22:17:30,764 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\werkzeug\\wrappers\\response.py', reloading
+2025-03-03 22:17:30,779 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\werkzeug\\sansio\\response.py', reloading
+2025-03-03 22:17:30,787 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\flask\\templating.py', reloading
+2025-03-03 22:17:33,925 [INFO] -  * Restarting with watchdog (windowsapi)

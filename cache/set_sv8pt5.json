@@ -1,0 +1,3761 @@
+{
+  "set_id": "sv8pt5",
+  "set_name": "Prismatic Evolutions",
+  "set_series": "Scarlet & Violet",
+  "cards": [
+    {
+      "id": "sv8pt5-60",
+      "name": "Umbreon ex",
+      "number": "60",
+      "rarity": "Double Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/60.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 7.0,
+          "mid": 12.0,
+          "high": 40.0,
+          "market": 9.66,
+          "directLow": null
+        },
+        "market": 9.66,
+        "primary_variant": "holofoil",
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": false
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-60",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "price_charting": {
+        "loose": 1397.52,
+        "new": 1268.12,
+        "graded": 1402.5,
+        "graded_variants": {
+          "bgs-10": 4258.0,
+          "box-only": 1543.0,
+          "condition-17": 506.04,
+          "condition-18": 1965.0,
+          "gamestop": 0.0,
+          "gamestop-trade": 0.0,
+          "loose": 1397.52,
+          "manual-only": 3275.0,
+          "new": 1268.12
+        },
+        "bgs_grades": {
+          "bgs-10": 4258.0
+        }
+      },
+      "arbitrage": {
+        "buy_from": "tcgplayer",
+        "buy_price": 9.66,
+        "sell_to": "pricecharting",
+        "sell_price": 1397.52,
+        "net_sell_price": 1215.8424,
+        "profit": 1205.1824,
+        "profit_margin": 12476.008281573497
+      }
+    },
+    {
+      "id": "sv8pt5-6",
+      "name": "Leafeon ex",
+      "number": "6",
+      "rarity": "Double Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/6.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 5.0,
+          "mid": 6.27,
+          "high": 30.0,
+          "market": 5.66,
+          "directLow": null
+        },
+        "market": 5.66,
+        "primary_variant": "holofoil",
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": false
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-6",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "price_charting": {
+        "loose": 348.22,
+        "new": 290.0,
+        "graded": 357.76,
+        "graded_variants": {
+          "bgs-10": 1483.0,
+          "box-only": 394.0,
+          "condition-17": 144.22,
+          "condition-18": 684.0,
+          "gamestop": 0.0,
+          "gamestop-trade": 0.0,
+          "loose": 348.22,
+          "manual-only": 1140.79,
+          "new": 290.0
+        },
+        "bgs_grades": {
+          "bgs-10": 1483.0
+        }
+      },
+      "arbitrage": {
+        "buy_from": "tcgplayer",
+        "buy_price": 5.66,
+        "sell_to": "pricecharting",
+        "sell_price": 348.22,
+        "net_sell_price": 302.95140000000004,
+        "profit": 296.2914,
+        "profit_margin": 5234.83038869258
+      }
+    },
+    {
+      "id": "sv8pt5-23",
+      "name": "Vaporeon ex",
+      "number": "23",
+      "rarity": "Double Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/23.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 4.5,
+          "mid": 5.95,
+          "high": 17.95,
+          "market": 5.14,
+          "directLow": null
+        },
+        "market": 5.14,
+        "primary_variant": "holofoil",
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": false
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-23",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "price_charting": {
+        "loose": 286.68,
+        "graded": 336.79,
+        "graded_variants": {
+          "bgs-10": 683.0,
+          "box-only": 370.0,
+          "condition-17": 420.0,
+          "condition-18": 315.0,
+          "gamestop": 0.0,
+          "gamestop-trade": 0.0,
+          "loose": 286.68,
+          "manual-only": 525.0
+        },
+        "bgs_grades": {
+          "bgs-10": 683.0
+        }
+      },
+      "arbitrage": {
+        "buy_from": "tcgplayer",
+        "buy_price": 5.14,
+        "sell_to": "pricecharting",
+        "sell_price": 286.68,
+        "net_sell_price": 249.4116,
+        "profit": 243.2716,
+        "profit_margin": 4732.910505836576
+      }
+    },
+    {
+      "id": "sv8pt5-30",
+      "name": "Jolteon ex",
+      "number": "30",
+      "rarity": "Double Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/30.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 5.0,
+          "mid": 7.2,
+          "high": 24.2,
+          "market": 6.05,
+          "directLow": 6.89
+        },
+        "market": 6.05,
+        "primary_variant": "holofoil",
+        "reverseHolofoil": {
+          "low": 7.27,
+          "mid": 10.84,
+          "high": 19.95,
+          "market": 7.48,
+          "directLow": null
+        },
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": true
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-30",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "price_charting": {
+        "loose": 254.27,
+        "graded": 280.99,
+        "graded_variants": {
+          "bgs-10": 1437.0,
+          "box-only": 309.0,
+          "condition-17": 153.89,
+          "condition-18": 663.0,
+          "gamestop": 0.0,
+          "gamestop-trade": 0.0,
+          "loose": 254.27,
+          "manual-only": 1105.0
+        },
+        "bgs_grades": {
+          "bgs-10": 1437.0
+        }
+      },
+      "arbitrage": {
+        "buy_from": "tcgplayer",
+        "buy_price": 6.05,
+        "sell_to": "pricecharting",
+        "sell_price": 254.27,
+        "net_sell_price": 221.2149,
+        "profit": 214.1649,
+        "profit_margin": 3539.915702479339
+      }
+    },
+    {
+      "id": "sv8pt5-14",
+      "name": "Flareon ex",
+      "number": "14",
+      "rarity": "Double Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/14.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 11.0,
+          "mid": 13.33,
+          "high": 35.0,
+          "market": 13.13,
+          "directLow": null
+        },
+        "market": 13.13,
+        "primary_variant": "holofoil",
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": false
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-14",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "price_charting": {
+        "loose": 276.0,
+        "new": 255.0,
+        "graded": 357.0,
+        "graded_variants": {
+          "bgs-10": 1718.0,
+          "box-only": 393.0,
+          "condition-17": 201.44,
+          "condition-18": 793.0,
+          "gamestop": 0.0,
+          "gamestop-trade": 0.0,
+          "loose": 276.0,
+          "manual-only": 1321.72,
+          "new": 255.0
+        },
+        "bgs_grades": {
+          "bgs-10": 1718.0
+        }
+      },
+      "arbitrage": {
+        "buy_from": "tcgplayer",
+        "buy_price": 13.13,
+        "sell_to": "pricecharting",
+        "sell_price": 276.0,
+        "net_sell_price": 240.12,
+        "profit": 225.99,
+        "profit_margin": 1721.1728865194211
+      }
+    },
+    {
+      "id": "sv8pt5-159",
+      "name": "Sandy Shocks ex",
+      "number": "159",
+      "rarity": "Special Illustration Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/159.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 42.01,
+          "mid": 52.0,
+          "high": 124.95,
+          "market": 42.01,
+          "directLow": null
+        },
+        "market": 42.01,
+        "primary_variant": "holofoil",
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": false
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-159",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "price_charting": {
+        "loose": 1.97,
+        "graded": 12.91,
+        "graded_variants": {
+          "bgs-10": 50.0,
+          "box-only": 14.0,
+          "condition-17": 31.0,
+          "condition-18": 23.0,
+          "gamestop": 0.0,
+          "gamestop-trade": 0.0,
+          "loose": 1.97,
+          "manual-only": 38.54
+        },
+        "bgs_grades": {
+          "bgs-10": 50.0
+        }
+      },
+      "arbitrage": {
+        "buy_from": "pricecharting",
+        "buy_price": 1.97,
+        "sell_to": "tcgplayer",
+        "sell_price": 42.01,
+        "net_sell_price": 35.7085,
+        "profit": 32.7385,
+        "profit_margin": 1661.8527918781726
+      }
+    },
+    {
+      "id": "sv8pt5-160",
+      "name": "Cornerstone Mask Ogerpon ex",
+      "number": "160",
+      "rarity": "Special Illustration Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/160.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 27.97,
+          "mid": 38.47,
+          "high": 80.0,
+          "market": 28.21,
+          "directLow": null
+        },
+        "market": 28.21,
+        "primary_variant": "holofoil",
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": false
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-160",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "price_charting": {
+        "loose": 1.63,
+        "graded": 5.51,
+        "graded_variants": {
+          "bgs-10": 29.0,
+          "box-only": 11.95,
+          "condition-17": 10.68,
+          "condition-18": 13.0,
+          "gamestop": 0.0,
+          "gamestop-trade": 0.0,
+          "loose": 1.63,
+          "manual-only": 22.0
+        },
+        "bgs_grades": {
+          "bgs-10": 29.0
+        }
+      },
+      "arbitrage": {
+        "buy_from": "pricecharting",
+        "buy_price": 1.63,
+        "sell_to": "tcgplayer",
+        "sell_price": 28.21,
+        "net_sell_price": 23.9785,
+        "profit": 21.3485,
+        "profit_margin": 1309.7239263803683
+      }
+    },
+    {
+      "id": "sv8pt5-75",
+      "name": "Eevee ex",
+      "number": "75",
+      "rarity": "Double Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/75.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 11.0,
+          "mid": 14.0,
+          "high": 89.0,
+          "market": 12.46,
+          "directLow": null
+        },
+        "market": 12.46,
+        "primary_variant": "holofoil",
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": false
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-75",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "price_charting": {
+        "loose": 198.59,
+        "new": 127.5,
+        "graded": 202.5,
+        "graded_variants": {
+          "bgs-10": 1038.0,
+          "box-only": 223.0,
+          "condition-17": 99.61,
+          "condition-18": 479.0,
+          "gamestop": 0.0,
+          "gamestop-trade": 0.0,
+          "loose": 198.59,
+          "manual-only": 798.47,
+          "new": 127.5
+        },
+        "bgs_grades": {
+          "bgs-10": 1038.0
+        }
+      },
+      "arbitrage": {
+        "buy_from": "tcgplayer",
+        "buy_price": 12.46,
+        "sell_to": "pricecharting",
+        "sell_price": 198.59,
+        "net_sell_price": 172.7733,
+        "profit": 159.3133,
+        "profit_margin": 1278.5979133226324
+      }
+    },
+    {
+      "id": "sv8pt5-152",
+      "name": "Wellspring Mask Ogerpon ex",
+      "number": "152",
+      "rarity": "Special Illustration Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/152.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 26.17,
+          "mid": 37.8,
+          "high": 59.95,
+          "market": 26.51,
+          "directLow": null
+        },
+        "market": 26.51,
+        "primary_variant": "holofoil",
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": false
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-152",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "price_charting": {
+        "loose": 1.69,
+        "new": 5.51,
+        "graded": 6.0,
+        "graded_variants": {
+          "bgs-10": 26.0,
+          "box-only": 7.0,
+          "condition-17": 9.98,
+          "condition-18": 12.0,
+          "gamestop": 0.0,
+          "gamestop-trade": 0.0,
+          "loose": 1.69,
+          "manual-only": 20.25,
+          "new": 5.51
+        },
+        "bgs_grades": {
+          "bgs-10": 26.0
+        }
+      },
+      "arbitrage": {
+        "buy_from": "pricecharting",
+        "buy_price": 1.69,
+        "sell_to": "tcgplayer",
+        "sell_price": 26.51,
+        "net_sell_price": 22.5335,
+        "profit": 19.8435,
+        "profit_margin": 1174.171597633136
+      }
+    },
+    {
+      "id": "sv8pt5-170",
+      "name": "Amarys",
+      "number": "170",
+      "rarity": "Special Illustration Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/170.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 48.75,
+          "mid": 71.83,
+          "high": 124.95,
+          "market": 35.92,
+          "directLow": null
+        },
+        "market": 35.92,
+        "primary_variant": "holofoil",
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": false
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-170",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "price_charting": {
+        "loose": 2.77,
+        "graded": 14.05,
+        "graded_variants": {
+          "bgs-10": 59.0,
+          "box-only": 15.0,
+          "condition-17": 36.0,
+          "condition-18": 27.0,
+          "gamestop": 0.0,
+          "gamestop-trade": 0.0,
+          "loose": 2.77,
+          "manual-only": 45.37
+        },
+        "bgs_grades": {
+          "bgs-10": 59.0
+        }
+      },
+      "arbitrage": {
+        "buy_from": "pricecharting",
+        "buy_price": 2.77,
+        "sell_to": "tcgplayer",
+        "sell_price": 35.92,
+        "net_sell_price": 30.532,
+        "profit": 26.762,
+        "profit_margin": 966.1371841155235
+      }
+    },
+    {
+      "id": "sv8pt5-173",
+      "name": "Janine's Secret Art",
+      "number": "173",
+      "rarity": "Special Illustration Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/173.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 48.39,
+          "mid": 72.85,
+          "high": 200.0,
+          "market": 47.95,
+          "directLow": null
+        },
+        "market": 47.95,
+        "primary_variant": "holofoil",
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": false
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-173",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "price_charting": {
+        "loose": 4.44,
+        "new": 6.75,
+        "graded": 13.96,
+        "graded_variants": {
+          "bgs-10": 36.0,
+          "box-only": 15.0,
+          "condition-17": 24.95,
+          "condition-18": 16.0,
+          "gamestop": 0.0,
+          "gamestop-trade": 0.0,
+          "loose": 4.44,
+          "manual-only": 27.49,
+          "new": 6.75
+        },
+        "bgs_grades": {
+          "bgs-10": 36.0
+        }
+      },
+      "arbitrage": {
+        "buy_from": "pricecharting",
+        "buy_price": 4.44,
+        "sell_to": "tcgplayer",
+        "sell_price": 47.95,
+        "net_sell_price": 40.7575,
+        "profit": 35.3175,
+        "profit_margin": 795.4391891891892
+      }
+    },
+    {
+      "id": "sv8pt5-171",
+      "name": "Crispin",
+      "number": "171",
+      "rarity": "Special Illustration Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/171.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 49.99,
+          "mid": 162.0,
+          "high": 299.95,
+          "market": 47.33,
+          "directLow": null
+        },
+        "market": 47.33,
+        "primary_variant": "holofoil",
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": false
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-171",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "price_charting": {
+        "loose": 6.65,
+        "new": 8.0,
+        "graded": 10.49,
+        "graded_variants": {
+          "bgs-10": 32.0,
+          "box-only": 12.0,
+          "cib": 6.5,
+          "condition-17": 17.42,
+          "condition-18": 15.0,
+          "gamestop": 0.0,
+          "gamestop-trade": 0.0,
+          "loose": 6.65,
+          "manual-only": 24.99,
+          "new": 8.0
+        },
+        "bgs_grades": {
+          "bgs-10": 32.0
+        }
+      },
+      "arbitrage": {
+        "buy_from": "pricecharting",
+        "buy_price": 6.65,
+        "sell_to": "tcgplayer",
+        "sell_price": 47.33,
+        "net_sell_price": 40.2305,
+        "profit": 32.5805,
+        "profit_margin": 489.93233082706763
+      }
+    },
+    {
+      "id": "sv8pt5-178",
+      "name": "Walking Wake ex",
+      "number": "178",
+      "rarity": "Hyper Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/178.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 12.0,
+          "mid": 16.45,
+          "high": 46.01,
+          "market": 14.78,
+          "directLow": null
+        },
+        "market": 14.78,
+        "primary_variant": "holofoil",
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": false
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-178",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "price_charting": {
+        "loose": 60.0,
+        "new": 51.87,
+        "graded": 68.43,
+        "graded_variants": {
+          "bgs-10": 245.0,
+          "box-only": 80.0,
+          "cib": 41.65,
+          "condition-17": 90.0,
+          "condition-18": 93.35,
+          "gamestop": 0.0,
+          "gamestop-trade": 0.0,
+          "loose": 60.0,
+          "manual-only": 188.17,
+          "new": 51.87
+        },
+        "bgs_grades": {
+          "bgs-10": 245.0
+        }
+      },
+      "arbitrage": {
+        "buy_from": "tcgplayer",
+        "buy_price": 14.78,
+        "sell_to": "pricecharting",
+        "sell_price": 60.0,
+        "net_sell_price": 52.2,
+        "profit": 36.42,
+        "profit_margin": 246.41407307171855
+      }
+    },
+    {
+      "id": "sv8pt5-179",
+      "name": "Pikachu ex",
+      "number": "179",
+      "rarity": "Hyper Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/179.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 83.64,
+          "mid": 109.66,
+          "high": 325.0,
+          "market": 96.47,
+          "directLow": null
+        },
+        "market": 96.47,
+        "primary_variant": "holofoil",
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": false
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-179",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "price_charting": {
+        "loose": 383.17,
+        "new": 365.44,
+        "graded": 387.73,
+        "graded_variants": {
+          "bgs-10": 1399.0,
+          "box-only": 729.64,
+          "condition-17": 140.25,
+          "condition-18": 646.0,
+          "gamestop": 0.0,
+          "gamestop-trade": 0.0,
+          "loose": 383.17,
+          "manual-only": 1076.35,
+          "new": 365.44
+        },
+        "bgs_grades": {
+          "bgs-10": 1399.0
+        }
+      },
+      "arbitrage": {
+        "buy_from": "tcgplayer",
+        "buy_price": 96.47,
+        "sell_to": "pricecharting",
+        "sell_price": 383.17,
+        "net_sell_price": 333.35790000000003,
+        "profit": 235.88790000000003,
+        "profit_margin": 244.51943609412257
+      }
+    },
+    {
+      "id": "sv8pt5-154",
+      "name": "Iron Hands ex",
+      "number": "154",
+      "rarity": "Special Illustration Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/154.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 110.0,
+          "mid": 139.23,
+          "high": 399.95,
+          "market": 75.33,
+          "directLow": null
+        },
+        "market": 75.33,
+        "primary_variant": "holofoil",
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": false
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-154",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "price_charting": {
+        "loose": 19.49,
+        "new": 15.0,
+        "graded": 22.12,
+        "graded_variants": {
+          "bgs-10": 93.0,
+          "box-only": 42.5,
+          "condition-17": 32.23,
+          "condition-18": 50.88,
+          "gamestop": 0.0,
+          "gamestop-trade": 0.0,
+          "loose": 19.49,
+          "manual-only": 71.87,
+          "new": 15.0
+        },
+        "bgs_grades": {
+          "bgs-10": 93.0
+        }
+      },
+      "arbitrage": {
+        "buy_from": "pricecharting",
+        "buy_price": 19.49,
+        "sell_to": "tcgplayer",
+        "sell_price": 75.33,
+        "net_sell_price": 64.0305,
+        "profit": 43.54050000000001,
+        "profit_margin": 223.39917906618786
+      }
+    },
+    {
+      "id": "sv8pt5-163",
+      "name": "Pecharunt ex",
+      "number": "163",
+      "rarity": "Special Illustration Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/163.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 65.0,
+          "mid": 85.0,
+          "high": 199.95,
+          "market": 73.07,
+          "directLow": null
+        },
+        "market": 73.07,
+        "primary_variant": "holofoil",
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": false
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-163",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "price_charting": {
+        "loose": 19.99,
+        "new": 12.5,
+        "graded": 18.73,
+        "graded_variants": {
+          "bgs-10": 87.0,
+          "box-only": 35.0,
+          "condition-17": 22.0,
+          "condition-18": 40.0,
+          "gamestop": 0.0,
+          "gamestop-trade": 0.0,
+          "loose": 19.99,
+          "manual-only": 66.78,
+          "new": 12.5
+        },
+        "bgs_grades": {
+          "bgs-10": 87.0
+        }
+      },
+      "arbitrage": {
+        "buy_from": "pricecharting",
+        "buy_price": 19.99,
+        "sell_to": "tcgplayer",
+        "sell_price": 73.07,
+        "net_sell_price": 62.10949999999999,
+        "profit": 41.11949999999999,
+        "profit_margin": 205.7003501750875
+      }
+    },
+    {
+      "id": "sv8pt5-176",
+      "name": "Iron Leaves ex",
+      "number": "176",
+      "rarity": "Hyper Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/176.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 9.9,
+          "mid": 12.88,
+          "high": 54.49,
+          "market": 11.05,
+          "directLow": null
+        },
+        "market": 11.05,
+        "primary_variant": "holofoil",
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": false
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-176",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "price_charting": {
+        "loose": 39.05,
+        "new": 25.0,
+        "graded": 38.79,
+        "graded_variants": {
+          "bgs-10": 160.0,
+          "box-only": 43.0,
+          "cib": 20.0,
+          "condition-17": 61.47,
+          "condition-18": 63.26,
+          "gamestop": 0.0,
+          "gamestop-trade": 0.0,
+          "loose": 39.05,
+          "manual-only": 123.25,
+          "new": 25.0
+        },
+        "bgs_grades": {
+          "bgs-10": 160.0
+        }
+      },
+      "arbitrage": {
+        "buy_from": "tcgplayer",
+        "buy_price": 11.05,
+        "sell_to": "pricecharting",
+        "sell_price": 39.05,
+        "net_sell_price": 33.973499999999994,
+        "profit": 21.923499999999994,
+        "profit_margin": 198.40271493212663
+      }
+    },
+    {
+      "id": "sv8pt5-164",
+      "name": "Gholdengo ex",
+      "number": "164",
+      "rarity": "Special Illustration Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/164.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 105.0,
+          "mid": 145.0,
+          "high": 399.95,
+          "market": 98.37,
+          "directLow": null
+        },
+        "market": 98.37,
+        "primary_variant": "holofoil",
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": false
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-164",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "price_charting": {
+        "loose": 27.88,
+        "new": 22.99,
+        "graded": 36.5,
+        "graded_variants": {
+          "bgs-10": 140.0,
+          "box-only": 40.0,
+          "condition-17": 56.75,
+          "condition-18": 36.73,
+          "gamestop": 0.0,
+          "gamestop-trade": 0.0,
+          "loose": 27.88,
+          "manual-only": 107.97,
+          "new": 22.99
+        },
+        "bgs_grades": {
+          "bgs-10": 140.0
+        }
+      },
+      "arbitrage": {
+        "buy_from": "pricecharting",
+        "buy_price": 27.88,
+        "sell_to": "tcgplayer",
+        "sell_price": 98.37,
+        "net_sell_price": 83.6145,
+        "profit": 54.73450000000001,
+        "profit_margin": 196.3217360114778
+      }
+    },
+    {
+      "id": "sv8pt5-162",
+      "name": "Roaring Moon ex",
+      "number": "162",
+      "rarity": "Special Illustration Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/162.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 340.0,
+          "mid": 398.0,
+          "high": 799.95,
+          "market": 223.7,
+          "directLow": null
+        },
+        "market": 223.7,
+        "primary_variant": "holofoil",
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": false
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-162",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "price_charting": {
+        "loose": 64.75,
+        "new": 52.06,
+        "graded": 63.99,
+        "graded_variants": {
+          "bgs-10": 352.0,
+          "box-only": 85.0,
+          "condition-17": 119.99,
+          "condition-18": 135.0,
+          "gamestop": 0.0,
+          "gamestop-trade": 0.0,
+          "loose": 64.75,
+          "manual-only": 270.8,
+          "new": 52.06
+        },
+        "bgs_grades": {
+          "bgs-10": 352.0
+        }
+      },
+      "arbitrage": {
+        "buy_from": "pricecharting",
+        "buy_price": 64.75,
+        "sell_to": "tcgplayer",
+        "sell_price": 223.7,
+        "net_sell_price": 190.14499999999998,
+        "profit": 124.39499999999998,
+        "profit_margin": 192.11583011583008
+      }
+    },
+    {
+      "id": "sv8pt5-180",
+      "name": "Terapagos ex",
+      "number": "180",
+      "rarity": "Hyper Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/180.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 21.0,
+          "mid": 25.99,
+          "high": 125.0,
+          "market": 22.91,
+          "directLow": null
+        },
+        "market": 22.91,
+        "primary_variant": "holofoil",
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": false
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-180",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "price_charting": {
+        "loose": 77.05,
+        "new": 66.0,
+        "graded": 66.62,
+        "graded_variants": {
+          "bgs-10": 325.0,
+          "box-only": 75.5,
+          "condition-17": 106.36,
+          "condition-18": 164.99,
+          "gamestop": 0.0,
+          "gamestop-trade": 0.0,
+          "loose": 77.05,
+          "manual-only": 250.25,
+          "new": 66.0
+        },
+        "bgs_grades": {
+          "bgs-10": 325.0
+        }
+      },
+      "arbitrage": {
+        "buy_from": "tcgplayer",
+        "buy_price": 22.91,
+        "sell_to": "pricecharting",
+        "sell_price": 77.05,
+        "net_sell_price": 67.0335,
+        "profit": 43.12350000000001,
+        "profit_margin": 188.2300305543431
+      }
+    },
+    {
+      "id": "sv8pt5-168",
+      "name": "Bloodmoon Ursaluna ex",
+      "number": "168",
+      "rarity": "Special Illustration Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/168.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 99.99,
+          "mid": 130.0,
+          "high": 399.95,
+          "market": 100.19,
+          "directLow": null
+        },
+        "market": 100.19,
+        "primary_variant": "holofoil",
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": false
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-168",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "price_charting": {
+        "loose": 40.0,
+        "new": 32.0,
+        "graded": 42.52,
+        "graded_variants": {
+          "bgs-10": 174.0,
+          "box-only": 47.0,
+          "condition-17": 59.0,
+          "condition-18": 59.0,
+          "gamestop": 0.0,
+          "gamestop-trade": 0.0,
+          "loose": 40.0,
+          "manual-only": 133.5,
+          "new": 32.0
+        },
+        "bgs_grades": {
+          "bgs-10": 174.0
+        }
+      },
+      "arbitrage": {
+        "buy_from": "pricecharting",
+        "buy_price": 40.0,
+        "sell_to": "tcgplayer",
+        "sell_price": 100.19,
+        "net_sell_price": 85.16149999999999,
+        "profit": 44.16149999999999,
+        "profit_margin": 110.40374999999997
+      }
+    },
+    {
+      "id": "sv8pt5-175",
+      "name": "Lacey",
+      "number": "175",
+      "rarity": "Special Illustration Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/175.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 63.39,
+          "mid": 67.23,
+          "high": 149.95,
+          "market": 63.88,
+          "directLow": null
+        },
+        "market": 63.88,
+        "primary_variant": "holofoil",
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": false
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-175",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "price_charting": {
+        "loose": 29.14,
+        "new": 21.0,
+        "graded": 29.49,
+        "graded_variants": {
+          "bgs-10": 128.0,
+          "box-only": 32.0,
+          "condition-17": 68.25,
+          "condition-18": 71.0,
+          "gamestop": 0.0,
+          "gamestop-trade": 0.0,
+          "loose": 29.14,
+          "manual-only": 98.5,
+          "new": 21.0
+        },
+        "bgs_grades": {
+          "bgs-10": 128.0
+        }
+      },
+      "arbitrage": {
+        "buy_from": "pricecharting",
+        "buy_price": 29.14,
+        "sell_to": "tcgplayer",
+        "sell_price": 63.88,
+        "net_sell_price": 54.298,
+        "profit": 24.158,
+        "profit_margin": 82.90322580645162
+      }
+    },
+    {
+      "id": "sv8pt5-172",
+      "name": "Drayton",
+      "number": "172",
+      "rarity": "Special Illustration Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/172.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 32.0,
+          "mid": 37.15,
+          "high": 79.95,
+          "market": 32.55,
+          "directLow": null
+        },
+        "market": 32.55,
+        "primary_variant": "holofoil",
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": false
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-172",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "price_charting": {
+        "loose": 14.85,
+        "new": 6.76,
+        "graded": 13.87,
+        "graded_variants": {
+          "bgs-10": 72.0,
+          "box-only": 16.5,
+          "condition-17": 24.0,
+          "condition-18": 23.5,
+          "gamestop": 0.0,
+          "gamestop-trade": 0.0,
+          "loose": 14.85,
+          "manual-only": 55.5,
+          "new": 6.76
+        },
+        "bgs_grades": {
+          "bgs-10": 72.0
+        }
+      },
+      "arbitrage": {
+        "buy_from": "pricecharting",
+        "buy_price": 14.85,
+        "sell_to": "tcgplayer",
+        "sell_price": 32.55,
+        "net_sell_price": 27.667499999999997,
+        "profit": 11.817499999999997,
+        "profit_margin": 79.57912457912457
+      }
+    },
+    {
+      "id": "sv8pt5-157",
+      "name": "Iron Valiant ex",
+      "number": "157",
+      "rarity": "Special Illustration Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/157.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 94.0,
+          "mid": 109.25,
+          "high": 299.95,
+          "market": 69.05,
+          "directLow": null
+        },
+        "market": 69.05,
+        "primary_variant": "holofoil",
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": false
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-157",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "price_charting": {
+        "loose": 33.28,
+        "new": 25.99,
+        "graded": 34.52,
+        "graded_variants": {
+          "bgs-10": 184.0,
+          "box-only": 34.96,
+          "cib": 21.0,
+          "condition-17": 77.99,
+          "condition-18": 70.47,
+          "gamestop": 0.0,
+          "gamestop-trade": 0.0,
+          "loose": 33.28,
+          "manual-only": 141.74,
+          "new": 25.99
+        },
+        "bgs_grades": {
+          "bgs-10": 184.0
+        }
+      },
+      "arbitrage": {
+        "buy_from": "pricecharting",
+        "buy_price": 33.28,
+        "sell_to": "tcgplayer",
+        "sell_price": 69.05,
+        "net_sell_price": 58.692499999999995,
+        "profit": 24.412499999999994,
+        "profit_margin": 73.35486778846152
+      }
+    },
+    {
+      "id": "sv8pt5-145",
+      "name": "Teal Mask Ogerpon ex",
+      "number": "145",
+      "rarity": "Special Illustration Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/145.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 36.0,
+          "mid": 40.47,
+          "high": 79.95,
+          "market": 36.25,
+          "directLow": null
+        },
+        "market": 36.25,
+        "primary_variant": "holofoil",
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": false
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-145",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "price_charting": {
+        "loose": 20.51,
+        "new": 21.07,
+        "graded": 23.7,
+        "graded_variants": {
+          "bgs-10": 87.0,
+          "box-only": 39.99,
+          "condition-17": 49.7,
+          "condition-18": 40.0,
+          "gamestop": 0.0,
+          "gamestop-trade": 0.0,
+          "loose": 20.51,
+          "manual-only": 67.3,
+          "new": 21.07
+        },
+        "bgs_grades": {
+          "bgs-10": 87.0
+        }
+      },
+      "arbitrage": {
+        "buy_from": "pricecharting",
+        "buy_price": 20.51,
+        "sell_to": "tcgplayer",
+        "sell_price": 36.25,
+        "net_sell_price": 30.8125,
+        "profit": 9.302499999999998,
+        "profit_margin": 45.355923939541675
+      }
+    },
+    {
+      "id": "sv8pt5-174",
+      "name": "Kieran",
+      "number": "174",
+      "rarity": "Special Illustration Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/174.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 42.75,
+          "mid": 52.49,
+          "high": 99.95,
+          "market": 42.9,
+          "directLow": null
+        },
+        "market": 42.9,
+        "primary_variant": "holofoil",
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": false
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-174",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "price_charting": {
+        "loose": 27.95,
+        "graded": 27.35,
+        "graded_variants": {
+          "bgs-10": 107.0,
+          "box-only": 35.0,
+          "condition-17": 37.33,
+          "condition-18": 49.0,
+          "gamestop": 0.0,
+          "gamestop-trade": 0.0,
+          "loose": 27.95,
+          "manual-only": 82.0
+        },
+        "bgs_grades": {
+          "bgs-10": 107.0
+        }
+      },
+      "arbitrage": {
+        "buy_from": "pricecharting",
+        "buy_price": 27.95,
+        "sell_to": "tcgplayer",
+        "sell_price": 42.9,
+        "net_sell_price": 36.464999999999996,
+        "profit": 7.514999999999997,
+        "profit_margin": 26.887298747763854
+      }
+    },
+    {
+      "id": "sv8pt5-148",
+      "name": "Hearthflame Mask Ogerpon ex",
+      "number": "148",
+      "rarity": "Special Illustration Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/148.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 27.53,
+          "mid": 32.98,
+          "high": 69.95,
+          "market": 29.01,
+          "directLow": null
+        },
+        "market": 29.01,
+        "primary_variant": "holofoil",
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": false
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-148",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "price_charting": {
+        "loose": 18.8,
+        "graded": 17.27,
+        "graded_variants": {
+          "bgs-10": 67.0,
+          "box-only": 22.5,
+          "condition-17": 80.0,
+          "condition-18": 31.0,
+          "gamestop": 0.0,
+          "gamestop-trade": 0.0,
+          "loose": 18.8,
+          "manual-only": 51.57
+        },
+        "bgs_grades": {
+          "bgs-10": 67.0
+        }
+      },
+      "arbitrage": {
+        "buy_from": "pricecharting",
+        "buy_price": 18.8,
+        "sell_to": "tcgplayer",
+        "sell_price": 29.01,
+        "net_sell_price": 24.6585,
+        "profit": 4.858499999999999,
+        "profit_margin": 25.843085106382972
+      }
+    },
+    {
+      "id": "sv8pt5-146",
+      "name": "Flareon ex",
+      "number": "146",
+      "rarity": "Special Illustration Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/146.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 420.0,
+          "mid": 499.99,
+          "high": 899.95,
+          "market": 386.6,
+          "directLow": null
+        },
+        "market": 386.6,
+        "primary_variant": "holofoil",
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": false
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-146",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "price_charting": {
+        "loose": 276.0,
+        "new": 255.0,
+        "graded": 357.0,
+        "graded_variants": {
+          "bgs-10": 1718.0,
+          "box-only": 393.0,
+          "condition-17": 201.44,
+          "condition-18": 793.0,
+          "gamestop": 0.0,
+          "gamestop-trade": 0.0,
+          "loose": 276.0,
+          "manual-only": 1321.72,
+          "new": 255.0
+        },
+        "bgs_grades": {
+          "bgs-10": 1718.0
+        }
+      },
+      "arbitrage": {
+        "buy_from": "pricecharting",
+        "buy_price": 276.0,
+        "sell_to": "tcgplayer",
+        "sell_price": 386.6,
+        "net_sell_price": 328.61,
+        "profit": 51.610000000000014,
+        "profit_margin": 18.699275362318847
+      }
+    },
+    {
+      "id": "sv8pt5-151",
+      "name": "Palafin ex",
+      "number": "151",
+      "rarity": "Special Illustration Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/151.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 275.0,
+          "mid": 275.0,
+          "high": 275.0,
+          "market": 101.73,
+          "directLow": null
+        },
+        "market": 101.73,
+        "primary_variant": "holofoil",
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": false
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-151",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "price_charting": {
+        "loose": 72.07,
+        "graded": 96.25,
+        "graded_variants": {
+          "bgs-10": 506.0,
+          "box-only": 106.0,
+          "condition-17": 311.0,
+          "condition-18": 233.0,
+          "gamestop": 0.0,
+          "gamestop-trade": 0.0,
+          "loose": 72.07,
+          "manual-only": 388.91
+        },
+        "bgs_grades": {
+          "bgs-10": 506.0
+        }
+      },
+      "arbitrage": {
+        "buy_from": "pricecharting",
+        "buy_price": 72.07,
+        "sell_to": "tcgplayer",
+        "sell_price": 101.73,
+        "net_sell_price": 86.4705,
+        "profit": 13.400500000000008,
+        "profit_margin": 18.593728319689205
+      }
+    },
+    {
+      "id": "sv8pt5-166",
+      "name": "Raging Bolt ex",
+      "number": "166",
+      "rarity": "Special Illustration Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/166.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 140.61,
+          "mid": 240.0,
+          "high": 499.95,
+          "market": 140.61,
+          "directLow": null
+        },
+        "market": 140.61,
+        "primary_variant": "holofoil",
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": false
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-166",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "price_charting": {
+        "loose": 104.32,
+        "new": 67.14,
+        "graded": 122.18,
+        "graded_variants": {
+          "bgs-10": 400.0,
+          "box-only": 134.0,
+          "cib": 60.0,
+          "condition-17": 186.27,
+          "condition-18": 165.0,
+          "gamestop": 0.0,
+          "gamestop-trade": 0.0,
+          "loose": 104.32,
+          "manual-only": 308.03,
+          "new": 67.14
+        },
+        "bgs_grades": {
+          "bgs-10": 400.0
+        }
+      },
+      "arbitrage": {
+        "buy_from": "pricecharting",
+        "buy_price": 104.32,
+        "sell_to": "tcgplayer",
+        "sell_price": 140.61,
+        "net_sell_price": 119.5185,
+        "profit": 14.19850000000001,
+        "profit_margin": 13.610525306748478
+      }
+    },
+    {
+      "id": "sv8pt5-147",
+      "name": "Ceruledge ex",
+      "number": "147",
+      "rarity": "Special Illustration Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/147.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 195.0,
+          "mid": 249.99,
+          "high": 499.95,
+          "market": 238.49,
+          "directLow": null
+        },
+        "market": 238.49,
+        "primary_variant": "holofoil",
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": false
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-147",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "price_charting": {
+        "loose": 185.54,
+        "graded": 242.19,
+        "graded_variants": {
+          "bgs-10": 1170.0,
+          "box-only": 266.0,
+          "condition-17": 350.0,
+          "condition-18": 540.0,
+          "gamestop": 0.0,
+          "gamestop-trade": 0.0,
+          "loose": 185.54,
+          "manual-only": 900.0
+        },
+        "bgs_grades": {
+          "bgs-10": 1170.0
+        }
+      },
+      "arbitrage": {
+        "buy_from": "pricecharting",
+        "buy_price": 185.54,
+        "sell_to": "tcgplayer",
+        "sell_price": 238.49,
+        "net_sell_price": 202.7165,
+        "profit": 16.176500000000004,
+        "profit_margin": 8.71860515252776
+      }
+    },
+    {
+      "id": "sv8pt5-165",
+      "name": "Dragapult ex",
+      "number": "165",
+      "rarity": "Special Illustration Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/165.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 175.0,
+          "mid": 187.05,
+          "high": 499.95,
+          "market": 178.34,
+          "directLow": null
+        },
+        "market": 178.34,
+        "primary_variant": "holofoil",
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": false
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-165",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "price_charting": {
+        "loose": 145.86,
+        "graded": 142.75,
+        "graded_variants": {
+          "bgs-10": 971.0,
+          "box-only": 157.0,
+          "condition-17": 598.0,
+          "condition-18": 448.0,
+          "gamestop": 0.0,
+          "gamestop-trade": 0.0,
+          "loose": 145.86,
+          "manual-only": 747.09
+        },
+        "bgs_grades": {
+          "bgs-10": 971.0
+        }
+      },
+      "arbitrage": {
+        "buy_from": "pricecharting",
+        "buy_price": 145.86,
+        "sell_to": "tcgplayer",
+        "sell_price": 178.34,
+        "net_sell_price": 151.589,
+        "profit": 4.728999999999985,
+        "profit_margin": 3.242150006855879
+      }
+    },
+    {
+      "id": "sv8pt5-155",
+      "name": "Espeon ex",
+      "number": "155",
+      "rarity": "Special Illustration Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/155.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 419.68,
+          "mid": 431.0,
+          "high": 899.95,
+          "market": 428.22,
+          "directLow": null
+        },
+        "market": 428.22,
+        "primary_variant": "holofoil",
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": false
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-155",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "price_charting": {
+        "loose": 358.46,
+        "graded": 396.52,
+        "graded_variants": {
+          "bgs-10": 1625.0,
+          "box-only": 436.0,
+          "condition-17": 810.0,
+          "condition-18": 750.0,
+          "gamestop": 0.0,
+          "gamestop-trade": 0.0,
+          "loose": 358.46,
+          "manual-only": 1250.0
+        },
+        "bgs_grades": {
+          "bgs-10": 1625.0
+        }
+      },
+      "arbitrage": {
+        "buy_from": "pricecharting",
+        "buy_price": 358.46,
+        "sell_to": "tcgplayer",
+        "sell_price": 428.22,
+        "net_sell_price": 363.987,
+        "profit": 4.527000000000044,
+        "profit_margin": 1.2629024158902091
+      }
+    },
+    {
+      "id": "sv8pt5-8",
+      "name": "Whimsicott",
+      "number": "8",
+      "rarity": "Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/8.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 0.01,
+          "mid": 0.1,
+          "high": 10.0,
+          "market": 0.08,
+          "directLow": 0.05
+        },
+        "market": 0.08,
+        "primary_variant": "holofoil",
+        "reverseHolofoil": {
+          "low": 0.04,
+          "mid": 0.16,
+          "high": 4.95,
+          "market": 0.12,
+          "directLow": 0.1
+        },
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": true
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-8",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "arbitrage": null
+    },
+    {
+      "id": "sv8pt5-5",
+      "name": "Leafeon",
+      "number": "5",
+      "rarity": "Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/5.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 0.05,
+          "mid": 0.24,
+          "high": 10.0,
+          "market": 0.23,
+          "directLow": null
+        },
+        "market": 0.23,
+        "primary_variant": "holofoil",
+        "reverseHolofoil": {
+          "low": 0.1,
+          "mid": 0.34,
+          "high": 10.0,
+          "market": 0.3,
+          "directLow": null
+        },
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": true
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-5",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "arbitrage": null
+    },
+    {
+      "id": "sv8pt5-13",
+      "name": "Flareon",
+      "number": "13",
+      "rarity": "Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/13.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 0.02,
+          "mid": 0.25,
+          "high": 8.91,
+          "market": 0.2,
+          "directLow": null
+        },
+        "market": 0.2,
+        "primary_variant": "holofoil",
+        "reverseHolofoil": {
+          "low": 0.01,
+          "mid": 0.45,
+          "high": 6.99,
+          "market": 0.39,
+          "directLow": null
+        },
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": true
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-13",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "arbitrage": null
+    },
+    {
+      "id": "sv8pt5-11",
+      "name": "Hydrapple ex",
+      "number": "11",
+      "rarity": "Double Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/11.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 0.48,
+          "mid": 1.0,
+          "high": 7.95,
+          "market": 0.99,
+          "directLow": null
+        },
+        "market": 0.99,
+        "primary_variant": "holofoil",
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": false
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-11",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "arbitrage": null
+    },
+    {
+      "id": "sv8pt5-12",
+      "name": "Teal Mask Ogerpon ex",
+      "number": "12",
+      "rarity": "Double Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/12.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 2.2,
+          "mid": 3.0,
+          "high": 49.99,
+          "market": 2.9,
+          "directLow": null
+        },
+        "market": 2.9,
+        "primary_variant": "holofoil",
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": false
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-12",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "arbitrage": null
+    },
+    {
+      "id": "sv8pt5-22",
+      "name": "Vaporeon",
+      "number": "22",
+      "rarity": "Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/22.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 0.01,
+          "mid": 0.25,
+          "high": 5.5,
+          "market": 0.25,
+          "directLow": null
+        },
+        "market": 0.25,
+        "primary_variant": "holofoil",
+        "reverseHolofoil": {
+          "low": 0.12,
+          "mid": 0.5,
+          "high": 25.99,
+          "market": 0.33,
+          "directLow": null
+        },
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": true
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-22",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "arbitrage": null
+    },
+    {
+      "id": "sv8pt5-25",
+      "name": "Glaceon",
+      "number": "25",
+      "rarity": "Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/25.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 0.04,
+          "mid": 0.25,
+          "high": 10.0,
+          "market": 0.23,
+          "directLow": null
+        },
+        "market": 0.23,
+        "primary_variant": "holofoil",
+        "reverseHolofoil": {
+          "low": 0.09,
+          "mid": 0.5,
+          "high": 10.0,
+          "market": 0.46,
+          "directLow": null
+        },
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": true
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-25",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "arbitrage": null
+    },
+    {
+      "id": "sv8pt5-31",
+      "name": "Iron Hands ex",
+      "number": "31",
+      "rarity": "Double Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/31.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 1.0,
+          "mid": 2.25,
+          "high": 9.99,
+          "market": 2.23,
+          "directLow": null
+        },
+        "market": 2.23,
+        "primary_variant": "holofoil",
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": false
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-31",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "arbitrage": null
+    },
+    {
+      "id": "sv8pt5-32",
+      "name": "Iron Thorns ex",
+      "number": "32",
+      "rarity": "Double Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/32.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 0.75,
+          "mid": 1.99,
+          "high": 10.0,
+          "market": 1.5,
+          "directLow": null
+        },
+        "market": 1.5,
+        "primary_variant": "holofoil",
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": false
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-32",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "arbitrage": null
+    },
+    {
+      "id": "sv8pt5-33",
+      "name": "Espeon",
+      "number": "33",
+      "rarity": "Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/33.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 0.03,
+          "mid": 0.3,
+          "high": 10.0,
+          "market": 0.42,
+          "directLow": null
+        },
+        "market": 0.42,
+        "primary_variant": "holofoil",
+        "reverseHolofoil": {
+          "low": 0.1,
+          "mid": 0.5,
+          "high": 10.0,
+          "market": 0.55,
+          "directLow": null
+        },
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": true
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-33",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "arbitrage": null
+    },
+    {
+      "id": "sv8pt5-26",
+      "name": "Glaceon ex",
+      "number": "26",
+      "rarity": "Double Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/26.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 3.68,
+          "mid": 4.92,
+          "high": 17.95,
+          "market": 4.46,
+          "directLow": null
+        },
+        "market": 4.46,
+        "primary_variant": "holofoil",
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": false
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-26",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "arbitrage": null
+    },
+    {
+      "id": "sv8pt5-28",
+      "name": "Pikachu ex",
+      "number": "28",
+      "rarity": "Double Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/28.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 1.09,
+          "mid": 2.0,
+          "high": 15.98,
+          "market": 1.73,
+          "directLow": null
+        },
+        "market": 1.73,
+        "primary_variant": "holofoil",
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": false
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-28",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "arbitrage": null
+    },
+    {
+      "id": "sv8pt5-17",
+      "name": "Hearthflame Mask Ogerpon ex",
+      "number": "17",
+      "rarity": "Double Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/17.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 0.25,
+          "mid": 0.8,
+          "high": 5.91,
+          "market": 0.64,
+          "directLow": null
+        },
+        "market": 0.64,
+        "primary_variant": "holofoil",
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": false
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-17",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "arbitrage": null
+    },
+    {
+      "id": "sv8pt5-27",
+      "name": "Wellspring Mask Ogerpon ex",
+      "number": "27",
+      "rarity": "Double Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/27.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 0.47,
+          "mid": 1.0,
+          "high": 7.95,
+          "market": 0.94,
+          "directLow": null
+        },
+        "market": 0.94,
+        "primary_variant": "holofoil",
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": false
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-27",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "arbitrage": null
+    },
+    {
+      "id": "sv8pt5-29",
+      "name": "Jolteon",
+      "number": "29",
+      "rarity": "Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/29.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 0.04,
+          "mid": 0.24,
+          "high": 10.0,
+          "market": 0.21,
+          "directLow": null
+        },
+        "market": 0.21,
+        "primary_variant": "holofoil",
+        "reverseHolofoil": {
+          "low": 0.05,
+          "mid": 0.35,
+          "high": 4.95,
+          "market": 0.33,
+          "directLow": null
+        },
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": true
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-29",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "arbitrage": null
+    },
+    {
+      "id": "sv8pt5-34",
+      "name": "Espeon ex",
+      "number": "34",
+      "rarity": "Double Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/34.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 4.0,
+          "mid": 5.75,
+          "high": 20.0,
+          "market": 4.88,
+          "directLow": null
+        },
+        "market": 4.88,
+        "primary_variant": "holofoil",
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": false
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-34",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "arbitrage": null
+    },
+    {
+      "id": "sv8pt5-45",
+      "name": "Fezandipiti",
+      "number": "45",
+      "rarity": "Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/45.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 0.01,
+          "mid": 0.11,
+          "high": 10.0,
+          "market": 0.08,
+          "directLow": 0.08
+        },
+        "market": 0.08,
+        "primary_variant": "holofoil",
+        "reverseHolofoil": {
+          "low": 0.06,
+          "mid": 0.24,
+          "high": 5.0,
+          "market": 0.18,
+          "directLow": 0.15
+        },
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": true
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-45",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "arbitrage": null
+    },
+    {
+      "id": "sv8pt5-46",
+      "name": "Iron Boulder",
+      "number": "46",
+      "rarity": "Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/46.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 0.01,
+          "mid": 0.13,
+          "high": 10.0,
+          "market": 0.1,
+          "directLow": 0.09
+        },
+        "market": 0.1,
+        "primary_variant": "holofoil",
+        "reverseHolofoil": {
+          "low": 0.1,
+          "mid": 0.3,
+          "high": 4.95,
+          "market": 0.27,
+          "directLow": 0.15
+        },
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": true
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-46",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "arbitrage": null
+    },
+    {
+      "id": "sv8pt5-43",
+      "name": "Flutter Mane",
+      "number": "43",
+      "rarity": "Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/43.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 0.03,
+          "mid": 0.15,
+          "high": 4.95,
+          "market": 0.12,
+          "directLow": null
+        },
+        "market": 0.12,
+        "primary_variant": "holofoil",
+        "reverseHolofoil": {
+          "low": 0.07,
+          "mid": 0.25,
+          "high": 4.95,
+          "market": 0.25,
+          "directLow": 0.22
+        },
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": true
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-43",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "arbitrage": null
+    },
+    {
+      "id": "sv8pt5-41",
+      "name": "Sylveon ex",
+      "number": "41",
+      "rarity": "Double Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/41.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 3.5,
+          "mid": 4.48,
+          "high": 14.95,
+          "market": 4.03,
+          "directLow": null
+        },
+        "market": 4.03,
+        "primary_variant": "holofoil",
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": false
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-41",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "arbitrage": null
+    },
+    {
+      "id": "sv8pt5-37",
+      "name": "Dusknoir",
+      "number": "37",
+      "rarity": "Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/37.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 0.1,
+          "mid": 0.3,
+          "high": 10.0,
+          "market": 0.35,
+          "directLow": null
+        },
+        "market": 0.35,
+        "primary_variant": "holofoil",
+        "reverseHolofoil": {
+          "low": 0.12,
+          "mid": 0.5,
+          "high": 4.95,
+          "market": 0.36,
+          "directLow": null
+        },
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": true
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-37",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "arbitrage": null
+    },
+    {
+      "id": "sv8pt5-40",
+      "name": "Sylveon",
+      "number": "40",
+      "rarity": "Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/40.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 0.01,
+          "mid": 0.29,
+          "high": 10.0,
+          "market": 0.32,
+          "directLow": null
+        },
+        "market": 0.32,
+        "primary_variant": "holofoil",
+        "reverseHolofoil": {
+          "low": 0.1,
+          "mid": 0.48,
+          "high": 15.0,
+          "market": 0.38,
+          "directLow": null
+        },
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": true
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-40",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "arbitrage": null
+    },
+    {
+      "id": "sv8pt5-44",
+      "name": "Munkidori",
+      "number": "44",
+      "rarity": "Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/44.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 0.05,
+          "mid": 0.25,
+          "high": 10.0,
+          "market": 0.49,
+          "directLow": null
+        },
+        "market": 0.49,
+        "primary_variant": "holofoil",
+        "reverseHolofoil": {
+          "low": 0.1,
+          "mid": 0.35,
+          "high": 4.95,
+          "market": 0.34,
+          "directLow": null
+        },
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": true
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-44",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "arbitrage": null
+    },
+    {
+      "id": "sv8pt5-49",
+      "name": "Groudon",
+      "number": "49",
+      "rarity": "Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/49.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 0.01,
+          "mid": 0.12,
+          "high": 4.95,
+          "market": 0.1,
+          "directLow": 0.09
+        },
+        "market": 0.1,
+        "primary_variant": "holofoil",
+        "reverseHolofoil": {
+          "low": 0.02,
+          "mid": 0.24,
+          "high": 10.0,
+          "market": 0.24,
+          "directLow": 0.19
+        },
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": true
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-49",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "arbitrage": null
+    },
+    {
+      "id": "sv8pt5-56",
+      "name": "Sandy Shocks ex",
+      "number": "56",
+      "rarity": "Double Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/56.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 0.15,
+          "mid": 0.75,
+          "high": 5.0,
+          "market": 0.55,
+          "directLow": null
+        },
+        "market": 0.55,
+        "primary_variant": "holofoil",
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": false
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-56",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "arbitrage": null
+    },
+    {
+      "id": "sv8pt5-59",
+      "name": "Umbreon",
+      "number": "59",
+      "rarity": "Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/59.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 0.01,
+          "mid": 0.44,
+          "high": 19.99,
+          "market": 0.29,
+          "directLow": null
+        },
+        "market": 0.29,
+        "primary_variant": "holofoil",
+        "reverseHolofoil": {
+          "low": 0.74,
+          "mid": 1.25,
+          "high": 39.99,
+          "market": 1.08,
+          "directLow": null
+        },
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": true
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-59",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "arbitrage": null
+    },
+    {
+      "id": "sv8pt5-51",
+      "name": "Lucario ex",
+      "number": "51",
+      "rarity": "Double Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/51.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 0.49,
+          "mid": 1.08,
+          "high": 7.95,
+          "market": 1.08,
+          "directLow": null
+        },
+        "market": 1.08,
+        "primary_variant": "holofoil",
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": false
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-51",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "arbitrage": null
+    },
+    {
+      "id": "sv8pt5-57",
+      "name": "Okidogi",
+      "number": "57",
+      "rarity": "Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/57.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 0.01,
+          "mid": 0.11,
+          "high": 10.0,
+          "market": 0.1,
+          "directLow": 0.09
+        },
+        "market": 0.1,
+        "primary_variant": "holofoil",
+        "reverseHolofoil": {
+          "low": 0.05,
+          "mid": 0.2,
+          "high": 4.95,
+          "market": 0.17,
+          "directLow": 0.17
+        },
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": true
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-57",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "arbitrage": null
+    },
+    {
+      "id": "sv8pt5-54",
+      "name": "Bloodmoon Ursaluna",
+      "number": "54",
+      "rarity": "Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/54.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 0.01,
+          "mid": 0.13,
+          "high": 10.0,
+          "market": 0.1,
+          "directLow": 0.1
+        },
+        "market": 0.1,
+        "primary_variant": "holofoil",
+        "reverseHolofoil": {
+          "low": 0.07,
+          "mid": 0.23,
+          "high": 25.0,
+          "market": 0.19,
+          "directLow": null
+        },
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": true
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-54",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "arbitrage": null
+    },
+    {
+      "id": "sv8pt5-58",
+      "name": "Cornerstone Mask Ogerpon ex",
+      "number": "58",
+      "rarity": "Double Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/58.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 0.4,
+          "mid": 1.0,
+          "high": 14.0,
+          "market": 0.97,
+          "directLow": null
+        },
+        "market": 0.97,
+        "primary_variant": "holofoil",
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": false
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-58",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "arbitrage": null
+    },
+    {
+      "id": "sv8pt5-64",
+      "name": "Tyranitar ex",
+      "number": "64",
+      "rarity": "Double Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/64.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 0.5,
+          "mid": 1.31,
+          "high": 7.95,
+          "market": 1.18,
+          "directLow": null
+        },
+        "market": 1.18,
+        "primary_variant": "holofoil",
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": false
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-64",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "arbitrage": null
+    },
+    {
+      "id": "sv8pt5-65",
+      "name": "Roaring Moon",
+      "number": "65",
+      "rarity": "Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/65.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 0.01,
+          "mid": 0.15,
+          "high": 10.0,
+          "market": 0.12,
+          "directLow": null
+        },
+        "market": 0.12,
+        "primary_variant": "holofoil",
+        "reverseHolofoil": {
+          "low": 0.14,
+          "mid": 0.35,
+          "high": 4.95,
+          "market": 0.35,
+          "directLow": null
+        },
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": true
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-65",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "arbitrage": null
+    },
+    {
+      "id": "sv8pt5-70",
+      "name": "Archaludon",
+      "number": "70",
+      "rarity": "Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/70.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 0.01,
+          "mid": 0.11,
+          "high": 10.0,
+          "market": 0.08,
+          "directLow": 0.09
+        },
+        "market": 0.08,
+        "primary_variant": "holofoil",
+        "reverseHolofoil": {
+          "low": 0.05,
+          "mid": 0.23,
+          "high": 4.95,
+          "market": 0.16,
+          "directLow": 0.17
+        },
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": true
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-70",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "arbitrage": null
+    },
+    {
+      "id": "sv8pt5-73",
+      "name": "Dragapult ex",
+      "number": "73",
+      "rarity": "Double Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/73.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 3.48,
+          "mid": 5.32,
+          "high": 17.95,
+          "market": 4.96,
+          "directLow": null
+        },
+        "market": 4.96,
+        "primary_variant": "holofoil",
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": false
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-73",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "arbitrage": null
+    },
+    {
+      "id": "sv8pt5-76",
+      "name": "Snorlax ex",
+      "number": "76",
+      "rarity": "Double Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/76.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 1.38,
+          "mid": 2.01,
+          "high": 10.0,
+          "market": 1.97,
+          "directLow": null
+        },
+        "market": 1.97,
+        "primary_variant": "holofoil",
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": false
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-76",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "arbitrage": null
+    },
+    {
+      "id": "sv8pt5-78",
+      "name": "Noctowl",
+      "number": "78",
+      "rarity": "Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/78.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 0.01,
+          "mid": 0.2,
+          "high": 4.95,
+          "market": 0.18,
+          "directLow": null
+        },
+        "market": 0.18,
+        "primary_variant": "holofoil",
+        "reverseHolofoil": {
+          "low": 0.07,
+          "mid": 0.25,
+          "high": 10.0,
+          "market": 0.22,
+          "directLow": null
+        },
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": true
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-78",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "arbitrage": null
+    },
+    {
+      "id": "sv8pt5-80",
+      "name": "Dudunsparce",
+      "number": "80",
+      "rarity": "Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/80.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 0.01,
+          "mid": 0.18,
+          "high": 25.0,
+          "market": 0.16,
+          "directLow": null
+        },
+        "market": 0.16,
+        "primary_variant": "holofoil",
+        "reverseHolofoil": {
+          "low": 0.02,
+          "mid": 0.25,
+          "high": 4.95,
+          "market": 0.19,
+          "directLow": null
+        },
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": true
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-80",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "arbitrage": null
+    },
+    {
+      "id": "sv8pt5-82",
+      "name": "Lugia ex",
+      "number": "82",
+      "rarity": "Double Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/82.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 0.99,
+          "mid": 1.99,
+          "high": 20.0,
+          "market": 1.62,
+          "directLow": null
+        },
+        "market": 1.62,
+        "primary_variant": "holofoil",
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": false
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-82",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "arbitrage": null
+    },
+    {
+      "id": "sv8pt5-91",
+      "name": "Noivern ex",
+      "number": "91",
+      "rarity": "Double Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/91.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 0.35,
+          "mid": 0.89,
+          "high": 10.0,
+          "market": 0.88,
+          "directLow": null
+        },
+        "market": 0.88,
+        "primary_variant": "holofoil",
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": false
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-91",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "arbitrage": null
+    },
+    {
+      "id": "sv8pt5-92",
+      "name": "Terapagos ex",
+      "number": "92",
+      "rarity": "Double Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/92.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 1.95,
+          "mid": 2.6,
+          "high": 9.95,
+          "market": 2.39,
+          "directLow": null
+        },
+        "market": 2.39,
+        "primary_variant": "holofoil",
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": false
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-92",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "arbitrage": null
+    },
+    {
+      "id": "sv8pt5-119",
+      "name": "Prime Catcher",
+      "number": "119",
+      "rarity": "ACE SPEC Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/119.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 1.81,
+          "mid": 3.12,
+          "high": 29.0,
+          "market": 2.64,
+          "directLow": 2.86
+        },
+        "market": 2.64,
+        "primary_variant": "holofoil",
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": false
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-119",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "arbitrage": null
+    },
+    {
+      "id": "sv8pt5-116",
+      "name": "Max Rod",
+      "number": "116",
+      "rarity": "ACE SPEC Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/116.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 2.39,
+          "mid": 3.65,
+          "high": 18.99,
+          "market": 4.46,
+          "directLow": 4.0
+        },
+        "market": 4.46,
+        "primary_variant": "holofoil",
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": false
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-116",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "arbitrage": null
+    },
+    {
+      "id": "sv8pt5-117",
+      "name": "Maximum Belt",
+      "number": "117",
+      "rarity": "ACE SPEC Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/117.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 0.25,
+          "mid": 0.95,
+          "high": 11.0,
+          "market": 0.91,
+          "directLow": null
+        },
+        "market": 0.91,
+        "primary_variant": "holofoil",
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": false
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-117",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "arbitrage": null
+    },
+    {
+      "id": "sv8pt5-128",
+      "name": "Scoop Up Cyclone",
+      "number": "128",
+      "rarity": "ACE SPEC Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/128.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 0.2,
+          "mid": 0.6,
+          "high": 18.0,
+          "market": 0.59,
+          "directLow": null
+        },
+        "market": 0.59,
+        "primary_variant": "holofoil",
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": false
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-128",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "arbitrage": null
+    },
+    {
+      "id": "sv8pt5-129",
+      "name": "Sparkling Crystal",
+      "number": "129",
+      "rarity": "ACE SPEC Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/129.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 0.5,
+          "mid": 1.0,
+          "high": 9.0,
+          "market": 1.12,
+          "directLow": null
+        },
+        "market": 1.12,
+        "primary_variant": "holofoil",
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": false
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-129",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "arbitrage": null
+    },
+    {
+      "id": "sv8pt5-131",
+      "name": "Treasure Tracker",
+      "number": "131",
+      "rarity": "ACE SPEC Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/131.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 0.09,
+          "mid": 1.0,
+          "high": 1025.0,
+          "market": 0.76,
+          "directLow": null
+        },
+        "market": 0.76,
+        "primary_variant": "holofoil",
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": false
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-131",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "arbitrage": null
+    },
+    {
+      "id": "sv8pt5-135",
+      "name": "Brassius",
+      "number": "135",
+      "rarity": "Ultra Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/135.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 0.93,
+          "mid": 1.52,
+          "high": 15.0,
+          "market": 1.24,
+          "directLow": null
+        },
+        "market": 1.24,
+        "primary_variant": "holofoil",
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": false
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-135",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "arbitrage": null
+    },
+    {
+      "id": "sv8pt5-133",
+      "name": "Atticus",
+      "number": "133",
+      "rarity": "Ultra Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/133.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 1.0,
+          "mid": 2.0,
+          "high": 10.99,
+          "market": 1.69,
+          "directLow": null
+        },
+        "market": 1.69,
+        "primary_variant": "holofoil",
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": false
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-133",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "arbitrage": null
+    },
+    {
+      "id": "sv8pt5-134",
+      "name": "Atticus",
+      "number": "134",
+      "rarity": "Ultra Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/134.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 0.5,
+          "mid": 1.59,
+          "high": 19.99,
+          "market": 1.49,
+          "directLow": null
+        },
+        "market": 1.49,
+        "primary_variant": "holofoil",
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": false
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-134",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "arbitrage": null
+    },
+    {
+      "id": "sv8pt5-132",
+      "name": "Amarys",
+      "number": "132",
+      "rarity": "Ultra Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/132.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 0.5,
+          "mid": 1.73,
+          "high": 10.0,
+          "market": 1.22,
+          "directLow": null
+        },
+        "market": 1.22,
+        "primary_variant": "holofoil",
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": false
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-132",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "arbitrage": null
+    },
+    {
+      "id": "sv8pt5-137",
+      "name": "Friends in Paldea",
+      "number": "137",
+      "rarity": "Ultra Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/137.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 2.5,
+          "mid": 4.07,
+          "high": 30.0,
+          "market": 3.88,
+          "directLow": null
+        },
+        "market": 3.88,
+        "primary_variant": "holofoil",
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": false
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-137",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "arbitrage": null
+    },
+    {
+      "id": "sv8pt5-136",
+      "name": "Eri",
+      "number": "136",
+      "rarity": "Ultra Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/136.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 4.0,
+          "mid": 6.0,
+          "high": 22.0,
+          "market": 5.02,
+          "directLow": null
+        },
+        "market": 5.02,
+        "primary_variant": "holofoil",
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": false
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-136",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "price_charting": {
+        "loose": 5.97,
+        "graded": 39.0,
+        "graded_variants": {
+          "bgs-10": 78.0,
+          "box-only": 43.0,
+          "condition-17": 12.5,
+          "condition-18": 36.0,
+          "gamestop": 0.0,
+          "gamestop-trade": 0.0,
+          "loose": 5.97,
+          "manual-only": 60.34
+        },
+        "bgs_grades": {
+          "bgs-10": 78.0
+        }
+      },
+      "arbitrage": null
+    },
+    {
+      "id": "sv8pt5-138",
+      "name": "Giacomo",
+      "number": "138",
+      "rarity": "Ultra Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/138.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 0.6,
+          "mid": 1.25,
+          "high": 19.99,
+          "market": 1.19,
+          "directLow": null
+        },
+        "market": 1.19,
+        "primary_variant": "holofoil",
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": false
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-138",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "arbitrage": null
+    },
+    {
+      "id": "sv8pt5-139",
+      "name": "Larry's Skill",
+      "number": "139",
+      "rarity": "Ultra Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/139.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 1.0,
+          "mid": 2.0,
+          "high": 19.99,
+          "market": 1.65,
+          "directLow": null
+        },
+        "market": 1.65,
+        "primary_variant": "holofoil",
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": false
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-139",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "arbitrage": null
+    },
+    {
+      "id": "sv8pt5-140",
+      "name": "Mela",
+      "number": "140",
+      "rarity": "Ultra Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/140.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 1.49,
+          "mid": 3.0,
+          "high": 19.99,
+          "market": 2.38,
+          "directLow": null
+        },
+        "market": 2.38,
+        "primary_variant": "holofoil",
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": false
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-140",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "arbitrage": null
+    },
+    {
+      "id": "sv8pt5-141",
+      "name": "Ortega",
+      "number": "141",
+      "rarity": "Ultra Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/141.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 0.7,
+          "mid": 1.52,
+          "high": 15.0,
+          "market": 1.29,
+          "directLow": null
+        },
+        "market": 1.29,
+        "primary_variant": "holofoil",
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": false
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-141",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "arbitrage": null
+    },
+    {
+      "id": "sv8pt5-142",
+      "name": "Raifort",
+      "number": "142",
+      "rarity": "Ultra Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/142.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 1.5,
+          "mid": 2.87,
+          "high": 22.0,
+          "market": 2.16,
+          "directLow": null
+        },
+        "market": 2.16,
+        "primary_variant": "holofoil",
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": false
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-142",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "arbitrage": null
+    },
+    {
+      "id": "sv8pt5-143",
+      "name": "Tyme",
+      "number": "143",
+      "rarity": "Ultra Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/143.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 0.38,
+          "mid": 1.07,
+          "high": 7.95,
+          "market": 0.97,
+          "directLow": null
+        },
+        "market": 0.97,
+        "primary_variant": "holofoil",
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": false
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-143",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "arbitrage": null
+    },
+    {
+      "id": "sv8pt5-144",
+      "name": "Leafeon ex",
+      "number": "144",
+      "rarity": "Special Illustration Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/144.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 419.99,
+          "mid": 499.0,
+          "high": 899.95,
+          "market": 367.04,
+          "directLow": 687.87
+        },
+        "market": 367.04,
+        "primary_variant": "holofoil",
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": false
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-144",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "price_charting": {
+        "loose": 348.22,
+        "new": 290.0,
+        "graded": 357.76,
+        "graded_variants": {
+          "bgs-10": 1483.0,
+          "box-only": 394.0,
+          "condition-17": 144.22,
+          "condition-18": 684.0,
+          "gamestop": 0.0,
+          "gamestop-trade": 0.0,
+          "loose": 348.22,
+          "manual-only": 1140.79,
+          "new": 290.0
+        },
+        "bgs_grades": {
+          "bgs-10": 1483.0
+        }
+      },
+      "arbitrage": null
+    },
+    {
+      "id": "sv8pt5-153",
+      "name": "Jolteon ex",
+      "number": "153",
+      "rarity": "Special Illustration Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/153.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 278.4,
+          "mid": 310.0,
+          "high": 899.95,
+          "market": 292.2,
+          "directLow": null
+        },
+        "market": 292.2,
+        "primary_variant": "holofoil",
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": false
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-153",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "price_charting": {
+        "loose": 254.27,
+        "graded": 280.99,
+        "graded_variants": {
+          "bgs-10": 1437.0,
+          "box-only": 309.0,
+          "condition-17": 153.89,
+          "condition-18": 663.0,
+          "gamestop": 0.0,
+          "gamestop-trade": 0.0,
+          "loose": 254.27,
+          "manual-only": 1105.0
+        },
+        "bgs_grades": {
+          "bgs-10": 1437.0
+        }
+      },
+      "arbitrage": null
+    },
+    {
+      "id": "sv8pt5-150",
+      "name": "Glaceon ex",
+      "number": "150",
+      "rarity": "Special Illustration Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/150.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 299.0,
+          "mid": 369.72,
+          "high": 799.95,
+          "market": 330.11,
+          "directLow": null
+        },
+        "market": 330.11,
+        "primary_variant": "holofoil",
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": false
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-150",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "price_charting": {
+        "loose": 318.5,
+        "new": 237.5,
+        "graded": 327.5,
+        "graded_variants": {
+          "bgs-10": 1609.0,
+          "box-only": 360.0,
+          "condition-17": 170.97,
+          "condition-18": 743.0,
+          "gamestop": 0.0,
+          "gamestop-trade": 0.0,
+          "loose": 318.5,
+          "manual-only": 1237.5,
+          "new": 237.5
+        },
+        "bgs_grades": {
+          "bgs-10": 1609.0
+        }
+      },
+      "arbitrage": null
+    },
+    {
+      "id": "sv8pt5-149",
+      "name": "Vaporeon ex",
+      "number": "149",
+      "rarity": "Special Illustration Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/149.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 299.99,
+          "mid": 344.97,
+          "high": 799.95,
+          "market": 314.56,
+          "directLow": null
+        },
+        "market": 314.56,
+        "primary_variant": "holofoil",
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": false
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-149",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "price_charting": {
+        "loose": 286.68,
+        "graded": 336.79,
+        "graded_variants": {
+          "bgs-10": 683.0,
+          "box-only": 370.0,
+          "condition-17": 420.0,
+          "condition-18": 315.0,
+          "gamestop": 0.0,
+          "gamestop-trade": 0.0,
+          "loose": 286.68,
+          "manual-only": 525.0
+        },
+        "bgs_grades": {
+          "bgs-10": 683.0
+        }
+      },
+      "arbitrage": null
+    },
+    {
+      "id": "sv8pt5-156",
+      "name": "Sylveon ex",
+      "number": "156",
+      "rarity": "Special Illustration Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/156.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 474.0,
+          "mid": 500.0,
+          "high": 899.95,
+          "market": 473.1,
+          "directLow": 499.99
+        },
+        "market": 473.1,
+        "primary_variant": "holofoil",
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": false
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-156",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "price_charting": {
+        "loose": 435.0,
+        "graded": 474.4,
+        "graded_variants": {
+          "bgs-10": 2168.0,
+          "box-only": 522.0,
+          "condition-17": 234.96,
+          "condition-18": 1001.0,
+          "gamestop": 0.0,
+          "gamestop-trade": 0.0,
+          "loose": 435.0,
+          "manual-only": 1668.07
+        },
+        "bgs_grades": {
+          "bgs-10": 2168.0
+        }
+      },
+      "arbitrage": null
+    },
+    {
+      "id": "sv8pt5-158",
+      "name": "Iron Crown ex",
+      "number": "158",
+      "rarity": "Special Illustration Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/158.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 69.0,
+          "mid": 84.83,
+          "high": 199.95,
+          "market": 63.22,
+          "directLow": 81.58
+        },
+        "market": 63.22,
+        "primary_variant": "holofoil",
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": false
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-158",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "price_charting": {
+        "loose": 73.16,
+        "new": 54.99,
+        "graded": 64.11,
+        "graded_variants": {
+          "bgs-10": 270.0,
+          "box-only": 89.95,
+          "condition-17": 100.28,
+          "condition-18": 139.0,
+          "gamestop": 0.0,
+          "gamestop-trade": 0.0,
+          "loose": 73.16,
+          "manual-only": 207.5,
+          "new": 54.99
+        },
+        "bgs_grades": {
+          "bgs-10": 270.0
+        }
+      },
+      "arbitrage": null
+    },
+    {
+      "id": "sv8pt5-161",
+      "name": "Umbreon ex",
+      "number": "161",
+      "rarity": "Special Illustration Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/161.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 1594.0,
+          "mid": 1776.53,
+          "high": 3000.0,
+          "market": 1594.56,
+          "directLow": null
+        },
+        "market": 1594.56,
+        "primary_variant": "holofoil",
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": false
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-161",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "price_charting": {
+        "loose": 1397.52,
+        "new": 1268.12,
+        "graded": 1402.5,
+        "graded_variants": {
+          "bgs-10": 4258.0,
+          "box-only": 1543.0,
+          "condition-17": 506.04,
+          "condition-18": 1965.0,
+          "gamestop": 0.0,
+          "gamestop-trade": 0.0,
+          "loose": 1397.52,
+          "manual-only": 3275.0,
+          "new": 1268.12
+        },
+        "bgs_grades": {
+          "bgs-10": 4258.0
+        }
+      },
+      "arbitrage": null
+    },
+    {
+      "id": "sv8pt5-167",
+      "name": "Eevee ex",
+      "number": "167",
+      "rarity": "Special Illustration Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/167.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 220.83,
+          "mid": 230.0,
+          "high": 348.0,
+          "market": 220.95,
+          "directLow": null
+        },
+        "market": 220.95,
+        "primary_variant": "holofoil",
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": false
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-167",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "price_charting": {
+        "loose": 198.59,
+        "new": 127.5,
+        "graded": 202.5,
+        "graded_variants": {
+          "bgs-10": 1038.0,
+          "box-only": 223.0,
+          "condition-17": 99.61,
+          "condition-18": 479.0,
+          "gamestop": 0.0,
+          "gamestop-trade": 0.0,
+          "loose": 198.59,
+          "manual-only": 798.47,
+          "new": 127.5
+        },
+        "bgs_grades": {
+          "bgs-10": 1038.0
+        }
+      },
+      "arbitrage": null
+    },
+    {
+      "id": "sv8pt5-169",
+      "name": "Terapagos ex",
+      "number": "169",
+      "rarity": "Special Illustration Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/169.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 71.0,
+          "mid": 90.0,
+          "high": 174.95,
+          "market": 72.21,
+          "directLow": null
+        },
+        "market": 72.21,
+        "primary_variant": "holofoil",
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": false
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-169",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "price_charting": {
+        "loose": 77.05,
+        "new": 66.0,
+        "graded": 66.62,
+        "graded_variants": {
+          "bgs-10": 325.0,
+          "box-only": 75.5,
+          "condition-17": 106.36,
+          "condition-18": 164.99,
+          "gamestop": 0.0,
+          "gamestop-trade": 0.0,
+          "loose": 77.05,
+          "manual-only": 250.25,
+          "new": 66.0
+        },
+        "bgs_grades": {
+          "bgs-10": 325.0
+        }
+      },
+      "arbitrage": null
+    },
+    {
+      "id": "sv8pt5-177",
+      "name": "Teal Mask Ogerpon ex",
+      "number": "177",
+      "rarity": "Hyper Rare",
+      "image": "https://images.pokemontcg.io/sv8pt5/177.png",
+      "tcgplayer": {
+        "holofoil": {
+          "low": 16.0,
+          "mid": 19.86,
+          "high": 44.95,
+          "market": 17.36,
+          "directLow": null
+        },
+        "market": 17.36,
+        "primary_variant": "holofoil",
+        "is_holofoil": true,
+        "is_first_edition": false,
+        "is_reverse_holo": false
+      },
+      "tcgplayer_url": "https://prices.pokemontcg.io/tcgplayer/sv8pt5-177",
+      "cardmarket": {},
+      "cardmarket_url": "",
+      "price_charting": {
+        "loose": 20.51,
+        "new": 21.07,
+        "graded": 23.7,
+        "graded_variants": {
+          "bgs-10": 87.0,
+          "box-only": 39.99,
+          "condition-17": 49.7,
+          "condition-18": 40.0,
+          "gamestop": 0.0,
+          "gamestop-trade": 0.0,
+          "loose": 20.51,
+          "manual-only": 67.3,
+          "new": 21.07
+        },
+        "bgs_grades": {
+          "bgs-10": 87.0
+        }
+      },
+      "arbitrage": null
+    }
+  ]
+}
