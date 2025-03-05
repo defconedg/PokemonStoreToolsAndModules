@@ -91,39 +91,87 @@ class PokemonTCGClient:
             
     def extract_card_variants(self, card_data: Dict[str, Any]) -> tuple:
         """
-        Extract and normalize pricing variants for a card
-        """
-        if 'tcgplayer' not in card_data:
-            return None, None
+        Extract and normalize pricing variants from TCGPlayer data
+        
+        Args:
+            card_data: Card data from Pokemon TCG API
             
-        tcgplayer = card_data.get('tcgplayer', {})
-        prices = tcgplayer.get('prices', {})
-        url = tcgplayer.get('url', '')
-        
-        # Create standardized structure
-        result = {}
-        
-        # All possible price variants based on Pokemon TCG API documentation
-        price_variants = [
-            'normal', 'holofoil', '1stEditionHolofoil', '1stEditionNormal',
-            'unlimited', 'unlimitedHolofoil', 'reverseHolofoil'
-        ]
-        
-        # Find prices for all variants
-        for variant in price_variants:
-            if variant in prices:
-                variant_data = prices[variant]
-                # Store the variant's prices
-                result[variant] = variant_data
+        Returns:
+            tuple: (prices_dict, tcgplayer_url)
+        """
+        try:
+            tcgplayer = card_data.get('tcgplayer', {})
+            prices = {}
+            url = tcgplayer.get('url', '')
+            
+            if not tcgplayer or not tcgplayer.get('prices'):
+                # Build a fallback URL if none exists
+                set_name = card_data.get('set', {}).get('name', '').replace(' ', '-').lower()
+                card_name = card_data.get('name', '').replace(' ', '-').lower()
+                url = f"https://www.tcgplayer.com/search/pokemon/{set_name}?q={card_name}"
+                return {}, url
                 
-                # Set main market price if not already set
-                if 'market' not in result and 'market' in variant_data:
-                    result['market'] = variant_data['market']
-                    result['primary_variant'] = variant
-                    
-        # Additional metadata about the card's printing
-        result['is_holofoil'] = any('holo' in v.lower() for v in prices.keys())
-        result['is_first_edition'] = any('1st' in v for v in prices.keys())
-        result['is_reverse_holo'] = 'reverseHolofoil' in prices
+            # Extract pricing variants
+            tcg_prices = tcgplayer.get('prices', {})
+            
+            # Store condition information to help with arbitrage
+            prices['condition_info'] = {
+                'source': 'TCGPlayer',
+                'preferred_condition': 'Near Mint',
+                'available_conditions': []
+            }
+            
+            # Identify the primary variant (normal, holofoil, reverse holofoil, etc.)
+            primary_variant = None
+            has_holofoil = 'holofoil' in tcg_prices
+            has_reverse_holo = 'reverseHolofoil' in tcg_prices
+            has_normal = 'normal' in tcg_prices
+            has_1st_edition = '1stEditionHolofoil' in tcg_prices
+            
+            if has_holofoil:
+                primary_variant = 'holofoil'
+                prices['is_holofoil'] = True
+            elif has_reverse_holo:
+                primary_variant = 'reverseHolofoil'
+                prices['is_reverse_holo'] = True
+            elif has_normal:
+                primary_variant = 'normal'
+            elif has_1st_edition:
+                primary_variant = '1stEditionHolofoil'
+                prices['is_first_edition'] = True
+            
+            # Add info about which variants are available
+            prices['primary_variant'] = primary_variant
+            prices['available_variants'] = list(tcg_prices.keys())
+            
+            # Process each variant's pricing data
+            for variant, variant_prices in tcg_prices.items():
+                # For each variant, we store its complete price data
+                prices[variant] = variant_prices
+                prices['condition_info']['available_conditions'].append(variant)
+                
+                # If this is the primary variant, extract its pricing for top-level access
+                if primary_variant and variant == primary_variant:
+                    # Always prioritize Near Mint pricing (high price) for arbitrage
+                    # Market price is an average of recent sales across conditions
+                    if 'high' in variant_prices:
+                        prices['near_mint'] = variant_prices['high']
+                        
+                    # Add other metrics, but flag the primary one for arbitrage
+                    for price_type in ['market', 'low', 'mid', 'high']:
+                        if price_type in variant_prices:
+                            prices[price_type] = variant_prices[price_type]
+            
+            # If near_mint price isn't available (no high price), use market as fallback
+            if 'market' in prices and 'near_mint' not in prices:
+                prices['near_mint'] = prices['market']
+                prices['condition_info']['note'] = 'Using market price as Near Mint substitute'
+            
+            # Flag if we have reliable Near Mint pricing
+            prices['has_near_mint_price'] = 'near_mint' in prices
+            
+            return prices, url
         
-        return result, url
+        except Exception as e:
+            logging.error(f"Error extracting TCGPlayer variants: {str(e)}")
+            return {}, ""

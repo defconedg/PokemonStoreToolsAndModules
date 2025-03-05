@@ -1,268 +1,588 @@
-2025-03-03 20:42:34,883 [INFO] - Clearing expired cache files...
-2025-03-03 20:42:34,890 [INFO] - Cleared 0 expired cache files
-2025-03-03 20:42:34,917 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+2025-03-04 20:05:54,787 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on all addresses (0.0.0.0)
  * Running on http://127.0.0.1:5000
  * Running on http://192.168.0.113:5000
-2025-03-03 20:42:34,917 [INFO] - [33mPress CTRL+C to quit[0m
-2025-03-03 20:42:34,935 [INFO] -  * Restarting with watchdog (windowsapi)
-2025-03-03 20:42:36,922 [INFO] - Clearing expired cache files...
-2025-03-03 20:42:36,930 [INFO] - Cleared 0 expired cache files
-2025-03-03 20:42:36,949 [WARNING] -  * Debugger is active!
-2025-03-03 20:42:36,969 [INFO] -  * Debugger PIN: 497-044-917
-2025-03-03 20:42:37,196 [INFO] -  * Detected change in 'C:\\Users\\defco\\PokemonStoreToolsAndModules\\example_usage.py', reloading
-2025-03-03 20:42:37,203 [INFO] -  * Detected change in 'C:\\Users\\defco\\PokemonStoreToolsAndModules\\pokemon_price_helper.py', reloading
-2025-03-03 20:42:37,219 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\flask\\__init__.py', reloading
-2025-03-03 20:42:37,221 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\dotenv\\__init__.py', reloading
-2025-03-03 20:42:37,226 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\typing.py', reloading
-2025-03-03 20:42:37,233 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\flask\\app.py', reloading
-2025-03-03 20:42:37,244 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\flask\\sansio\\app.py', reloading
-2025-03-03 20:42:37,245 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\datetime.py', reloading
-2025-03-03 20:42:37,245 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\flask\\json\\__init__.py', reloading
-2025-03-03 20:42:37,253 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\flask\\globals.py', reloading
-2025-03-03 20:42:37,254 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\flask\\sansio\\scaffold.py', reloading
-2025-03-03 20:42:37,260 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\flask\\templating.py', reloading
-2025-03-03 20:42:37,261 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\dotenv\\main.py', reloading
-2025-03-03 20:42:37,266 [INFO] -  * Detected change in 'C:\\Users\\defco\\PokemonStoreToolsAndModules\\error_handling.py', reloading
-2025-03-03 20:42:37,267 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\flask\\wrappers.py', reloading
-2025-03-03 20:42:37,274 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\werkzeug\\datastructures\\__init__.py', reloading
-2025-03-03 20:42:37,274 [INFO] -  * Detected change in 'C:\\Users\\defco\\PokemonStoreToolsAndModules\\utils.py', reloading
-2025-03-03 20:42:37,279 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\werkzeug\\wrappers\\__init__.py', reloading
-2025-03-03 20:42:37,282 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\json\\__init__.py', reloading
-2025-03-03 20:42:37,288 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\flask\\typing.py', reloading
-2025-03-03 20:42:37,290 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\requests\\__init__.py', reloading
-2025-03-03 20:42:37,300 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\werkzeug\\sansio\\response.py', reloading
-2025-03-03 20:42:37,309 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\werkzeug\\utils.py', reloading
-2025-03-03 20:42:37,310 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\jinja2\\__init__.py', reloading
-2025-03-03 20:42:37,320 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\werkzeug\\wrappers\\request.py', reloading
-2025-03-03 20:42:37,329 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\werkzeug\\wrappers\\response.py', reloading
-2025-03-03 20:42:37,337 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\werkzeug\\sansio\\request.py', reloading
-2025-03-03 20:42:37,347 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\jinja2\\environment.py', reloading
-2025-03-03 20:42:37,372 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\re.py', reloading
-2025-03-03 20:42:37,387 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\functools.py', reloading
-2025-03-03 20:42:37,394 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\decimal.py', reloading
-2025-03-03 20:42:37,396 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\subprocess.py', reloading
-2025-03-03 20:42:37,408 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\random.py', reloading
-2025-03-03 20:42:37,418 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\threading.py', reloading
-2025-03-03 21:31:50,550 [INFO] - Clearing expired cache files...
-2025-03-03 21:31:50,557 [INFO] - Cleared 0 expired cache files
-2025-03-03 21:31:50,590 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+2025-03-04 20:05:54,788 [INFO] - [33mPress CTRL+C to quit[0m
+2025-03-04 20:05:54,806 [INFO] -  * Restarting with watchdog (windowsapi)
+2025-03-04 20:05:56,872 [WARNING] -  * Debugger is active!
+2025-03-04 20:05:56,892 [INFO] -  * Debugger PIN: 497-044-917
+2025-03-04 20:06:39,785 [INFO] - 127.0.0.1 - - [04/Mar/2025 20:06:39] "GET / HTTP/1.1" 200 -
+2025-03-04 20:06:39,835 [INFO] - Fetching all Pokemon card sets...
+2025-03-04 20:06:39,993 [INFO] - 127.0.0.1 - - [04/Mar/2025 20:06:39] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-04 20:06:41,163 [INFO] - Found 164 Pokemon card sets
+2025-03-04 20:06:41,177 [INFO] - 127.0.0.1 - - [04/Mar/2025 20:06:41] "GET /api/sets HTTP/1.1" 200 -
+2025-03-04 20:06:41,181 [INFO] - Fetching all Pokemon card sets...
+2025-03-04 20:06:42,444 [INFO] - Found 164 Pokemon card sets
+2025-03-04 20:06:42,452 [INFO] - 127.0.0.1 - - [04/Mar/2025 20:06:42] "GET /api/sets HTTP/1.1" 200 -
+2025-03-04 20:07:09,230 [INFO] - Searching for cards matching 'Chi'...
+2025-03-04 20:07:10,054 [ERROR] - Error using client, falling back to direct API call: string indices must be integers
+2025-03-04 20:07:10,863 [INFO] - Found 15 cards matching 'Chi' using fallback
+2025-03-04 20:07:10,866 [INFO] - 127.0.0.1 - - [04/Mar/2025 20:07:10] "GET /api/search?q=Chi HTTP/1.1" 200 -
+2025-03-04 20:07:13,207 [INFO] - Searching for cards matching 'Chim'...
+2025-03-04 20:07:13,905 [ERROR] - Error using client, falling back to direct API call: string indices must be integers
+2025-03-04 20:07:14,840 [INFO] - Found 15 cards matching 'Chim' using fallback
+2025-03-04 20:07:14,843 [INFO] - 127.0.0.1 - - [04/Mar/2025 20:07:14] "GET /api/search?q=Chim HTTP/1.1" 200 -
+2025-03-04 20:07:23,518 [INFO] - Fetching price data for card ID: dp5-56
+2025-03-04 20:07:23,518 [INFO] - Getting card details from Pokemon TCG API...
+2025-03-04 20:07:24,085 [INFO] - Processing card: Chimchar from Majestic Dawn
+2025-03-04 20:07:24,086 [INFO] - Extracting TCGPlayer pricing data...
+2025-03-04 20:07:24,086 [INFO] - Fetching PriceCharting pricing data...
+2025-03-04 20:07:24,087 [INFO] - Fetching PriceCharting data for: Chimchar ({'id': 'dp5', 'name': 'Majestic Dawn', 'series': 'Diamond & Pearl', 'printedTotal': 100, 'total': 100, 'legalities': {'unlimited': 'Legal'}, 'ptcgoCode': 'MD', 'releaseDate': '2008/05/01', 'updatedAt': '2018/03/04 10:35:00', 'images': {'symbol': 'https://images.pokemontcg.io/dp5/symbol.png', 'logo': 'https://images.pokemontcg.io/dp5/logo.png'}} #56)
+2025-03-04 20:07:25,120 [WARNING] - All direct lookup attempts failed for Chimchar ({'id': 'dp5', 'name': 'Majestic Dawn', 'series': 'Diamond & Pearl', 'printedTotal': 100, 'total': 100, 'legalities': {'unlimited': 'Legal'}, 'ptcgoCode': 'MD', 'releaseDate': '2008/05/01', 'updatedAt': '2018/03/04 10:35:00', 'images': {'symbol': 'https://images.pokemontcg.io/dp5/symbol.png', 'logo': 'https://images.pokemontcg.io/dp5/logo.png'}} #56)
+2025-03-04 20:07:25,123 [INFO] - Getting PriceCharting data for 'Chimchar' (#56) from 'Majestic Dawn'
+2025-03-04 20:07:25,958 [WARNING] - All direct lookup attempts failed for Chimchar (Majestic Dawn #56)
+2025-03-04 20:07:26,169 [ERROR] - Error searching for 'pokemon Chimchar Majestic Dawn': 403 Client Error: Forbidden for url: https://www.pricecharting.com/api/products?q=pokemon+Chimchar+Majestic+Dawn&limit=20&t=pokemon&token=3ada03b1de794bed535db04c27d9141af942fbd7
+2025-03-04 20:07:26,389 [ERROR] - Error searching for 'Chimchar Majestic Dawn': 403 Client Error: Forbidden for url: https://www.pricecharting.com/api/products?q=Chimchar+Majestic+Dawn&limit=20&t=pokemon&token=3ada03b1de794bed535db04c27d9141af942fbd7
+2025-03-04 20:07:26,596 [ERROR] - Error searching for 'Chimchar': 403 Client Error: Forbidden for url: https://www.pricecharting.com/api/products?q=Chimchar&limit=20&t=pokemon&token=3ada03b1de794bed535db04c27d9141af942fbd7
+2025-03-04 20:07:26,598 [WARNING] - No suitable product match found for Chimchar (#56)
+2025-03-04 20:07:26,598 [INFO] - PriceCharting prices - Loose: $0.0, Graded: $0.0
+2025-03-04 20:07:26,598 [INFO] - Processing CardMarket pricing data...
+2025-03-04 20:07:26,599 [INFO] - Calculating arbitrage opportunities...
+2025-03-04 20:07:26,599 [INFO] - Found arbitrage opportunity! Buy: $0.27 Sell: $2.75 Profit: $1.07 (404.72%)
+2025-03-04 20:07:26,600 [INFO] - 127.0.0.1 - - [04/Mar/2025 20:07:26] "GET /api/card_prices?id=dp5-56 HTTP/1.1" 200 -
+2025-03-04 20:07:37,186 [INFO] - Searching for cards matching 'Terapagos'...
+2025-03-04 20:07:37,856 [ERROR] - Error using client, falling back to direct API call: string indices must be integers
+2025-03-04 20:07:38,538 [INFO] - Found 8 cards matching 'Terapagos' using fallback
+2025-03-04 20:07:38,540 [INFO] - 127.0.0.1 - - [04/Mar/2025 20:07:38] "GET /api/search?q=Terapagos HTTP/1.1" 200 -
+2025-03-04 20:07:40,838 [INFO] - Fetching price data for card ID: sv7-170
+2025-03-04 20:07:40,839 [INFO] - Getting card details from Pokemon TCG API...
+2025-03-04 20:07:41,195 [INFO] - Processing card: Terapagos ex from Stellar Crown
+2025-03-04 20:07:41,195 [INFO] - Extracting TCGPlayer pricing data...
+2025-03-04 20:07:41,195 [INFO] - Fetching PriceCharting pricing data...
+2025-03-04 20:07:41,196 [INFO] - Fetching PriceCharting data for: Terapagos ex ({'id': 'sv7', 'name': 'Stellar Crown', 'series': 'Scarlet & Violet', 'printedTotal': 142, 'total': 175, 'legalities': {'unlimited': 'Legal', 'standard': 'Legal', 'expanded': 'Legal'}, 'ptcgoCode': 'SCR', 'releaseDate': '2024/09/13', 'updatedAt': '2024/09/13 15:00:00', 'images': {'symbol': 'https://images.pokemontcg.io/sv7/symbol.png', 'logo': 'https://images.pokemontcg.io/sv7/logo.png'}} #170)
+2025-03-04 20:07:41,196 [INFO] - Using mapped set name: 'Pokemon Stellar Crown' for 'sv7'
+2025-03-04 20:07:42,005 [WARNING] - All direct lookup attempts failed for Terapagos ex (Pokemon Stellar Crown #170)
+2025-03-04 20:07:42,007 [INFO] - Getting PriceCharting data for 'Terapagos ex' (#170) from 'Stellar Crown'
+2025-03-04 20:07:42,801 [WARNING] - All direct lookup attempts failed for Terapagos ex (Stellar Crown #170)
+2025-03-04 20:07:43,045 [ERROR] - Error searching for 'pokemon Terapagos ex Stellar Crown': 403 Client Error: Forbidden for url: https://www.pricecharting.com/api/products?q=pokemon+Terapagos+ex+Stellar+Crown&limit=20&t=pokemon&token=3ada03b1de794bed535db04c27d9141af942fbd7
+2025-03-04 20:07:43,234 [ERROR] - Error searching for 'Terapagos ex Stellar Crown': 403 Client Error: Forbidden for url: https://www.pricecharting.com/api/products?q=Terapagos+ex+Stellar+Crown&limit=20&t=pokemon&token=3ada03b1de794bed535db04c27d9141af942fbd7
+2025-03-04 20:07:43,417 [ERROR] - Error searching for 'Terapagos ex': 403 Client Error: Forbidden for url: https://www.pricecharting.com/api/products?q=Terapagos+ex&limit=20&t=pokemon&token=3ada03b1de794bed535db04c27d9141af942fbd7
+2025-03-04 20:07:43,419 [WARNING] - No suitable product match found for Terapagos ex (#170)
+2025-03-04 20:07:43,419 [INFO] - PriceCharting prices - Loose: $0.0, Graded: $0.0
+2025-03-04 20:07:43,420 [INFO] - Processing CardMarket pricing data...
+2025-03-04 20:07:43,420 [INFO] - Calculating arbitrage opportunities...
+2025-03-04 20:07:43,420 [INFO] - Found arbitrage opportunity! Buy: $80.64 Sell: $174.95 Profit: $67.06 (83.16%)
+2025-03-04 20:07:43,422 [INFO] - 127.0.0.1 - - [04/Mar/2025 20:07:43] "GET /api/card_prices?id=sv7-170 HTTP/1.1" 200 -
+2025-03-04 20:09:51,584 [INFO] - Searching for cards matching 'Glaceon ex'...
+2025-03-04 20:09:51,974 [ERROR] - Error searching cards with query 'name:*Glaceon ex*': 400 Client Error: Bad Request for url: https://api.pokemontcg.io/v2/cards?q=name%3A%2AGlaceon+ex%2A&page=1&pageSize=15&orderBy=name
+2025-03-04 20:09:51,975 [ERROR] - Error using client, falling back to direct API call: 400 Client Error: Bad Request for url: https://api.pokemontcg.io/v2/cards?q=name%3A%2AGlaceon+ex%2A&page=1&pageSize=15&orderBy=name
+2025-03-04 20:09:52,275 [ERROR] - Error searching for 'Glaceon ex': 400 Client Error: Bad Request for url: https://api.pokemontcg.io/v2/cards?q=name%3A%2AGlaceon+ex%2A&orderBy=name&pageSize=15
+2025-03-04 20:09:52,278 [INFO] - 127.0.0.1 - - [04/Mar/2025 20:09:52] "[35m[1mGET /api/search?q=Glaceon+ex HTTP/1.1[0m" 500 -
+2025-03-04 20:09:54,346 [INFO] - Searching for cards matching 'Glaceon'...
+2025-03-04 20:09:55,280 [ERROR] - Error using client, falling back to direct API call: string indices must be integers
+2025-03-04 20:09:56,176 [INFO] - Found 15 cards matching 'Glaceon' using fallback
+2025-03-04 20:09:56,180 [INFO] - 127.0.0.1 - - [04/Mar/2025 20:09:56] "GET /api/search?q=Glaceon HTTP/1.1" 200 -
+2025-03-04 20:10:00,247 [INFO] - Fetching price data for card ID: swsh7-40
+2025-03-04 20:10:00,248 [INFO] - Getting card details from Pokemon TCG API...
+2025-03-04 20:10:00,709 [INFO] - Processing card: Glaceon V from Evolving Skies
+2025-03-04 20:10:00,709 [INFO] - Extracting TCGPlayer pricing data...
+2025-03-04 20:10:00,709 [INFO] - Fetching PriceCharting pricing data...
+2025-03-04 20:10:00,710 [INFO] - Fetching PriceCharting data for: Glaceon V ({'id': 'swsh7', 'name': 'Evolving Skies', 'series': 'Sword & Shield', 'printedTotal': 203, 'total': 237, 'legalities': {'unlimited': 'Legal', 'standard': 'Legal', 'expanded': 'Legal'}, 'ptcgoCode': 'EVS', 'releaseDate': '2021/08/27', 'updatedAt': '2021/08/27 10:17:00', 'images': {'symbol': 'https://images.pokemontcg.io/swsh7/symbol.png', 'logo': 'https://images.pokemontcg.io/swsh7/logo.png'}} #40)
+2025-03-04 20:10:00,710 [INFO] - Using mapped set name: 'Pokemon Evolving Skies' for 'swsh7'
+2025-03-04 20:10:01,614 [WARNING] - All direct lookup attempts failed for Glaceon V (Pokemon Evolving Skies #40)
+2025-03-04 20:10:01,616 [INFO] - Getting PriceCharting data for 'Glaceon V' (#40) from 'Evolving Skies'
+2025-03-04 20:10:02,587 [WARNING] - All direct lookup attempts failed for Glaceon V (Evolving Skies #40)
+2025-03-04 20:10:02,840 [ERROR] - Error searching for 'pokemon Glaceon V Evolving Skies': 403 Client Error: Forbidden for url: https://www.pricecharting.com/api/products?q=pokemon+Glaceon+V+Evolving+Skies&limit=20&t=pokemon&token=3ada03b1de794bed535db04c27d9141af942fbd7
+2025-03-04 20:10:03,037 [ERROR] - Error searching for 'Glaceon V Evolving Skies': 403 Client Error: Forbidden for url: https://www.pricecharting.com/api/products?q=Glaceon+V+Evolving+Skies&limit=20&t=pokemon&token=3ada03b1de794bed535db04c27d9141af942fbd7
+2025-03-04 20:10:03,238 [ERROR] - Error searching for 'Glaceon V': 403 Client Error: Forbidden for url: https://www.pricecharting.com/api/products?q=Glaceon+V&limit=20&t=pokemon&token=3ada03b1de794bed535db04c27d9141af942fbd7
+2025-03-04 20:10:03,239 [WARNING] - No suitable product match found for Glaceon V (#40)
+2025-03-04 20:10:03,240 [INFO] - PriceCharting prices - Loose: $0.0, Graded: $0.0
+2025-03-04 20:10:03,240 [INFO] - Processing CardMarket pricing data...
+2025-03-04 20:10:03,240 [INFO] - Calculating arbitrage opportunities...
+2025-03-04 20:10:03,240 [INFO] - Found arbitrage opportunity! Buy: $1.40 Sell: $89.00 Profit: $73.25 (5235.19%)
+2025-03-04 20:10:03,242 [INFO] - 127.0.0.1 - - [04/Mar/2025 20:10:03] "GET /api/card_prices?id=swsh7-40 HTTP/1.1" 200 -
+2025-03-04 20:18:52,533 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on all addresses (0.0.0.0)
  * Running on http://127.0.0.1:5000
  * Running on http://192.168.0.113:5000
-2025-03-03 21:31:50,591 [INFO] - [33mPress CTRL+C to quit[0m
-2025-03-03 21:31:50,611 [INFO] -  * Restarting with watchdog (windowsapi)
-2025-03-03 21:31:52,560 [INFO] - Clearing expired cache files...
-2025-03-03 21:31:52,568 [INFO] - Cleared 0 expired cache files
-2025-03-03 21:31:52,587 [WARNING] -  * Debugger is active!
-2025-03-03 21:31:52,608 [INFO] -  * Debugger PIN: 497-044-917
-2025-03-03 21:31:58,866 [INFO] - 127.0.0.1 - - [03/Mar/2025 21:31:58] "GET / HTTP/1.1" 200 -
-2025-03-03 21:31:59,066 [INFO] - 127.0.0.1 - - [03/Mar/2025 21:31:59] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-2025-03-03 21:31:59,069 [INFO] - Returning cached set list
-2025-03-03 21:31:59,078 [INFO] - 127.0.0.1 - - [03/Mar/2025 21:31:59] "GET /api/sets HTTP/1.1" 200 -
-2025-03-03 21:32:02,937 [INFO] - Returning cached search results for 'bewear'
-2025-03-03 21:32:02,938 [INFO] - 127.0.0.1 - - [03/Mar/2025 21:32:02] "GET /api/search?q=bewear HTTP/1.1" 200 -
-2025-03-03 21:32:06,036 [INFO] - Returning cached price data for card ID: smp-SM34
-2025-03-03 21:32:06,037 [INFO] - 127.0.0.1 - - [03/Mar/2025 21:32:06] "GET /api/card_prices?id=smp-SM34 HTTP/1.1" 200 -
-2025-03-03 21:32:20,795 [INFO] - Searching for cards matching 'glaceon'...
-2025-03-03 21:32:21,692 [INFO] - Found 15 cards matching 'glaceon'
-2025-03-03 21:32:21,697 [INFO] - 127.0.0.1 - - [03/Mar/2025 21:32:21] "GET /api/search?q=glaceon HTTP/1.1" 200 -
-2025-03-03 21:32:25,608 [INFO] - Fetching price data for card ID: bw9-23
-2025-03-03 21:32:25,609 [INFO] - Getting card details from Pokemon TCG API...
-2025-03-03 21:32:25,958 [INFO] - Processing card: Glaceon from Plasma Freeze
-2025-03-03 21:32:25,959 [INFO] - Extracting TCGPlayer pricing data...
-2025-03-03 21:32:25,959 [INFO] - Fetching PriceCharting pricing data...
-2025-03-03 21:32:25,960 [INFO] - Fetching PriceCharting data for: Glaceon
-2025-03-03 21:32:25,960 [INFO] - Getting PriceCharting data for 'Glaceon' (#23) from 'Plasma Freeze'
-2025-03-03 21:32:26,316 [WARNING] - No suitable product match found for Glaceon (#23)
-2025-03-03 21:32:26,317 [INFO] - PriceCharting prices - Loose: $2.74, Graded: $8.22
-2025-03-03 21:32:26,317 [INFO] - Processing CardMarket pricing data...
-2025-03-03 21:32:26,317 [INFO] - Calculating arbitrage opportunities...
-2025-03-03 21:32:26,318 [INFO] - Found arbitrage opportunity! Buy: $2.33 Sell: $22.78 Profit: $18.31 (785.92%)
-2025-03-03 21:32:26,321 [INFO] - 127.0.0.1 - - [03/Mar/2025 21:32:26] "GET /api/card_prices?id=bw9-23 HTTP/1.1" 200 -
-2025-03-03 21:34:55,197 [INFO] -  * Detected change in 'C:\\Users\\defco\\PokemonStoreToolsAndModules\\app.py', reloading
-2025-03-03 21:34:58,779 [INFO] -  * Restarting with watchdog (windowsapi)
-2025-03-03 21:49:48,483 [INFO] - Clearing expired cache files...
-2025-03-03 21:49:48,490 [INFO] - Cleared 0 expired cache files
-2025-03-03 21:49:48,518 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+2025-03-04 20:18:52,534 [INFO] - [33mPress CTRL+C to quit[0m
+2025-03-04 20:18:52,554 [INFO] -  * Restarting with watchdog (windowsapi)
+2025-03-04 20:18:54,625 [WARNING] -  * Debugger is active!
+2025-03-04 20:18:54,647 [INFO] -  * Debugger PIN: 497-044-917
+2025-03-04 20:19:17,229 [INFO] - 127.0.0.1 - - [04/Mar/2025 20:19:17] "GET / HTTP/1.1" 200 -
+2025-03-04 20:19:17,277 [INFO] - Fetching all Pokemon card sets...
+2025-03-04 20:19:17,442 [INFO] - 127.0.0.1 - - [04/Mar/2025 20:19:17] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-04 20:19:18,603 [INFO] - Found 164 Pokemon card sets
+2025-03-04 20:19:18,612 [INFO] - 127.0.0.1 - - [04/Mar/2025 20:19:18] "GET /api/sets HTTP/1.1" 200 -
+2025-03-04 20:19:18,616 [INFO] - Fetching all Pokemon card sets...
+2025-03-04 20:19:19,811 [INFO] - Found 164 Pokemon card sets
+2025-03-04 20:19:19,819 [INFO] - 127.0.0.1 - - [04/Mar/2025 20:19:19] "GET /api/sets HTTP/1.1" 200 -
+2025-03-04 20:19:38,839 [INFO] - Searching for cards matching 'Glaceon ex'...
+2025-03-04 20:19:39,140 [ERROR] - Error searching cards with query 'name:*Glaceon ex*': 400 Client Error: Bad Request for url: https://api.pokemontcg.io/v2/cards?q=name%3A%2AGlaceon+ex%2A&page=1&pageSize=15&orderBy=name
+2025-03-04 20:19:39,141 [ERROR] - Error using client, falling back to direct API call: 400 Client Error: Bad Request for url: https://api.pokemontcg.io/v2/cards?q=name%3A%2AGlaceon+ex%2A&page=1&pageSize=15&orderBy=name
+2025-03-04 20:19:39,442 [ERROR] - Error searching for 'Glaceon ex': 400 Client Error: Bad Request for url: https://api.pokemontcg.io/v2/cards?q=name%3A%2AGlaceon+ex%2A&orderBy=name&pageSize=15
+2025-03-04 20:19:39,447 [INFO] - 127.0.0.1 - - [04/Mar/2025 20:19:39] "[35m[1mGET /api/search?q=Glaceon+ex HTTP/1.1[0m" 500 -
+2025-03-04 20:19:40,951 [INFO] - Searching for cards matching 'Glaceon ex'...
+2025-03-04 20:19:41,235 [ERROR] - Error searching cards with query 'name:*Glaceon ex*': 400 Client Error: Bad Request for url: https://api.pokemontcg.io/v2/cards?q=name%3A%2AGlaceon+ex%2A&page=1&pageSize=15&orderBy=name
+2025-03-04 20:19:41,236 [ERROR] - Error using client, falling back to direct API call: 400 Client Error: Bad Request for url: https://api.pokemontcg.io/v2/cards?q=name%3A%2AGlaceon+ex%2A&page=1&pageSize=15&orderBy=name
+2025-03-04 20:19:41,551 [ERROR] - Error searching for 'Glaceon ex': 400 Client Error: Bad Request for url: https://api.pokemontcg.io/v2/cards?q=name%3A%2AGlaceon+ex%2A&orderBy=name&pageSize=15
+2025-03-04 20:19:41,554 [INFO] - 127.0.0.1 - - [04/Mar/2025 20:19:41] "[35m[1mGET /api/search?q=Glaceon+ex HTTP/1.1[0m" 500 -
+2025-03-04 20:19:43,288 [INFO] - Searching for cards matching 'Glaceonex'...
+2025-03-04 20:19:43,712 [ERROR] - Error using client, falling back to direct API call: string indices must be integers
+2025-03-04 20:19:43,915 [INFO] - Searching for cards matching 'Glaceon-0ex'...
+2025-03-04 20:19:44,106 [INFO] - Found 0 cards matching 'Glaceonex' using fallback
+2025-03-04 20:19:44,107 [INFO] - 127.0.0.1 - - [04/Mar/2025 20:19:44] "GET /api/search?q=Glaceonex HTTP/1.1" 200 -
+2025-03-04 20:19:44,328 [ERROR] - Error using client, falling back to direct API call: string indices must be integers
+2025-03-04 20:19:44,647 [INFO] - Found 0 cards matching 'Glaceon-0ex' using fallback
+2025-03-04 20:19:44,649 [INFO] - 127.0.0.1 - - [04/Mar/2025 20:19:44] "GET /api/search?q=Glaceon-0ex HTTP/1.1" 200 -
+2025-03-04 20:19:44,816 [INFO] - Searching for cards matching 'Glaceon-ex'...
+2025-03-04 20:19:45,251 [ERROR] - Error using client, falling back to direct API call: string indices must be integers
+2025-03-04 20:19:45,653 [INFO] - Searching for cards matching 'Glaceonex'...
+2025-03-04 20:19:45,698 [INFO] - Found 2 cards matching 'Glaceon-ex' using fallback
+2025-03-04 20:19:45,700 [INFO] - 127.0.0.1 - - [04/Mar/2025 20:19:45] "GET /api/search?q=Glaceon-ex HTTP/1.1" 200 -
+2025-03-04 20:19:46,068 [ERROR] - Error using client, falling back to direct API call: string indices must be integers
+2025-03-04 20:19:46,460 [INFO] - Found 0 cards matching 'Glaceonex' using fallback
+2025-03-04 20:19:46,461 [INFO] - 127.0.0.1 - - [04/Mar/2025 20:19:46] "GET /api/search?q=Glaceonex HTTP/1.1" 200 -
+2025-03-04 20:19:46,507 [INFO] - Searching for cards matching 'Glaceon'...
+2025-03-04 20:19:47,471 [ERROR] - Error using client, falling back to direct API call: string indices must be integers
+2025-03-04 20:19:48,428 [INFO] - Found 15 cards matching 'Glaceon' using fallback
+2025-03-04 20:19:48,431 [INFO] - 127.0.0.1 - - [04/Mar/2025 20:19:48] "GET /api/search?q=Glaceon HTTP/1.1" 200 -
+2025-03-04 20:19:49,472 [INFO] - Searching for cards matching 'Glaceo'...
+2025-03-04 20:19:49,914 [INFO] - Searching for cards matching 'Glaceon'...
+2025-03-04 20:19:50,362 [ERROR] - Error using client, falling back to direct API call: string indices must be integers
+2025-03-04 20:19:50,776 [ERROR] - Error using client, falling back to direct API call: string indices must be integers
+2025-03-04 20:19:51,238 [INFO] - Found 15 cards matching 'Glaceo' using fallback
+2025-03-04 20:19:51,241 [INFO] - 127.0.0.1 - - [04/Mar/2025 20:19:51] "GET /api/search?q=Glaceo HTTP/1.1" 200 -
+2025-03-04 20:19:51,699 [INFO] - Found 15 cards matching 'Glaceon' using fallback
+2025-03-04 20:19:51,701 [INFO] - 127.0.0.1 - - [04/Mar/2025 20:19:51] "GET /api/search?q=Glaceon HTTP/1.1" 200 -
+2025-03-04 20:19:54,751 [INFO] - Fetching price data for card ID: swsh7-40
+2025-03-04 20:19:54,751 [INFO] - Getting card details from Pokemon TCG API...
+2025-03-04 20:19:55,081 [INFO] - Processing card: Glaceon V from Evolving Skies
+2025-03-04 20:19:55,082 [INFO] - Extracting TCGPlayer pricing data...
+2025-03-04 20:19:55,083 [INFO] - Fetching PriceCharting pricing data...
+2025-03-04 20:19:55,083 [INFO] - Fetching PriceCharting data for: Glaceon V ({'id': 'swsh7', 'name': 'Evolving Skies', 'series': 'Sword & Shield', 'printedTotal': 203, 'total': 237, 'legalities': {'unlimited': 'Legal', 'standard': 'Legal', 'expanded': 'Legal'}, 'ptcgoCode': 'EVS', 'releaseDate': '2021/08/27', 'updatedAt': '2021/08/27 10:17:00', 'images': {'symbol': 'https://images.pokemontcg.io/swsh7/symbol.png', 'logo': 'https://images.pokemontcg.io/swsh7/logo.png'}} #40)
+2025-03-04 20:19:55,084 [INFO] - Using mapped set name: 'Pokemon Evolving Skies' for 'swsh7'
+2025-03-04 20:19:56,079 [WARNING] - All direct lookup attempts failed for Glaceon V (Pokemon Evolving Skies #40)
+2025-03-04 20:19:56,081 [INFO] - Getting PriceCharting data for 'Glaceon V' (#40) from 'Evolving Skies'
+2025-03-04 20:19:57,015 [WARNING] - All direct lookup attempts failed for Glaceon V (Evolving Skies #40)
+2025-03-04 20:19:57,197 [ERROR] - Error searching for 'pokemon Glaceon V Evolving Skies': 403 Client Error: Forbidden for url: https://www.pricecharting.com/api/products?q=pokemon+Glaceon+V+Evolving+Skies&limit=20&t=pokemon&token=3ada03b1de794bed535db04c27d9141af942fbd7
+2025-03-04 20:19:57,547 [ERROR] - Error searching for 'Glaceon V Evolving Skies': 403 Client Error: Forbidden for url: https://www.pricecharting.com/api/products?q=Glaceon+V+Evolving+Skies&limit=20&t=pokemon&token=3ada03b1de794bed535db04c27d9141af942fbd7
+2025-03-04 20:19:57,762 [ERROR] - Error searching for 'Glaceon V': 403 Client Error: Forbidden for url: https://www.pricecharting.com/api/products?q=Glaceon+V&limit=20&t=pokemon&token=3ada03b1de794bed535db04c27d9141af942fbd7
+2025-03-04 20:19:57,763 [WARNING] - No suitable product match found for Glaceon V (#40)
+2025-03-04 20:19:57,764 [INFO] - PriceCharting prices - Loose: $0.0, Graded: $0.0
+2025-03-04 20:19:57,764 [INFO] - Processing CardMarket pricing data...
+2025-03-04 20:19:57,764 [INFO] - Calculating arbitrage opportunities...
+2025-03-04 20:19:57,765 [ERROR] - Error calculating arbitrage: name 'json' is not defined
+2025-03-04 20:19:57,765 [ERROR] - Full exception details:
+Traceback (most recent call last):
+  File "C:\Users\defco\PokemonStoreToolsAndModules\arbitrage_tool.py", line 96, in calculate_arbitrage
+    logger.debug(f"All TCGPlayer prices: {json.dumps(card_data['tcgplayer'])}")
+NameError: name 'json' is not defined
+2025-03-04 20:19:57,767 [INFO] - No profitable arbitrage opportunities found
+2025-03-04 20:19:57,769 [INFO] - 127.0.0.1 - - [04/Mar/2025 20:19:57] "GET /api/card_prices?id=swsh7-40 HTTP/1.1" 200 -
+2025-03-04 20:26:08,484 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on all addresses (0.0.0.0)
  * Running on http://127.0.0.1:5000
  * Running on http://192.168.0.113:5000
-2025-03-03 21:49:48,518 [INFO] - [33mPress CTRL+C to quit[0m
-2025-03-03 21:49:48,537 [INFO] -  * Restarting with watchdog (windowsapi)
-2025-03-03 21:49:50,490 [INFO] - Clearing expired cache files...
-2025-03-03 21:49:50,498 [INFO] - Cleared 0 expired cache files
-2025-03-03 21:49:50,518 [WARNING] -  * Debugger is active!
-2025-03-03 21:49:50,539 [INFO] -  * Debugger PIN: 497-044-917
-2025-03-03 21:49:52,776 [INFO] - 127.0.0.1 - - [03/Mar/2025 21:49:52] "GET / HTTP/1.1" 200 -
-2025-03-03 21:49:52,847 [INFO] - Returning cached set list
-2025-03-03 21:49:52,856 [INFO] - 127.0.0.1 - - [03/Mar/2025 21:49:52] "GET /api/sets HTTP/1.1" 200 -
-2025-03-03 21:49:52,908 [INFO] - 127.0.0.1 - - [03/Mar/2025 21:49:52] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-2025-03-03 21:49:59,329 [INFO] - Searching for cards matching 'Drag'...
-2025-03-03 21:50:00,293 [INFO] - Found 15 cards matching 'Drag'
-2025-03-03 21:50:00,299 [INFO] - 127.0.0.1 - - [03/Mar/2025 21:50:00] "GET /api/search?q=Drag HTTP/1.1" 200 -
-2025-03-03 21:50:09,066 [INFO] - Searching for cards matching 'charmander'...
-2025-03-03 21:50:09,879 [INFO] - Found 15 cards matching 'charmander'
-2025-03-03 21:50:09,885 [INFO] - 127.0.0.1 - - [03/Mar/2025 21:50:09] "GET /api/search?q=charmander HTTP/1.1" 200 -
-2025-03-03 21:50:19,931 [INFO] - Searching for cards matching 'charm'...
-2025-03-03 21:50:20,769 [INFO] - Found 15 cards matching 'charm'
-2025-03-03 21:50:20,775 [INFO] - 127.0.0.1 - - [03/Mar/2025 21:50:20] "GET /api/search?q=charm HTTP/1.1" 200 -
-2025-03-03 21:50:30,719 [INFO] - Searching for cards matching 'prismaticx'...
-2025-03-03 21:50:31,087 [INFO] - Found 0 cards matching 'prismaticx'
-2025-03-03 21:50:31,090 [INFO] - 127.0.0.1 - - [03/Mar/2025 21:50:31] "GET /api/search?q=prismaticx HTTP/1.1" 200 -
-2025-03-03 21:50:32,492 [INFO] - Searching for cards matching 'prismatic'...
-2025-03-03 21:50:32,859 [INFO] - Found 0 cards matching 'prismatic'
-2025-03-03 21:50:32,863 [INFO] - 127.0.0.1 - - [03/Mar/2025 21:50:32] "GET /api/search?q=prismatic HTTP/1.1" 200 -
-2025-03-03 21:50:38,308 [INFO] - Searching for cards matching 'pika'...
-2025-03-03 21:50:39,192 [INFO] - Found 15 cards matching 'pika'
-2025-03-03 21:50:39,197 [INFO] - 127.0.0.1 - - [03/Mar/2025 21:50:39] "GET /api/search?q=pika HTTP/1.1" 200 -
-2025-03-03 21:50:44,739 [INFO] - Searching for cards matching 'raichu'...
-2025-03-03 21:50:45,653 [INFO] - Found 15 cards matching 'raichu'
-2025-03-03 21:50:45,659 [INFO] - 127.0.0.1 - - [03/Mar/2025 21:50:45] "GET /api/search?q=raichu HTTP/1.1" 200 -
-2025-03-03 21:50:49,687 [INFO] - Fetching price data for card ID: hgss1-10
-2025-03-03 21:50:49,687 [INFO] - Getting card details from Pokemon TCG API...
-2025-03-03 21:50:50,053 [INFO] - Processing card: Raichu from HeartGold & SoulSilver
-2025-03-03 21:50:50,053 [INFO] - Extracting TCGPlayer pricing data...
-2025-03-03 21:50:50,054 [INFO] - Fetching PriceCharting pricing data...
-2025-03-03 21:50:50,054 [INFO] - Fetching PriceCharting data for: Raichu
-2025-03-03 21:50:50,054 [INFO] - Getting PriceCharting data for 'Raichu' (#10) from 'HeartGold & SoulSilver'
-2025-03-03 21:50:50,317 [WARNING] - No suitable product match found for Raichu (#10)
-2025-03-03 21:50:50,317 [INFO] - PriceCharting prices - Loose: $2.14, Graded: $6.42
-2025-03-03 21:50:50,318 [INFO] - Processing CardMarket pricing data...
-2025-03-03 21:50:50,318 [INFO] - Calculating arbitrage opportunities...
-2025-03-03 21:50:50,319 [INFO] - Found arbitrage opportunity! Buy: $2.14 Sell: $14.26 Profit: $8.98 (419.67%)
-2025-03-03 21:50:50,322 [INFO] - 127.0.0.1 - - [03/Mar/2025 21:50:50] "GET /api/card_prices?id=hgss1-10 HTTP/1.1" 200 -
-2025-03-03 21:51:13,353 [INFO] - Searching for cards matching 'clef'...
-2025-03-03 21:51:14,256 [INFO] - Found 15 cards matching 'clef'
-2025-03-03 21:51:14,261 [INFO] - 127.0.0.1 - - [03/Mar/2025 21:51:14] "GET /api/search?q=clef HTTP/1.1" 200 -
-2025-03-03 21:51:25,440 [INFO] - Searching for cards matching 'gren'...
-2025-03-03 21:51:26,351 [INFO] - Found 15 cards matching 'gren'
-2025-03-03 21:51:26,357 [INFO] - 127.0.0.1 - - [03/Mar/2025 21:51:26] "GET /api/search?q=gren HTTP/1.1" 200 -
-2025-03-03 21:51:41,047 [INFO] - Returning cached search results for 'umbreon'
-2025-03-03 21:51:41,049 [INFO] - 127.0.0.1 - - [03/Mar/2025 21:51:41] "GET /api/search?q=umbreon HTTP/1.1" 200 -
-2025-03-03 21:51:49,070 [INFO] - Returning cached search results for 'umbreon'
-2025-03-03 21:51:49,071 [INFO] - 127.0.0.1 - - [03/Mar/2025 21:51:49] "GET /api/search?q=umbreon HTTP/1.1" 200 -
-2025-03-03 21:52:16,264 [INFO] - Returning cached search results for 'bewear'
-2025-03-03 21:52:16,265 [INFO] - 127.0.0.1 - - [03/Mar/2025 21:52:16] "GET /api/search?q=bewear HTTP/1.1" 200 -
-2025-03-03 21:52:20,511 [INFO] - Returning cached price data for card ID: sv6pt5-79
-2025-03-03 21:52:20,512 [INFO] - 127.0.0.1 - - [03/Mar/2025 21:52:20] "GET /api/card_prices?id=sv6pt5-79 HTTP/1.1" 200 -
-2025-03-03 21:55:51,734 [INFO] - Clearing expired cache files...
-2025-03-03 21:55:51,742 [INFO] - Cleared 0 expired cache files
-2025-03-03 21:55:51,768 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+2025-03-04 20:26:08,485 [INFO] - [33mPress CTRL+C to quit[0m
+2025-03-04 20:26:08,506 [INFO] -  * Restarting with watchdog (windowsapi)
+2025-03-04 20:26:10,573 [WARNING] -  * Debugger is active!
+2025-03-04 20:26:10,597 [INFO] -  * Debugger PIN: 497-044-917
+2025-03-04 20:26:47,785 [INFO] - 127.0.0.1 - - [04/Mar/2025 20:26:47] "GET / HTTP/1.1" 200 -
+2025-03-04 20:26:47,827 [INFO] - 127.0.0.1 - - [04/Mar/2025 20:26:47] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-04 20:26:47,830 [INFO] - Fetching all Pokemon card sets...
+2025-03-04 20:26:49,228 [INFO] - Found 164 Pokemon card sets
+2025-03-04 20:26:49,236 [INFO] - 127.0.0.1 - - [04/Mar/2025 20:26:49] "GET /api/sets HTTP/1.1" 200 -
+2025-03-04 20:26:49,241 [INFO] - Fetching all Pokemon card sets...
+2025-03-04 20:26:50,459 [INFO] - Found 164 Pokemon card sets
+2025-03-04 20:26:50,469 [INFO] - 127.0.0.1 - - [04/Mar/2025 20:26:50] "GET /api/sets HTTP/1.1" 200 -
+2025-03-04 20:26:58,450 [INFO] - Searching for cards matching 'rot'...
+2025-03-04 20:26:59,348 [ERROR] - Error using client, falling back to direct API call: string indices must be integers
+2025-03-04 20:27:00,272 [INFO] - Found 15 cards matching 'rot' using fallback
+2025-03-04 20:27:00,276 [INFO] - 127.0.0.1 - - [04/Mar/2025 20:27:00] "GET /api/search?q=rot HTTP/1.1" 200 -
+2025-03-04 20:27:06,407 [INFO] - Fetching price data for card ID: sv7-118
+2025-03-04 20:27:06,408 [INFO] - Getting card details from Pokemon TCG API...
+2025-03-04 20:27:06,758 [INFO] - Processing card: Fan Rotom from Stellar Crown
+2025-03-04 20:27:06,759 [INFO] - Extracting TCGPlayer pricing data...
+2025-03-04 20:27:06,759 [INFO] - Fetching PriceCharting pricing data...
+2025-03-04 20:27:06,759 [INFO] - Fetching PriceCharting data for: Fan Rotom ({'id': 'sv7', 'name': 'Stellar Crown', 'series': 'Scarlet & Violet', 'printedTotal': 142, 'total': 175, 'legalities': {'unlimited': 'Legal', 'standard': 'Legal', 'expanded': 'Legal'}, 'ptcgoCode': 'SCR', 'releaseDate': '2024/09/13', 'updatedAt': '2024/09/13 15:00:00', 'images': {'symbol': 'https://images.pokemontcg.io/sv7/symbol.png', 'logo': 'https://images.pokemontcg.io/sv7/logo.png'}} #118)
+2025-03-04 20:27:06,760 [INFO] - Using mapped set name: 'Pokemon Stellar Crown' for 'sv7'
+2025-03-04 20:27:07,658 [WARNING] - All direct lookup attempts failed for Fan Rotom (Pokemon Stellar Crown #118)
+2025-03-04 20:27:07,659 [INFO] - Getting PriceCharting data for 'Fan Rotom' (#118) from 'Stellar Crown'
+2025-03-04 20:27:08,543 [WARNING] - All direct lookup attempts failed for Fan Rotom (Stellar Crown #118)
+2025-03-04 20:27:08,935 [ERROR] - Error searching for 'pokemon Fan Rotom Stellar Crown': 403 Client Error: Forbidden for url: https://www.pricecharting.com/api/products?q=pokemon+Fan+Rotom+Stellar+Crown&limit=20&t=pokemon&token=3ada03b1de794bed535db04c27d9141af942fbd7
+2025-03-04 20:27:09,130 [ERROR] - Error searching for 'Fan Rotom Stellar Crown': 403 Client Error: Forbidden for url: https://www.pricecharting.com/api/products?q=Fan+Rotom+Stellar+Crown&limit=20&t=pokemon&token=3ada03b1de794bed535db04c27d9141af942fbd7
+2025-03-04 20:27:09,487 [ERROR] - Error searching for 'Fan Rotom': 403 Client Error: Forbidden for url: https://www.pricecharting.com/api/products?q=Fan+Rotom&limit=20&t=pokemon&token=3ada03b1de794bed535db04c27d9141af942fbd7
+2025-03-04 20:27:09,489 [WARNING] - No suitable product match found for Fan Rotom (#118)
+2025-03-04 20:27:09,489 [INFO] - PriceCharting prices - Loose: $0.0, Graded: $0.0
+2025-03-04 20:27:09,490 [INFO] - Processing CardMarket pricing data...
+2025-03-04 20:27:09,491 [INFO] - Calculating arbitrage opportunities...
+2025-03-04 20:27:09,491 [ERROR] - Error calculating arbitrage: name 'json' is not defined
+2025-03-04 20:27:09,492 [ERROR] - Full exception details:
+Traceback (most recent call last):
+  File "C:\Users\defco\PokemonStoreToolsAndModules\arbitrage_tool.py", line 96, in calculate_arbitrage
+    logger.debug(f"All TCGPlayer prices: {json.dumps(card_data['tcgplayer'])}")
+NameError: name 'json' is not defined
+2025-03-04 20:27:09,494 [INFO] - No profitable arbitrage opportunities found
+2025-03-04 20:27:09,495 [INFO] - 127.0.0.1 - - [04/Mar/2025 20:27:09] "GET /api/card_prices?id=sv7-118 HTTP/1.1" 200 -
+2025-03-04 20:27:53,874 [INFO] - Searching for cards matching 'Chim'...
+2025-03-04 20:27:54,687 [ERROR] - Error using client, falling back to direct API call: string indices must be integers
+2025-03-04 20:27:55,580 [INFO] - Found 15 cards matching 'Chim' using fallback
+2025-03-04 20:27:55,583 [INFO] - 127.0.0.1 - - [04/Mar/2025 20:27:55] "GET /api/search?q=Chim HTTP/1.1" 200 -
+2025-03-04 20:27:56,499 [INFO] - Fetching price data for card ID: pop9-13
+2025-03-04 20:27:56,499 [INFO] - Getting card details from Pokemon TCG API...
+2025-03-04 20:27:56,856 [INFO] - Processing card: Chimchar from POP Series 9
+2025-03-04 20:27:56,856 [INFO] - Extracting TCGPlayer pricing data...
+2025-03-04 20:27:56,857 [INFO] - Fetching PriceCharting pricing data...
+2025-03-04 20:27:56,857 [INFO] - Fetching PriceCharting data for: Chimchar ({'id': 'pop9', 'name': 'POP Series 9', 'series': 'POP', 'printedTotal': 17, 'total': 17, 'legalities': {'unlimited': 'Legal'}, 'releaseDate': '2009/03/01', 'updatedAt': '2020/05/01 16:06:00', 'images': {'symbol': 'https://images.pokemontcg.io/pop9/symbol.png', 'logo': 'https://images.pokemontcg.io/pop9/logo.png'}} #13)
+2025-03-04 20:27:57,826 [WARNING] - All direct lookup attempts failed for Chimchar ({'id': 'pop9', 'name': 'POP Series 9', 'series': 'POP', 'printedTotal': 17, 'total': 17, 'legalities': {'unlimited': 'Legal'}, 'releaseDate': '2009/03/01', 'updatedAt': '2020/05/01 16:06:00', 'images': {'symbol': 'https://images.pokemontcg.io/pop9/symbol.png', 'logo': 'https://images.pokemontcg.io/pop9/logo.png'}} #13)
+2025-03-04 20:27:57,828 [INFO] - Getting PriceCharting data for 'Chimchar' (#13) from 'POP Series 9'
+2025-03-04 20:27:58,685 [WARNING] - All direct lookup attempts failed for Chimchar (POP Series 9 #13)
+2025-03-04 20:27:58,914 [ERROR] - Error searching for 'pokemon Chimchar POP Series 9': 403 Client Error: Forbidden for url: https://www.pricecharting.com/api/products?q=pokemon+Chimchar+POP+Series+9&limit=20&t=pokemon&token=3ada03b1de794bed535db04c27d9141af942fbd7
+2025-03-04 20:27:59,109 [ERROR] - Error searching for 'Chimchar POP Series 9': 403 Client Error: Forbidden for url: https://www.pricecharting.com/api/products?q=Chimchar+POP+Series+9&limit=20&t=pokemon&token=3ada03b1de794bed535db04c27d9141af942fbd7
+2025-03-04 20:27:59,298 [ERROR] - Error searching for 'Chimchar': 403 Client Error: Forbidden for url: https://www.pricecharting.com/api/products?q=Chimchar&limit=20&t=pokemon&token=3ada03b1de794bed535db04c27d9141af942fbd7
+2025-03-04 20:27:59,300 [WARNING] - No suitable product match found for Chimchar (#13)
+2025-03-04 20:27:59,300 [INFO] - PriceCharting prices - Loose: $0.0, Graded: $0.0
+2025-03-04 20:27:59,300 [INFO] - Processing CardMarket pricing data...
+2025-03-04 20:27:59,301 [INFO] - Calculating arbitrage opportunities...
+2025-03-04 20:27:59,301 [ERROR] - Error calculating arbitrage: name 'json' is not defined
+2025-03-04 20:27:59,302 [ERROR] - Full exception details:
+Traceback (most recent call last):
+  File "C:\Users\defco\PokemonStoreToolsAndModules\arbitrage_tool.py", line 96, in calculate_arbitrage
+    logger.debug(f"All TCGPlayer prices: {json.dumps(card_data['tcgplayer'])}")
+NameError: name 'json' is not defined
+2025-03-04 20:27:59,302 [INFO] - No profitable arbitrage opportunities found
+2025-03-04 20:27:59,304 [INFO] - 127.0.0.1 - - [04/Mar/2025 20:27:59] "GET /api/card_prices?id=pop9-13 HTTP/1.1" 200 -
+2025-03-04 20:28:18,729 [INFO] - Searching for cards matching 'umbreon'...
+2025-03-04 20:28:19,623 [ERROR] - Error using client, falling back to direct API call: string indices must be integers
+2025-03-04 20:28:20,590 [INFO] - Found 15 cards matching 'umbreon' using fallback
+2025-03-04 20:28:20,593 [INFO] - 127.0.0.1 - - [04/Mar/2025 20:28:20] "GET /api/search?q=umbreon HTTP/1.1" 200 -
+2025-03-04 20:28:23,575 [INFO] - Fetching price data for card ID: bw9-64
+2025-03-04 20:28:23,575 [INFO] - Getting card details from Pokemon TCG API...
+2025-03-04 20:28:23,864 [INFO] - Processing card: Umbreon from Plasma Freeze
+2025-03-04 20:28:23,865 [INFO] - Extracting TCGPlayer pricing data...
+2025-03-04 20:28:23,865 [INFO] - Fetching PriceCharting pricing data...
+2025-03-04 20:28:23,865 [INFO] - Fetching PriceCharting data for: Umbreon ({'id': 'bw9', 'name': 'Plasma Freeze', 'series': 'Black & White', 'printedTotal': 116, 'total': 122, 'legalities': {'unlimited': 'Legal', 'expanded': 'Legal'}, 'ptcgoCode': 'PLF', 'releaseDate': '2013/05/08', 'updatedAt': '2018/03/04 10:35:00', 'images': {'symbol': 'https://images.pokemontcg.io/bw9/symbol.png', 'logo': 'https://images.pokemontcg.io/bw9/logo.png'}} #64)
+2025-03-04 20:28:24,891 [WARNING] - All direct lookup attempts failed for Umbreon ({'id': 'bw9', 'name': 'Plasma Freeze', 'series': 'Black & White', 'printedTotal': 116, 'total': 122, 'legalities': {'unlimited': 'Legal', 'expanded': 'Legal'}, 'ptcgoCode': 'PLF', 'releaseDate': '2013/05/08', 'updatedAt': '2018/03/04 10:35:00', 'images': {'symbol': 'https://images.pokemontcg.io/bw9/symbol.png', 'logo': 'https://images.pokemontcg.io/bw9/logo.png'}} #64)
+2025-03-04 20:28:24,893 [INFO] - Getting PriceCharting data for 'Umbreon' (#64) from 'Plasma Freeze'
+2025-03-04 20:28:25,792 [WARNING] - All direct lookup attempts failed for Umbreon (Plasma Freeze #64)
+2025-03-04 20:28:25,986 [ERROR] - Error searching for 'pokemon Umbreon Plasma Freeze': 403 Client Error: Forbidden for url: https://www.pricecharting.com/api/products?q=pokemon+Umbreon+Plasma+Freeze&limit=20&t=pokemon&token=3ada03b1de794bed535db04c27d9141af942fbd7
+2025-03-04 20:28:26,236 [ERROR] - Error searching for 'Umbreon Plasma Freeze': 403 Client Error: Forbidden for url: https://www.pricecharting.com/api/products?q=Umbreon+Plasma+Freeze&limit=20&t=pokemon&token=3ada03b1de794bed535db04c27d9141af942fbd7
+2025-03-04 20:28:26,411 [ERROR] - Error searching for 'Umbreon': 403 Client Error: Forbidden for url: https://www.pricecharting.com/api/products?q=Umbreon&limit=20&t=pokemon&token=3ada03b1de794bed535db04c27d9141af942fbd7
+2025-03-04 20:28:26,413 [WARNING] - No suitable product match found for Umbreon (#64)
+2025-03-04 20:28:26,413 [INFO] - PriceCharting prices - Loose: $0.0, Graded: $0.0
+2025-03-04 20:28:26,414 [INFO] - Processing CardMarket pricing data...
+2025-03-04 20:28:26,414 [INFO] - Calculating arbitrage opportunities...
+2025-03-04 20:28:26,414 [ERROR] - Error calculating arbitrage: name 'json' is not defined
+2025-03-04 20:28:26,415 [ERROR] - Full exception details:
+Traceback (most recent call last):
+  File "C:\Users\defco\PokemonStoreToolsAndModules\arbitrage_tool.py", line 96, in calculate_arbitrage
+    logger.debug(f"All TCGPlayer prices: {json.dumps(card_data['tcgplayer'])}")
+NameError: name 'json' is not defined
+2025-03-04 20:28:26,415 [INFO] - No profitable arbitrage opportunities found
+2025-03-04 20:28:26,416 [INFO] - 127.0.0.1 - - [04/Mar/2025 20:28:26] "GET /api/card_prices?id=bw9-64 HTTP/1.1" 200 -
+2025-03-04 20:28:47,926 [INFO] - Searching for cards matching 'wooper'...
+2025-03-04 20:28:48,952 [ERROR] - Error using client, falling back to direct API call: string indices must be integers
+2025-03-04 20:28:49,861 [INFO] - Found 15 cards matching 'wooper' using fallback
+2025-03-04 20:28:49,865 [INFO] - 127.0.0.1 - - [04/Mar/2025 20:28:49] "GET /api/search?q=wooper HTTP/1.1" 200 -
+2025-03-04 20:28:51,245 [INFO] - Fetching price data for card ID: sv2-221
+2025-03-04 20:28:51,246 [INFO] - Getting card details from Pokemon TCG API...
+2025-03-04 20:28:51,640 [INFO] - Processing card: Paldean Wooper from Paldea Evolved
+2025-03-04 20:28:51,641 [INFO] - Extracting TCGPlayer pricing data...
+2025-03-04 20:28:51,641 [INFO] - Fetching PriceCharting pricing data...
+2025-03-04 20:28:51,642 [INFO] - Fetching PriceCharting data for: Paldean Wooper ({'id': 'sv2', 'name': 'Paldea Evolved', 'series': 'Scarlet & Violet', 'printedTotal': 193, 'total': 279, 'legalities': {'unlimited': 'Legal', 'standard': 'Legal', 'expanded': 'Legal'}, 'releaseDate': '2023/06/09', 'updatedAt': '2023/06/09 15:00:00', 'images': {'symbol': 'https://images.pokemontcg.io/sv2/symbol.png', 'logo': 'https://images.pokemontcg.io/sv2/logo.png'}} #221)
+2025-03-04 20:28:51,642 [INFO] - Using mapped set name: 'Pokemon Paldea Evolved' for 'sv2'
+2025-03-04 20:28:52,531 [WARNING] - All direct lookup attempts failed for Paldean Wooper (Pokemon Paldea Evolved #221)
+2025-03-04 20:28:52,533 [INFO] - Getting PriceCharting data for 'Paldean Wooper' (#221) from 'Paldea Evolved'
+2025-03-04 20:28:53,526 [WARNING] - All direct lookup attempts failed for Paldean Wooper (Paldea Evolved #221)
+2025-03-04 20:28:53,737 [ERROR] - Error searching for 'pokemon Paldean Wooper Paldea Evolved': 403 Client Error: Forbidden for url: https://www.pricecharting.com/api/products?q=pokemon+Paldean+Wooper+Paldea+Evolved&limit=20&t=pokemon&token=3ada03b1de794bed535db04c27d9141af942fbd7
+2025-03-04 20:28:54,048 [ERROR] - Error searching for 'Paldean Wooper Paldea Evolved': 403 Client Error: Forbidden for url: https://www.pricecharting.com/api/products?q=Paldean+Wooper+Paldea+Evolved&limit=20&t=pokemon&token=3ada03b1de794bed535db04c27d9141af942fbd7
+2025-03-04 20:28:54,232 [ERROR] - Error searching for 'Paldean Wooper': 403 Client Error: Forbidden for url: https://www.pricecharting.com/api/products?q=Paldean+Wooper&limit=20&t=pokemon&token=3ada03b1de794bed535db04c27d9141af942fbd7
+2025-03-04 20:28:54,234 [WARNING] - No suitable product match found for Paldean Wooper (#221)
+2025-03-04 20:28:54,235 [INFO] - PriceCharting prices - Loose: $0.0, Graded: $0.0
+2025-03-04 20:28:54,235 [INFO] - Processing CardMarket pricing data...
+2025-03-04 20:28:54,235 [INFO] - Calculating arbitrage opportunities...
+2025-03-04 20:28:54,236 [ERROR] - Error calculating arbitrage: name 'json' is not defined
+2025-03-04 20:28:54,236 [ERROR] - Full exception details:
+Traceback (most recent call last):
+  File "C:\Users\defco\PokemonStoreToolsAndModules\arbitrage_tool.py", line 96, in calculate_arbitrage
+    logger.debug(f"All TCGPlayer prices: {json.dumps(card_data['tcgplayer'])}")
+NameError: name 'json' is not defined
+2025-03-04 20:28:54,237 [INFO] - No profitable arbitrage opportunities found
+2025-03-04 20:28:54,238 [INFO] - 127.0.0.1 - - [04/Mar/2025 20:28:54] "GET /api/card_prices?id=sv2-221 HTTP/1.1" 200 -
+2025-03-04 20:29:07,027 [INFO] - Searching for cards matching 'tauros'...
+2025-03-04 20:29:08,015 [ERROR] - Error using client, falling back to direct API call: string indices must be integers
+2025-03-04 20:29:08,925 [INFO] - Found 15 cards matching 'tauros' using fallback
+2025-03-04 20:29:08,927 [INFO] - 127.0.0.1 - - [04/Mar/2025 20:29:08] "GET /api/search?q=tauros HTTP/1.1" 200 -
+2025-03-04 20:29:16,532 [INFO] - Fetching price data for card ID: sv2-218
+2025-03-04 20:29:16,532 [INFO] - Getting card details from Pokemon TCG API...
+2025-03-04 20:29:16,891 [INFO] - Processing card: Paldean Tauros from Paldea Evolved
+2025-03-04 20:29:16,891 [INFO] - Extracting TCGPlayer pricing data...
+2025-03-04 20:29:16,891 [INFO] - Fetching PriceCharting pricing data...
+2025-03-04 20:29:16,892 [INFO] - Fetching PriceCharting data for: Paldean Tauros ({'id': 'sv2', 'name': 'Paldea Evolved', 'series': 'Scarlet & Violet', 'printedTotal': 193, 'total': 279, 'legalities': {'unlimited': 'Legal', 'standard': 'Legal', 'expanded': 'Legal'}, 'releaseDate': '2023/06/09', 'updatedAt': '2023/06/09 15:00:00', 'images': {'symbol': 'https://images.pokemontcg.io/sv2/symbol.png', 'logo': 'https://images.pokemontcg.io/sv2/logo.png'}} #218)
+2025-03-04 20:29:16,892 [INFO] - Using mapped set name: 'Pokemon Paldea Evolved' for 'sv2'
+2025-03-04 20:29:17,892 [WARNING] - All direct lookup attempts failed for Paldean Tauros (Pokemon Paldea Evolved #218)
+2025-03-04 20:29:17,894 [INFO] - Getting PriceCharting data for 'Paldean Tauros' (#218) from 'Paldea Evolved'
+2025-03-04 20:29:18,807 [WARNING] - All direct lookup attempts failed for Paldean Tauros (Paldea Evolved #218)
+2025-03-04 20:29:19,007 [ERROR] - Error searching for 'pokemon Paldean Tauros Paldea Evolved': 403 Client Error: Forbidden for url: https://www.pricecharting.com/api/products?q=pokemon+Paldean+Tauros+Paldea+Evolved&limit=20&t=pokemon&token=3ada03b1de794bed535db04c27d9141af942fbd7
+2025-03-04 20:29:19,224 [ERROR] - Error searching for 'Paldean Tauros Paldea Evolved': 403 Client Error: Forbidden for url: https://www.pricecharting.com/api/products?q=Paldean+Tauros+Paldea+Evolved&limit=20&t=pokemon&token=3ada03b1de794bed535db04c27d9141af942fbd7
+2025-03-04 20:29:19,462 [ERROR] - Error searching for 'Paldean Tauros': 403 Client Error: Forbidden for url: https://www.pricecharting.com/api/products?q=Paldean+Tauros&limit=20&t=pokemon&token=3ada03b1de794bed535db04c27d9141af942fbd7
+2025-03-04 20:29:19,465 [WARNING] - No suitable product match found for Paldean Tauros (#218)
+2025-03-04 20:29:19,465 [INFO] - PriceCharting prices - Loose: $0.0, Graded: $0.0
+2025-03-04 20:29:19,465 [INFO] - Processing CardMarket pricing data...
+2025-03-04 20:29:19,466 [INFO] - Calculating arbitrage opportunities...
+2025-03-04 20:29:19,466 [ERROR] - Error calculating arbitrage: name 'json' is not defined
+2025-03-04 20:29:19,466 [ERROR] - Full exception details:
+Traceback (most recent call last):
+  File "C:\Users\defco\PokemonStoreToolsAndModules\arbitrage_tool.py", line 96, in calculate_arbitrage
+    logger.debug(f"All TCGPlayer prices: {json.dumps(card_data['tcgplayer'])}")
+NameError: name 'json' is not defined
+2025-03-04 20:29:19,467 [INFO] - No profitable arbitrage opportunities found
+2025-03-04 20:29:19,469 [INFO] - 127.0.0.1 - - [04/Mar/2025 20:29:19] "GET /api/card_prices?id=sv2-218 HTTP/1.1" 200 -
+2025-03-04 20:31:27,327 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on all addresses (0.0.0.0)
  * Running on http://127.0.0.1:5000
  * Running on http://192.168.0.113:5000
-2025-03-03 21:55:51,768 [INFO] - [33mPress CTRL+C to quit[0m
-2025-03-03 21:55:51,786 [INFO] -  * Restarting with watchdog (windowsapi)
-2025-03-03 21:55:53,715 [INFO] - Clearing expired cache files...
-2025-03-03 21:55:53,724 [INFO] - Cleared 0 expired cache files
-2025-03-03 21:55:53,741 [WARNING] -  * Debugger is active!
-2025-03-03 21:55:53,761 [INFO] -  * Debugger PIN: 497-044-917
-2025-03-03 21:56:27,390 [INFO] - Searching for cards matching 'Bewear (beFable)'...
-2025-03-03 21:56:28,038 [ERROR] - Error searching for 'Bewear (beFable)': 400 Client Error: Bad Request for url: https://api.pokemontcg.io/v2/cards?q=name%3A%2ABewear+%28beFable%29%2A&orderBy=name&pageSize=15
-2025-03-03 21:56:28,041 [INFO] - 127.0.0.1 - - [03/Mar/2025 21:56:28] "[35m[1mGET /api/search?q=Bewear+(beFable) HTTP/1.1[0m" 500 -
-2025-03-03 21:56:28,148 [INFO] - Searching for cards matching 'Bewear (beweaFable)'...
-2025-03-03 21:56:28,443 [ERROR] - Error searching for 'Bewear (beweaFable)': 400 Client Error: Bad Request for url: https://api.pokemontcg.io/v2/cards?q=name%3A%2ABewear+%28beweaFable%29%2A&orderBy=name&pageSize=15
-2025-03-03 21:56:28,446 [INFO] - 127.0.0.1 - - [03/Mar/2025 21:56:28] "[35m[1mGET /api/search?q=Bewear+(beweaFable) HTTP/1.1[0m" 500 -
-2025-03-03 21:56:28,481 [INFO] - Searching for cards matching 'Bewear (bewearFable)'...
-2025-03-03 21:56:28,754 [ERROR] - Error searching for 'Bewear (bewearFable)': 400 Client Error: Bad Request for url: https://api.pokemontcg.io/v2/cards?q=name%3A%2ABewear+%28bewearFable%29%2A&orderBy=name&pageSize=15
-2025-03-03 21:56:28,756 [INFO] - 127.0.0.1 - - [03/Mar/2025 21:56:28] "[35m[1mGET /api/search?q=Bewear+(bewearFable) HTTP/1.1[0m" 500 -
-2025-03-03 21:56:31,360 [INFO] - Searching for cards matching 'Bewear (bewear'...
-2025-03-03 21:56:31,691 [ERROR] - Error searching for 'Bewear (bewear': 400 Client Error: Bad Request for url: https://api.pokemontcg.io/v2/cards?q=name%3A%2ABewear+%28bewear%2A&orderBy=name&pageSize=15
-2025-03-03 21:56:31,693 [INFO] - 127.0.0.1 - - [03/Mar/2025 21:56:31] "[35m[1mGET /api/search?q=Bewear+(bewear HTTP/1.1[0m" 500 -
-2025-03-03 21:56:31,708 [INFO] - Searching for cards matching 'Bewear (bewea'...
-2025-03-03 21:56:32,006 [ERROR] - Error searching for 'Bewear (bewea': 400 Client Error: Bad Request for url: https://api.pokemontcg.io/v2/cards?q=name%3A%2ABewear+%28bewea%2A&orderBy=name&pageSize=15
-2025-03-03 21:56:32,008 [INFO] - 127.0.0.1 - - [03/Mar/2025 21:56:32] "[35m[1mGET /api/search?q=Bewear+(bewea HTTP/1.1[0m" 500 -
-2025-03-03 21:56:34,702 [INFO] - Searching for cards matching 'bewea'...
-2025-03-03 21:56:35,020 [INFO] - Returning cached search results for 'bewear'
-2025-03-03 21:56:35,022 [INFO] - 127.0.0.1 - - [03/Mar/2025 21:56:35] "GET /api/search?q=bewear HTTP/1.1" 200 -
-2025-03-03 21:56:35,582 [INFO] - Found 12 cards matching 'bewea'
-2025-03-03 21:56:35,587 [INFO] - 127.0.0.1 - - [03/Mar/2025 21:56:35] "GET /api/search?q=bewea HTTP/1.1" 200 -
-2025-03-03 21:56:36,755 [INFO] - Returning cached price data for card ID: sv6pt5-79
-2025-03-03 21:56:36,757 [INFO] - 127.0.0.1 - - [03/Mar/2025 21:56:36] "GET /api/card_prices?id=sv6pt5-79 HTTP/1.1" 200 -
-2025-03-03 22:00:22,525 [INFO] - Clearing expired cache files...
-2025-03-03 22:00:22,534 [INFO] - Cleared 0 expired cache files
-2025-03-03 22:00:22,560 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+2025-03-04 20:31:27,328 [INFO] - [33mPress CTRL+C to quit[0m
+2025-03-04 20:31:27,348 [INFO] -  * Restarting with watchdog (windowsapi)
+2025-03-04 20:31:29,356 [WARNING] -  * Debugger is active!
+2025-03-04 20:31:29,377 [INFO] -  * Debugger PIN: 497-044-917
+2025-03-04 20:32:03,293 [INFO] - 127.0.0.1 - - [04/Mar/2025 20:32:03] "GET / HTTP/1.1" 200 -
+2025-03-04 20:32:03,352 [INFO] - 127.0.0.1 - - [04/Mar/2025 20:32:03] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-04 20:32:03,355 [INFO] - Fetching all Pokemon card sets...
+2025-03-04 20:32:04,852 [INFO] - Found 164 Pokemon card sets
+2025-03-04 20:32:04,861 [INFO] - 127.0.0.1 - - [04/Mar/2025 20:32:04] "GET /api/sets HTTP/1.1" 200 -
+2025-03-04 20:32:04,866 [INFO] - Fetching all Pokemon card sets...
+2025-03-04 20:32:06,057 [INFO] - Found 164 Pokemon card sets
+2025-03-04 20:32:06,067 [INFO] - 127.0.0.1 - - [04/Mar/2025 20:32:06] "GET /api/sets HTTP/1.1" 200 -
+2025-03-04 20:32:28,850 [INFO] - Searching for cards matching 'Tauros'...
+2025-03-04 20:32:29,745 [ERROR] - Error using client, falling back to direct API call: string indices must be integers
+2025-03-04 20:32:30,594 [INFO] - Found 15 cards matching 'Tauros' using fallback
+2025-03-04 20:32:30,597 [INFO] - 127.0.0.1 - - [04/Mar/2025 20:32:30] "GET /api/search?q=Tauros HTTP/1.1" 200 -
+2025-03-04 20:32:33,663 [INFO] - Fetching price data for card ID: sv2-218
+2025-03-04 20:32:33,663 [INFO] - Getting card details from Pokemon TCG API...
+2025-03-04 20:32:34,002 [INFO] - Processing card: Paldean Tauros from Paldea Evolved
+2025-03-04 20:32:34,003 [INFO] - Extracting TCGPlayer pricing data...
+2025-03-04 20:32:34,003 [INFO] - Fetching PriceCharting pricing data...
+2025-03-04 20:32:34,004 [INFO] - Fetching PriceCharting data for: Paldean Tauros ({'id': 'sv2', 'name': 'Paldea Evolved', 'series': 'Scarlet & Violet', 'printedTotal': 193, 'total': 279, 'legalities': {'unlimited': 'Legal', 'standard': 'Legal', 'expanded': 'Legal'}, 'releaseDate': '2023/06/09', 'updatedAt': '2023/06/09 15:00:00', 'images': {'symbol': 'https://images.pokemontcg.io/sv2/symbol.png', 'logo': 'https://images.pokemontcg.io/sv2/logo.png'}} #218)
+2025-03-04 20:32:34,004 [INFO] - Using mapped set name: 'Pokemon Paldea Evolved' for 'sv2'
+2025-03-04 20:32:34,867 [WARNING] - All direct lookup attempts failed for Paldean Tauros (Pokemon Paldea Evolved #218)
+2025-03-04 20:32:34,869 [INFO] - Getting PriceCharting data for 'Paldean Tauros' (#218) from 'Paldea Evolved'
+2025-03-04 20:32:35,731 [WARNING] - All direct lookup attempts failed for Paldean Tauros (Paldea Evolved #218)
+2025-03-04 20:32:35,954 [ERROR] - Error searching for 'pokemon Paldean Tauros Paldea Evolved': 403 Client Error: Forbidden for url: https://www.pricecharting.com/api/products?q=pokemon+Paldean+Tauros+Paldea+Evolved&limit=20&t=pokemon&token=3ada03b1de794bed535db04c27d9141af942fbd7
+2025-03-04 20:32:36,169 [ERROR] - Error searching for 'Paldean Tauros Paldea Evolved': 403 Client Error: Forbidden for url: https://www.pricecharting.com/api/products?q=Paldean+Tauros+Paldea+Evolved&limit=20&t=pokemon&token=3ada03b1de794bed535db04c27d9141af942fbd7
+2025-03-04 20:32:36,341 [ERROR] - Error searching for 'Paldean Tauros': 403 Client Error: Forbidden for url: https://www.pricecharting.com/api/products?q=Paldean+Tauros&limit=20&t=pokemon&token=3ada03b1de794bed535db04c27d9141af942fbd7
+2025-03-04 20:32:36,343 [WARNING] - No suitable product match found for Paldean Tauros (#218)
+2025-03-04 20:32:36,343 [INFO] - PriceCharting prices - Loose: $0.0, Graded: $0.0
+2025-03-04 20:32:36,344 [INFO] - Processing CardMarket pricing data...
+2025-03-04 20:32:36,344 [INFO] - Calculating arbitrage opportunities...
+2025-03-04 20:32:36,345 [INFO] - Cheapest source: tcgplayer_holofoil_market = $14.80
+2025-03-04 20:32:36,345 [INFO] - Most expensive source: tcgplayer_holofoil_high = $42.69
+2025-03-04 20:32:36,345 [INFO] - Found arbitrage opportunity! Buy: $14.80 Sell: $42.69 Profit: $20.49 (138.42%)
+2025-03-04 20:32:36,347 [INFO] - 127.0.0.1 - - [04/Mar/2025 20:32:36] "GET /api/card_prices?id=sv2-218 HTTP/1.1" 200 -
+2025-03-04 20:35:57,636 [INFO] -  * Detected change in 'C:\\Users\\defco\\PokemonStoreToolsAndModules\\card_mapper.py', reloading
+2025-03-04 20:41:47,623 [INFO] -  * Restarting with watchdog (windowsapi)
+2025-03-04 20:41:49,957 [WARNING] -  * Debugger is active!
+2025-03-04 20:41:49,979 [INFO] -  * Debugger PIN: 497-044-917
+2025-03-04 20:44:29,303 [INFO] -  * Detected change in 'C:\\Users\\defco\\PokemonStoreToolsAndModules\\pokemon_arbitrage\\config.py', reloading
+2025-03-04 20:44:29,659 [INFO] -  * Detected change in 'C:\\Users\\defco\\PokemonStoreToolsAndModules\\config.py', reloading
+2025-03-04 20:44:29,662 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\flask\\__init__.py', reloading
+2025-03-04 20:44:29,665 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\dotenv\\__init__.py', reloading
+2025-03-04 20:44:29,670 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\flask\\sansio\\app.py', reloading
+2025-03-04 20:44:29,671 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\flask\\sansio\\scaffold.py', reloading
+2025-03-04 20:44:29,672 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\dotenv\\main.py', reloading
+2025-03-04 20:44:29,680 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\flask\\json\\__init__.py', reloading
+2025-03-04 20:44:29,681 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\flask\\globals.py', reloading
+2025-03-04 20:44:29,682 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\flask\\templating.py', reloading
+2025-03-04 20:44:29,683 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\flask\\wrappers.py', reloading
+2025-03-04 20:44:29,684 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\werkzeug\\datastructures\\__init__.py', reloading
+2025-03-04 20:44:29,685 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\werkzeug\\wrappers\\__init__.py', reloading
+2025-03-04 20:44:29,685 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\flask\\typing.py', reloading
+2025-03-04 20:44:29,687 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\werkzeug\\sansio\\response.py', reloading
+2025-03-04 20:44:29,688 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\werkzeug\\utils.py', reloading
+2025-03-04 20:44:29,690 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\jinja2\\__init__.py', reloading
+2025-03-04 20:44:29,694 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\werkzeug\\wrappers\\request.py', reloading
+2025-03-04 20:44:29,695 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\werkzeug\\wrappers\\response.py', reloading
+2025-03-04 20:44:29,695 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\werkzeug\\sansio\\request.py', reloading
+2025-03-04 20:44:29,696 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\jinja2\\environment.py', reloading
+2025-03-04 20:44:29,705 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\typing.py', reloading
+2025-03-04 20:44:29,706 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\datetime.py', reloading
+2025-03-04 20:44:29,706 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\re.py', reloading
+2025-03-04 20:44:29,707 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\logging\\__init__.py', reloading
+2025-03-04 20:44:29,708 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\importlib\\util.py', reloading
+2025-03-04 20:44:29,709 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\subprocess.py', reloading
+2025-03-04 20:44:29,710 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\functools.py', reloading
+2025-03-04 20:44:29,711 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\difflib.py', reloading
+2025-03-04 20:44:29,713 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\decimal.py', reloading
+2025-03-04 20:44:29,714 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\DateTime\\__init__.py', reloading
+2025-03-04 20:44:29,717 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\random.py', reloading
+2025-03-04 20:46:42,435 [INFO] -  * Restarting with watchdog (windowsapi)
+2025-03-04 20:46:44,434 [WARNING] -  * Debugger is active!
+2025-03-04 20:46:44,456 [INFO] -  * Debugger PIN: 497-044-917
+2025-03-04 20:50:45,496 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on all addresses (0.0.0.0)
  * Running on http://127.0.0.1:5000
  * Running on http://192.168.0.113:5000
-2025-03-03 22:00:22,561 [INFO] - [33mPress CTRL+C to quit[0m
-2025-03-03 22:00:22,578 [INFO] -  * Restarting with watchdog (windowsapi)
-2025-03-03 22:00:24,545 [INFO] - Clearing expired cache files...
-2025-03-03 22:00:24,555 [INFO] - Cleared 0 expired cache files
-2025-03-03 22:00:24,573 [WARNING] -  * Debugger is active!
-2025-03-03 22:00:24,594 [INFO] -  * Debugger PIN: 497-044-917
-2025-03-03 22:00:27,553 [INFO] - 127.0.0.1 - - [03/Mar/2025 22:00:27] "GET / HTTP/1.1" 200 -
-2025-03-03 22:00:27,703 [INFO] - 127.0.0.1 - - [03/Mar/2025 22:00:27] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-2025-03-03 22:01:03,487 [INFO] - 127.0.0.1 - - [03/Mar/2025 22:01:03] "GET / HTTP/1.1" 200 -
-2025-03-03 22:02:23,818 [INFO] - 127.0.0.1 - - [03/Mar/2025 22:02:23] "GET / HTTP/1.1" 200 -
-2025-03-03 22:03:39,113 [INFO] - Clearing expired cache files...
-2025-03-03 22:03:39,121 [INFO] - Cleared 0 expired cache files
-2025-03-03 22:03:39,146 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+2025-03-04 20:50:45,497 [INFO] - [33mPress CTRL+C to quit[0m
+2025-03-04 20:50:45,515 [INFO] -  * Restarting with watchdog (windowsapi)
+2025-03-04 20:50:47,501 [WARNING] -  * Debugger is active!
+2025-03-04 20:50:47,522 [INFO] -  * Debugger PIN: 497-044-917
+2025-03-04 20:50:49,818 [INFO] - 127.0.0.1 - - [04/Mar/2025 20:50:49] "GET / HTTP/1.1" 200 -
+2025-03-04 20:50:49,875 [INFO] - Fetching all Pokemon card sets...
+2025-03-04 20:50:50,023 [INFO] - 127.0.0.1 - - [04/Mar/2025 20:50:50] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-04 20:50:51,199 [INFO] - Found 164 Pokemon card sets
+2025-03-04 20:50:51,208 [INFO] - 127.0.0.1 - - [04/Mar/2025 20:50:51] "GET /api/sets HTTP/1.1" 200 -
+2025-03-04 20:50:51,214 [INFO] - Fetching all Pokemon card sets...
+2025-03-04 20:50:52,470 [INFO] - Found 164 Pokemon card sets
+2025-03-04 20:50:52,478 [INFO] - 127.0.0.1 - - [04/Mar/2025 20:50:52] "GET /api/sets HTTP/1.1" 200 -
+2025-03-04 20:50:56,053 [INFO] - Searching for cards matching 'Eevee'...
+2025-03-04 20:50:56,946 [ERROR] - Error using client, falling back to direct API call: string indices must be integers
+2025-03-04 20:50:57,863 [INFO] - Found 15 cards matching 'Eevee' using fallback
+2025-03-04 20:50:57,866 [INFO] - 127.0.0.1 - - [04/Mar/2025 20:50:57] "GET /api/search?q=Eevee HTTP/1.1" 200 -
+2025-03-04 20:51:05,482 [INFO] - Fetching price data for card ID: sm115-49
+2025-03-04 20:51:05,482 [INFO] - Getting card details from Pokemon TCG API...
+2025-03-04 20:51:05,814 [INFO] - Processing card: Eevee from Hidden Fates
+2025-03-04 20:51:05,814 [INFO] - Extracting TCGPlayer pricing data...
+2025-03-04 20:51:05,815 [INFO] - Fetching PriceCharting pricing data...
+2025-03-04 20:51:05,815 [INFO] - Fetching PriceCharting data for: Eevee ({'id': 'sm115', 'name': 'Hidden Fates', 'series': 'Sun & Moon', 'printedTotal': 68, 'total': 69, 'legalities': {'unlimited': 'Legal', 'expanded': 'Legal'}, 'ptcgoCode': 'HIF', 'releaseDate': '2019/08/23', 'updatedAt': '2021/09/01 05:37:00', 'images': {'symbol': 'https://images.pokemontcg.io/sm115/symbol.png', 'logo': 'https://images.pokemontcg.io/sm115/logo.png'}} #49)
+2025-03-04 20:51:05,815 [INFO] - Using mapped set name: 'Pokemon Hidden Fates' for 'sm115'
+2025-03-04 20:51:06,799 [WARNING] - All direct lookup attempts failed for Eevee (Pokemon Hidden Fates #49)
+2025-03-04 20:51:06,801 [INFO] - Getting PriceCharting data for 'Eevee' (#49) from 'Hidden Fates'
+2025-03-04 20:51:07,740 [WARNING] - All direct lookup attempts failed for Eevee (Hidden Fates #49)
+2025-03-04 20:51:07,983 [ERROR] - Error searching for 'pokemon Eevee Hidden Fates': 403 Client Error: Forbidden for url: https://www.pricecharting.com/api/products?q=pokemon+Eevee+Hidden+Fates&limit=20&t=pokemon&token=3ada03b1de794bed535db04c27d9141af942fbd7
+2025-03-04 20:51:08,286 [ERROR] - Error searching for 'Eevee Hidden Fates': 403 Client Error: Forbidden for url: https://www.pricecharting.com/api/products?q=Eevee+Hidden+Fates&limit=20&t=pokemon&token=3ada03b1de794bed535db04c27d9141af942fbd7
+2025-03-04 20:51:08,483 [ERROR] - Error searching for 'Eevee': 403 Client Error: Forbidden for url: https://www.pricecharting.com/api/products?q=Eevee&limit=20&t=pokemon&token=3ada03b1de794bed535db04c27d9141af942fbd7
+2025-03-04 20:51:08,484 [WARNING] - No suitable product match found for Eevee (#49)
+2025-03-04 20:51:08,484 [INFO] - PriceCharting prices - Loose: $0.0, Graded: $0.0
+2025-03-04 20:51:08,485 [INFO] - Processing CardMarket pricing data...
+2025-03-04 20:51:08,485 [INFO] - Calculating arbitrage opportunities...
+2025-03-04 20:51:08,486 [INFO] - Cheapest source: tcgplayer_normal_market = $0.17
+2025-03-04 20:51:08,486 [INFO] - Most expensive source: tcgplayer_reverseHolofoil_high = $1.60
+2025-03-04 20:51:08,486 [INFO] - No profitable arbitrage opportunities found
+2025-03-04 20:51:08,488 [INFO] - 127.0.0.1 - - [04/Mar/2025 20:51:08] "GET /api/card_prices?id=sm115-49 HTTP/1.1" 200 -
+2025-03-04 20:51:21,419 [INFO] - 127.0.0.1 - - [04/Mar/2025 20:51:21] "[33mGET /api/set_prices?id=sv7 HTTP/1.1[0m" 404 -
+2025-03-04 20:51:58,140 [INFO] - Searching for cards matching 'Charme'...
+2025-03-04 20:51:59,024 [ERROR] - Error using client, falling back to direct API call: string indices must be integers
+2025-03-04 20:51:59,972 [INFO] - Found 15 cards matching 'Charme' using fallback
+2025-03-04 20:51:59,975 [INFO] - 127.0.0.1 - - [04/Mar/2025 20:51:59] "GET /api/search?q=Charme HTTP/1.1" 200 -
+2025-03-04 20:52:00,537 [INFO] - Fetching price data for card ID: swsh4-24
+2025-03-04 20:52:00,537 [INFO] - Getting card details from Pokemon TCG API...
+2025-03-04 20:52:00,952 [INFO] - Processing card: Charmeleon from Vivid Voltage
+2025-03-04 20:52:00,953 [INFO] - Extracting TCGPlayer pricing data...
+2025-03-04 20:52:00,953 [INFO] - Fetching PriceCharting pricing data...
+2025-03-04 20:52:00,953 [INFO] - Fetching PriceCharting data for: Charmeleon ({'id': 'swsh4', 'name': 'Vivid Voltage', 'series': 'Sword & Shield', 'printedTotal': 185, 'total': 203, 'legalities': {'unlimited': 'Legal', 'expanded': 'Legal'}, 'ptcgoCode': 'VIV', 'releaseDate': '2020/11/13', 'updatedAt': '2020/11/13 16:20:00', 'images': {'symbol': 'https://images.pokemontcg.io/swsh4/symbol.png', 'logo': 'https://images.pokemontcg.io/swsh4/logo.png'}} #24)
+2025-03-04 20:52:00,954 [INFO] - Using mapped set name: 'Pokemon Vivid Voltage' for 'swsh4'
+2025-03-04 20:52:01,903 [WARNING] - All direct lookup attempts failed for Charmeleon (Pokemon Vivid Voltage #24)
+2025-03-04 20:52:01,905 [INFO] - Getting PriceCharting data for 'Charmeleon' (#24) from 'Vivid Voltage'
+2025-03-04 20:52:02,801 [WARNING] - All direct lookup attempts failed for Charmeleon (Vivid Voltage #24)
+2025-03-04 20:52:02,998 [ERROR] - Error searching for 'pokemon Charmeleon Vivid Voltage': 403 Client Error: Forbidden for url: https://www.pricecharting.com/api/products?q=pokemon+Charmeleon+Vivid+Voltage&limit=20&t=pokemon&token=3ada03b1de794bed535db04c27d9141af942fbd7
+2025-03-04 20:52:03,191 [ERROR] - Error searching for 'Charmeleon Vivid Voltage': 403 Client Error: Forbidden for url: https://www.pricecharting.com/api/products?q=Charmeleon+Vivid+Voltage&limit=20&t=pokemon&token=3ada03b1de794bed535db04c27d9141af942fbd7
+2025-03-04 20:52:03,387 [ERROR] - Error searching for 'Charmeleon': 403 Client Error: Forbidden for url: https://www.pricecharting.com/api/products?q=Charmeleon&limit=20&t=pokemon&token=3ada03b1de794bed535db04c27d9141af942fbd7
+2025-03-04 20:52:03,389 [WARNING] - No suitable product match found for Charmeleon (#24)
+2025-03-04 20:52:03,390 [INFO] - PriceCharting prices - Loose: $0.0, Graded: $0.0
+2025-03-04 20:52:03,390 [INFO] - Processing CardMarket pricing data...
+2025-03-04 20:52:03,390 [INFO] - Calculating arbitrage opportunities...
+2025-03-04 20:52:03,391 [INFO] - Cheapest source: cardmarket = $0.05
+2025-03-04 20:52:03,391 [INFO] - Most expensive source: tcgplayer_reverseHolofoil_high = $999.99
+2025-03-04 20:52:03,391 [INFO] - Found arbitrage opportunity! Buy: $0.05 Sell: $999.99 Profit: $848.94 (1601770.75%)
+2025-03-04 20:52:03,393 [INFO] - 127.0.0.1 - - [04/Mar/2025 20:52:03] "GET /api/card_prices?id=swsh4-24 HTTP/1.1" 200 -
+2025-03-04 20:53:37,522 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on all addresses (0.0.0.0)
  * Running on http://127.0.0.1:5000
  * Running on http://192.168.0.113:5000
-2025-03-03 22:03:39,147 [INFO] - [33mPress CTRL+C to quit[0m
-2025-03-03 22:03:39,165 [INFO] -  * Restarting with watchdog (windowsapi)
-2025-03-03 22:03:41,150 [INFO] - Clearing expired cache files...
-2025-03-03 22:03:41,160 [INFO] - Cleared 0 expired cache files
-2025-03-03 22:03:41,179 [WARNING] -  * Debugger is active!
-2025-03-03 22:03:41,200 [INFO] -  * Debugger PIN: 497-044-917
-2025-03-03 22:03:59,871 [INFO] - 127.0.0.1 - - [03/Mar/2025 22:03:59] "GET / HTTP/1.1" 200 -
-2025-03-03 22:04:05,673 [INFO] - Clearing expired cache files...
-2025-03-03 22:04:05,678 [INFO] - Cleared 0 expired cache files
-2025-03-03 22:04:05,705 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+2025-03-04 20:53:37,523 [INFO] - [33mPress CTRL+C to quit[0m
+2025-03-04 20:53:37,540 [INFO] -  * Restarting with watchdog (windowsapi)
+2025-03-04 20:53:39,560 [WARNING] -  * Debugger is active!
+2025-03-04 20:53:39,583 [INFO] -  * Debugger PIN: 497-044-917
+2025-03-04 20:53:44,713 [INFO] - 127.0.0.1 - - [04/Mar/2025 20:53:44] "GET / HTTP/1.1" 200 -
+2025-03-04 20:53:44,767 [INFO] - Fetching all Pokemon card sets...
+2025-03-04 20:53:46,060 [INFO] - Found 164 Pokemon card sets
+2025-03-04 20:53:46,070 [INFO] - 127.0.0.1 - - [04/Mar/2025 20:53:46] "GET /api/sets HTTP/1.1" 200 -
+2025-03-04 20:53:46,075 [INFO] - Fetching all Pokemon card sets...
+2025-03-04 20:53:47,341 [INFO] - Found 164 Pokemon card sets
+2025-03-04 20:53:47,349 [INFO] - 127.0.0.1 - - [04/Mar/2025 20:53:47] "GET /api/sets HTTP/1.1" 200 -
+2025-03-04 20:53:48,274 [INFO] - Searching for cards matching 'Tauros'...
+2025-03-04 20:53:49,319 [ERROR] - Error using client, falling back to direct API call: string indices must be integers
+2025-03-04 20:53:50,179 [INFO] - Found 15 cards matching 'Tauros' using fallback
+2025-03-04 20:53:50,182 [INFO] - 127.0.0.1 - - [04/Mar/2025 20:53:50] "GET /api/search?q=Tauros HTTP/1.1" 200 -
+2025-03-04 20:53:54,660 [INFO] - Fetching price data for card ID: dp6-74
+2025-03-04 20:53:54,660 [INFO] - Getting card details from Pokemon TCG API...
+2025-03-04 20:53:54,992 [INFO] - Processing card: Tauros from Legends Awakened
+2025-03-04 20:53:54,992 [INFO] - Extracting TCGPlayer pricing data...
+2025-03-04 20:53:54,993 [INFO] - Fetching PriceCharting pricing data...
+2025-03-04 20:53:54,993 [INFO] - Fetching PriceCharting data for: Tauros ({'id': 'dp6', 'name': 'Legends Awakened', 'series': 'Diamond & Pearl', 'printedTotal': 146, 'total': 146, 'legalities': {'unlimited': 'Legal'}, 'ptcgoCode': 'LA', 'releaseDate': '2008/08/01', 'updatedAt': '2018/03/04 10:35:00', 'images': {'symbol': 'https://images.pokemontcg.io/dp6/symbol.png', 'logo': 'https://images.pokemontcg.io/dp6/logo.png'}} #74)
+2025-03-04 20:53:54,994 [INFO] - Using mapped set name: 'Pokemon Legends Awakened' for 'dp6'
+2025-03-04 20:53:55,842 [WARNING] - All direct lookup attempts failed for Tauros (Pokemon Legends Awakened #74)
+2025-03-04 20:53:55,844 [INFO] - Getting PriceCharting data for 'Tauros' (#74) from 'Legends Awakened'
+2025-03-04 20:53:56,858 [WARNING] - All direct lookup attempts failed for Tauros (Legends Awakened #74)
+2025-03-04 20:53:57,038 [ERROR] - Error searching for 'pokemon Tauros Legends Awakened #74': 403 Client Error: Forbidden for url: https://www.pricecharting.com/api/products?q=pokemon+Tauros+Legends+Awakened+%2374&limit=20&t=pokemon&token=3ada03b1de794bed535db04c27d9141af942fbd7
+2025-03-04 20:53:57,239 [ERROR] - Error searching for 'Tauros Legends Awakened': 403 Client Error: Forbidden for url: https://www.pricecharting.com/api/products?q=Tauros+Legends+Awakened&limit=20&t=pokemon&token=3ada03b1de794bed535db04c27d9141af942fbd7
+2025-03-04 20:53:57,568 [ERROR] - Error searching for 'Tauros': 403 Client Error: Forbidden for url: https://www.pricecharting.com/api/products?q=Tauros&limit=20&t=pokemon&token=3ada03b1de794bed535db04c27d9141af942fbd7
+2025-03-04 20:53:57,765 [ERROR] - Error searching for 'Tauros Legends Awakened #74': 403 Client Error: Forbidden for url: https://www.pricecharting.com/api/products?q=Tauros+Legends+Awakened+%2374&limit=20&t=pokemon&token=3ada03b1de794bed535db04c27d9141af942fbd7
+2025-03-04 20:53:57,767 [WARNING] - No suitable product match found for Tauros (#74)
+2025-03-04 20:53:57,767 [INFO] - PriceCharting prices - Loose: $0.0, Graded: $0.0
+2025-03-04 20:53:57,767 [INFO] - Processing CardMarket pricing data...
+2025-03-04 20:53:57,768 [INFO] - Calculating arbitrage opportunities...
+2025-03-04 20:53:57,768 [INFO] - Cheapest source: cardmarket = $0.33
+2025-03-04 20:53:57,769 [INFO] - Most expensive source: tcgplayer_normal_high = $18.94
+2025-03-04 20:53:57,769 [INFO] - Found arbitrage opportunity! Buy: $0.33 Sell: $18.94 Profit: $14.77 (4494.95%)
+2025-03-04 20:53:57,771 [INFO] - 127.0.0.1 - - [04/Mar/2025 20:53:57] "GET /api/card_prices?id=dp6-74 HTTP/1.1" 200 -
+2025-03-04 20:54:40,718 [INFO] - Searching for cards matching 'pal'...
+2025-03-04 20:54:41,627 [ERROR] - Error using client, falling back to direct API call: string indices must be integers
+2025-03-04 20:54:42,506 [INFO] - Found 15 cards matching 'pal' using fallback
+2025-03-04 20:54:42,508 [INFO] - 127.0.0.1 - - [04/Mar/2025 20:54:42] "GET /api/search?q=pal HTTP/1.1" 200 -
+2025-03-04 20:54:44,640 [INFO] - Fetching price data for card ID: swshp-SWSH253
+2025-03-04 20:54:44,640 [INFO] - Getting card details from Pokemon TCG API...
+2025-03-04 20:54:45,059 [INFO] - Processing card: Origin Forme Palkia V from SWSH Black Star Promos
+2025-03-04 20:54:45,059 [INFO] - Extracting TCGPlayer pricing data...
+2025-03-04 20:54:45,059 [INFO] - Fetching PriceCharting pricing data...
+2025-03-04 20:54:45,060 [INFO] - Fetching PriceCharting data for: Origin Forme Palkia V ({'id': 'swshp', 'name': 'SWSH Black Star Promos', 'series': 'Sword & Shield', 'printedTotal': 307, 'total': 304, 'legalities': {'unlimited': 'Legal', 'standard': 'Legal', 'expanded': 'Legal'}, 'ptcgoCode': 'PR-SW', 'releaseDate': '2019/11/15', 'updatedAt': '2022/07/23 20:15:00', 'images': {'symbol': 'https://images.pokemontcg.io/swshp/symbol.png', 'logo': 'https://images.pokemontcg.io/swshp/logo.png'}} #SWSH253)
+2025-03-04 20:54:45,060 [INFO] - Using mapped set name: 'Pokemon Promo' for 'swshp'
+2025-03-04 20:54:45,972 [WARNING] - All direct lookup attempts failed for Origin Forme Palkia V (Pokemon Promo #SWSH253)
+2025-03-04 20:54:45,973 [INFO] - Getting PriceCharting data for 'Origin Forme Palkia V' (#SWSH253) from 'SWSH Black Star Promos'
+2025-03-04 20:54:46,837 [WARNING] - All direct lookup attempts failed for Origin Forme Palkia V (SWSH Black Star Promos #SWSH253)
+2025-03-04 20:54:47,263 [ERROR] - Error searching for 'pokemon Origin Forme Palkia V SWSH Black Star Promos': 403 Client Error: Forbidden for url: https://www.pricecharting.com/api/products?q=pokemon+Origin+Forme+Palkia+V+SWSH+Black+Star+Promos&limit=20&t=pokemon&token=3ada03b1de794bed535db04c27d9141af942fbd7
+2025-03-04 20:54:47,513 [ERROR] - Error searching for 'Origin Forme Palkia V SWSH Black Star Promos': 403 Client Error: Forbidden for url: https://www.pricecharting.com/api/products?q=Origin+Forme+Palkia+V+SWSH+Black+Star+Promos&limit=20&t=pokemon&token=3ada03b1de794bed535db04c27d9141af942fbd7
+2025-03-04 20:54:47,716 [ERROR] - Error searching for 'Origin Forme Palkia V': 403 Client Error: Forbidden for url: https://www.pricecharting.com/api/products?q=Origin+Forme+Palkia+V&limit=20&t=pokemon&token=3ada03b1de794bed535db04c27d9141af942fbd7
+2025-03-04 20:54:47,717 [WARNING] - No suitable product match found for Origin Forme Palkia V (#SWSH253)
+2025-03-04 20:54:47,718 [INFO] - PriceCharting prices - Loose: $0.0, Graded: $0.0
+2025-03-04 20:54:47,718 [INFO] - Processing CardMarket pricing data...
+2025-03-04 20:54:47,718 [INFO] - Calculating arbitrage opportunities...
+2025-03-04 20:54:47,719 [INFO] - Cheapest source: tcgplayer_holofoil_market = $2.68
+2025-03-04 20:54:47,719 [INFO] - Most expensive source: tcgplayer_holofoil_high = $9999.00
+2025-03-04 20:54:47,719 [INFO] - Found arbitrage opportunity! Buy: $2.68 Sell: $9999.00 Profit: $8495.47 (316995.15%)
+2025-03-04 20:54:47,721 [INFO] - 127.0.0.1 - - [04/Mar/2025 20:54:47] "GET /api/card_prices?id=swshp-SWSH253 HTTP/1.1" 200 -
+2025-03-04 21:07:13,333 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on all addresses (0.0.0.0)
  * Running on http://127.0.0.1:5000
  * Running on http://192.168.0.113:5000
-2025-03-03 22:04:05,706 [INFO] - [33mPress CTRL+C to quit[0m
-2025-03-03 22:04:05,716 [INFO] -  * Restarting with watchdog (windowsapi)
-2025-03-03 22:04:06,098 [INFO] - Clearing expired cache files...
-2025-03-03 22:04:06,104 [INFO] - Cleared 0 expired cache files
-2025-03-03 22:04:06,118 [WARNING] -  * Debugger is active!
-2025-03-03 22:04:06,139 [INFO] -  * Debugger PIN: 497-044-917
-2025-03-03 22:04:08,104 [INFO] - 127.0.0.1 - - [03/Mar/2025 22:04:08] "GET / HTTP/1.1" 200 -
-2025-03-03 22:04:08,220 [INFO] - 127.0.0.1 - - [03/Mar/2025 22:04:08] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-2025-03-03 22:11:49,450 [INFO] - Clearing expired cache files...
-2025-03-03 22:11:49,459 [INFO] - Cleared 0 expired cache files
-2025-03-03 22:11:49,488 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.0.113:5000
-2025-03-03 22:11:49,489 [INFO] - [33mPress CTRL+C to quit[0m
-2025-03-03 22:11:49,508 [INFO] -  * Restarting with watchdog (windowsapi)
-2025-03-03 22:11:51,502 [INFO] - Clearing expired cache files...
-2025-03-03 22:11:51,512 [INFO] - Cleared 0 expired cache files
-2025-03-03 22:11:51,529 [WARNING] -  * Debugger is active!
-2025-03-03 22:11:51,550 [INFO] -  * Debugger PIN: 497-044-917
-2025-03-03 22:12:24,719 [INFO] - Clearing expired cache files...
-2025-03-03 22:12:24,728 [INFO] - Cleared 0 expired cache files
-2025-03-03 22:12:24,753 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.0.113:5000
-2025-03-03 22:12:24,753 [INFO] - [33mPress CTRL+C to quit[0m
-2025-03-03 22:12:24,771 [INFO] -  * Restarting with watchdog (windowsapi)
-2025-03-03 22:12:26,778 [INFO] - Clearing expired cache files...
-2025-03-03 22:12:26,788 [INFO] - Cleared 0 expired cache files
-2025-03-03 22:12:26,807 [WARNING] -  * Debugger is active!
-2025-03-03 22:12:26,829 [INFO] -  * Debugger PIN: 497-044-917
-2025-03-03 22:12:34,738 [INFO] - 127.0.0.1 - - [03/Mar/2025 22:12:34] "GET / HTTP/1.1" 200 -
-2025-03-03 22:12:34,916 [INFO] - 127.0.0.1 - - [03/Mar/2025 22:12:34] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-2025-03-03 22:17:30,571 [INFO] -  * Detected change in 'C:\\Users\\defco\\PokemonStoreToolsAndModules\\diagnostic.py', reloading
-2025-03-03 22:17:30,573 [INFO] -  * Detected change in 'C:\\Users\\defco\\PokemonStoreToolsAndModules\\error_handling.py', reloading
-2025-03-03 22:17:30,606 [INFO] -  * Detected change in 'C:\\Users\\defco\\PokemonStoreToolsAndModules\\utils.py', reloading
-2025-03-03 22:17:30,683 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\flask\\__init__.py', reloading
-2025-03-03 22:17:30,689 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\flask\\app.py', reloading
-2025-03-03 22:17:30,716 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\flask\\sansio\\app.py', reloading
-2025-03-03 22:17:30,726 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\flask\\sansio\\scaffold.py', reloading
-2025-03-03 22:17:30,738 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\flask\\globals.py', reloading
-2025-03-03 22:17:30,741 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\flask\\wrappers.py', reloading
-2025-03-03 22:17:30,744 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\werkzeug\\wrappers\\__init__.py', reloading
-2025-03-03 22:17:30,746 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\werkzeug\\wrappers\\request.py', reloading
-2025-03-03 22:17:30,754 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\werkzeug\\sansio\\request.py', reloading
-2025-03-03 22:17:30,760 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\flask\\json\\__init__.py', reloading
-2025-03-03 22:17:30,764 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\werkzeug\\wrappers\\response.py', reloading
-2025-03-03 22:17:30,779 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\werkzeug\\sansio\\response.py', reloading
-2025-03-03 22:17:30,787 [INFO] -  * Detected change in 'c:\\Users\\defco\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\flask\\templating.py', reloading
-2025-03-03 22:17:33,925 [INFO] -  * Restarting with watchdog (windowsapi)
+2025-03-04 21:07:13,334 [INFO] - [33mPress CTRL+C to quit[0m
+2025-03-04 21:07:13,353 [INFO] -  * Restarting with watchdog (windowsapi)
+2025-03-04 21:07:15,343 [WARNING] -  * Debugger is active!
+2025-03-04 21:07:15,365 [INFO] -  * Debugger PIN: 497-044-917
+2025-03-04 21:07:17,571 [INFO] - 127.0.0.1 - - [04/Mar/2025 21:07:17] "GET / HTTP/1.1" 200 -
+2025-03-04 21:07:17,629 [INFO] - Fetching all Pokemon card sets...
+2025-03-04 21:07:18,951 [INFO] - Found 164 Pokemon card sets
+2025-03-04 21:07:18,959 [INFO] - 127.0.0.1 - - [04/Mar/2025 21:07:18] "GET /api/sets HTTP/1.1" 200 -
+2025-03-04 21:07:18,964 [INFO] - Fetching all Pokemon card sets...
+2025-03-04 21:07:20,258 [INFO] - Found 164 Pokemon card sets
+2025-03-04 21:07:20,266 [INFO] - 127.0.0.1 - - [04/Mar/2025 21:07:20] "GET /api/sets HTTP/1.1" 200 -
+2025-03-04 21:07:23,436 [INFO] - Searching for cards matching 'vma'...
+2025-03-04 21:07:23,785 [INFO] - Searching for cards matching 'vmax'...
+2025-03-04 21:07:24,340 [ERROR] - Error using client, falling back to direct API call: string indices must be integers
+2025-03-04 21:07:24,692 [ERROR] - Error using client, falling back to direct API call: string indices must be integers
+2025-03-04 21:07:25,065 [INFO] - Found 15 cards matching 'vma' using fallback
+2025-03-04 21:07:25,068 [INFO] - 127.0.0.1 - - [04/Mar/2025 21:07:25] "GET /api/search?q=vma HTTP/1.1" 200 -
+2025-03-04 21:07:25,587 [INFO] - Found 15 cards matching 'vmax' using fallback
+2025-03-04 21:07:25,590 [INFO] - 127.0.0.1 - - [04/Mar/2025 21:07:25] "GET /api/search?q=vmax HTTP/1.1" 200 -
+2025-03-04 21:07:26,984 [INFO] - Fetching price data for card ID: swsh4-190
+2025-03-04 21:07:26,985 [INFO] - Getting card details from Pokemon TCG API...
+2025-03-04 21:07:27,416 [INFO] - Processing card: Aegislash VMAX from Vivid Voltage
+2025-03-04 21:07:27,417 [INFO] - Extracting TCGPlayer pricing data...
+2025-03-04 21:07:27,417 [INFO] - Fetching PriceCharting pricing data...
+2025-03-04 21:07:27,418 [INFO] - Fetching PriceCharting data for: Aegislash VMAX ({'id': 'swsh4', 'name': 'Vivid Voltage', 'series': 'Sword & Shield', 'printedTotal': 185, 'total': 203, 'legalities': {'unlimited': 'Legal', 'expanded': 'Legal'}, 'ptcgoCode': 'VIV', 'releaseDate': '2020/11/13', 'updatedAt': '2020/11/13 16:20:00', 'images': {'symbol': 'https://images.pokemontcg.io/swsh4/symbol.png', 'logo': 'https://images.pokemontcg.io/swsh4/logo.png'}} #190)
+2025-03-04 21:07:27,418 [INFO] - Using mapped set name: 'Pokemon Vivid Voltage' for 'swsh4'
+2025-03-04 21:07:28,263 [WARNING] - All direct lookup attempts failed for Aegislash VMAX (Pokemon Vivid Voltage #190)
+2025-03-04 21:07:28,265 [INFO] - Getting PriceCharting data for 'Aegislash VMAX' (#190) from 'Vivid Voltage'
+2025-03-04 21:07:29,125 [WARNING] - All direct lookup attempts failed for Aegislash VMAX (Vivid Voltage #190)
+2025-03-04 21:07:29,313 [ERROR] - Error searching for 'pokemon Aegislash VMAX Vivid Voltage': 403 Client Error: Forbidden for url: https://www.pricecharting.com/api/products?q=pokemon+Aegislash+VMAX+Vivid+Voltage&limit=20&t=pokemon&token=3ada03b1de794bed535db04c27d9141af942fbd7
+2025-03-04 21:07:29,552 [ERROR] - Error searching for 'Aegislash VMAX Vivid Voltage': 403 Client Error: Forbidden for url: https://www.pricecharting.com/api/products?q=Aegislash+VMAX+Vivid+Voltage&limit=20&t=pokemon&token=3ada03b1de794bed535db04c27d9141af942fbd7
+2025-03-04 21:07:29,807 [ERROR] - Error searching for 'Aegislash VMAX': 403 Client Error: Forbidden for url: https://www.pricecharting.com/api/products?q=Aegislash+VMAX&limit=20&t=pokemon&token=3ada03b1de794bed535db04c27d9141af942fbd7
+2025-03-04 21:07:29,808 [WARNING] - No suitable product match found for Aegislash VMAX (#190)
+2025-03-04 21:07:29,809 [INFO] - PriceCharting prices - Loose: $0.0, Graded: $0.0
+2025-03-04 21:07:29,809 [INFO] - Processing CardMarket pricing data...
+2025-03-04 21:07:29,809 [INFO] - Calculating arbitrage opportunities...
+2025-03-04 21:07:29,810 [INFO] - Cheapest source: cardmarket = $5.97
+2025-03-04 21:07:29,810 [INFO] - Most expensive source: tcgplayer_holofoil_high = $22.79
+2025-03-04 21:07:29,810 [INFO] - Found arbitrage opportunity! Buy: $5.97 Sell: $22.79 Profit: $12.40 (207.84%)
+2025-03-04 21:07:29,812 [INFO] - 127.0.0.1 - - [04/Mar/2025 21:07:29] "GET /api/card_prices?id=swsh4-190 HTTP/1.1" 200 -

@@ -23,10 +23,10 @@ POKEAPI_BASE_URL = "https://pokeapi.co/api/v2"
 # ===============================
 
 # EUR to USD conversion rate (for converting CardMarket prices to USD)
-EUR_TO_USD_CONVERSION_RATE = 1.09  # Example rate, adjust as needed
+EUR_TO_USD_CONVERSION_RATE = 1.06    
 
 # USD to EUR conversion rate (for converting US prices to CardMarket)
-USD_TO_EUR_CONVERSION_RATE = 0.92  # Example rate, adjust as needed
+USD_TO_EUR_CONVERSION_RATE = 0.94  
 
 # Marketplace fees (percentage as decimal)
 FEES = {
@@ -126,6 +126,8 @@ SET_MAPPING = {
     "sv7": {"tcg_name": "Stellar Crown", "pricecharting_name": "Pokemon Stellar Crown"},
     "sv8": {"tcg_name": "Surging Sparks", "pricecharting_name": "Pokemon Surging Sparks"},
     "sv8pt5": {"tcg_name": "Prismatic Evolutions", "pricecharting_name": "Pokemon Prismatic Evolutions"},
+    "hgss4": {"tcg_name": "HS—Triumphant", "pricecharting_name": "Pokemon HS Triumphant"},
+    "dp6": {"tcg_name": "Legends Awakened", "pricecharting_name": "Pokemon Legends Awakened"}
 }
 
 

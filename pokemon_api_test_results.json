@@ -1,0 +1,1370 @@
+[
+  {
+    "set_id": "sm3",
+    "card_number": "150",
+    "card_name": "Charizard GX",
+    "expected_to_work": true,
+    "pokemon_tcg": {
+      "success": true,
+      "data": {
+        "id": "sm3-150",
+        "name": "Charizard-GX",
+        "supertype": "Pok\u00e9mon",
+        "subtypes": [
+          "Stage 2",
+          "GX"
+        ],
+        "hp": "250",
+        "types": [
+          "Fire"
+        ],
+        "evolvesFrom": "Charmeleon",
+        "rules": [
+          "Pok\u00e9mon-GX rule: When your Pok\u00e9mon-GX is Knocked Out, your opponent takes 2 Prize cards."
+        ],
+        "attacks": [
+          {
+            "name": "Wing Attack",
+            "cost": [
+              "Colorless",
+              "Colorless",
+              "Colorless"
+            ],
+            "convertedEnergyCost": 3,
+            "damage": "70",
+            "text": ""
+          },
+          {
+            "name": "Crimson Storm",
+            "cost": [
+              "Fire",
+              "Fire",
+              "Fire",
+              "Colorless",
+              "Colorless"
+            ],
+            "convertedEnergyCost": 5,
+            "damage": "300",
+            "text": "Discard 3 Fire Energy from this Pok\u00e9mon."
+          },
+          {
+            "name": "Raging Out-GX",
+            "cost": [
+              "Fire",
+              "Colorless",
+              "Colorless"
+            ],
+            "convertedEnergyCost": 3,
+            "damage": "",
+            "text": "Discard the top 10 cards of your opponent's deck. (You can't use more than 1 GX attack in a game.)"
+          }
+        ],
+        "weaknesses": [
+          {
+            "type": "Water",
+            "value": "\u00d72"
+          }
+        ],
+        "retreatCost": [
+          "Colorless",
+          "Colorless"
+        ],
+        "convertedRetreatCost": 2,
+        "set": {
+          "id": "sm3",
+          "name": "Burning Shadows",
+          "series": "Sun & Moon",
+          "printedTotal": 147,
+          "total": 177,
+          "legalities": {
+            "unlimited": "Legal",
+            "expanded": "Legal"
+          },
+          "ptcgoCode": "BUS",
+          "releaseDate": "2017/08/05",
+          "updatedAt": "2022/10/11 21:39:00",
+          "images": {
+            "symbol": "https://images.pokemontcg.io/sm3/symbol.png",
+            "logo": "https://images.pokemontcg.io/sm3/logo.png"
+          }
+        },
+        "number": "150",
+        "artist": "5ban Graphics",
+        "rarity": "Rare Rainbow",
+        "nationalPokedexNumbers": [
+          6
+        ],
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "images": {
+          "small": "https://images.pokemontcg.io/sm3/150.png",
+          "large": "https://images.pokemontcg.io/sm3/150_hires.png"
+        },
+        "tcgplayer": {
+          "url": "https://prices.pokemontcg.io/tcgplayer/sm3-150",
+          "updatedAt": "2025/03/04",
+          "prices": {
+            "holofoil": {
+              "low": 272.18,
+              "mid": 394.88,
+              "high": 875.98,
+              "market": 423.25,
+              "directLow": 318.01
+            }
+          }
+        },
+        "cardmarket": {
+          "url": "https://prices.pokemontcg.io/cardmarket/sm3-150",
+          "updatedAt": "2025/03/04",
+          "prices": {
+            "averageSellPrice": 200.83,
+            "lowPrice": 50.0,
+            "trendPrice": 93.02,
+            "germanProLow": 0.0,
+            "suggestedPrice": 0.0,
+            "reverseHoloSell": 0.0,
+            "reverseHoloLow": 0.0,
+            "reverseHoloTrend": 329.31,
+            "lowPriceExPlus": 130.0,
+            "avg1": 59.99,
+            "avg7": 170.55,
+            "avg30": 213.6,
+            "reverseHoloAvg1": 152.0,
+            "reverseHoloAvg7": 280.22,
+            "reverseHoloAvg30": 445.45
+          }
+        }
+      }
+    },
+    "price_charting": {
+      "success": true,
+      "data": {
+        "bgs-10-price": 356600,
+        "box-only-price": 135000,
+        "cib-price": 27443,
+        "condition-17-price": 199797,
+        "condition-18-price": 164600,
+        "console-name": "Pokemon Burning Shadows",
+        "gamestop-price": 0,
+        "gamestop-trade-price": 0,
+        "genre": "Pokemon Card",
+        "graded-price": 48027,
+        "id": "960934",
+        "loose-price": 18750,
+        "manual-only-price": 274335,
+        "new-price": 31760,
+        "product-name": "Charizard GX #150",
+        "release-date": "2017-08-04",
+        "retail-cib-buy": 15100,
+        "retail-cib-sell": 30200,
+        "retail-loose-buy": 10300,
+        "retail-loose-sell": 20600,
+        "retail-new-buy": 17450,
+        "retail-new-sell": 34900,
+        "sales-volume": "410",
+        "status": "success",
+        "tcg-id": "138497"
+      },
+      "strategy": "direct_lookup",
+      "query": "pokemon Charizard-GX Burning Shadows 150"
+    },
+    "overall_success": true
+  },
+  {
+    "set_id": "base1",
+    "card_number": "4",
+    "card_name": "Charizard",
+    "expected_to_work": true,
+    "pokemon_tcg": {
+      "success": true,
+      "data": {
+        "id": "base1-4",
+        "name": "Charizard",
+        "supertype": "Pok\u00e9mon",
+        "subtypes": [
+          "Stage 2"
+        ],
+        "level": "76",
+        "hp": "120",
+        "types": [
+          "Fire"
+        ],
+        "evolvesFrom": "Charmeleon",
+        "abilities": [
+          {
+            "name": "Energy Burn",
+            "text": "As often as you like during your turn (before your attack), you may turn all Energy attached to Charizard into Fire Energy for the rest of the turn. This power can't be used if Charizard is Asleep, Confused, or Paralyzed.",
+            "type": "Pok\u00e9mon Power"
+          }
+        ],
+        "attacks": [
+          {
+            "name": "Fire Spin",
+            "cost": [
+              "Fire",
+              "Fire",
+              "Fire",
+              "Fire"
+            ],
+            "convertedEnergyCost": 4,
+            "damage": "100",
+            "text": "Discard 2 Energy cards attached to Charizard in order to use this attack."
+          }
+        ],
+        "weaknesses": [
+          {
+            "type": "Water",
+            "value": "\u00d72"
+          }
+        ],
+        "resistances": [
+          {
+            "type": "Fighting",
+            "value": "-30"
+          }
+        ],
+        "retreatCost": [
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ],
+        "convertedRetreatCost": 3,
+        "set": {
+          "id": "base1",
+          "name": "Base",
+          "series": "Base",
+          "printedTotal": 102,
+          "total": 102,
+          "legalities": {
+            "unlimited": "Legal"
+          },
+          "ptcgoCode": "BS",
+          "releaseDate": "1999/01/09",
+          "updatedAt": "2022/10/10 15:12:00",
+          "images": {
+            "symbol": "https://images.pokemontcg.io/base1/symbol.png",
+            "logo": "https://images.pokemontcg.io/base1/logo.png"
+          }
+        },
+        "number": "4",
+        "artist": "Mitsuhiro Arita",
+        "rarity": "Rare Holo",
+        "flavorText": "Spits fire that is hot enough to melt boulders. Known to unintentionally cause forest fires.",
+        "nationalPokedexNumbers": [
+          6
+        ],
+        "legalities": {
+          "unlimited": "Legal"
+        },
+        "images": {
+          "small": "https://images.pokemontcg.io/base1/4.png",
+          "large": "https://images.pokemontcg.io/base1/4_hires.png"
+        },
+        "tcgplayer": {
+          "url": "https://prices.pokemontcg.io/tcgplayer/base1-4",
+          "updatedAt": "2025/03/04",
+          "prices": {
+            "holofoil": {
+              "low": 330.0,
+              "mid": 467.1,
+              "high": 1249.99,
+              "market": 422.45,
+              "directLow": null
+            }
+          }
+        },
+        "cardmarket": {
+          "url": "https://prices.pokemontcg.io/cardmarket/base1-4",
+          "updatedAt": "2025/03/04",
+          "prices": {
+            "averageSellPrice": 1883.0,
+            "lowPrice": 625.0,
+            "trendPrice": 1294.82,
+            "germanProLow": 0.0,
+            "suggestedPrice": 0.0,
+            "reverseHoloSell": 0.0,
+            "reverseHoloLow": 0.0,
+            "reverseHoloTrend": 0.0,
+            "lowPriceExPlus": 1000.0,
+            "avg1": 499.99,
+            "avg7": 1600.57,
+            "avg30": 1711.29,
+            "reverseHoloAvg1": 0.0,
+            "reverseHoloAvg7": 0.0,
+            "reverseHoloAvg30": 0.0
+          }
+        }
+      }
+    },
+    "price_charting": {
+      "success": true,
+      "data": {
+        "bgs-10-price": 35220100,
+        "box-only-price": 2832973,
+        "cib-price": 745000,
+        "condition-17-price": 5500000,
+        "condition-18-price": 16255400,
+        "console-name": "Pokemon Base Set",
+        "gamestop-price": 0,
+        "gamestop-trade-price": 0,
+        "genre": "Pokemon Card",
+        "graded-price": 2670150,
+        "id": "715593",
+        "loose-price": 394025,
+        "manual-only-price": 27092397,
+        "new-price": 1136634,
+        "product-name": "Charizard [1st Edition] #4",
+        "release-date": "1999-02-05",
+        "retail-cib-buy": 491700,
+        "retail-cib-sell": 819500,
+        "retail-loose-buy": 260040,
+        "retail-loose-sell": 433400,
+        "retail-new-buy": 750180,
+        "retail-new-sell": 1250300,
+        "sales-volume": "165",
+        "status": "success",
+        "tcg-id": "106999"
+      },
+      "strategy": "direct_lookup",
+      "query": "pokemon Charizard Base 4"
+    },
+    "overall_success": true
+  },
+  {
+    "set_id": "swsh3",
+    "card_number": "189",
+    "card_name": "Charizard VMAX",
+    "expected_to_work": true,
+    "pokemon_tcg": {
+      "success": true,
+      "data": {
+        "id": "swsh3-189",
+        "name": "Rose",
+        "supertype": "Trainer",
+        "subtypes": [
+          "Supporter"
+        ],
+        "rules": [
+          "Attach up to 2 basic Energy cards from your discard pile to 1 of your Pok\u00e9mon VMAX. If you attached any Energy cards in this way, discard your hand.",
+          "You may play only 1 Supporter card during your turn."
+        ],
+        "set": {
+          "id": "swsh3",
+          "name": "Darkness Ablaze",
+          "series": "Sword & Shield",
+          "printedTotal": 189,
+          "total": 201,
+          "legalities": {
+            "unlimited": "Legal",
+            "expanded": "Legal"
+          },
+          "ptcgoCode": "DAA",
+          "releaseDate": "2020/08/14",
+          "updatedAt": "2020/10/25 13:45:00",
+          "images": {
+            "symbol": "https://images.pokemontcg.io/swsh3/symbol.png",
+            "logo": "https://images.pokemontcg.io/swsh3/logo.png"
+          }
+        },
+        "number": "189",
+        "artist": "Naoki Saito",
+        "rarity": "Rare Ultra",
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "regulationMark": "D",
+        "images": {
+          "small": "https://images.pokemontcg.io/swsh3/189.png",
+          "large": "https://images.pokemontcg.io/swsh3/189_hires.png"
+        },
+        "tcgplayer": {
+          "url": "https://prices.pokemontcg.io/tcgplayer/swsh3-189",
+          "updatedAt": "2025/03/04",
+          "prices": {
+            "holofoil": {
+              "low": 0.5,
+              "mid": 1.75,
+              "high": 89.0,
+              "market": 1.58,
+              "directLow": 1.72
+            }
+          }
+        },
+        "cardmarket": {
+          "url": "https://prices.pokemontcg.io/cardmarket/swsh3-189",
+          "updatedAt": "2025/03/04",
+          "prices": {
+            "averageSellPrice": 2.34,
+            "lowPrice": 0.95,
+            "trendPrice": 2.54,
+            "germanProLow": 0.0,
+            "suggestedPrice": 0.0,
+            "reverseHoloSell": 0.0,
+            "reverseHoloLow": 0.0,
+            "reverseHoloTrend": 5.4,
+            "lowPriceExPlus": 1.45,
+            "avg1": 2.0,
+            "avg7": 2.37,
+            "avg30": 2.36,
+            "reverseHoloAvg1": 5.5,
+            "reverseHoloAvg7": 5.82,
+            "reverseHoloAvg30": 6.41
+          }
+        }
+      }
+    },
+    "price_charting": {
+      "success": true,
+      "data": {
+        "bgs-10-price": 2500,
+        "box-only-price": 1100,
+        "cib-price": 700,
+        "condition-17-price": 1500,
+        "condition-18-price": 1100,
+        "console-name": "Pokemon Darkness Ablaze",
+        "gamestop-price": 0,
+        "gamestop-trade-price": 0,
+        "genre": "Pokemon Card",
+        "graded-price": 999,
+        "id": "887267",
+        "loose-price": 271,
+        "manual-only-price": 1899,
+        "new-price": 832,
+        "product-name": "Rose #189",
+        "release-date": "2020-08-14",
+        "retail-cib-buy": 150,
+        "retail-cib-sell": 769,
+        "retail-loose-sell": 299,
+        "retail-new-buy": 180,
+        "retail-new-sell": 919,
+        "sales-volume": "304",
+        "status": "success",
+        "tcg-id": "219310"
+      },
+      "strategy": "direct_lookup",
+      "query": "pokemon Rose Darkness Ablaze 189"
+    },
+    "overall_success": true
+  },
+  {
+    "set_id": "dp6",
+    "card_number": "27",
+    "card_name": "Ditto",
+    "expected_to_work": false,
+    "pokemon_tcg": {
+      "success": true,
+      "data": {
+        "id": "dp6-27",
+        "name": "Ditto",
+        "supertype": "Pok\u00e9mon",
+        "subtypes": [
+          "Basic"
+        ],
+        "level": "33",
+        "hp": "60",
+        "types": [
+          "Colorless"
+        ],
+        "abilities": [
+          {
+            "name": "Ditto DNA",
+            "text": "As long as Ditto is your Active Pok\u00e9mon, its maximum HP is the same as your opponent's Active Pok\u00e9mon. Ditto can use the attacks of that Pok\u00e9mon as its own. (You still need the necessary Energy to use each attack.) If that Pok\u00e9mon is no longer your opponent's Active Pok\u00e9mon, choose 1 of your opponent's Active Pok\u00e9mon for Ditto to copy.",
+            "type": "Pok\u00e9-Body"
+          }
+        ],
+        "weaknesses": [
+          {
+            "type": "Fighting",
+            "value": "+20"
+          }
+        ],
+        "retreatCost": [
+          "Colorless"
+        ],
+        "convertedRetreatCost": 1,
+        "set": {
+          "id": "dp6",
+          "name": "Legends Awakened",
+          "series": "Diamond & Pearl",
+          "printedTotal": 146,
+          "total": 146,
+          "legalities": {
+            "unlimited": "Legal"
+          },
+          "ptcgoCode": "LA",
+          "releaseDate": "2008/08/01",
+          "updatedAt": "2018/03/04 10:35:00",
+          "images": {
+            "symbol": "https://images.pokemontcg.io/dp6/symbol.png",
+            "logo": "https://images.pokemontcg.io/dp6/logo.png"
+          }
+        },
+        "number": "27",
+        "artist": "Ken Sugimori",
+        "rarity": "Rare",
+        "flavorText": "It has the ability to reconstitute its entire cellular structure to transform into whatever it sees.",
+        "nationalPokedexNumbers": [
+          132
+        ],
+        "legalities": {
+          "unlimited": "Legal"
+        },
+        "images": {
+          "small": "https://images.pokemontcg.io/dp6/27.png",
+          "large": "https://images.pokemontcg.io/dp6/27_hires.png"
+        },
+        "tcgplayer": {
+          "url": "https://prices.pokemontcg.io/tcgplayer/dp6-27",
+          "updatedAt": "2025/03/04",
+          "prices": {
+            "normal": {
+              "low": 6.75,
+              "mid": 7.16,
+              "high": 14.99,
+              "market": 7.16,
+              "directLow": null
+            },
+            "reverseHolofoil": {
+              "low": 7.96,
+              "mid": 10.51,
+              "high": 21.44,
+              "market": 10.72,
+              "directLow": null
+            }
+          }
+        },
+        "cardmarket": {
+          "url": "https://prices.pokemontcg.io/cardmarket/dp6-27",
+          "updatedAt": "2025/03/04",
+          "prices": {
+            "averageSellPrice": 3.35,
+            "lowPrice": 1.0,
+            "trendPrice": 2.71,
+            "germanProLow": 0.0,
+            "suggestedPrice": 0.0,
+            "reverseHoloSell": 5.11,
+            "reverseHoloLow": 1.95,
+            "reverseHoloTrend": 4.34,
+            "lowPriceExPlus": 2.6,
+            "avg1": 2.99,
+            "avg7": 3.03,
+            "avg30": 2.42,
+            "reverseHoloAvg1": 6.99,
+            "reverseHoloAvg7": 4.5,
+            "reverseHoloAvg30": 4.26
+          }
+        }
+      }
+    },
+    "price_charting": {
+      "success": true,
+      "data": {
+        "bgs-10-price": 16000,
+        "box-only-price": 5100,
+        "condition-17-price": 9800,
+        "condition-18-price": 7400,
+        "console-name": "Pokemon Legends Awakened",
+        "gamestop-price": 0,
+        "gamestop-trade-price": 0,
+        "genre": "Pokemon Card",
+        "graded-price": 4609,
+        "id": "924958",
+        "loose-price": 595,
+        "manual-only-price": 12269,
+        "new-price": 910,
+        "product-name": "Ditto #27",
+        "release-date": "2008-08-20",
+        "retail-loose-buy": 130,
+        "retail-loose-sell": 659,
+        "retail-new-buy": 200,
+        "retail-new-sell": 999,
+        "sales-volume": "28",
+        "status": "success",
+        "tcg-id": "84843"
+      },
+      "strategy": "direct_lookup",
+      "query": "pokemon Ditto Legends Awakened 27"
+    },
+    "overall_success": true
+  },
+  {
+    "set_id": "ex11",
+    "card_number": "39",
+    "card_name": "Ditto",
+    "expected_to_work": false,
+    "pokemon_tcg": {
+      "success": true,
+      "data": {
+        "id": "ex11-39",
+        "name": "Ditto",
+        "supertype": "Pok\u00e9mon",
+        "subtypes": [
+          "Basic"
+        ],
+        "hp": "60",
+        "types": [
+          "Lightning"
+        ],
+        "abilities": [
+          {
+            "name": "Duplicate",
+            "text": "Once during your turn (before your attack), you may search your deck for another Ditto and switch it with Ditto. (Any cards attached to Ditto, damage counters, Special Conditions, and effects on it are now on the new Pok\u00e9mon.) If you do, put Ditto on top of your deck. Shuffle your deck afterward. You can't use more than 1 Duplicate Pok\u00e9-Power each turn.",
+            "type": "Pok\u00e9-Power"
+          }
+        ],
+        "attacks": [
+          {
+            "name": "Thunderbolt",
+            "cost": [
+              "Lightning",
+              "Colorless"
+            ],
+            "convertedEnergyCost": 2,
+            "damage": "40",
+            "text": "Discard all Energy cards attached to Ditto."
+          }
+        ],
+        "weaknesses": [
+          {
+            "type": "Fighting",
+            "value": "\u00d72"
+          }
+        ],
+        "retreatCost": [
+          "Colorless"
+        ],
+        "convertedRetreatCost": 1,
+        "set": {
+          "id": "ex11",
+          "name": "Delta Species",
+          "series": "EX",
+          "printedTotal": 113,
+          "total": 114,
+          "legalities": {
+            "unlimited": "Legal"
+          },
+          "ptcgoCode": "DS",
+          "releaseDate": "2005/10/31",
+          "updatedAt": "2020/05/01 16:06:00",
+          "images": {
+            "symbol": "https://images.pokemontcg.io/ex11/symbol.png",
+            "logo": "https://images.pokemontcg.io/ex11/logo.png"
+          }
+        },
+        "number": "39",
+        "artist": "Yuka Morii",
+        "rarity": "Uncommon",
+        "nationalPokedexNumbers": [
+          132
+        ],
+        "legalities": {
+          "unlimited": "Legal"
+        },
+        "images": {
+          "small": "https://images.pokemontcg.io/ex11/39.png",
+          "large": "https://images.pokemontcg.io/ex11/39_hires.png"
+        },
+        "tcgplayer": {
+          "url": "https://prices.pokemontcg.io/tcgplayer/ex11-39",
+          "updatedAt": "2025/03/04",
+          "prices": {
+            "normal": {
+              "low": 49.98,
+              "mid": 49.99,
+              "high": 50.78,
+              "market": 20.42,
+              "directLow": null
+            },
+            "reverseHolofoil": {
+              "low": 79.99,
+              "mid": 99.95,
+              "high": 99.99,
+              "market": 79.99,
+              "directLow": null
+            }
+          }
+        },
+        "cardmarket": {
+          "url": "https://prices.pokemontcg.io/cardmarket/ex11-39",
+          "updatedAt": "2025/03/04",
+          "prices": {
+            "averageSellPrice": 13.85,
+            "lowPrice": 5.0,
+            "trendPrice": 13.07,
+            "germanProLow": 0.0,
+            "suggestedPrice": 0.0,
+            "reverseHoloSell": 16.5,
+            "reverseHoloLow": 7.99,
+            "reverseHoloTrend": 24.26,
+            "lowPriceExPlus": 12.99,
+            "avg1": 9.0,
+            "avg7": 15.24,
+            "avg30": 14.69,
+            "reverseHoloAvg1": 9.75,
+            "reverseHoloAvg7": 20.67,
+            "reverseHoloAvg30": 26.57
+          }
+        }
+      }
+    },
+    "price_charting": {
+      "success": true,
+      "data": {
+        "bgs-10-price": 23100,
+        "box-only-price": 6500,
+        "cib-price": 1986,
+        "condition-17-price": 14200,
+        "condition-18-price": 10700,
+        "console-name": "Pokemon Delta Species",
+        "gamestop-price": 0,
+        "gamestop-trade-price": 0,
+        "genre": "Pokemon Card",
+        "graded-price": 5913,
+        "id": "888701",
+        "loose-price": 1240,
+        "manual-only-price": 17750,
+        "new-price": 3101,
+        "product-name": "Ditto (Pikachu) #39",
+        "release-date": "2005-10-31",
+        "retail-cib-buy": 660,
+        "retail-cib-sell": 2199,
+        "retail-loose-buy": 350,
+        "retail-loose-sell": 1399,
+        "retail-new-buy": 1020,
+        "retail-new-sell": 3399,
+        "sales-volume": "84",
+        "status": "success",
+        "tcg-id": "84836"
+      },
+      "strategy": "direct_lookup",
+      "query": "pokemon Ditto Delta Species 39"
+    },
+    "overall_success": true
+  },
+  {
+    "set_id": "ex11",
+    "card_number": "40",
+    "card_name": "Ditto",
+    "expected_to_work": false,
+    "pokemon_tcg": {
+      "success": true,
+      "data": {
+        "id": "ex11-40",
+        "name": "Ditto",
+        "supertype": "Pok\u00e9mon",
+        "subtypes": [
+          "Basic"
+        ],
+        "hp": "60",
+        "types": [
+          "Water"
+        ],
+        "abilities": [
+          {
+            "name": "Duplicate",
+            "text": "Once during your turn (before your attack), you may search your deck for another Ditto and switch it with Ditto. (Any cards attached to Ditto, damage counters, Special Conditions, and effects on it are now on the new Pok\u00e9mon.) If you do, put Ditto on top of your deck. Shuffle your deck afterward. You can't use more than 1 Duplicate Pok\u00e9-Power each turn.",
+            "type": "Pok\u00e9-Power"
+          }
+        ],
+        "attacks": [
+          {
+            "name": "Smash Turn",
+            "cost": [
+              "Water",
+              "Colorless"
+            ],
+            "convertedEnergyCost": 2,
+            "damage": "20",
+            "text": "After your attack, you may switch Ditto with 1 of your Benched Pok\u00e9mon."
+          }
+        ],
+        "weaknesses": [
+          {
+            "type": "Lightning",
+            "value": "\u00d72"
+          }
+        ],
+        "retreatCost": [
+          "Colorless"
+        ],
+        "convertedRetreatCost": 1,
+        "set": {
+          "id": "ex11",
+          "name": "Delta Species",
+          "series": "EX",
+          "printedTotal": 113,
+          "total": 114,
+          "legalities": {
+            "unlimited": "Legal"
+          },
+          "ptcgoCode": "DS",
+          "releaseDate": "2005/10/31",
+          "updatedAt": "2020/05/01 16:06:00",
+          "images": {
+            "symbol": "https://images.pokemontcg.io/ex11/symbol.png",
+            "logo": "https://images.pokemontcg.io/ex11/logo.png"
+          }
+        },
+        "number": "40",
+        "artist": "Yuka Morii",
+        "rarity": "Uncommon",
+        "nationalPokedexNumbers": [
+          132
+        ],
+        "legalities": {
+          "unlimited": "Legal"
+        },
+        "images": {
+          "small": "https://images.pokemontcg.io/ex11/40.png",
+          "large": "https://images.pokemontcg.io/ex11/40_hires.png"
+        },
+        "tcgplayer": {
+          "url": "https://prices.pokemontcg.io/tcgplayer/ex11-40",
+          "updatedAt": "2025/03/04",
+          "prices": {
+            "normal": {
+              "low": 19.99,
+              "mid": 41.4,
+              "high": 59.99,
+              "market": 18.75,
+              "directLow": null
+            },
+            "reverseHolofoil": {
+              "low": 69.69,
+              "mid": 69.69,
+              "high": 69.69,
+              "market": 79.5,
+              "directLow": null
+            }
+          }
+        },
+        "cardmarket": {
+          "url": "https://prices.pokemontcg.io/cardmarket/ex11-40",
+          "updatedAt": "2025/03/04",
+          "prices": {
+            "averageSellPrice": 6.38,
+            "lowPrice": 2.5,
+            "trendPrice": 7.14,
+            "germanProLow": 0.0,
+            "suggestedPrice": 0.0,
+            "reverseHoloSell": 21.25,
+            "reverseHoloLow": 8.0,
+            "reverseHoloTrend": 19.38,
+            "lowPriceExPlus": 5.5,
+            "avg1": 6.93,
+            "avg7": 7.73,
+            "avg30": 5.98,
+            "reverseHoloAvg1": 11.0,
+            "reverseHoloAvg7": 20.98,
+            "reverseHoloAvg30": 16.87
+          }
+        }
+      }
+    },
+    "price_charting": {
+      "success": true,
+      "data": {
+        "bgs-10-price": 17900,
+        "box-only-price": 5000,
+        "cib-price": 1900,
+        "condition-17-price": 8500,
+        "condition-18-price": 8300,
+        "console-name": "Pokemon Delta Species",
+        "gamestop-price": 0,
+        "gamestop-trade-price": 0,
+        "genre": "Pokemon Card",
+        "graded-price": 4978,
+        "id": "888702",
+        "loose-price": 899,
+        "manual-only-price": 13761,
+        "new-price": 2350,
+        "product-name": "Ditto (Squirtle) #40",
+        "release-date": "2005-10-31",
+        "retail-cib-buy": 630,
+        "retail-cib-sell": 2099,
+        "retail-loose-buy": 200,
+        "retail-loose-sell": 989,
+        "retail-new-buy": 780,
+        "retail-new-sell": 2599,
+        "sales-volume": "68",
+        "status": "success",
+        "tcg-id": "84837"
+      },
+      "strategy": "direct_lookup",
+      "query": "pokemon Ditto Delta Species 40"
+    },
+    "overall_success": true
+  },
+  {
+    "set_id": "base5",
+    "card_number": "50",
+    "card_name": "Charmander",
+    "expected_to_work": false,
+    "pokemon_tcg": {
+      "success": true,
+      "data": {
+        "id": "base5-50",
+        "name": "Charmander",
+        "supertype": "Pok\u00e9mon",
+        "subtypes": [
+          "Basic"
+        ],
+        "level": "9",
+        "hp": "40",
+        "types": [
+          "Fire"
+        ],
+        "evolvesTo": [
+          "Charmeleon"
+        ],
+        "abilities": [
+          {
+            "name": "Gather Fire",
+            "text": "Once during your turn (before your attack), you may take 1 Fire Energy card attached to 1 of your other Pok\u00e9mon and attach it to Charmander. This power can't be used if Charmander is Asleep, Confused, or Paralyzed.",
+            "type": "Pok\u00e9mon Power"
+          }
+        ],
+        "attacks": [
+          {
+            "name": "Fire Tail",
+            "cost": [
+              "Fire"
+            ],
+            "convertedEnergyCost": 1,
+            "damage": "20",
+            "text": ""
+          }
+        ],
+        "weaknesses": [
+          {
+            "type": "Water",
+            "value": "\u00d72"
+          }
+        ],
+        "retreatCost": [
+          "Colorless"
+        ],
+        "convertedRetreatCost": 1,
+        "set": {
+          "id": "base5",
+          "name": "Team Rocket",
+          "series": "Base",
+          "printedTotal": 82,
+          "total": 83,
+          "legalities": {
+            "unlimited": "Legal"
+          },
+          "ptcgoCode": "TR",
+          "releaseDate": "2000/04/24",
+          "updatedAt": "2020/08/14 09:35:00",
+          "images": {
+            "symbol": "https://images.pokemontcg.io/base5/symbol.png",
+            "logo": "https://images.pokemontcg.io/base5/logo.png"
+          }
+        },
+        "number": "50",
+        "artist": "Kagemaru Himeno",
+        "rarity": "Common",
+        "flavorText": "Many people find it cute and try to hold it, only to be burned by its tail.",
+        "nationalPokedexNumbers": [
+          4
+        ],
+        "legalities": {
+          "unlimited": "Legal"
+        },
+        "images": {
+          "small": "https://images.pokemontcg.io/base5/50.png",
+          "large": "https://images.pokemontcg.io/base5/50_hires.png"
+        },
+        "tcgplayer": {
+          "url": "https://prices.pokemontcg.io/tcgplayer/base5-50",
+          "updatedAt": "2025/03/04",
+          "prices": {
+            "1stEdition": {
+              "low": 1.5,
+              "mid": 3.66,
+              "high": 17.1,
+              "market": 5.87,
+              "directLow": 2.98
+            },
+            "unlimited": {
+              "low": 0.35,
+              "mid": 1.06,
+              "high": 5.0,
+              "market": 1.29,
+              "directLow": 0.75
+            }
+          }
+        },
+        "cardmarket": {
+          "url": "https://prices.pokemontcg.io/cardmarket/base5-50",
+          "updatedAt": "2025/03/04",
+          "prices": {
+            "averageSellPrice": 2.29,
+            "lowPrice": 0.04,
+            "trendPrice": 2.07,
+            "germanProLow": 0.0,
+            "suggestedPrice": 0.0,
+            "reverseHoloSell": 0.0,
+            "reverseHoloLow": 0.0,
+            "reverseHoloTrend": 8.77,
+            "lowPriceExPlus": 0.4,
+            "avg1": 1.0,
+            "avg7": 2.02,
+            "avg30": 2.27,
+            "reverseHoloAvg1": 3.99,
+            "reverseHoloAvg7": 8.63,
+            "reverseHoloAvg30": 5.6
+          }
+        }
+      }
+    },
+    "price_charting": {
+      "success": true,
+      "data": {
+        "bgs-10-price": 16200,
+        "box-only-price": 3268,
+        "cib-price": 1565,
+        "condition-17-price": 5166,
+        "condition-18-price": 7500,
+        "console-name": "Pokemon Team Rocket",
+        "gamestop-price": 0,
+        "gamestop-trade-price": 0,
+        "genre": "Pokemon Card",
+        "graded-price": 3166,
+        "id": "1341391",
+        "loose-price": 523,
+        "manual-only-price": 12448,
+        "new-price": 2425,
+        "product-name": "Charmander [1st Edition] #50",
+        "release-date": "2000-04-24",
+        "retail-cib-buy": 430,
+        "retail-cib-sell": 1699,
+        "retail-loose-buy": 120,
+        "retail-loose-sell": 579,
+        "retail-new-buy": 810,
+        "retail-new-sell": 2699,
+        "sales-volume": "811",
+        "status": "success",
+        "tcg-id": "84204"
+      },
+      "strategy": "direct_lookup",
+      "query": "pokemon Charmander Team Rocket 50"
+    },
+    "overall_success": true
+  },
+  {
+    "set_id": "sm4",
+    "card_number": "56",
+    "card_name": "Bewear",
+    "expected_to_work": false,
+    "pokemon_tcg": {
+      "success": true,
+      "data": {
+        "id": "sm4-56",
+        "name": "Bewear",
+        "supertype": "Pok\u00e9mon",
+        "subtypes": [
+          "Stage 1"
+        ],
+        "hp": "130",
+        "types": [
+          "Fighting"
+        ],
+        "evolvesFrom": "Stufful",
+        "abilities": [
+          {
+            "name": "Fluffy",
+            "text": "This Pok\u00e9mon takes 30 less damage from the attacks of your opponent's non-Fire Pok\u00e9mon (after applying Weakness and Resistance).",
+            "type": "Ability"
+          }
+        ],
+        "attacks": [
+          {
+            "name": "Cross-Cut",
+            "cost": [
+              "Fighting",
+              "Colorless",
+              "Colorless"
+            ],
+            "convertedEnergyCost": 3,
+            "damage": "60+",
+            "text": "If your opponent's Active Pok\u00e9mon is an Evolution Pok\u00e9mon, this attack does 60 more damage."
+          }
+        ],
+        "weaknesses": [
+          {
+            "type": "Psychic",
+            "value": "\u00d72"
+          }
+        ],
+        "retreatCost": [
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ],
+        "convertedRetreatCost": 3,
+        "set": {
+          "id": "sm4",
+          "name": "Crimson Invasion",
+          "series": "Sun & Moon",
+          "printedTotal": 111,
+          "total": 126,
+          "legalities": {
+            "unlimited": "Legal",
+            "expanded": "Legal"
+          },
+          "ptcgoCode": "CIN",
+          "releaseDate": "2017/11/03",
+          "updatedAt": "2022/10/11 21:39:00",
+          "images": {
+            "symbol": "https://images.pokemontcg.io/sm4/symbol.png",
+            "logo": "https://images.pokemontcg.io/sm4/logo.png"
+          }
+        },
+        "number": "56",
+        "artist": "Saya Tsuruta",
+        "rarity": "Rare Holo",
+        "flavorText": "This immensely dangerous Pok\u00e9mon possesses overwhelming physical strength. Its habitat is generally off-limits.",
+        "nationalPokedexNumbers": [
+          760
+        ],
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "images": {
+          "small": "https://images.pokemontcg.io/sm4/56.png",
+          "large": "https://images.pokemontcg.io/sm4/56_hires.png"
+        },
+        "tcgplayer": {
+          "url": "https://prices.pokemontcg.io/tcgplayer/sm4-56",
+          "updatedAt": "2025/03/04",
+          "prices": {
+            "holofoil": {
+              "low": 0.15,
+              "mid": 0.29,
+              "high": 1.32,
+              "market": 0.29,
+              "directLow": null
+            },
+            "reverseHolofoil": {
+              "low": 0.16,
+              "mid": 0.33,
+              "high": 1.36,
+              "market": 0.33,
+              "directLow": null
+            }
+          }
+        },
+        "cardmarket": {
+          "url": "https://prices.pokemontcg.io/cardmarket/sm4-56",
+          "updatedAt": "2025/03/04",
+          "prices": {
+            "averageSellPrice": 0.39,
+            "lowPrice": 0.08,
+            "trendPrice": 0.25,
+            "germanProLow": 0.0,
+            "suggestedPrice": 0.0,
+            "reverseHoloSell": 0.24,
+            "reverseHoloLow": 0.08,
+            "reverseHoloTrend": 0.27,
+            "lowPriceExPlus": 0.08,
+            "avg1": 0.25,
+            "avg7": 0.32,
+            "avg30": 0.38,
+            "reverseHoloAvg1": 0.3,
+            "reverseHoloAvg7": 0.29,
+            "reverseHoloAvg30": 0.46
+          }
+        }
+      }
+    },
+    "price_charting": {
+      "success": true,
+      "data": {
+        "bgs-10-price": 2400,
+        "box-only-price": 300,
+        "cib-price": 950,
+        "condition-17-price": 999,
+        "condition-18-price": 1100,
+        "console-name": "Pokemon Crimson Invasion",
+        "gamestop-price": 0,
+        "gamestop-trade-price": 0,
+        "genre": "Pokemon Card",
+        "graded-price": 290,
+        "id": "961203",
+        "loose-price": 132,
+        "manual-only-price": 1850,
+        "product-name": "Bewear [Holo] #56",
+        "release-date": "2017-10-06",
+        "retail-cib-buy": 200,
+        "retail-cib-sell": 999,
+        "retail-loose-sell": 149,
+        "sales-volume": "23",
+        "status": "success",
+        "tcg-id": "149079"
+      },
+      "strategy": "direct_lookup",
+      "query": "pokemon Bewear Crimson Invasion 56"
+    },
+    "overall_success": true
+  },
+  {
+    "set_id": "sv6pt5",
+    "card_number": "79",
+    "card_name": "Bewear",
+    "expected_to_work": false,
+    "pokemon_tcg": {
+      "success": true,
+      "data": {
+        "id": "sv6pt5-79",
+        "name": "Bewear",
+        "supertype": "Pok\u00e9mon",
+        "subtypes": [
+          "Stage 1"
+        ],
+        "hp": "130",
+        "types": [
+          "Colorless"
+        ],
+        "evolvesFrom": "Stufful",
+        "attacks": [
+          {
+            "name": "Power Charger",
+            "cost": [
+              "Colorless"
+            ],
+            "convertedEnergyCost": 1,
+            "damage": "30",
+            "text": "Search your deck for a Basic Energy card and attach it to this Pok\u00e9mon. Then, shuffle your deck."
+          },
+          {
+            "name": "Hammer In",
+            "cost": [
+              "Colorless",
+              "Colorless",
+              "Colorless"
+            ],
+            "convertedEnergyCost": 3,
+            "damage": "130",
+            "text": ""
+          }
+        ],
+        "weaknesses": [
+          {
+            "type": "Fighting",
+            "value": "\u00d72"
+          }
+        ],
+        "retreatCost": [
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ],
+        "convertedRetreatCost": 3,
+        "set": {
+          "id": "sv6pt5",
+          "name": "Shrouded Fable",
+          "series": "Scarlet & Violet",
+          "printedTotal": 64,
+          "total": 99,
+          "legalities": {
+            "unlimited": "Legal",
+            "standard": "Legal",
+            "expanded": "Legal"
+          },
+          "ptcgoCode": "SFA",
+          "releaseDate": "2024/08/02",
+          "updatedAt": "2024/08/02 15:00:00",
+          "images": {
+            "symbol": "https://images.pokemontcg.io/sv6pt5/symbol.png",
+            "logo": "https://images.pokemontcg.io/sv6pt5/logo.png"
+          }
+        },
+        "number": "79",
+        "rarity": "Illustration Rare",
+        "nationalPokedexNumbers": [
+          760
+        ],
+        "legalities": {
+          "unlimited": "Legal",
+          "standard": "Legal",
+          "expanded": "Legal"
+        },
+        "regulationMark": "H",
+        "images": {
+          "small": "https://images.pokemontcg.io/sv6pt5/79.png",
+          "large": "https://images.pokemontcg.io/sv6pt5/79_hires.png"
+        },
+        "tcgplayer": {
+          "url": "https://prices.pokemontcg.io/tcgplayer/sv6pt5-79",
+          "updatedAt": "2025/03/04",
+          "prices": {
+            "holofoil": {
+              "low": 10.0,
+              "mid": 14.87,
+              "high": 32.0,
+              "market": 12.64,
+              "directLow": 16.2
+            }
+          }
+        },
+        "cardmarket": {
+          "url": "https://prices.pokemontcg.io/cardmarket/sv6pt5-79",
+          "updatedAt": "2025/03/04",
+          "prices": {
+            "averageSellPrice": 5.63,
+            "lowPrice": 4.49,
+            "trendPrice": 6.3,
+            "germanProLow": 0.0,
+            "suggestedPrice": 0.0,
+            "reverseHoloSell": 0.0,
+            "reverseHoloLow": 0.0,
+            "reverseHoloTrend": 0.0,
+            "lowPriceExPlus": 4.49,
+            "avg1": 5.43,
+            "avg7": 6.07,
+            "avg30": 5.79,
+            "reverseHoloAvg1": 0.0,
+            "reverseHoloAvg7": 0.0,
+            "reverseHoloAvg30": 0.0
+          }
+        }
+      }
+    },
+    "price_charting": {
+      "success": true,
+      "data": {
+        "bgs-10-price": 12600,
+        "box-only-price": 1900,
+        "condition-17-price": 2000,
+        "condition-18-price": 5800,
+        "console-name": "Pokemon Shrouded Fable",
+        "gamestop-price": 0,
+        "gamestop-trade-price": 0,
+        "genre": "Pokemon Card",
+        "graded-price": 1725,
+        "id": "7108736",
+        "loose-price": 1146,
+        "manual-only-price": 9658,
+        "new-price": 1550,
+        "product-name": "Bewear #79",
+        "release-date": "2024-08-02",
+        "retail-loose-buy": 330,
+        "retail-loose-sell": 1299,
+        "retail-new-buy": 430,
+        "retail-new-sell": 1699,
+        "sales-volume": "853",
+        "status": "success",
+        "tcg-id": "560390"
+      },
+      "strategy": "direct_lookup",
+      "query": "pokemon Bewear Shrouded Fable 79"
+    },
+    "overall_success": true
+  }
+]

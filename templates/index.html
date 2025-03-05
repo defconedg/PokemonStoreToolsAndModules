@@ -309,26 +309,6 @@
                                     </div>
                                 </div>
                             </div>
-
-                            <div class="col-md-6">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <h5 class="mb-0">Raw JSON Data</h5>
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="btn-group w-100 mb-3">
-                                            <button class="btn btn-sm btn-outline-secondary active" data-target="rawTCGData">TCG</button>
-                                            <button class="btn btn-sm btn-outline-secondary" data-target="rawPCData">PriceCharting</button>
-                                            <button class="btn btn-sm btn-outline-secondary" data-target="rawCMData">CardMarket</button>
-                                        </div>
-                                        <div>
-                                            <pre id="rawTCGData" class="raw-data" style="background: #343a40; padding: 10px; border-radius: 5px; overflow-x: auto; max-height:200px;"></pre>
-                                            <pre id="rawPCData" class="raw-data" style="display:none; background: #343a40; padding: 10px; border-radius: 5px; overflow-x: auto; max-height:200px;"></pre>
-                                            <pre id="rawCMData" class="raw-data" style="display:none; background: #343a40; padding: 10px; border-radius: 5px; overflow-x: auto; max-height:200px;"></pre>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -397,6 +377,9 @@
             const API_BASE_URL = window.location.origin;
             console.log("API base URL:", API_BASE_URL);
             
+            // SINGLE searchTimeout declaration for all search functionality
+            let searchTimeout;
+            
             // Add a debug function to log API calls
             function debugApiCall(endpoint, method = 'GET', params = null) {
                 const url = params ? `${API_BASE_URL}${endpoint}?${params}` : `${API_BASE_URL}${endpoint}`;
@@ -453,29 +436,6 @@
                     });
             }
             
-            // Modify existing fetch calls to use the debugged version
-            // For example, update fetchCardData:
-            function fetchCardData(cardId) {
-                showLoading(true);
-                cardResult.style.display = 'none';
-                setResult.style.display = 'none';
-                
-                const url = `${API_BASE_URL}/api/card_prices?id=${encodeURIComponent(cardId)}`;
-                debugApiCall('/api/card_prices', 'GET', `id=${encodeURIComponent(cardId)}`);
-                
-                fetchWithDebug(url)
-                    .then(data => {
-                        displayCardResult(data);
-                    })
-                    .catch(error => {
-                        console.error('Error fetching card data:', error);
-                        alert(`Failed to load card data: ${error.message}`);
-                    })
-                    .finally(() => {
-                        showLoading(false);
-                    });
-            }
-            
             // Initial API check to verify connection
             console.log("🔌 Checking API connection...");
             fetch(`${API_BASE_URL}/api/sets`)
@@ -495,11 +455,7 @@
                     alert("Failed to connect to API: " + error.message);
                 });
             
-            // Update other fetch calls similarly (search, set data)
-            // ...existing code...
-            
-            // Update search input handler to use fetchWithDebug
-            let searchTimeout;
+            // Updated search input handler with debug logging
             cardSearchInput.addEventListener('input', function() {
                 const query = this.value.trim();
                 
@@ -523,280 +479,6 @@
                     fetchWithDebug(url)
                         .then(data => {
                             suggestionsDiv.innerHTML = '';
-                            
-                            if (data.suggestions && data.suggestions.length) {
-                                data.suggestions.forEach(card => {
-                                    // ...existing suggestion rendering...
-                                });
-                                suggestionsDiv.style.display = 'block';
-                            } else {
-                                suggestionsDiv.innerHTML = '<div class="p-3">No cards found matching your search</div>';
-                                suggestionsDiv.style.display = 'block';
-                            }
-                        })
-                        .catch(error => {
-                            console.error('Error fetching suggestions:', error);
-                            searchErrorElement.textContent = `Search error: ${error.message}. Try a different search term.`;
-                            searchErrorElement.style.display = 'block';
-                            suggestionsDiv.style.display = 'none';
-                        });
-                }, 300);
-            });
-            
-            // Update fetchSetData to use fetchWithDebug
-            function fetchSetData(setId) {
-                showLoading(true);
-                cardResult.style.display = 'none';
-                setResult.style.display = 'none';
-                
-                const url = `${API_BASE_URL}/api/set_prices?id=${encodeURIComponent(setId)}`;
-                debugApiCall('/api/set_prices', 'GET', `id=${encodeURIComponent(setId)}`);
-                
-                fetchWithDebug(url)
-                    .then(data => {
-                        displaySetResult(data);
-                    })
-                    .catch(error => {
-                        console.error('Error fetching set data:', error);
-                        alert(`Failed to load set data: ${error.message}`);
-                    })
-                    .finally(() => {
-                        showLoading(false);
-                    });
-            }
-            
-            // Format price values - Define helper functions first
-            function formatPrice(price) {
-                if (price === 'N/A' || price === undefined) return 'N/A';
-                return typeof price === 'number' ? price.toFixed(2) : price;
-            }
-            
-            // Format variant names
-            function formatVariantName(variantName) {
-                if (!variantName) return 'Normal';
-                
-                return variantName
-                    .replace(/([A-Z])/g, ' $1')
-                    .replace('_', ' ')
-                    .replace(/^./, str => str.toUpperCase())
-                    .replace('1st Edition', '1st Ed.')
-                    .replace('Holofoil', 'Holo');
-            }
-            
-            // Helper function to render TCG Player price rows
-            function renderTcgPricesRows(tcgplayer) {
-                let html = '';
-                
-                // First handle the primary variant if it exists
-                if (tcgplayer.market) {
-                    const variant = tcgplayer.primary_variant || 'Normal';
-                    html += `<tr>
-                        <td>${formatVariantName(variant)}</td>
-                        <td>$${formatPrice(tcgplayer.market)}</td>
-                        <td>$${formatPrice(tcgplayer.low || 'N/A')}</td>
-                        <td>$${formatPrice(tcgplayer.mid || 'N/A')}</td>
-                        <td>$${formatPrice(tcgplayer.high || 'N/A')}</td>
-                    </tr>`;
-                }
-                
-                // Handle additional variants
-                for (const key in tcgplayer) {
-                    if (key !== 'market' && key !== 'primary_variant' && 
-                        !key.startsWith('is_') && typeof tcgplayer[key] === 'object') {
-                        const variantName = formatVariantName(key);
-                        
-                        html += `<tr>
-                            <td>${variantName}</td>
-                            <td>$${formatPrice(tcgplayer[key].market)}</td>
-                            <td>$${formatPrice(tcgplayer[key].low || 'N/A')}</td>
-                            <td>$${formatPrice(tcgplayer[key].mid || 'N/A')}</td>
-                            <td>$${formatPrice(tcgplayer[key].high || 'N/A')}</td>
-                        </tr>`;
-                    }
-                }
-                
-                return html || '<tr><td colspan="5" class="text-center">No variant price data available</td></tr>';
-            }
-            
-            // Helper function to render PriceCharting rows
-            function renderPriceChartingRows(priceCharting) {
-                let html = '';
-                
-                // Handle basic price types
-                if (priceCharting.loose) {
-                    html += `<tr>
-                        <td>Ungraded</td>
-                        <td>$${formatPrice(priceCharting.loose)}</td>
-                    </tr>`;
-                }
-                
-                if (priceCharting.graded) {
-                    html += `<tr>
-                        <td>Graded (General)</td>
-                        <td>$${formatPrice(priceCharting.graded)}</td>
-                    </tr>`;
-                }
-                
-                // Handle PSA grades if available
-                if (priceCharting.psa_grades) {
-                    Object.entries(priceCharting.psa_grades).forEach(([grade, price]) => {
-                        html += `<tr>
-                            <td>${grade.toUpperCase()}</td>
-                            <td>$${formatPrice(price)}</td>
-                        </tr>`;
-                    });
-                }
-                
-                return html || '<tr><td colspan="2" class="text-center">No condition price data available</td></tr>';
-            }
-            
-            // Helper function to render CardMarket rows
-            function renderCardMarketRows(cardmarket) {
-                let html = '';
-                const exchangeRate = cardmarket.exchangeRate || 1.09;
-                
-                // Trend Price
-                if (cardmarket.trendPrice) {
-                    const eurPrice = cardmarket.trendPrice;
-                    const usdPrice = cardmarket.trendPrice_usd || (eurPrice * exchangeRate);
-                    
-                    html += `<tr>
-                        <td>Trend Price</td>
-                        <td>€${formatPrice(eurPrice)}</td>
-                        <td>$${formatPrice(usdPrice)}</td>
-                    </tr>`;
-                }
-                
-                // Avg 1 day
-                if (cardmarket.avg1) {
-                    const eurPrice = cardmarket.avg1;
-                    const usdPrice = cardmarket.avg1_usd || (eurPrice * exchangeRate);
-                    
-                    html += `<tr>
-                        <td>1 Day Average</td>
-                        <td>€${formatPrice(eurPrice)}</td>
-                        <td>$${formatPrice(usdPrice)}</td>
-                    </tr>`;
-                }
-                
-                // Avg 7 days
-                if (cardmarket.avg7) {
-                    const eurPrice = cardmarket.avg7;
-                    const usdPrice = cardmarket.avg7_usd || (eurPrice * exchangeRate);
-                    
-                    html += `<tr>
-                        <td>7 Day Average</td>
-                        <td>€${formatPrice(eurPrice)}</td>
-                        <td>$${formatPrice(usdPrice)}</td>
-                    </tr>`;
-                }
-                
-                // Avg 30 days
-                if (cardmarket.avg30) {
-                    const eurPrice = cardmarket.avg30;
-                    const usdPrice = cardmarket.avg30_usd || (eurPrice * exchangeRate);
-                    
-                    html += `<tr>
-                        <td>30 Day Average</td>
-                        <td>€${formatPrice(eurPrice)}</td>
-                        <td>$${formatPrice(usdPrice)}</td>
-                    </tr>`;
-                }
-                
-                // Low Price
-                if (cardmarket.lowPrice) {
-                    const eurPrice = cardmarket.lowPrice;
-                    const usdPrice = eurPrice * exchangeRate;
-                    
-                    html += `<tr>
-                        <td>Lowest Price</td>
-                        <td>€${formatPrice(eurPrice)}</td>
-                        <td>$${formatPrice(usdPrice)}</td>
-                    </tr>`;
-                }
-                
-                // Low Price Ex
-                if (cardmarket.lowPriceExShipping) {
-                    const eurPrice = cardmarket.lowPriceExShipping;
-                    const usdPrice = eurPrice * exchangeRate;
-                    
-                    html += `<tr>
-                        <td>Lowest Price (Excl. Shipping)</td>
-                        <td>€${formatPrice(eurPrice)}</td>
-                        <td>$${formatPrice(usdPrice)}</td>
-                    </tr>`;
-                }
-                
-                return html || '<tr><td colspan="3" class="text-center">No CardMarket price data available</td></tr>';
-            }
-            
-            // Functions for API interaction and display
-            function checkAPIStatus() {
-                fetch(`${API_BASE_URL}/api/sets`)
-                    .then(response => {
-                        if (response.ok) {
-                            return response.json();
-                        } else {
-                            throw new Error(`HTTP error! Status: ${response.status}`);
-                        }
-                    })
-                    .then(data => {
-                        if (data.error) {
-                            throw new Error(data.error);
-                        }
-                        
-                        setSelect.innerHTML = '<option value="">Select a set to analyze</option>';
-                        if (data.sets && data.sets.length) {
-                            data.sets.forEach(set => {
-                                const option = document.createElement('option');
-                                option.value = set.id;
-                                option.textContent = `${set.name} (${set.series})`;
-                                setSelect.appendChild(option);
-                            });
-                        }
-                    })
-                    .catch(error => {
-                        console.error('API Status Check Error:', error);
-                        setSelect.innerHTML = '<option value="">API server unavailable</option>';
-                    });
-            }
-            
-            // Initial API check and set loading
-            checkAPIStatus();
-            
-            // Search input autocomplete with better error handling
-            let searchTimeout;
-            cardSearchInput.addEventListener('input', function() {
-                const query = this.value.trim();
-                
-                // Clear previous timeout to prevent multiple requests
-                clearTimeout(searchTimeout);
-                
-                // Hide error message when input changes
-                searchErrorElement.style.display = 'none';
-                
-                if (query.length < 3) {
-                    suggestionsDiv.style.display = 'none';
-                    return;
-                }
-                
-                searchTimeout = setTimeout(() => {
-                    // Use URLSearchParams to safely encode the query parameters
-                    const params = new URLSearchParams({ q: query });
-                    
-                    fetch(`${API_BASE_URL}/api/search?${params}`)
-                        .then(response => {
-                            if (!response.ok) {
-                                throw new Error(`HTTP error! Status: ${response.status}`);
-                            }
-                            return response.json();
-                        })
-                        .then(data => {
-                            suggestionsDiv.innerHTML = '';
-                            
-                            if (data.error) {
-                                throw new Error(data.error);
-                            }
                             
                             if (data.suggestions && data.suggestions.length) {
                                 data.suggestions.forEach(card => {
@@ -833,6 +515,8 @@
                         });
                 }, 300);
             });
+
+            // Remove the duplicate search input handler and keep the rest of the functions
             
             // Hide suggestions when clicking elsewhere
             document.addEventListener('click', function(e) {
@@ -856,6 +540,50 @@
                 }
             });
             
+            // Update fetchCardData to use fetchWithDebug
+            function fetchCardData(cardId) {
+                showLoading(true);
+                cardResult.style.display = 'none';
+                setResult.style.display = 'none';
+                
+                const url = `${API_BASE_URL}/api/card_prices?id=${encodeURIComponent(cardId)}`;
+                debugApiCall('/api/card_prices', 'GET', `id=${encodeURIComponent(cardId)}`);
+                
+                fetchWithDebug(url)
+                    .then(data => {
+                        displayCardResult(data);
+                    })
+                    .catch(error => {
+                        console.error('Error fetching card data:', error);
+                        alert(`Failed to load card data: ${error.message}`);
+                    })
+                    .finally(() => {
+                        showLoading(false);
+                    });
+            }
+            
+            // Update fetchSetData similarly
+            function fetchSetData(setId) {
+                showLoading(true);
+                cardResult.style.display = 'none';
+                setResult.style.display = 'none';
+                
+                const url = `${API_BASE_URL}/api/set_prices?id=${encodeURIComponent(setId)}`;
+                debugApiCall('/api/set_prices', 'GET', `id=${encodeURIComponent(setId)}`);
+                
+                fetchWithDebug(url)
+                    .then(data => {
+                        displaySetResult(data);
+                    })
+                    .catch(error => {
+                        console.error('Error fetching set data:', error);
+                        alert(`Failed to load set data: ${error.message}`);
+                    })
+                    .finally(() => {
+                        showLoading(false);
+                    });
+            }
+            
             // Analyze set button click
             analyzeSetBtn.addEventListener('click', function() {
                 const setId = setSelect.value;
@@ -866,564 +594,468 @@
                 }
             });
             
-            // Sort order change
-            sortOrder.addEventListener('change', function() {
-                const rows = Array.from(document.querySelectorAll('#setTable tr'));
-                const tbody = document.getElementById('setTable');
-                
-                rows.sort((a, b) => {
-                    const sortValue = this.value;
-                    let aValue, bValue;
-                    
-                    if (sortValue.startsWith('profit')) {
-                        aValue = parseFloat(a.dataset.profitMargin || 0);
-                        bValue = parseFloat(b.dataset.profitMargin || 0);
-                    } else {
-                        aValue = parseFloat(a.dataset.price || 0);
-                        bValue = parseFloat(b.dataset.price || 0);
-                    }
-                    
-                    return sortValue.endsWith('asc') ? aValue - bValue : bValue - aValue;
-                });
-                
-                // Clear and re-append in new order
-                tbody.innerHTML = '';
-                rows.forEach(row => tbody.appendChild(row));
-            });
+            // Keep the rest of the code as it is...
+            // ...existing code (formatPrice, formatVariantName, renderTcgPricesRows, renderPriceChartingRows, renderCardMarketRows, etc.)...
             
-            function fetchCardData(cardId) {
-                showLoading(true);
-                cardResult.style.display = 'none';
-                setResult.style.display = 'none';
-                
-                fetch(`${API_BASE_URL}/api/card_prices?id=${encodeURIComponent(cardId)}`)
-                    .then(response => {
-                        if (!response.ok) {
-                            throw new Error(`HTTP error! Status: ${response.status}`);
-                        }
-                        return response.json();
-                    })
-                    .then(data => {
-                        if (data.error) {
-                            throw new Error(data.error);
-                        }
-                        displayCardResult(data);
-                    })
-                    .catch(error => {
-                        console.error('Error fetching card data:', error);
-                        alert(`Error loading card data: ${error.message}`);
-                    })
-                    .finally(() => {
-                        showLoading(false);
-                    });
-            }
-            
-            function fetchSetData(setId) {
-                showLoading(true);
-                cardResult.style.display = 'none';
-                setResult.style.display = 'none';
-                
-                fetch(`${API_BASE_URL}/api/set_prices?id=${encodeURIComponent(setId)}`)
-                    .then(response => {
-                        if (!response.ok) {
-                            throw new Error(`HTTP error! Status: ${response.status}`);
-                        }
-                        return response.json();
-                    })
-                    .then(data => {
-                        if (data.error) {
-                            throw new Error(data.error);
-                        }
-                        displaySetResult(data);
-                    })
-                    .catch(error => {
-                        console.error('Error fetching set data:', error);
-                        alert(`Error loading set data: ${error.message}`);
-                    })
-                    .finally(() => {
-                        showLoading(false);
-                    });
-            }
-            
+            // Fix the missing displayCardResult and displaySetResult functions
             function displayCardResult(data) {
-                document.getElementById('cardName').textContent = data.name;
-                document.getElementById('cardSet').textContent = `${data.set} · ${data.rarity || ''}`;
+                // Log what we're trying to display
+                console.log("Displaying card data:", data);
                 
-                const cardImage = document.getElementById('cardImage');
-                cardImage.src = data.large_image || data.image;
-                cardImage.onerror = function() {
-                    this.src = 'https://via.placeholder.com/245x342?text=No+Image+Available';
-                };
-                
-                // Add card attributes display
-                const cardDetails = document.createElement('div');
-                cardDetails.className = 'mb-3 small text-muted';
-                cardDetails.innerHTML = `
-                    <span class="badge bg-secondary me-1">${data.supertype || 'Pokémon'}</span>
-                    ${data.subtypes && data.subtypes.length ? data.subtypes.map(st => `<span class="badge bg-info me-1">${st}</span>`).join('') : ''}
-                    <span class="badge bg-dark">#${data.number}</span>
-                    ${data.printing_type ? `<span class="badge bg-warning ms-1">${data.printing_type}</span>` : ''}
-                `;
-                document.getElementById('cardImage').insertAdjacentElement('afterend', cardDetails);
-                
-                const priceTable = document.getElementById('priceTable');
-                priceTable.innerHTML = '';
-                
-                // PriceCharting prices
-                if (data.price_charting) {
-                    const loosePriceRow = createPriceRow('PriceCharting (Ungraded)', 
-                                                       data.price_charting.loose || 'N/A',
-                                                       data.pricecharting_url);
-                    priceTable.appendChild(loosePriceRow);
+                try {
+                    document.getElementById('cardName').textContent = data.name;
+                    document.getElementById('cardSet').textContent = `${data.set} · ${data.rarity || ''}`;
                     
-                    // Add graded prices if available
-                    if (data.price_charting.graded) {
-                        const gradedPriceRow = createPriceRow('PriceCharting (Graded)', 
-                                                            data.price_charting.graded,
-                                                            data.pricecharting_url);
-                        priceTable.appendChild(gradedPriceRow);
-                    }
+                    const cardImage = document.getElementById('cardImage');
+                    cardImage.src = data.large_image || data.image;
+                    cardImage.onerror = function() {
+                        this.src = 'https://via.placeholder.com/245x342?text=No+Image+Available';
+                    };
                     
-                    // Add PSA graded variants if available
-                    if (data.price_charting.psa_grades) {
-                        for (const [grade, price] of Object.entries(data.price_charting.psa_grades)) {
-                            const gradePriceRow = createPriceRow(`PriceCharting (${grade.toUpperCase()})`, 
-                                                              price,
-                                                              data.pricecharting_url);
-                            priceTable.appendChild(gradePriceRow);
-                        }
-                    }
-                }
-                
-                // TCGPlayer prices
-                if (data.tcgplayer) {
-                    // Display primary variant market price
-                    const marketPriceRow = createPriceRow(`TCGPlayer (${data.tcgplayer.primary_variant || 'Market'})`, 
-                                               data.tcgplayer.market || 'N/A', 
-                                               data.tcgplayer_url);
-                    priceTable.appendChild(marketPriceRow);
-                    
-                    // Add other TCG price variants
-                    for (const key in data.tcgplayer) {
-                        if (key !== 'market' && key !== 'primary_variant' && 
-                            !key.startsWith('is_') && typeof data.tcgplayer[key] === 'object') {
-                            const variantName = key.replace(/([A-Z])/g, ' $1')
-                                                  .replace('_', ' ')
-                                                  .replace('1st Edition', '1st Ed.')
-                                                  .replace('Holofoil', 'Holo');
-                            
-                            if (data.tcgplayer[key].market) {
-                                const variantRow = createPriceRow(`TCGPlayer (${variantName})`, 
-                                                       data.tcgplayer[key].market, 
-                                                       data.tcgplayer_url);
-                                priceTable.appendChild(variantRow);
-                            }
-                        }
-                    }
-                }
-                
-                // CardMarket prices
-                if (data.cardmarket) {
-                    const trendPriceRow = createPriceRow('CardMarket EU (Trend)', 
-                                        data.cardmarket.trendPrice ? 
-                                        `€${data.cardmarket.trendPrice.toFixed(2)} ($${data.cardmarket.trendPrice_usd ? data.cardmarket.trendPrice_usd.toFixed(2) : '?'})` : 
-                                        'N/A', 
-                                        data.cardmarket_url);
-                    priceTable.appendChild(trendPriceRow);
-                    
-                    if (data.cardmarket.avg1) {
-                        const avgPriceRow = createPriceRow('CardMarket EU (1 Day Avg)', 
-                                            data.cardmarket.avg1 ?
-                                            `€${data.cardmarket.avg1.toFixed(2)} ($${(data.cardmarket.avg1 * data.cardmarket.exchangeRate || 0).toFixed(2)})` :
-                                            'N/A', 
-                                            data.cardmarket_url);
-                        priceTable.appendChild(avgPriceRow);
-                    }
-                }
-                
-                // Display arbitrage alert if available
-                const arbitrageAlert = document.getElementById('arbitrageAlert');
-                if (data.arbitrage) {
-                    const margin = data.arbitrage.profit_margin.toFixed(2);
-                    let alertClass = 'alert-danger';
-                    let icon = 'bi-exclamation-triangle';
-                    
-                    if (margin >= 20) {
-                        alertClass = 'alert-success';
-                        icon = 'bi-cash-coin';
-                    } else if (margin >= 10) {
-                        alertClass = 'alert-warning';
-                        icon = 'bi-graph-up';
-                    }
-                    
-                    arbitrageAlert.className = `alert ${alertClass}`;
-                    arbitrageAlert.innerHTML = `
-                        <h5><i class="bi ${icon} me-2"></i>Arbitrage Opportunity!</h5>
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="card bg-light mb-2">
-                                    <div class="card-body p-2">
-                                        <h6 class="card-title mb-1">Buy from</h6>
-                                        <p class="card-text">${data.arbitrage.buy_from} for $${data.arbitrage.buy_price.toFixed(2)}</p>
+                    // Add source comparison information section right after the card image
+                    const sourceComparisonHtml = `
+                        <div class="card mt-3 bg-dark border-info">
+                            <div class="card-header bg-info text-dark">
+                                <h5 class="mb-0">Data Source Comparison</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h6 class="text-info mb-2">TCGPlayer.io Data</h6>
+                                        <ul class="list-group list-group-flush bg-dark">
+                                            <li class="list-group-item bg-dark"><strong>Card Name:</strong> ${data.name || 'Not available'}</li>
+                                            <li class="list-group-item bg-dark"><strong>Set Name:</strong> ${data.set || 'Not available'}</li>
+                                            <li class="list-group-item bg-dark"><strong>Set ID:</strong> ${data.set_id || 'Not available'}</li>
+                                            <li class="list-group-item bg-dark"><strong>Card Number:</strong> ${data.number || 'Not available'}</li>
+                                            <li class="list-group-item bg-dark"><strong>Rarity:</strong> ${data.rarity || 'Not available'}</li>
+                                            <li class="list-group-item bg-dark"><strong>TCG ID:</strong> ${data.id || 'Not available'}</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h6 class="text-success mb-2">PriceCharting.com Data</h6>
+                                        <ul class="list-group list-group-flush bg-dark">
+                                            <li class="list-group-item bg-dark"><strong>Product Name:</strong> ${data.price_charting && data.price_charting._product_name ? data.price_charting._product_name : 'Not matched'}</li>
+                                            <li class="list-group-item bg-dark"><strong>Product ID:</strong> ${data.price_charting && data.price_charting._product_id ? data.price_charting._product_id : 'Not matched'}</li>
+                                            <li class="list-group-item bg-dark"><strong>Confidence:</strong> ${data.price_charting && data.price_charting._match_confidence ? data.price_charting._match_confidence : 'Unknown'}</li>
+                                            <li class="list-group-item bg-dark"><strong>URL:</strong> ${data.pricecharting_url ? `<a href="${data.pricecharting_url}" target="_blank">View on PriceCharting</a>` : 'Not available'}</li>
+                                        </ul>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="card bg-light mb-2">
-                                    <div class="card-body p-2">
-                                        <h6 class="card-title mb-1">Sell to</h6>
-                                        <p class="card-text">${data.arbitrage.sell_to} for $${data.arbitrage.sell_price.toFixed(2)}</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="card bg-light mb-2">
-                                    <div class="card-body p-2">
-                                        <h6 class="card-title mb-1">Potential Profit</h6>
-                                        <p class="card-text">$${data.arbitrage.profit.toFixed(2)} (${margin}%)</p>
+                                <div class="mt-3">
+                                    <div class="alert ${data.price_charting && data.price_charting._product_name ? 'alert-success' : 'alert-warning'} p-2">
+                                        <i class="bi ${data.price_charting && data.price_charting._product_name ? 'bi-check-circle' : 'bi-exclamation-triangle'} me-2"></i>
+                                        <strong>Match Status:</strong> ${data.price_charting && data.price_charting._product_name ? 'Product matched successfully' : 'No PriceCharting product match found'}
                                     </div>
                                 </div>
                             </div>
                         </div>
                     `;
-                    arbitrageAlert.style.display = 'block';
-                } else {
-                    arbitrageAlert.style.display = 'none';
-                }
-                
-                // --- New: Populate Additional Information Section ---
-                // Display entire API responses (formatted as JSON)
-                document.getElementById('tcgDetails').textContent =
-                    JSON.stringify(data, null, 2);
-                document.getElementById('pcDetails').textContent =
-                    JSON.stringify(data.price_charting || {}, null, 2);
-                document.getElementById('cmDetails').textContent =
-                    JSON.stringify(data.cardmarket || {}, null, 2);
-                
-                // Set information: use the set id to generate a set image via the PokemonTCG API
-                // (Assumes the API endpoint supports: /v2/sets/{set_id}/images/symbol)
-                if(data.set_id) {
-                    document.getElementById('setImage').src =
-                        `https://api.pokemontcg.io/v2/sets/${data.set_id}/images/symbol`;
-                } else {
-                    document.getElementById('setImage').src = 'https://via.placeholder.com/80?text=No+Set+Image';
-                }
-                document.getElementById('setNameDetail').textContent = data.set;
-                // --- End New ---
-                
-                // CARD DETAILS
-                const cardDetailsTable = document.getElementById('cardDetailsTable');
-                cardDetailsTable.innerHTML = '';
-                
-                // Add rows for basic card details
-                const cardDetails = [
-                    { label: "Card Number", value: data.number },
-                    { label: "Rarity", value: data.rarity || 'N/A' },
-                    { label: "Supertype", value: data.supertype || 'N/A' },
-                    { label: "Subtypes", value: data.subtypes ? data.subtypes.join(', ') : 'N/A' },
-                    { label: "Printing", value: data.printing_type || 'N/A' },
-                    { label: "TCG ID", value: data.id }
-                ];
-                
-                cardDetails.forEach(detail => {
-                    const row = document.createElement('tr');
-                    const labelCell = document.createElement('td');
-                    labelCell.className = 'fw-bold';
-                    labelCell.textContent = detail.label;
                     
-                    const valueCell = document.createElement('td');
-                    valueCell.textContent = detail.value;
+                    // Insert the comparison section after the card image
+                    const cardImageEl = document.getElementById('cardImage');
+                    if (cardImageEl) {
+                        cardImageEl.insertAdjacentHTML('afterend', sourceComparisonHtml);
+                    }
                     
-                    row.appendChild(labelCell);
-                    row.appendChild(valueCell);
-                    cardDetailsTable.appendChild(row);
-                });
-                
-                // SET DETAILS
-                // Set the set logo and symbol images
-                const setSymbol = document.getElementById('setSymbol');
-                const setLogo = document.getElementById('setLogo');
-                
-                if (data.set_id) {
-                    setSymbol.src = `https://images.pokemontcg.io/${data.set_id}/symbol.png`;
-                    setLogo.src = `https://images.pokemontcg.io/${data.set_id}/logo.png`;
-                } else {
-                    setSymbol.src = 'https://via.placeholder.com/50?text=?';
-                    setLogo.src = 'https://via.placeholder.com/200x100?text=No+Set+Image';
-                }
-                
-                document.getElementById('setNameFull').textContent = data.set || 'Unknown Set';
-                
-                // Add set series if available
-                const setDetailsElement = document.getElementById('setDetails');
-                setDetailsElement.textContent = `Series: ${data.set_series || 'Unknown'}`;
-                
-                // TCG PLAYER DETAILS
-                document.getElementById('tcgPlayerLink').href = data.tcgplayer_url || '#';
-                
-                const tcgPricesTable = document.getElementById('tcgPricesTable');
-                tcgPricesTable.innerHTML = '';
-                
-                if (data.tcgplayer && Object.keys(data.tcgplayer).length > 0) {
-                    const tcgPricesHTML = `<table class="table table-sm">
-                        <thead>
-                            <tr>
-                                <th>Variant</th>
-                                <th>Market</th>
-                                <th>Low</th>
-                                <th>Mid</th>
-                                <th>High</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            ${renderTcgPricesRows(data.tcgplayer)}
-                        </tbody>
-                    </table>`;
+                    // Clear previous price table data
+                    const priceTable = document.getElementById('priceTable');
+                    priceTable.innerHTML = '';
                     
-                    tcgPricesTable.innerHTML = tcgPricesHTML;
-                } else {
-                    tcgPricesTable.innerHTML = '<p class="text-muted">No TCGPlayer price data available</p>';
-                }
-                
-                // PRICE CHARTING DETAILS
-                document.getElementById('priceChartingLink').href = data.pricecharting_url || '#';
-                
-                const pcDetailsFormatted = document.getElementById('pcDetailsFormatted');
-                pcDetailsFormatted.innerHTML = '';
-                
-                if (data.price_charting && Object.keys(data.price_charting).length > 0) {
-                    const pcHTML = `<table class="table table-sm">
-                        <thead>
-                            <tr>
-                                <th>Condition</th>
-                                <th>Price</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            ${renderPriceChartingRows(data.price_charting)}
-                        </tbody>
-                    </table>`;
+                    // Let's handle basic card price display
+                    let hasDisplayedPrices = false;
                     
-                    pcDetailsFormatted.innerHTML = pcHTML;
-                } else {
-                    pcDetailsFormatted.innerHTML = '<p class="text-muted">No PriceCharting data available</p>';
-                }
-                
-                // CARDMARKET DETAILS
-                document.getElementById('cardmarketLink').href = data.cardmarket_url || '#';
-                
-                const cmDetailsFormatted = document.getElementById('cardmarketDetailsFormatted');
-                cmDetailsFormatted.innerHTML = '';
-                
-                if (data.cardmarket && Object.keys(data.cardmarket).length > 0) {
-                    const cmHTML = `<table class="table table-sm">
-                        <thead>
-                            <tr>
-                                <th>Price Type</th>
-                                <th>EUR</th>
-                                <th>USD</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            ${renderCardMarketRows(data.cardmarket)}
-                        </tbody>
-                    </table>`;
-                    
-                    cmDetailsFormatted.innerHTML = cmHTML;
-                } else {
-                    cmDetailsFormatted.innerHTML = '<p class="text-muted">No CardMarket data available</p>';
-                }
-                
-                // RAW DATA
-                document.getElementById('rawTCGData').textContent = JSON.stringify(data, null, 2);
-                document.getElementById('rawPCData').textContent = JSON.stringify(data.price_charting || {}, null, 2);
-                document.getElementById('rawCMData').textContent = JSON.stringify(data.cardmarket || {}, null, 2);
-                
-                // Add event listeners to raw data tabs
-                document.querySelectorAll('.btn-group button').forEach(button => {
-                    button.addEventListener('click', function() {
-                        // Remove active class from all buttons
-                        document.querySelectorAll('.btn-group button').forEach(btn => {
-                            btn.classList.remove('active');
-                        });
+                    // PriceCharting prices
+                    if (data.price_charting && Object.keys(data.price_charting).length > 0) {
+                        console.log("Has PriceCharting data:", data.price_charting);
+                        if (data.price_charting.loose) {
+                            const pricechartingRow = createPriceRow('PriceCharting (Ungraded)', data.price_charting.loose, data.pricecharting_url, data);
+                            priceTable.appendChild(pricechartingRow);
+                            hasDisplayedPrices = true;
+                        }
                         
-                        // Add active class to clicked button
-                        this.classList.add('active');
+                        // Add graded prices if available
+                        if (data.price_charting.graded) {
+                            const gradedRow = createPriceRow('PriceCharting (Graded)', data.price_charting.graded, data.pricecharting_url, data);
+                            priceTable.appendChild(gradedRow);
+                        }
                         
-                        // Hide all raw data elements
-                        document.querySelectorAll('.raw-data').forEach(elem => {
-                            elem.style.display = 'none';
-                        });
+                        // Add PSA graded pricing if available
+                        if (data.price_charting.psa_grades) {
+                            for (const [grade, price] of Object.entries(data.price_charting.psa_grades)) {
+                                const psaRow = createPriceRow(`PriceCharting (${grade.toUpperCase()})`, price, data.pricecharting_url, data);
+                                priceTable.appendChild(psaRow);
+                            }
+                        }
+                    } else {
+                        console.log("No PriceCharting data found");
+                    }
+                    
+                    // TCGPlayer prices
+                    if (data.tcgplayer && Object.keys(data.tcgplayer).length > 0) {
+                        console.log("Has TCGPlayer data:", data.tcgplayer);
+                        if (data.tcgplayer.market) {
+                            const tcgPlayerRow = createPriceRow('TCGPlayer (Market)', data.tcgplayer.market, data.tcgplayer_url, data);
+                            priceTable.appendChild(tcgPlayerRow);
+                            hasDisplayedPrices = true;
+                        }
                         
-                        // Show selected raw data element
-                        const targetId = this.getAttribute('data-target');
-                        document.getElementById(targetId).style.display = 'block';
+                        // Add other TCG price variants
+                        for (const key in data.tcgplayer) {
+                            if (key !== 'market' && key !== 'primary_variant' && 
+                                !key.startsWith('is_') && typeof data.tcgplayer[key] === 'object') {
+                                const variantName = key.replace(/([A-Z])/g, ' $1')
+                                                      .replace('_', ' ')
+                                                      .replace(/^./, str => str.toUpperCase());
+                                
+                                if (data.tcgplayer[key].market) {
+                                    const variantRow = createPriceRow(`TCGPlayer (${variantName})`, 
+                                                           data.tcgplayer[key].market, 
+                                                           data.tcgplayer_url, data);
+                                    priceTable.appendChild(variantRow);
+                                }
+                            }
+                        }
+                    } else {
+                        console.log("No TCGPlayer data found");
+                    }
+                    
+                    // CardMarket prices
+                    if (data.cardmarket && Object.keys(data.cardmarket).length > 0) {
+                        console.log("Has CardMarket data:", data.cardmarket);
+                        if (data.cardmarket.trendPrice) {
+                            const cardmarketRow = createPriceRow('CardMarket (Trend)', 
+                                                `€${data.cardmarket.trendPrice.toFixed(2)} (${data.cardmarket.trendPrice_usd ? '$'+data.cardmarket.trendPrice_usd.toFixed(2) : 'N/A'})`, 
+                                                data.cardmarket_url, data);
+                            priceTable.appendChild(cardmarketRow);
+                            hasDisplayedPrices = true;
+                        }
+                        
+                        // Add 1 day average
+                        if (data.cardmarket.avg1) {
+                            const avg1Row = createPriceRow('CardMarket (1 Day Avg)', 
+                                            `€${data.cardmarket.avg1.toFixed(2)} (${data.cardmarket.avg1_usd ? '$'+data.cardmarket.avg1_usd.toFixed(2) : 'N/A'})`, 
+                                            data.cardmarket_url, data);
+                            priceTable.appendChild(avg1Row);
+                        }
+                    } else {
+                        console.log("No CardMarket data found");
+                    }
+                    
+                    // Display arbitrage alert if available
+                    const arbitrageAlert = document.getElementById('arbitrageAlert');
+                    if (data.arbitrage) {
+                        console.log("Arbitrage opportunity found:", data.arbitrage);
+                        const margin = data.arbitrage.profit_margin.toFixed(2);
+                        let alertClass = 'alert-danger';
+                        let icon = 'bi-exclamation-triangle';
+                        
+                        if (margin >= 20) {
+                            alertClass = 'alert-success';
+                            icon = 'bi-cash-coin';
+                        } else if (margin >= 10) {
+                            alertClass = 'alert-warning';
+                            icon = 'bi-graph-up';
+                        }
+                        
+                        // Get condition notes if available
+                        const conditionNotes = data.arbitrage.condition_notes || [];
+                        const conditionHtml = conditionNotes.length > 0 ? 
+                            `<div class="small mt-2 text-info">
+                                <strong>Condition Comparison:</strong> 
+                                <span class="badge bg-secondary me-1">${conditionNotes.join('</span> <span class="badge bg-secondary me-1">')}</span>
+                             </div>` : '';
+                        
+                        arbitrageAlert.className = `alert ${alertClass}`;
+                        arbitrageAlert.innerHTML = `
+                            <h5><i class="bi ${icon} me-2"></i>Arbitrage Opportunity!</h5>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="card bg-light mb-2">
+                                        <div class="card-body p-2 text-dark">
+                                            <h6 class="card-title mb-1">Buy from</h6>
+                                            <p class="card-text">${data.arbitrage.buy_from} for $${data.arbitrage.buy_price.toFixed(2)}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card bg-light mb-2">
+                                        <div class="card-body p-2 text-dark">
+                                            <h6 class="card-title mb-1">Sell to</h6>
+                                            <p class="card-text">${data.arbitrage.sell_to} for $${data.arbitrage.sell_price.toFixed(2)}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card bg-light mb-2">
+                                        <div class="card-body p-2 text-dark">
+                                            <h6 class="card-title mb-1">Potential Profit</h6>
+                                            <p class="card-text">$${data.arbitrage.profit.toFixed(2)} (${margin}%)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            ${conditionHtml}
+                        `;
+                        arbitrageAlert.style.display = 'block';
+                    } else {
+                        console.log("No arbitrage opportunity found");
+                        arbitrageAlert.style.display = 'none';
+                    }
+                    
+                    if (!hasDisplayedPrices) {
+                        // Add a message if no prices found
+                        const noDataRow = document.createElement('tr');
+                        const noDataCell = document.createElement('td');
+                        noDataCell.colSpan = 3;
+                        noDataCell.textContent = 'No pricing data available';
+                        noDataCell.className = 'text-center';
+                        noDataRow.appendChild(noDataCell);
+                        priceTable.appendChild(noDataRow);
+                    }
+                    
+                    // Handle the rest of the UI
+                    const setSymbol = document.getElementById('setSymbol');
+                    const setLogo = document.getElementById('setLogo');
+                    
+                    if (data.set_id) {
+                        setSymbol.src = `https://images.pokemontcg.io/${data.set_id}/symbol.png`;
+                        setLogo.src = `https://images.pokemontcg.io/${data.set_id}/logo.png`;
+                    }
+                    
+                    document.getElementById('setNameFull').textContent = data.set || 'Unknown Set';
+                    document.getElementById('setDetails').textContent = `Series: ${data.set_series || 'Unknown'}`;
+                    
+                    // Adding more detailed information display in the details sections
+                    // Card details
+                    const cardDetailsTable = document.getElementById('cardDetailsTable');
+                    cardDetailsTable.innerHTML = '';
+                    
+                    const cardDetails = [
+                        { label: "Card Number", value: data.number },
+                        { label: "Rarity", value: data.rarity || 'N/A' },
+                        { label: "Set", value: data.set },
+                        { label: "ID", value: data.id }
+                    ];
+                    
+                    cardDetails.forEach(detail => {
+                        const row = document.createElement('tr');
+                        const labelCell = document.createElement('td');
+                        labelCell.className = 'fw-bold';
+                        labelCell.textContent = detail.label;
+                        
+                        const valueCell = document.createElement('td');
+                        valueCell.textContent = detail.value;
+                        
+                        row.appendChild(labelCell);
+                        row.appendChild(valueCell);
+                        cardDetailsTable.appendChild(row);
                     });
-                });
-                
-                cardResult.style.display = 'block';
+                    
+                    // Fill in other details sections
+                    document.getElementById('tcgPlayerLink').href = data.tcgplayer_url || '#';
+                    document.getElementById('priceChartingLink').href = data.pricecharting_url || '#';
+                    document.getElementById('cardmarketLink').href = data.cardmarket_url || '#';
+                    
+                    // Format detailed tables for each price source
+                    // TCG Player details
+                    const tcgPricesTable = document.getElementById('tcgPricesTable');
+                    if (data.tcgplayer && Object.keys(data.tcgplayer).length > 0) {
+                        tcgPricesTable.innerHTML = `
+                            <table class="table table-sm">
+                                <thead>
+                                    <tr>
+                                        <th>Variant</th>
+                                        <th>Market</th>
+                                        <th>Low</th>
+                                        <th>Mid</th>
+                                        <th>High</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    ${renderTcgPlayerPrices(data.tcgplayer)}
+                                </tbody>
+                            </table>
+                        `;
+                    } else {
+                        tcgPricesTable.innerHTML = '<p class="text-muted">No TCGPlayer pricing data available</p>';
+                    }
+                    
+                    // PriceCharting details
+                    const pcDetailsFormatted = document.getElementById('pcDetailsFormatted');
+                    if (data.price_charting && Object.keys(data.price_charting).length > 0) {
+                        pcDetailsFormatted.innerHTML = `
+                            <table class="table table-sm">
+                                <thead>
+                                    <tr>
+                                        <th>Condition</th>
+                                        <th>Price</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    ${renderPriceChartingDetails(data.price_charting)}
+                                </tbody>
+                            </table>
+                        `;
+                    } else {
+                        pcDetailsFormatted.innerHTML = '<p class="text-muted">No PriceCharting data available</p>';
+                    }
+                    
+                    // CardMarket details
+                    const cmDetailsFormatted = document.getElementById('cardmarketDetailsFormatted');
+                    if (data.cardmarket && Object.keys(data.cardmarket).length > 0) {
+                        cmDetailsFormatted.innerHTML = `
+                            <table class="table table-sm">
+                                <thead>
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>EUR</th>
+                                        <th>USD</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    ${renderCardMarketDetails(data.cardmarket)}
+                                </tbody>
+                            </table>
+                        `;
+                    } else {
+                        cmDetailsFormatted.innerHTML = '<p class="text-muted">No CardMarket data available</p>';
+                    }
+                    
+                    // Show the card result section
+                    cardResult.style.display = 'block';
+                    console.log("Card display complete");
+                } catch (error) {
+                    console.error("Error displaying card:", error);
+                    alert("Error displaying card data: " + error.message);
+                }
             }
             
             function displaySetResult(data) {
-                document.getElementById('setName').textContent = data.set_name;
+                console.log("Displaying set data:", data);
                 
-                const setTable = document.getElementById('setTable');
-                setTable.innerHTML = '';
-                
-                // Calculate statistics for the set
-                const totalCards = data.cards.length;
-                const exchangeRate = data.exchange_rate || 1.09; // Default if not provided
-                const cardsWithArbitrage = data.cards.filter(card => card.arbitrage).length;
-                const highProfitCards = data.cards.filter(card => 
-                    card.arbitrage && card.arbitrage.profit_margin >= 20
-                ).length;
-                
-                // Display set statistics
-                document.getElementById('setStats').innerHTML = `
-                    <span class="badge bg-primary me-1">${totalCards} Cards</span>
-                    <span class="badge bg-success me-1">${cardsWithArbitrage} Arbitrage Opportunities</span>
-                    <span class="badge bg-warning">${highProfitCards} High Profit</span>
-                `;
-                
-                // Add exchange rate info
-                document.getElementById('setStats').innerHTML += `
-                    <span class="badge bg-info ms-2">€1 = $${exchangeRate.toFixed(2)}</span>
-                `;
-                
-                data.cards.forEach(card => {
-                    const row = document.createElement('tr');
+                try {
+                    document.getElementById('setName').textContent = data.set_name || 'Unknown Set';
                     
-                    // Add dataset attributes for sorting
-                    if (card.arbitrage) {
-                        row.dataset.profitMargin = card.arbitrage.profit_margin;
-                        row.dataset.price = Math.max(
-                            (card.price_charting && card.price_charting.loose) || 0,
-                            (card.tcgplayer && card.tcgplayer.market) || 0,
-                            (card.cardmarket && card.cardmarket.trendPrice) || 0
-                        );
+                    const setTable = document.getElementById('setTable');
+                    setTable.innerHTML = '';
+                    
+                    if (!data.cards || data.cards.length === 0) {
+                        setTable.innerHTML = '<tr><td colspan="7" class="text-center">No cards found in this set</td></tr>';
+                        setResult.style.display = 'block';
+                        return;
                     }
                     
-                    // Add profit-based row coloring
-                    if (card.arbitrage && card.arbitrage.profit_margin >= 20) {
-                        row.className = 'profit-high';
-                    } else if (card.arbitrage && card.arbitrage.profit_margin >= 10) {
-                        row.className = 'profit-medium';
-                    } else {
-                        row.className = 'profit-none';
-                    }
-                    
-                    // Card info - Add attributes
-                    const cardCell = document.createElement('td');
-                    cardCell.innerHTML = `
-                        <div class="d-flex align-items-center">
-                            <img src="${card.image}" class="card-image me-2" alt="${card.name}">
-                            <div>
-                                <strong>${card.name}</strong>
-                                <br>
-                                <small>#${card.number} · ${card.rarity || ''}</small>
-                                ${card.printing_type ? `<br><span class="badge bg-warning mt-1">${card.printing_type}</span>` : ''}
-                            </div>
-                        </div>
+                    // Display set statistics
+                    document.getElementById('setStats').innerHTML = `
+                        <span class="badge bg-primary me-1">${data.cards.length} Cards</span>
                     `;
-                    row.appendChild(cardCell);
                     
-                    // PriceCharting - Include graded if available
-                    const pcCell = document.createElement('td');
-                    if (card.price_charting && card.price_charting.loose) {
-                        pcCell.innerHTML = `$${card.price_charting.loose.toFixed(2)}`;
+                    // Process each card
+                    data.cards.forEach(card => {
+                        const row = document.createElement('tr');
                         
-                        // Add graded price if available
-                        if (card.price_charting.graded) {
-                            pcCell.innerHTML += `<br><small>Graded: $${card.price_charting.graded.toFixed(2)}</small>`;
-                        }
-                        
-                        // Add PSA 10 if available
-                        if (card.price_charting.psa_grades && card.price_charting.psa_grades['psa-10']) {
-                            pcCell.innerHTML += `<br><small>PSA 10: $${card.price_charting.psa_grades['psa-10'].toFixed(2)}</small>`;
-                        }
-                    } else {
-                        pcCell.textContent = 'N/A';
-                    }
-                    row.appendChild(pcCell);
-                    
-                    // TCGPlayer
-                    const tcgCell = document.createElement('td');
-                    if (card.tcgplayer && card.tcgplayer.market) {
-                        tcgCell.innerHTML = `$${card.tcgplayer.market.toFixed(2)}`;
-                        if (card.tcgplayer_url) {
-                            tcgCell.innerHTML += `<br><a href="${card.tcgplayer_url}" target="_blank" class="small">View</a>`;
-                        }
-                    } else {
-                        tcgCell.textContent = 'N/A';
-                    }
-                    row.appendChild(tcgCell);
-                    
-                    // CardMarket
-                    const cmCell = document.createElement('td');
-                    if (card.cardmarket && card.cardmarket.trendPrice) {
-                        const eurPrice = card.cardmarket.trendPrice.toFixed(2);
-                        const usdPrice = card.cardmarket.trendPrice_usd ? card.cardmarket.trendPrice_usd.toFixed(2) : (card.cardmarket.trendPrice * exchangeRate).toFixed(2);
-                        cmCell.innerHTML = `
-                            <div class="price-dual">
-                                <span class="price-eur">€${eurPrice}</span>
-                                <span class="price-usd">($${usdPrice})</span>
+                        // Card info
+                        const cardCell = document.createElement('td');
+                        cardCell.innerHTML = `
+                            <div class="d-flex align-items-center">
+                                <img src="${card.image || '#'}" class="card-image me-2" alt="${card.name}"
+                                     onerror="this.src='https://via.placeholder.com/100x140?text=No+Image'">
+                                <div>
+                                    <strong>${card.name}</strong>
+                                    <br>
+                                    <small>#${card.number} · ${card.rarity || ''}</small>
+                                </div>
                             </div>
                         `;
-                        if (card.cardmarket_url) {
-                            cmCell.innerHTML += `<br><a href="${card.cardmarket_url}" target="_blank" class="small">View</a>`;
+                        row.appendChild(cardCell);
+                        
+                        // PriceCharting
+                        const pcCell = document.createElement('td');
+                        if (card.price_charting && card.price_charting.loose) {
+                            pcCell.textContent = `$${card.price_charting.loose.toFixed(2)}`;
+                        } else {
+                            pcCell.textContent = 'N/A';
                         }
-                    } else {
-                        cmCell.textContent = 'N/A';
-                    }
-                    row.appendChild(cmCell);
-                    
-                    // Best Arbitrage
-                    const arbCell = document.createElement('td');
-                    if (card.arbitrage) {
-                        arbCell.innerHTML = `${card.arbitrage.buy_from} → ${card.arbitrage.sell_to}`;
-                    } else {
-                        arbCell.textContent = 'None';
-                    }
-                    row.appendChild(arbCell);
-                    
-                    // Profit Margin
-                    const profitCell = document.createElement('td');
-                    if (card.arbitrage) {
-                        profitCell.innerHTML = `
-                            <strong>$${card.arbitrage.profit.toFixed(2)}</strong>
-                            <br>
-                            <span class="small">(${card.arbitrage.profit_margin.toFixed(2)}%)</span>
-                        `;
-                    } else {
-                        profitCell.textContent = 'N/A';
-                    }
-                    row.appendChild(profitCell);
-                    
-                    // Actions
-                    const actionsCell = document.createElement('td');
-                    actionsCell.innerHTML = `
-                        <button class="btn btn-sm btn-primary view-detail" data-id="${card.id}">Details</button>
-                    `;
-                    row.appendChild(actionsCell);
-                    
-                    setTable.appendChild(row);
-                });
-                
-                // Add event listeners to detail buttons
-                document.querySelectorAll('.view-detail').forEach(button => {
-                    button.addEventListener('click', function() {
-                        fetchCardData(this.dataset.id);
+                        row.appendChild(pcCell);
+                        
+                        // TCGPlayer
+                        const tcgCell = document.createElement('td');
+                        if (card.tcgplayer && card.tcgplayer.market) {
+                            tcgCell.textContent = `$${card.tcgplayer.market.toFixed(2)}`;
+                        } else {
+                            tcgCell.textContent = 'N/A';
+                        }
+                        row.appendChild(tcgCell);
+                        
+                        // CardMarket
+                        const cmCell = document.createElement('td');
+                        if (card.cardmarket && card.cardmarket.trendPrice) {
+                            cmCell.textContent = `€${card.cardmarket.trendPrice.toFixed(2)}`;
+                        } else {
+                            cmCell.textContent = 'N/A';
+                        }
+                        row.appendChild(cmCell);
+                        
+                        // Best Arbitrage
+                        const arbCell = document.createElement('td');
+                        if (card.arbitrage) {
+                            arbCell.textContent = `${card.arbitrage.buy_from} → ${card.arbitrage.sell_to}`;
+                        } else {
+                            arbCell.textContent = 'None';
+                        }
+                        row.appendChild(arbCell);
+                        
+                        // Profit
+                        const profitCell = document.createElement('td');
+                        if (card.arbitrage) {
+                            profitCell.innerHTML = `$${card.arbitrage.profit.toFixed(2)}<br>(${card.arbitrage.profit_margin.toFixed(2)}%)`;
+                        } else {
+                            profitCell.textContent = 'N/A';
+                        }
+                        row.appendChild(profitCell);
+                        
+                        // Actions
+                        const actionsCell = document.createElement('td');
+                        actionsCell.innerHTML = `<button class="btn btn-sm btn-primary view-detail" data-id="${card.id}">Details</button>`;
+                        row.appendChild(actionsCell);
+                        
+                        setTable.appendChild(row);
                     });
-                });
-                
-                setResult.style.display = 'block';
+                    
+                    // Add event listeners to detail buttons
+                    document.querySelectorAll('.view-detail').forEach(button => {
+                        button.addEventListener('click', function() {
+                            fetchCardData(this.dataset.id);
+                        });
+                    });
+                    
+                    // Show the set result section
+                    setResult.style.display = 'block';
+                    console.log("Set display complete");
+                } catch (error) {
+                    console.error("Error displaying set:", error);
+                    alert("Error displaying set data: " + error.message);
+                }
             }
             
-            function createPriceRow(market, price, link = null) {
+            // Simple utility function to create price rows - now with cardData parameter
+            function createPriceRow(market, price, link = null, cardData = null) {
                 const row = document.createElement('tr');
                 
                 const marketCell = document.createElement('td');
-                marketCell.textContent = market;
+                
+                // Check if the market name contains a condition hint
+                const hasNearMintLabel = 
+                    (market.includes('Near Mint') || 
+                    (market.includes('TCGPlayer') && cardData && 
+                     price === cardData.tcgplayer?.near_mint));
+                     
+                if (hasNearMintLabel) {
+                    marketCell.innerHTML = `${market} <span class="badge bg-success">Near Mint</span>`;
+                } else {
+                    marketCell.textContent = market;
+                }
+                
                 row.appendChild(marketCell);
                 
                 const priceCell = document.createElement('td');
@@ -1451,6 +1083,327 @@
             function showLoading(show) {
                 loadingDiv.style.display = show ? 'block' : 'none';
             }
+            
+            // Add specific error handling for UI element operations
+            function safelyExecute(fn, errorMessage = "Operation failed") {
+                try {
+                    return fn();
+                } catch (error) {
+                    console.error(`${errorMessage}: ${error.message}`);
+                    return null;
+                }
+            }
+            
+            // Helper function to safely update text content
+            function updateTextContent(elementId, text) {
+                const element = document.getElementById(elementId);
+                if (element) {
+                    element.textContent = text;
+                } else {
+                    console.error(`Element not found: ${elementId}`);
+                }
+            }
+            
+            // Helper functions for rendering detailed price sections
+            function renderTcgPlayerPrices(tcgplayer) {
+                if (!tcgplayer) return '<tr><td colspan="5">No data available</td></tr>';
+                
+                let html = '';
+                
+                // Main market price if available
+                if (tcgplayer.market) {
+                    html += `<tr>
+                        <td>Normal</td>
+                        <td>$${formatPrice(tcgplayer.market)}</td>
+                        <td>$${formatPrice(tcgplayer.low || 'N/A')}</td>
+                        <td>$${formatPrice(tcgplayer.mid || 'N/A')}</td>
+                        <td>$${formatPrice(tcgplayer.high || 'N/A')}</td>
+                    </tr>`;
+                }
+                
+                // Variant prices
+                for (const key in tcgplayer) {
+                    if (typeof tcgplayer[key] === 'object' && !Array.isArray(tcgplayer[key]) && key !== 'prices') {
+                        const variant = key.replace(/([A-Z])/g, ' $1').replace(/^./, str => str.toUpperCase());
+                        
+                        if (tcgplayer[key].market) {
+                            html += `<tr>
+                                <td>${variant}</td>
+                                <td>$${formatPrice(tcgplayer[key].market)}</td>
+                                <td>$${formatPrice(tcgplayer[key].low || 'N/A')}</td>
+                                <td>$${formatPrice(tcgplayer[key].mid || 'N/A')}</td>
+                                <td>$${formatPrice(tcgplayer[key].high || 'N/A')}</td>
+                            </tr>`;
+                        }
+                    }
+                }
+                
+                return html || '<tr><td colspan="5">No price data available</td></tr>';
+            }
+            
+            function renderPriceChartingDetails(pc) {
+                if (!pc) return '<tr><td colspan="2">No data available</td></tr>';
+                
+                let html = '';
+                
+                // Basic prices
+                if (pc.loose) {
+                    html += `<tr><td>Loose/Ungraded</td><td>$${formatPrice(pc.loose)}</td></tr>`;
+                }
+                
+                if (pc.graded) {
+                    html += `<tr><td>Graded (General)</td><td>$${formatPrice(pc.graded)}</td></tr>`;
+                }
+                
+                // PSA graded prices
+                if (pc.psa_grades) {
+                    for (const [grade, price] of Object.entries(pc.psa_grades)) {
+                        html += `<tr><td>${grade.toUpperCase()}</td><td>$${formatPrice(price)}</td></tr>`;
+                    }
+                }
+                
+                return html || '<tr><td colspan="2">No price data available</td></tr>';
+            }
+            
+            function renderCardMarketDetails(cm) {
+                if (!cm) return '<tr><td colspan="3">No data available</td></tr>';
+                
+                let html = '';
+                const exchangeRate = cm.exchangeRate || 1.09;
+                
+                // Trend price
+                if (cm.trendPrice) {
+                    html += `<tr>
+                        <td>Trend Price</td>
+                        <td>€${formatPrice(cm.trendPrice)}</td>
+                        <td>$${formatPrice(cm.trendPrice_usd || (cm.trendPrice * exchangeRate))}</td>
+                    </tr>`;
+                }
+                
+                // 1-day average
+                if (cm.avg1) {
+                    html += `<tr>
+                        <td>1-Day Average</td>
+                        <td>€${formatPrice(cm.avg1)}</td>
+                        <td>$${formatPrice(cm.avg1_usd || (cm.avg1 * exchangeRate))}</td>
+                    </tr>`;
+                }
+                
+                // 7-day average
+                if (cm.avg7) {
+                    html += `<tr>
+                        <td>7-Day Average</td>
+                        <td>€${formatPrice(cm.avg7)}</td>
+                        <td>$${formatPrice(cm.avg7_usd || (cm.avg7 * exchangeRate))}</td>
+                    </tr>`;
+                }
+                
+                // 30-day average
+                if (cm.avg30) {
+                    html += `<tr>
+                        <td>30-Day Average</td>
+                        <td>€${formatPrice(cm.avg30)}</td>
+                        <td>$${formatPrice(cm.avg30_usd || (cm.avg30 * exchangeRate))}</td>
+                    </tr>`;
+                }
+                
+                return html || '<tr><td colspan="3">No price data available</td></tr>';
+            }
+            
+            function formatPrice(price) {
+                if (price === null || price === undefined || price === 'N/A') {
+                    return 'N/A';
+                }
+                return typeof price === 'number' ? price.toFixed(2) : price;
+            }
+            
+            // Function to clear all existing card data before loading new data
+            function clearCardData() {
+                // Clear price comparison container
+                document.getElementById('price-comparison').innerHTML = '';
+                
+                // Clear arbitrage opportunity section
+                document.getElementById('arbitrage-container').innerHTML = '';
+                
+                // Clear card details section
+                document.getElementById('card-details').innerHTML = '';
+                
+                // Hide the results section until new data is loaded
+                document.getElementById('results-section').style.display = 'none';
+            }
+
+            // Modified function to display arbitrage data with more details
+            function displayArbitrageAlert(arbitrageData, container) {
+                if (!arbitrageData) {
+                    container.innerHTML = '<div class="alert alert-warning">No arbitrage opportunity found</div>';
+                    return;
+                }
+                
+                const margin = arbitrageData.profit_margin.toFixed(2);
+                let alertClass = 'alert-danger';
+                let icon = 'bi-exclamation-triangle';
+                
+                if (margin >= 20) {
+                    alertClass = 'alert-success';
+                    icon = 'bi-cash-coin';
+                } else if (margin >= 10) {
+                    alertClass = 'alert-warning';
+                    icon = 'bi-graph-up';
+                }
+                
+                // Format the buy source info
+                let buySourceInfo = '';
+                if (arbitrageData.buy_source_details) {
+                    const details = arbitrageData.buy_source_details;
+                    if (details.source && details.condition) {
+                        buySourceInfo = `<small class="d-block mt-1 text-info">${details.source} (${details.condition})</small>`;
+                    }
+                    // Add currency conversion info if applicable
+                    if (details.currency === 'EUR→USD') {
+                        buySourceInfo += `<small class="d-block mt-1">€${details.original_value.toFixed(2)} → $${details.converted_value.toFixed(2)}</small>`;
+                    }
+                }
+                
+                // Format the sell source info
+                let sellSourceInfo = '';
+                if (arbitrageData.sell_source_details) {
+                    const details = arbitrageData.sell_source_details;
+                    if (details.source) {
+                        if (details.variant && details.price_point) {
+                            sellSourceInfo = `<small class="d-block mt-1 text-info">${details.source} (${details.variant} - ${details.price_point})</small>`;
+                        } else if (details.condition) {
+                            sellSourceInfo = `<small class="d-block mt-1 text-info">${details.source} (${details.condition})</small>`;
+                        }
+                    }
+                }
+                
+                // Calculate fee amount for clarity
+                const feeAmount = arbitrageData.sell_price * arbitrageData.sell_fee_rate;
+                
+                // Get condition notes if available
+                const conditionNotes = arbitrageData.condition_notes || [];
+                const conditionHtml = conditionNotes.length > 0 ? 
+                    `<div class="small mt-2 text-info">
+                        <strong>Condition Comparison:</strong> 
+                        <span class="badge bg-secondary me-1">${conditionNotes.join('</span> <span class="badge bg-secondary me-1">')}</span>
+                     </div>` : '';
+                
+                container.innerHTML = `
+                    <div class="alert ${alertClass}">
+                        <h5><i class="bi ${icon} me-2"></i>Arbitrage Opportunity!</h5>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card bg-light mb-2">
+                                    <div class="card-body p-2 text-dark">
+                                        <h6 class="card-title mb-1">Buy from</h6>
+                                        <p class="card-text">${getBuySourceName(arbitrageData.buy_from)} for $${arbitrageData.buy_price.toFixed(2)}</p>
+                                        ${buySourceInfo}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card bg-light mb-2">
+                                    <div class="card-body p-2 text-dark">
+                                        <h6 class="card-title mb=1">Sell to</h6>
+                                        <p class="card-text">${getSellSourceName(arbitrageData.sell_to)} for $${arbitrageData.sell_price.toFixed(2)}</p>
+                                        ${sellSourceInfo}
+                                        <small class="d-block text-muted">Fees: $${feeAmount.toFixed(2)} (${(arbitrageData.sell_fee_rate * 100).toFixed(0)}%)</small>
+                                        <small class="d-block text-muted">Net after fees: $${arbitrageData.net_sell_price.toFixed(2)}</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card bg-light mb-2">
+                                    <div class="card-body p-2 text-dark">
+                                        <h6 class="card-title mb-1">Potential Profit</h6>
+                                        <p class="card-text">$${arbitrageData.profit.toFixed(2)} (${margin}%)</p>
+                                        <small class="text-muted">Shipping cost: $${arbitrageData.shipping_cost.toFixed(2)}</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        ${conditionHtml}
+                    </div>
+                `;
+            }
+            
+            // Helper function to get a friendly name for buy sources
+            function getBuySourceName(sourceKey) {
+                const sourceMappings = {
+                    'cardmarket': 'CardMarket',
+                    'tcgplayer': 'TCGPlayer',
+                    'pricecharting': 'PriceCharting',
+                    'pricecharting_psa10': 'PriceCharting PSA 10'
+                };
+                
+                // Handle tcgplayer variant sources
+                if (sourceKey.startsWith('tcgplayer_')) {
+                    const parts = sourceKey.split('_');
+                    if (parts.length >= 3) {
+                        const variant = parts[1]; // e.g., normal, holofoil
+                        const type = parts[2]; // e.g., high, market
+                        return `TCGPlayer (${formatVariantName(variant)} - ${type})`;
+                    }
+                }
+                
+                return sourceMappings[sourceKey] || sourceKey;
+            }
+            
+            // Helper function to get a friendly name for sell sources
+            function getSellSourceName(sourceKey) {
+                return getBuySourceName(sourceKey); // Reuse the same function
+            }
+            
+            // Helper function to format variant names
+            function formatVariantName(variant) {
+                if (!variant) return '';
+                return variant
+                    .replace(/([A-Z])/g, ' $1') // Add space before capital letters
+                    .replace(/^./, str => str.toUpperCase()); // Capitalize first letter
+            }
+
+            // Modified function to load card data
+            function loadCardData(cardId) {
+                // First clear previous card data
+                clearCardData();
+                
+                // Show loading indicator
+                document.getElementById('loading-indicator').style.display = 'block';
+                
+                // Fetch the card data
+                fetch(`/api/card_prices?id=${cardId}`)
+                    .then(response => response.json())
+                    .then(data => {
+                        // Hide loading indicator
+                        document.getElementById('loading-indicator').style.display = 'none';
+                        
+                        // Display the results section
+                        document.getElementById('results-section').style.display = 'block';
+                        
+                        // Process and display the data
+                        displayCardDetails(data);
+                        displayPriceComparison(data);
+                        displayArbitrageOpportunity(data);
+                    })
+                    .catch(error => {
+                        console.error('Error loading card data:', error);
+                        document.getElementById('loading-indicator').style.display = 'none';
+                        document.getElementById('error-message').textContent = 'Error loading card data. Please try again.';
+                        document.getElementById('error-message').style.display = 'block';
+                    });
+            }
+
+            // Event listener for card selection
+            document.addEventListener('click', function(event) {
+                if (event.target.classList.contains('card-select-btn')) {
+                    const cardId = event.target.getAttribute('data-card-id');
+                    if (cardId) {
+                        loadCardData(cardId);
+                    }
+                }
+            });
+            
+            // ...existing code...
         });
     </script>
     
